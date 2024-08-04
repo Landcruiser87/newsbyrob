@@ -19,7 +19,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
     """
 
     articles = []
-    article_id = creator = title = description = url = pub_date = current_time = None
+    article_id = creator = title = description = url = pub_date = current_time = identifier = threat_level = country = keyword = None
 
     #Set the outer loop over each card returned. 
     for card in results:
@@ -83,19 +83,13 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         NewArticle (dataclass): Custom data object
 
     Returns:
-        property_listings (list): List of dataclass objects
+        new_articles (list): List of dataclass objects
     """
     feeds = {
         "main_feed":"https://travel.state.gov/_res/rss/TAsTWs.xml#.html",
     }
-
+    new_articles = []
     url = feeds.get(cat)
-
-    #Error Trapping
-    # else:
-    #     logger.critical("Inproper input for area, moving to next site")
-    #     return
- 
     headers = {
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
@@ -116,11 +110,10 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         logger.warning(f'Reason: {response.reason}')
         return None
 
-    #Get the HTML
+    #Parse the XML
     bs4ob = BeautifulSoup(response.text, features="xml")
 
-    # Isolate the property-list from the expanded one (I don't want the 3 mile
-    # surrounding.  Just the neighborhood)
+    #Find all records (item CSS)
     results = bs4ob.find_all("item")
     if results:
         new_articles = get_articles(results, cat, source, logger, NewArticle)

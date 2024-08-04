@@ -154,7 +154,7 @@ def parse_feed(site:str, siteinfo:tuple):
                     del datacheck
                     # layout["find_count"].update(support.update_count(len(data), layout))
 
-                    #Add the listings to the jsondata dict. 
+                    #Add the articles to the jsondata dict. 
                     add_data(data, (site, cat))
                     del data
             else:
@@ -190,17 +190,18 @@ def main():
     for site, info in SITES.items():
         parse_feed(site, info)
         time.sleep(np.random.randint(3, 6))
-    # If new listings are found, save the data to the json file, 
-    # format the list of dataclassses to a url 
-    # Send gmail alerting of new properties
+
     if newstories:
+        # If new articles are found, save the data to the json file, 
+        # format the list of dataclassses to a url 
+        # Send gmail alerting of new articles
         support.save_data(jsondata)
         links_html = support.urlformat(newstories)
         support.send_email_update(links_html)
         logger.info(f"{len(newstories)} new articles found.  Email sent")
 
     else:
-        logger.critical("No new listings were found")
+        logger.critical("No new articles were found")
     
     logger.info("Program shutting down")
 
