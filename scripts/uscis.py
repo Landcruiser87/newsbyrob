@@ -2,7 +2,6 @@ import logging
 from bs4 import BeautifulSoup
 import requests
 import time
-from typing import Union
 
 def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
     """[Ingest XML of summary page for articles info]
