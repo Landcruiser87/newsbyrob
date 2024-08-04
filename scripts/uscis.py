@@ -19,7 +19,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
     """
 
     articles = []
-    article_id = creator = title = description = url = pub_date = date_pulled = current_time = None
+    article_id = creator = title = description = url = pub_date = current_time = None
 
     #Set the outer loop over each card returned. 
     for card in results:

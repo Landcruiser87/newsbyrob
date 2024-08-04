@@ -86,7 +86,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         property_listings (list): List of dataclass objects
     """
     feeds = {
-        "main":"https://travel.state.gov/_res/rss/TAsTWs.xml#.html",
+        "main_feed":"https://travel.state.gov/_res/rss/TAsTWs.xml#.html",
     }
 
     url = feeds.get(cat)

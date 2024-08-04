@@ -2645,20 +2645,6 @@
     "country": "AS",
     "keyword": "advisory"
   },
-  "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bermuda-travel-advisory.html": {
-    "source": "https://travel.state.gov",
-    "creator": null,
-    "title": "Bermuda - Level 1: Exercise Normal Precautions",
-    "description": "\n<p><b>Reissued with obsolete COVID-19 page links removed.</b></p>\n<p>Exercise normal precautions in Bermuda.</p>\n<p>Read the <a href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Bermuda.html\">country information page</a> for additional information on travel to Bermuda.</p>\n<p>If you decide to travel to Bermuda:&nbsp;</p>\n<ul>\n<li>Enroll in the <a href=\"https://step.state.gov/\">Smart Traveler Enrollment Program (STEP)</a> to receive Alerts and make it easier to locate you in an emergency.</li>\n<li>Follow the Department of State on <a href=\"http://facebook.com/travelgov\">Facebook</a> and <a href=\"http://twitter.com/travelgov\">Twitter</a>.</li>\n<li>Review the <a href=\"https://www.osac.gov/Content/Browse/Report?subContentTypes=Country%20Security%20Report\">Country Security Report</a> for Bermuda.</li>\n<li>Prepare a contingency plan for emergency situations. Review the <a href=\"https://travel.state.gov/content/passports/en/go/checklist.html\">Traveler&#8217;s Checklist</a>.</li>\n<li>Visit the CDC page for the latest <a href=\"https://wwwnc.cdc.gov/travel/destinations/list\">Travel Health Information</a> related to your travel.</li>\n</ul>\n",
-    "link": "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bermuda-travel-advisory.html",
-    "category": "main",
-    "pub_date": "Mon, 17 Jul 2023",
-    "date_pulled": "08-04-2024_17-11-30",
-    "identifier": "BD,advisory",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "country": "BD",
-    "keyword": "advisory"
-  },
   "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/france-travel-advisory.html": {
     "source": "https://travel.state.gov",
     "creator": null,
@@ -8385,20 +8371,6 @@
     "country": "",
     "keyword": ""
   },
-  "1e0163bf-6793-4431-bb42-8ca290b7ad0e": {
-    "source": "https://www.uscis.gov",
-    "creator": "USCIS",
-    "title": "USCIS Updates Interpretation of \u201cUnder Honorable Conditions\u201d for Military Naturalization",
-    "description": "U.S. Citizenship and Immigration Services is publishing an update to its Policy Manual to clarify that a current or former service member who received an uncharacterized discharge may be eligible for naturalization under sections 328 and 329 of the Immigration and Naturalization Act (INA).",
-    "link": "https://www.uscis.gov/newsroom/alerts/uscis-updates-interpretation-of-under-honorable-conditions-for-military-naturalization",
-    "category": "Alerts",
-    "pub_date": "Tue, 02 Aug 22 13:23:41 -0400",
-    "date_pulled": "08-04-2024_17-12-09",
-    "identifier": "",
-    "threat_level": "",
-    "country": "",
-    "keyword": ""
-  },
   "feee536b-b97e-415e-a994-2069121c7614": {
     "source": "https://www.uscis.gov",
     "creator": "USCIS",
@@ -10429,20 +10401,6 @@
     "country": "",
     "keyword": ""
   },
-  "https://www.cbp.gov/node/78": {
-    "source": "https://www.cbp.gov",
-    "creator": "U.S. Customs and Border Protection",
-    "title": "From the Air and Sea",
-    "description": "U.S. Customs and Border Protection's (CBP) Air and Marine Operations (AMO) safeguards our Nation by anticipating and confronting security threats through our aviation and maritime law enforcement expertise, innovative capabilities, and partnerships\u2026",
-    "link": "https://www.cbp.gov/border-security/air-sea",
-    "category": "Border Security updates",
-    "pub_date": "Wed, 24 Jul 2013 12:53:03 -0400",
-    "date_pulled": "08-04-2024_17-13-06",
-    "identifier": "",
-    "threat_level": "",
-    "country": "",
-    "keyword": ""
-  },
   "https://www.cbp.gov/node/84": {
     "source": "https://www.cbp.gov",
     "creator": "U.S. Customs and Border Protection",
@@ -10466,6 +10424,48 @@
     "category": "Border Security updates",
     "pub_date": "Mon, 05 Dec 2011 00:00:00 -0500",
     "date_pulled": "08-04-2024_17-13-06",
+    "identifier": "",
+    "threat_level": "",
+    "country": "",
+    "keyword": ""
+  },
+  "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bermuda-travel-advisory.html": {
+    "source": "https://travel.state.gov",
+    "creator": null,
+    "title": "Bermuda - Level 1: Exercise Normal Precautions",
+    "description": "\n<p><b>Reissued with obsolete COVID-19 page links removed.</b></p>\n<p>Exercise normal precautions in Bermuda.</p>\n<p>Read the <a href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Bermuda.html\">country information page</a> for additional information on travel to Bermuda.</p>\n<p>If you decide to travel to Bermuda:&nbsp;</p>\n<ul>\n<li>Enroll in the <a href=\"https://step.state.gov/\">Smart Traveler Enrollment Program (STEP)</a> to receive Alerts and make it easier to locate you in an emergency.</li>\n<li>Follow the Department of State on <a href=\"http://facebook.com/travelgov\">Facebook</a> and <a href=\"http://twitter.com/travelgov\">Twitter</a>.</li>\n<li>Review the <a href=\"https://www.osac.gov/Content/Browse/Report?subContentTypes=Country%20Security%20Report\">Country Security Report</a> for Bermuda.</li>\n<li>Prepare a contingency plan for emergency situations. Review the <a href=\"https://travel.state.gov/content/passports/en/go/checklist.html\">Traveler&#8217;s Checklist</a>.</li>\n<li>Visit the CDC page for the latest <a href=\"https://wwwnc.cdc.gov/travel/destinations/list\">Travel Health Information</a> related to your travel.</li>\n</ul>\n",
+    "link": "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bermuda-travel-advisory.html",
+    "category": "dos_main",
+    "pub_date": "Mon, 17 Jul 2023",
+    "date_pulled": "08-04-2024_17-37-22",
+    "identifier": "BD,advisory",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "country": "BD",
+    "keyword": "advisory"
+  },
+  "1e0163bf-6793-4431-bb42-8ca290b7ad0e": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "USCIS Updates Interpretation of \u201cUnder Honorable Conditions\u201d for Military Naturalization",
+    "description": "U.S. Citizenship and Immigration Services is publishing an update to its Policy Manual to clarify that a current or former service member who received an uncharacterized discharge may be eligible for naturalization under sections 328 and 329 of the Immigration and Naturalization Act (INA).",
+    "link": "https://www.uscis.gov/newsroom/alerts/uscis-updates-interpretation-of-under-honorable-conditions-for-military-naturalization",
+    "category": "Alerts",
+    "pub_date": "Tue, 02 Aug 22 13:23:41 -0400",
+    "date_pulled": "08-04-2024_17-39-03",
+    "identifier": "",
+    "threat_level": "",
+    "country": "",
+    "keyword": ""
+  },
+  "https://www.cbp.gov/node/78": {
+    "source": "https://www.cbp.gov",
+    "creator": "U.S. Customs and Border Protection",
+    "title": "From the Air and Sea",
+    "description": "U.S. Customs and Border Protection's (CBP) Air and Marine Operations (AMO) safeguards our Nation by anticipating and confronting security threats through our aviation and maritime law enforcement expertise, innovative capabilities, and partnerships\u2026",
+    "link": "https://www.cbp.gov/border-security/air-sea",
+    "category": "Border Security updates",
+    "pub_date": "Wed, 24 Jul 2013 12:53:03 -0400",
+    "date_pulled": "08-04-2024_17-39-38",
     "identifier": "",
     "threat_level": "",
     "country": "",
