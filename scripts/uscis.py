@@ -74,10 +74,10 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         new_articles (list): List of dataclass objects
     """
     feeds = {
-        "Fact Sheets"  :"https://www.uscis.gov/news/rss-feed/93166",
-        "News Releases":"https://www.uscis.gov/news/rss-feed/23269",
-        # "Stakeholder Messages" :"https://www.uscis.gov/news/stakeholder-messages", #Seems broken right now
-        "Alerts"       :"https://www.uscis.gov/news/rss-feed/22984"
+        "Fact Sheets"         :"https://www.uscis.gov/news/rss-feed/93166",
+        "News Releases"       :"https://www.uscis.gov/news/rss-feed/23269",
+        "Stakeholder Messages":"https://www.uscis.gov/news/rss-feed/97790", 
+        "Alerts"              :"https://www.uscis.gov/news/rss-feed/22984"
     }
     new_articles = []
     url = feeds.get(cat)
