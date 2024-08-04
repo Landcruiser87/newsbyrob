@@ -13,18 +13,17 @@ import uscis, cbp, travel, ice, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "DOS": ("https://travel.state.gov", travel),
-    "USCIS" : ("https://www.uscis.gov", uscis),
-    "CBP"   : ("https://www.cbp.gov", cbp),
+    "DOS"  : ("https://travel.state.gov", travel),
+    "USCIS": ("https://www.uscis.gov", uscis),
+    "CBP"  : ("https://www.cbp.gov", cbp),
     # "ICE"   : ("https://www.ice.gov", ice),
 }
 
 CATEGORIES = {
-    "DOS": ["main_feed"],
-    "USCIS" : ["Fact Sheets", "News Releases", "Alerts"], #Stakeholder messages currently down
-    "CBP"   : ["Travel updates","Trusted traveler updates", "Border Security updates"], #"Border wait time feeds" currently down
+    "DOS"  : ["main_feed"],
+    "USCIS": ["Fact Sheets", "News Releases", "Alerts"], #Stakeholder messages currently down
+    "CBP"  : ["Travel updates","Trusted traveler updates", "Border Security updates"], #"Border wait time feeds" currently down
     # "ICE"   : ["List of cats"],
-    
 }
 
 
