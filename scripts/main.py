@@ -13,17 +13,18 @@ import uscis, cbp, travel, ice, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "USCIS" : ("https://www.uscis.gov/news/rss-feed/59144", uscis),
     "CBP"   : ("https://www.cbp.gov/rss", cbp),
-    "TRAVEL": ("https://travel.state.gov/_res/rss/TAsTWs.xml#.html", travel),
-    "ICE"   : ("https://www.ice.gov/rss", ice)
+    "ICE"   : ("https://www.ice.gov/rss", ice),
+    "USCIS" : ("https://www.uscis.gov/news/rss-feed/59144", uscis),
+    "TRAVEL": ("https://travel.state.gov/_res/rss/TAsTWs.xml#.html", travel)
 }
 
 CATEGORIES = {
+    "CBP"   : ["Travel updates","Trusted traveler updates", "Border Security updates"],
+            #"Border wait time feeds" not functional
     "USCIS" : ["List of cats"],
-    "CBP"   : ["List of cats"],
-    "TRAVEL": ["List of cats"],
-    "ICE"   : ["List of cats"]
+    "ICE"   : ["List of cats"],
+    "TRAVEL": ["List of cats"]    
 }
 
 
@@ -36,6 +37,7 @@ class NewArticle():
     description : str
     link        : str
     category    : str
+    pub_date    : np.datetime64
     date_pulled : np.datetime64
     L_dist      : float = ""
     crime_sc    : dict = field(default_factory=lambda:{})
@@ -115,21 +117,23 @@ def check_ids(data:list):
         return None
 
 #FUNCTION Scrape data
-def scrape(site:tuple):
+def parse_feed(site:str, siteinfo:tuple):
     """This function will iterate through different categories on each RSS feed. Ingesting
     only the material that we deem important
 
     Args:
-        site (str): RSS feed we want to ingest
-    """	
-    for cat in CATEGORIES.get(site[0]):
+        site (str): abbrev RSS feed we want to ingest
+        siteinfo (tuple): Tuple of site address and file to import
+    """
+    
+    for cat in CATEGORIES.get(site):
         if cat:
             #Update and advance the overall progressbar
             # progbar.advance(task)
             # progbar.update(task_id=task, description=f"{neigh}:{site[0]}")
             
-            logger.info(f"scraping {site[0]} for {neigh}")
-            data = site[1].neighscrape(neigh, site[0], logger, NewArticle)
+            logger.info(f"Parsing {site} for {cat}")
+            data = siteinfo[1].ingest_xml(cat, siteinfo[0], logger, NewArticle)
 
             #Take a lil nap.  Be nice to the servers!
             # support.run_sleep(np.random.randint(3,8), f'Napping at {site[0]}', layout)
@@ -147,13 +151,13 @@ def scrape(site:tuple):
                     # layout["find_count"].update(support.update_count(len(data), layout))
 
                     #Add the listings to the jsondata dict. 
-                    add_data(data, (site[0], neigh))
+                    add_data(data, (site[0], cat))
                     del data
             else:
-                logger.info(f"No new data found on {source}")
+                logger.info(f"No new data found on {site[0]}")
 
         else:
-            logger.warning(f"{source} is not in validated search list")
+            logger.warning(f"{site[0]} is not in validated search list")
 
 
 ################################# Start Program ####################################
@@ -162,7 +166,7 @@ def main():
     global newstories, jsondata
     newstories = []
     fp = "./data/im_updates.json"
-    totalstops = len(CATEGORIES) * len(SITES)
+    # totalstops = len(CATEGORIES) * len(SITES)
 
     global logger, console
     console = Console(color_system="auto")
@@ -180,8 +184,8 @@ def main():
 
     # with Live(layout, refresh_per_second=10, screen=True, transient=True) as live:
     #     logger.addHandler(support.MainTableHandler(main_table, layout, logger.level))
-    for site in SITES:
-        scrape(site)
+    for site, info in SITES.items():
+        parse_feed(site, info)
 
     # If new listings are found, save the data to the json file, 
     # format the list of dataclassses to a url 
