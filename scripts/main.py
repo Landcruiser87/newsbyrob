@@ -13,16 +13,15 @@ import uscis, cbp, travel, ice, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "CBP"   : ("https://www.cbp.gov/rss", cbp),
+    "USCIS" : ("https://www.uscis.gov", uscis),
+    "CBP"   : ("https://www.cbp.gov", cbp),
     "ICE"   : ("https://www.ice.gov/rss", ice),
-    "USCIS" : ("https://www.uscis.gov/news/rss-feed/59144", uscis),
     "TRAVEL": ("https://travel.state.gov/_res/rss/TAsTWs.xml#.html", travel)
 }
 
 CATEGORIES = {
-    "CBP"   : ["Travel updates","Trusted traveler updates", "Border Security updates"],
-            #"Border wait time feeds" not functional
-    "USCIS" : ["List of cats"],
+    "USCIS" : ["Fact Sheets", "News Releases", "Alerts"], #Stakeholder messages currently down
+    "CBP"   : ["Travel updates","Trusted traveler updates", "Border Security updates"], #"Border wait time feeds" currently down
     "ICE"   : ["List of cats"],
     "TRAVEL": ["List of cats"]    
 }
@@ -84,8 +83,8 @@ def add_data(data:list, siteinfo:tuple):
     #update main data container
     jsondata.update(new_dict)
     
-    #make tuples of (urls, site, neighborhood) for emailing
-    newurls = [(new_dict[idx].get("link"), siteinfo[0].split(".")[1], (new_dict[idx].get("neigh"))) for idx in new_dict.keys()]
+    #make tuples of (urls, site, category) for emailing
+    newurls = [(new_dict[idx].get("link"), siteinfo[0], siteinfo[1]) for idx in new_dict.keys()]
     #Extend the newstories global list
     newstories.extend(newurls)
 
@@ -145,21 +144,18 @@ def parse_feed(site:str, siteinfo:tuple):
                 datacheck = check_ids(data)
                 if datacheck:
                     logger.info(f"New data found, cleaning and storing {len(datacheck)} new links")
-                    #pull the lat long, score it and store it. 
                     data = datacheck
                     del datacheck
-                    #Get lat longs for the address's
                     # layout["find_count"].update(support.update_count(len(data), layout))
 
                     #Add the listings to the jsondata dict. 
-                    add_data(data, (site[0], cat))
+                    add_data(data, (site, cat))
                     del data
             else:
-                logger.info(f"No new data found on {site[0]}")
+                logger.info(f"No new data found on {site}")
 
         else:
-            logger.warning(f"{site[0]} is not in validated search list")
-
+            logger.warning(f"{site} is not in validated search list")
 
 ################################# Start Program ####################################
 

@@ -26,25 +26,25 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
         # Time of pull
         current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
         
-        card_contents = card.contents()
+        card_contents = card.contents
         for row in card_contents:
+            rname = row.name
             if row == "\n":
                 continue
-            elif row.startswith("<title>"):
+            elif rname == "title":
                 title = row.text
-            elif row.startswith("<link>"):
+            elif rname == "link":
                 url = row.text
-            elif row.startswith("<description>"):
+            elif rname == "description":
                 description = row.text
-            elif row.startswith("<pubDate>"):
+            elif rname == "pubDate":
                 pub_date = row.text
                 #NOTE - will need datetime formatting
-            elif row.startswith("<creator>"):
+            elif rname == "creator":
                 creator = row.text
-            elif row.startswith("<guid"):
+            elif rname == "guid":
                 article_id = row.text
             
-
         article = NewArticle(
             id=article_id,
             source=source,
