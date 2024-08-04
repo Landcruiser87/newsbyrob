@@ -46,8 +46,8 @@ def urlformat(urls:list)->str:
     links_html = links_html + "</ol>"
     return links_html
 
-#FUNCTION Send Housing Email
-def send_housing_email(urls:str):
+#FUNCTION Send email update
+def send_email_update(urls:str):
     """[Function for sending an email.  Formats the url list into a basic email with said list]
 
     Args:
@@ -172,7 +172,7 @@ def date_convert(time_big:datetime)->datetime:
 #FUNCTION Save Data
 def save_data(jsond:dict):
     out_json = json.dumps(jsond, indent=2, cls=NumpyArrayEncoder)
-    with open("./data/news_list.json", "w") as out_f:
+    with open("./data/im_updates.json", "w") as out_f:
         out_f.write(out_json)
 
 #FUNCTION Load Historical

@@ -13,17 +13,18 @@ import uscis, cbp, travel, ice, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
+    "TRAVEL": ("https://travel.state.gov", travel),
     "USCIS" : ("https://www.uscis.gov", uscis),
     "CBP"   : ("https://www.cbp.gov", cbp),
-    "ICE"   : ("https://www.ice.gov/rss", ice),
-    "TRAVEL": ("https://travel.state.gov/_res/rss/TAsTWs.xml#.html", travel)
+    # "ICE"   : ("https://www.ice.gov", ice),
 }
 
 CATEGORIES = {
+    "TRAVEL": ["main"],
     "USCIS" : ["Fact Sheets", "News Releases", "Alerts"], #Stakeholder messages currently down
     "CBP"   : ["Travel updates","Trusted traveler updates", "Border Security updates"], #"Border wait time feeds" currently down
-    "ICE"   : ["List of cats"],
-    "TRAVEL": ["List of cats"]    
+    # "ICE"   : ["List of cats"],
+    
 }
 
 
@@ -39,6 +40,10 @@ class NewArticle():
     category    : str
     pub_date    : np.datetime64
     date_pulled : np.datetime64
+    identifier  : str = ""
+    threat_level: str = ""
+    country     : str = ""
+    keyword     : str = ""
     # L_dist      : float = ""
     # crime_sc    : dict = field(default_factory=lambda:{})
 
@@ -136,6 +141,7 @@ def parse_feed(site:str, siteinfo:tuple):
             data = siteinfo[1].ingest_xml(cat, siteinfo[0], logger, NewArticle)
 
             #Take a lil nap.  Be nice to the servers!
+            time.sleep(np.random.randint(4, 6))
             # support.run_sleep(np.random.randint(3,8), f'Napping at {site[0]}', layout)
 
             #If data was returned
@@ -183,14 +189,14 @@ def main():
     #     logger.addHandler(support.MainTableHandler(main_table, layout, logger.level))
     for site, info in SITES.items():
         parse_feed(site, info)
-
+        time.sleep(np.random.randint(3, 6))
     # If new listings are found, save the data to the json file, 
     # format the list of dataclassses to a url 
     # Send gmail alerting of new properties
     if newstories:
         support.save_data(jsondata)
         links_html = support.urlformat(newstories)
-        support.send_housing_email(links_html)
+        support.send_email_update(links_html)
         logger.info(f"{len(newstories)} new articles found.  Email sent")
 
     else:
