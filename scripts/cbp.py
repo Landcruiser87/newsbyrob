@@ -4,80 +4,60 @@ import requests
 import time
 from typing import Union
 
-def get_listings(result:BeautifulSoup, neigh:str, source:str, logger:logging, NewArticle)->list:
+def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
     """[Ingest XML of summary page for articles info]
 
     Args:
         result (BeautifulSoup object): html of apartments page
-        neigh (str): neighorhood being searched
-        source (str): Source website
+        cat (str): category being searched
+        source (str): source website
         logger (logging.logger): logger for Kenny loggin
-        NewArticle (dataclass) : Dataclass object for news article
+        NewArticle (dataclass) : Dataclass object for NewsArticle
 
     Returns:
         articles (list): [List of NewArticle objects]
     """
 
     articles = []
-    listingid = price = beds = sqft = baths = pets = url = addy = current_time = None
+    article_id = creator = title = description = url = pub_date = date_pulled = current_time = None
 
     #Set the outer loop over each card returned. 
-    for card in result.find_all("li", class_="placard-container"):
+    for card in results:
         # Time of pull
         current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
+        
+        card_contents = card.contents()
+        for row in card_contents:
+            if row == "\n":
+                continue
+            elif row.startswith("<title>"):
+                title = row.text
+            elif row.startswith("<link>"):
+                url = row.text
+            elif row.startswith("<description>"):
+                description = row.text
+            elif row.startswith("<pubDate>"):
+                pub_date = row.text
+                #NOTE - will need datetime formatting
+            elif row.startswith("<creator>"):
+                creator = row.text
+            elif row.startswith("<guid"):
+                article_id = row.text
+            
 
-        #Grab the id
-        search = card.find("article", "search-placard for-rent-mls-placard")
-        if search:
-            listingid = search.get("data-pk")
-        else:
-            logger.warning(f"missing id for card on {source} in {neigh}")
-            continue
-
-        details = card.find("div", class_="for-rent-content-container")
-        if details:
-            #grab address
-            res = card.find("p", class_="address")
-            if res:
-                addy = res.text
-            #grab url
-            res = card.find("a")
-            if res:
-                url = "https://" + source + res.get("href")
-
-            search = card.find("ul", class_="detailed-info-container")
-            for subsearch in search.find_all("li"):
-                testval = subsearch.text
-                if testval:
-                    #Grab price
-                    if "$" in testval:
-                        price = int("".join(x for x in testval if x.isnumeric()))
-                    #Grab Beds
-                    elif "beds" in testval.lower():
-                        beds = int("".join(x for x in testval if x.isnumeric()))
-                    #Grab baths
-                    elif "baths" in testval.lower():
-                        baths = int("".join(x for x in testval if x.isnumeric()))
-                    #! SQFT is available on the individual links, but not worth
-                    #! the extra call to grab it
-
-        pets = True
-
-        listing = NewArticle(
-            id=listingid,
+        article = NewArticle(
+            id=article_id,
             source=source,
-            price=price,
-            neigh=neigh,
-            bed=beds,
-            sqft=sqft,
-            bath=baths,
-            dogs=pets,
+            creator=creator,
+            title=title,
+            description=description,
             link=url,
-            address=addy,
+            category=cat,
+            pub_date=pub_date,
             date_pulled=current_time
         )
-        articles.append(listing)
-        listingid = price = beds = sqft = baths = pets = url = addy = current_time = None
+        articles.append(article)
+        article_id = creator = title = description = url = category = pub_date = date_pulled = current_time = None
 
     return articles
 
@@ -127,18 +107,15 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         return None
 
     #Get the HTML
-    bs4ob = BeautifulSoup(response.text, 'lxml')
+    bs4ob = BeautifulSoup(response.text, features="xml")
 
     # Isolate the property-list from the expanded one (I don't want the 3 mile
     # surrounding.  Just the neighborhood)
-    nores = bs4ob.find_all("div", class_="no-results-container")
-    if not nores:
-        results = bs4ob.find("section", class_="placards")
-        if results:
-            if results.get("id") =='placardContainer':
-                property_listings = get_listings(results, neigh, source, logger, Propertyinfo)
-                logger.info(f'{len(property_listings)} articles returned from {source}')
-                return property_listings
+    results = bs4ob.find_all("item")
+    if results:
+        new_articles = get_articles(results, cat, source, logger, NewArticle)
+        logger.info(f'{len(new_articles)} articles returned from {source}')
+        return new_articles
             
     else:
-        logger.warning("No articles returned on apartments.  Moving to next site")
+        logger.warning(f"No articles returned on {source} / {cat}.  Moving to next feed")

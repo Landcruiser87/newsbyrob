@@ -32,6 +32,7 @@ CATEGORIES = {
 @dataclass
 class NewArticle():
     id          : str
+    source      : str
     creator     : str
     title       : str
     description : str
@@ -39,8 +40,8 @@ class NewArticle():
     category    : str
     pub_date    : np.datetime64
     date_pulled : np.datetime64
-    L_dist      : float = ""
-    crime_sc    : dict = field(default_factory=lambda:{})
+    # L_dist      : float = ""
+    # crime_sc    : dict = field(default_factory=lambda:{})
 
 ################################# Timing Func ####################################
 def log_time(fn):
@@ -108,12 +109,12 @@ def check_ids(data:list):
     n_ids = set([data[x].id for x in range(len(data))])
     newids = n_ids - j_ids
     if newids:
-        #Only add the listings that are new.  
+        #Only add the articles that are new.  
         newdata = []
         [newdata.append(data[idx]) for idx, _ in enumerate(data) if data[idx].id in newids]
         return newdata
     else:
-        logger.info("Listing(s) already stored in rental_list.json") 
+        logger.info("Articles(s) already stored in im_updates.json") 
         return None
 
 #FUNCTION Scrape data
