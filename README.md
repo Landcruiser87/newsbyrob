@@ -9,9 +9,20 @@
 
 ## Purpose
 A dear friend of my fiancee, Rob, used to circulate and currate his own email
-listings of different and interesting changes in US immigration law. Sadly, he recently passed away and as a present to my fiancee I wanted to recreate that information exchange so that she could both remember/honor him and stay up to date on any changes that may influence her work.  In general, it is difficult to track these changes as they're spread across 4 different sites and have different categories that all need manual inspection for quality. This software has the capability to ingest that information from all 4 sites RSS feeds.  (via xml).  It then emails you any new findings after it scans the targeted RSS feeds.  
+listings of different and interesting changes in US immigration law. Sadly, he
+recently passed away and as a present to my fiancee I wanted to recreate that
+information exchange so that she could both remember/honor him and stay up to
+date on any changes that may influence her work.  In general, it is difficult to
+track these changes as they're spread across 4 different sites and have
+different categories that all need manual inspection for quality. This software
+has the capability to ingest that information from all 4 sites RSS feeds.  (via
+xml).  It then emails you any new findings after it scans the targeted RSS
+feeds.  
 
-If there are other immigration lawyers who are in need of this information.  Feel free to clone and use the repo for your own purposes.  You will need to create a dummy gmail account for utilizing the email function.  Information as to how to do that can be found here.  
+If there are other immigration lawyers who are in need of this information.
+Feel free to clone and use the repo for your own purposes.  You will need to
+create a dummy gmail account for utilizing the email function.  Information as
+to how to do that can be found here.  
 
 [Real Python Article](https://realpython.com/python-send-email/)
 
