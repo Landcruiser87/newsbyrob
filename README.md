@@ -75,9 +75,8 @@ $ mkdir scripts
 
 Copy data to data directory
 
-## Main Outline
+## Sites Searched
 
-Tasks
 - Aggregate news data from these sources.  Looks as though some have an RSS feed you can tap right into.  Easier than scraping so going that way.
 - Sites to search are
   - [UCIS](https://www.uscis.gov/news/rss-feed/59144)
@@ -85,5 +84,8 @@ Tasks
   - [travel](https://travel.state.gov/_res/rss/TAsTWs.xml#.html)
   - [ICE](https://www.ice.gov/rss)
 
-  [ ] - Transfer to 2nd computer
-  [ ] - 
+## TODO
+  [ ] - Ensure published dates are in a unified date format (spoiler, they're not)
+  [ ] - Add function to handle all cases in support.py
+  [ ] - Add any additional users to dislist
+
