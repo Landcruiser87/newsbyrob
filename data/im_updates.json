@@ -1505,7 +1505,7 @@
     "link": "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/finland-travel-advisory.html",
     "category": "main_feed",
     "pub_date": "Wed, 26 Jul 2023",
-    "date_pulled": "08-04-2024_22-56-01",
+    "date_pulled": "08-05-2024_11-35-59",
     "identifier": "FI,advisory",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "country": "FI",
@@ -9616,5 +9616,95 @@
     "category": "Forms Updates",
     "pub_date": "Mon, 01 Apr 24 18:16:14 -0400",
     "date_pulled": "08-05-2024_10-30-16"
+  },
+  "a6152334-5bd7-46e0-a5d9-59edda6b4b6b": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Second Random Selection from Previously Submitted Registrations Complete for FY 2025 H-1B Regular Cap",
+    "description": "USCIS recently announced that we would need to select additional registrations for unique beneficiaries to reach the fiscal year 2025 H-1B regular cap numerical allocation.",
+    "link": "https://www.uscis.gov/newsroom/alerts/second-random-selection-from-previously-submitted-registrations-complete-for-fy-2025-h-1b-regular",
+    "category": "Alerts",
+    "pub_date": "Mon, 05 Aug 24 09:04:14 -0400",
+    "date_pulled": "08-05-2024_10-36-11"
+  },
+  "25734b22-71d7-439e-923a-4b9c736815c8": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form I-9, Employment Eligibility Verification",
+    "description": "Edition Date: 08/01/23. Employers should use the 08/01/23 edition of Form I-9. This edition will have an expiration date of either 07/31/2026 or 05/31/2027.<br />\n<br />\nStarting Aug. 1, 2026, employers should use the Form I-9 version with the 05/31/2027 expiration date.",
+    "link": "https://www.uscis.gov/i-9",
+    "category": "Forms Updates",
+    "pub_date": "Tue, 01 Aug 23 15:37:08 -0400",
+    "date_pulled": "08-05-2024_10-36-15"
+  },
+  "02003ae5-03af-44d2-ab22-7cd22571a08d": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form G-1055, Fee Schedule",
+    "description": "Edition Date: 07/31/24. You can find the edition date at the bottom of the page of Form G-1055, Fee Schedule.",
+    "link": "https://www.uscis.gov/g-1055",
+    "category": "Forms Updates",
+    "pub_date": "Wed, 31 Jul 24 16:27:46 -0400",
+    "date_pulled": "08-05-2024_10-36-15"
+  },
+  "c8070564-8f9e-4703-a9fe-ef07f3691647": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form I-539, Application to Extend/Change Nonimmigrant Status",
+    "description": "Edition Date: 07/27/24. Starting Oct. 1, 2024, we will accept only the 07/27/24 edition. Until then, you can also use the 04/01/24 edition. You can find the edition date at the bottom of the page on the form and instructions.",
+    "link": "https://www.uscis.gov/i-539",
+    "category": "Forms Updates",
+    "pub_date": "Sat, 27 Jul 24 09:58:25 -0400",
+    "date_pulled": "08-05-2024_10-36-15"
+  },
+  "a2f6eab8-f5ff-491d-807c-c15e9572bd2f": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form G-1055, Fee Schedule",
+    "description": "Edition Date: 07/10/24. You can find the edition date at the bottom of the page of Form G-1055, Fee Schedule.",
+    "link": "https://www.uscis.gov/g-1055",
+    "category": "Forms Updates",
+    "pub_date": "Wed, 10 Jul 24 09:23:33 -0400",
+    "date_pulled": "08-05-2024_10-36-15"
+  },
+  "b068b235-4cf1-4223-bd99-c963d373b1fb": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form G-1055, Fee Schedule",
+    "description": "Edition Date: 06/21/24. You can find the edition date at the bottom of the page of Form G-1055, Fee Schedule.",
+    "link": "https://www.uscis.gov/g-1055",
+    "category": "Forms Updates",
+    "pub_date": "Fri, 21 Jun 24 09:02:23 -0400",
+    "date_pulled": "08-05-2024_10-36-15"
+  },
+  "814544e1-051a-4357-a022-17757546ae10": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form G-1055, Fee Schedule",
+    "description": "Edition Date: 05/29/24. You can find the edition date at the bottom of the page of Form G-1055, Fee Schedule.",
+    "link": "https://www.uscis.gov/g-1055",
+    "category": "Forms Updates",
+    "pub_date": "Wed, 29 May 24 15:37:57 -0400",
+    "date_pulled": "08-05-2024_10-36-15"
+  },
+  "e71c3973-1bff-4cfc-b640-ff3401985ea7": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form I-508, Request for Waiver of Certain Rights, Privileges, Exemptions and Immunities",
+    "description": "Edition Date: 04/16/24. Starting July 23, we will accept only the 04/16/24 edition. Until then, you can also use the 12/08/21 edition. You can find the edition date at the bottom of the page on the form and instructions.",
+    "link": "https://www.uscis.gov/i-508",
+    "category": "Forms Updates",
+    "pub_date": "Tue, 16 Apr 24 10:55:27 -0400",
+    "date_pulled": "08-05-2024_10-36-15"
+  },
+  "aaac4497-7bcb-4185-8047-1a967fba9f05": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form I-941, Application for Entrepreneur Parole",
+    "description": "Edition Date: 05/06/24. Starting July 8, 2024 we will accept only the 05/06/24 edition. Until then, you can also use the 04/01/24 and 07/21/22 editions. You can find the edition date at the bottom of the page on the form and instructions.",
+    "link": "https://www.uscis.gov/i-941",
+    "category": "Forms Updates",
+    "pub_date": "Mon, 06 May 24 09:40:59 -0400",
+    "date_pulled": "08-05-2024_10-36-15"
   }
 }

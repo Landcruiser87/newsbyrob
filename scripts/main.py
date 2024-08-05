@@ -20,11 +20,14 @@ SITES = {
 }
 
 CATEGORIES = {
-    "DOS"  : ["main_feed"],
+    "DOS"  : ["main_feed"], 
     "USCIS": ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
     "CBP"  : ["Travel updates","Trusted traveler updates", "Border Security updates"], #"Border wait time feeds" currently down
     "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"],
 }
+
+#BUG - I might need to have the update on DOS be an evolving update as I think just the alert for the country status changes from the current record...  but then how do i store
+#the historical data.   ehhh.  Versioned subdict keys?
 
 
 #Define dataclass container
@@ -94,7 +97,7 @@ def add_data(data:list, siteinfo:tuple):
     newstories.extend(newurls)
 
     logger.info(f"data added for {siteinfo[0]} in {siteinfo[1]}")
-    logger.info(f"These ids were added {ids}")
+    logger.info(f"These ids were added or altered\n{ids}")
     
 #FUNCTION Check IDs
 def check_ids(data:list):
@@ -119,6 +122,21 @@ def check_ids(data:list):
         return newdata
     else:
         logger.info("Articles(s) already stored in im_updates.json") 
+        return None
+
+#FUNCTION Check Changes
+def check_changes(data:list)->list:
+    newdata = []
+    for newarticle in data:
+        title = jsondata[newarticle.id]["title"]
+        descript = jsondata[newarticle.id]["description"]
+        if (newarticle.description != descript) | (newarticle.title != title):
+            logger.warning(f"Updated information found for {newarticle.id} ")
+            newdata.append(newarticle)
+    if newdata:
+        return newdata
+    else:
+        logger.info("No updates from article(s) stored in im_updates.json") 
         return None
 
 #FUNCTION Scrape data
@@ -146,7 +164,11 @@ def parse_feed(site:str, siteinfo:tuple):
             #If data was returned
             if data:
                 #This function will isolate new id's that aren't in the historical JSON
-                datacheck = check_ids(data)
+                if site != "DOS":
+                    datacheck = check_ids(data)
+                else:
+                    datacheck = check_changes(data)
+
                 if datacheck:
                     logger.info(f"New data found, cleaning and storing {len(datacheck)} new links")
                     data = datacheck
