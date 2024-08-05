@@ -123,7 +123,7 @@ def get_rich_handler(console:Console):
     Returns:
         rh(RichHandler): This will format your terminal output
     """
-    FORMAT_RICH = "|%(funcName)-12s|%(message)s "#%(levelname)-8s | %(lineno)-3d
+    FORMAT_RICH = "|%(funcName)-12s|%(message)s "
     rh = RichHandler(level=logging.INFO, console=console)
     rh.setFormatter(logging.Formatter(FORMAT_RICH))
     return rh

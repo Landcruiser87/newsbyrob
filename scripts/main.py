@@ -93,9 +93,9 @@ def add_data(data:list, siteinfo:tuple):
     #Extend the newstories global list
     newstories.extend(newurls)
 
-    logger.info("Global dict updated")
     logger.info(f"data added for {siteinfo[0]} in {siteinfo[1]}")
-
+    logger.info(f"These ids were added {ids}")
+    
 #FUNCTION Check IDs
 def check_ids(data:list):
     """This function takes in a list of NewArticle objects, reformats them to a
@@ -130,7 +130,6 @@ def parse_feed(site:str, siteinfo:tuple):
         site (str): abbrev RSS feed we want to ingest
         siteinfo (tuple): Tuple of site address and file to import
     """
-    
     for cat in CATEGORIES.get(site):
         if cat:
             #Update and advance the overall progressbar
@@ -164,7 +163,7 @@ def parse_feed(site:str, siteinfo:tuple):
             logger.warning(f"{site} is not in validated search list")
 
 ################################# Start Program ####################################
-
+@log_time
 def main():
     global newstories, jsondata
     newstories = []
@@ -198,7 +197,7 @@ def main():
         support.save_data(jsondata)
         links_html = support.urlformat(newstories)
         # support.send_email_update(links_html)
-        logger.info(f"{len(newstories)} new articles found.  Email sent")
+        logger.warning(f"{len(newstories)} new articles found.  Email sent")
 
     else:
         logger.critical("No new articles were found")
