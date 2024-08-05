@@ -84,11 +84,6 @@ Tasks
   - [CBP](https://www.cbp.gov/rss)
   - [travel](https://travel.state.gov/_res/rss/TAsTWs.xml#.html)
   - [ICE](https://www.ice.gov/rss)
-- Figure out main categories. Figure out report format
-- Segment it by source website.  
-- [ ] Some sites have multiple RSS feeds so, need to ask which ones would be most important
-  
 
-You'll also need some categorizing to make sure you don't pull in old stories.  
-As well as work through some pretty significant pagination.  The program framework for the chi housing scraper should be sufficient for the same task.  
-
+  [ ] - Transfer to 2nd computer
+  [ ] - 

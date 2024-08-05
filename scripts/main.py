@@ -22,7 +22,7 @@ SITES = {
 CATEGORIES = {
     "DOS"  : ["main_feed"], 
     "USCIS": ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
-    "CBP"  : ["Travel updates","Trusted traveler updates", "Border Security updates"], #"Border wait time feeds" currently down
+    "CBP"  : ["Travel updates","Trusted traveler updates","Border Security updates","Border Security","Newsroom"], #"Border wait time feeds" currently down
     "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"],
 }
 
@@ -88,7 +88,7 @@ def add_data(data:list, siteinfo:tuple):
     jsondata.update(new_dict)
     
     #make tuples of (urls, site, category) for emailing
-    newurls = [(new_dict[idx].get("link"), siteinfo[0], siteinfo[1]) for idx in new_dict.keys()]
+    newurls = [(new_dict[idx].get("link"), siteinfo[0], siteinfo[1], new_dict[idx].get("title")) for idx in new_dict.keys()]
     #Extend the newstories global list
     newstories.extend(newurls)
 
