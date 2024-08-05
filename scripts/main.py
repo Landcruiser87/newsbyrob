@@ -175,7 +175,7 @@ def parse_feed(site:str, siteinfo:tuple):
 
             #If data was returned
             if data:
-                #This function will isolate new id's that aren't in the historical JSON
+                #These functions will isolate new id's that aren't in the historical JSON
                 if site != "DOS":
                     datacheck = check_ids(data)
                 else:

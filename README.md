@@ -103,3 +103,6 @@ Copy data to data directory
 
 [ ] Add any additional users to dislist
 
+[ ] Total Progress bar
+
+[ ] Something else cool
