@@ -16,7 +16,7 @@ SITES = {
     "DOS"  : ("https://travel.state.gov", travel),
     "USCIS": ("https://www.uscis.gov", uscis),
     "CBP"  : ("https://www.cbp.gov", cbp),
-    "ICE"   : ("https://www.ice.gov", ice),
+    "ICE"  : ("https://www.ice.gov", ice),
 }
 
 CATEGORIES = {
