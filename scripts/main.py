@@ -122,6 +122,17 @@ def check_ids(data:list):
 
 #FUNCTION Check Changes
 def check_changes(data:list)->list:
+    """For DOS, we want to track when a record changes, this function examines the
+    title and description of each country's travel status.  If either is
+    different in any way, then the record flagged for updating when
+    the data is added to the jsondata container.
+
+    Args:
+        data (list): List of NewArticle objects]
+
+    Returns:
+        newdata (list): list of new ids
+    """    
     #BUG - How am I going to track travel changes over time for each country?  Or do i really?  Unsure
     newdata = []
     for newarticle in data:
