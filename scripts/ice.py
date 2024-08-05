@@ -42,14 +42,6 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
                 creator = row.text
             elif rname == "guid":
                 article_id = row.text
-            # elif rname == "identifier":
-            #     identifier = row.text.strip("\n")
-            # elif row.attrs["domain"] == "Threat-Level":
-            #     threat_level = row.text
-            # elif row.attrs["domain"] == "Country-Tag":
-            #     country = row.text
-            # elif row.attrs["domain"] == "Keyword":
-            #     keyword = row.text
 
         article = NewArticle(
             id=article_id,
@@ -80,6 +72,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     Returns:
         new_articles (list): List of dataclass objects
     """
+    #Variable setup
     feeds = {
         "Management and Administration":"https://www.ice.gov/rss/news/373",
         "Operational"                  :"https://www.ice.gov/rss/news/370",

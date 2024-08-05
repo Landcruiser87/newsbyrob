@@ -123,7 +123,7 @@ def get_rich_handler(console:Console):
     Returns:
         rh(RichHandler): This will format your terminal output
     """
-    FORMAT_RICH = "| %(levelname)-8s | %(funcName)-12s |%(message)s "#%(levelname)-8s | %(lineno)-3d
+    FORMAT_RICH = "|%(funcName)-12s|%(message)s "#%(levelname)-8s | %(lineno)-3d
     rh = RichHandler(level=logging.INFO, console=console)
     rh.setFormatter(logging.Formatter(FORMAT_RICH))
     return rh
@@ -140,7 +140,7 @@ def get_logger(log_dir:Path, console:Console)->logging.Logger:
     """	
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
-    # logger.addHandler(get_file_handler(log_dir)) 
+    logger.addHandler(get_file_handler(log_dir)) 
     logger.addHandler(get_rich_handler(console))  #Was causing flickering error in the rendering because the log statments kept trying to print
     logger.propagate = False
     return logger

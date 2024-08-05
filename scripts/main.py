@@ -13,18 +13,17 @@ import uscis, cbp, travel, ice, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "ICE"   : ("https://www.ice.gov", ice),
     "DOS"  : ("https://travel.state.gov", travel),
     "USCIS": ("https://www.uscis.gov", uscis),
     "CBP"  : ("https://www.cbp.gov", cbp),
-    
+    "ICE"   : ("https://www.ice.gov", ice),
 }
 
 CATEGORIES = {
-    "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"],
     "DOS"  : ["main_feed"],
     "USCIS": ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts"], 
     "CBP"  : ["Travel updates","Trusted traveler updates", "Border Security updates"], #"Border wait time feeds" currently down
+    "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"],
 }
 
 
@@ -44,8 +43,6 @@ class NewArticle():
     threat_level: str = ""
     country     : str = ""
     keyword     : str = ""
-    # L_dist      : float = ""
-    # crime_sc    : dict = field(default_factory=lambda:{})
 
 ################################# Timing Func ####################################
 def log_time(fn):
@@ -84,6 +81,9 @@ def add_data(data:list, siteinfo:tuple):
     new_dict = {data[x].id : data[x].__dict__ for x in range(len(data))}
     #Pop the id from the dict underneath (no need to store it twice)
     [new_dict[x].pop("id") for x in ids]
+    if siteinfo[0] != "DOS":
+        for val in ["identifier","threat_level","country","keyword" ]:
+            [new_dict[x].pop(val) for x in ids]
 
     #update main data container
     jsondata.update(new_dict)
