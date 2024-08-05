@@ -159,6 +159,8 @@ class NumpyArrayEncoder(json.JSONEncoder):
             return float(obj)
         elif isinstance(obj, np.ndarray):
             return obj.tolist()
+        elif isinstance(obj, datetime.datetime):
+            return datetime.datetime.strftime(obj, "%m-%d-%Y_%H-%M-%S")
         else:
             return super(NumpyArrayEncoder, self).default(obj)
 
@@ -171,6 +173,8 @@ def date_convert(time_big:datetime)->datetime:
 
 #FUNCTION Save Data
 def save_data(jsond:dict):
+    #Sort by published date
+    jsond = dict(sorted(jsond.items(), key=lambda x: datetime.datetime.strftime(x[1]["pub_date"], "%d %m %Y"), reverse=True))
     out_json = json.dumps(jsond, indent=2, cls=NumpyArrayEncoder)
     with open("./data/im_updates.json", "w") as out_f:
         out_f.write(out_json)

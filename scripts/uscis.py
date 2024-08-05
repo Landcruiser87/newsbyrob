@@ -2,6 +2,12 @@ import logging
 from bs4 import BeautifulSoup
 import requests
 import time
+import datetime
+
+def date_convert(time_str:str)->datetime:
+    # _.strftime("%a, %d %b %y %H:%M:%S %z") #To verify correct converstion
+    dateOb = datetime.datetime.strptime(time_str, "%a, %d %b %y %H:%M:%S %z")
+    return dateOb
 
 def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
     """[Ingest XML of summary page for articles info]
@@ -37,8 +43,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
             elif rname == "description":
                 description = row.text
             elif rname == "pubDate":
-                pub_date = row.text
-                #NOTE - will need datetime formatting
+                pub_date = date_convert(row.text)
             elif rname == "creator":
                 creator = row.text
             elif rname == "guid":
@@ -53,7 +58,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
             link=url,
             category=cat,
             pub_date=pub_date,
-            date_pulled=current_time
+            pull_date=current_time
         )
         articles.append(article)
         article_id = creator = title = description = url = pub_date =  current_time = None

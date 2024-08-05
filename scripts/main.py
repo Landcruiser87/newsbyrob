@@ -22,7 +22,7 @@ SITES = {
 CATEGORIES = {
     "DOS"  : ["main_feed"], 
     "USCIS": ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
-    "CBP"  : ["Travel updates","Trusted traveler updates","Border Security updates","Border Security","Newsroom"], #"Border wait time feeds" currently down
+    "CBP"  : ["Travel updates","Trusted traveler updates","Border Security updates","Border Security","Newsroom"], #"Border wait time feeds" currently down Also security might be redundant here
     "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"],
 }
 
@@ -37,7 +37,7 @@ class NewArticle():
     link        : str
     category    : str
     pub_date    : np.datetime64
-    date_pulled : np.datetime64
+    pull_date : np.datetime64
     identifier  : str = ""
     threat_level: str = ""
     country     : str = ""
@@ -136,11 +136,14 @@ def check_changes(data:list)->list:
     #BUG - How am I going to track travel changes over time for each country?  Or do i really?  Unsure
     newdata = []
     for newarticle in data:
-        title = jsondata[newarticle.id]["title"]
-        descript = jsondata[newarticle.id]["description"]
-        if (newarticle.description != descript) | (newarticle.title != title):
-            logger.warning(f"Updated information found for {newarticle.id} ")
-            newdata.append(newarticle)
+        if newarticle.id in jsondata.keys():
+            title = jsondata[newarticle.id]["title"]
+            descript = jsondata[newarticle.id]["description"]
+            if (newarticle.description != descript) | (newarticle.title != title):
+                logger.warning(f"Updated information found for\n{newarticle.title}\n{newarticle.id} ")
+                newdata.append(newarticle)
+        else:
+            newdata.append(newarticle) 
     if newdata:
         return newdata
     else:
