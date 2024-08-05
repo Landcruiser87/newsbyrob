@@ -23,7 +23,7 @@ SITES = {
 CATEGORIES = {
     "DOS"  : ["main_feed"], 
     "USCIS": ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
-    "CBP"  : ["Travel updates","Trusted traveler updates","Border Security updates","Border Security","Newsroom"], #"Border wait time feeds" currently down Also security might be redundant here
+    "CBP"  : ["Travel updates","Trusted traveler updates","Border Security updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
     "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"],
 }
 
