@@ -2,6 +2,7 @@
 import numpy as np
 import logging
 import time
+import datetime
 # from rich.logging import RichHandler
 # from rich.live import Live
 from rich.console import Console
@@ -36,8 +37,8 @@ class NewArticle():
     description : str
     link        : str
     category    : str
-    pub_date    : np.datetime64
-    pull_date : np.datetime64
+    pub_date    : datetime.datetime
+    pull_date   : datetime.datetime
     identifier  : str = ""
     threat_level: str = ""
     country     : str = ""
