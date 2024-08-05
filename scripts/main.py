@@ -26,10 +26,6 @@ CATEGORIES = {
     "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"],
 }
 
-#BUG - I might need to have the update on DOS be an evolving update as I think just the alert for the country status changes from the current record...  but then how do i store
-#the historical data.   ehhh.  Versioned subdict keys?
-
-
 #Define dataclass container
 @dataclass
 class NewArticle():
@@ -126,6 +122,7 @@ def check_ids(data:list):
 
 #FUNCTION Check Changes
 def check_changes(data:list)->list:
+    #BUG - How am I going to track travel changes over time for each country?  Or do i really?  Unsure
     newdata = []
     for newarticle in data:
         title = jsondata[newarticle.id]["title"]
