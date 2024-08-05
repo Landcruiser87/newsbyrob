@@ -76,7 +76,8 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         "Fact Sheets"         :"https://www.uscis.gov/news/rss-feed/93166",
         "News Releases"       :"https://www.uscis.gov/news/rss-feed/23269",
         "Stakeholder Messages":"https://www.uscis.gov/news/rss-feed/97790", 
-        "Alerts"              :"https://www.uscis.gov/news/rss-feed/22984"
+        "Alerts"              :"https://www.uscis.gov/news/rss-feed/22984",
+        "Forms Updates"       :"https://www.uscis.gov/forms/forms-updates/rss-feed"
     }
     new_articles = []
     url = feeds.get(cat)

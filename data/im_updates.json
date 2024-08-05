@@ -9596,5 +9596,25 @@
     "category": "Profesional Responsibility",
     "pub_date": "Fri, 13 May 2016 17:45:45 -0400",
     "date_pulled": "08-04-2024_22-57-01"
+  },
+  "7061caf0-96f9-4f8e-a21f-91b494fb2baa": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form G-1055, Fee Schedule",
+    "description": "Edition Date: 04/26/24. You can find the edition date at the bottom of the page of Form G-1055, Fee Schedule.",
+    "link": "https://www.uscis.gov/g-1055",
+    "category": "Forms Updates",
+    "pub_date": "Fri, 26 Apr 24 15:13:08 -0400",
+    "date_pulled": "08-05-2024_10-30-16"
+  },
+  "98374843-ed1d-414b-9b5b-a46a20f11611": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form I-929, Petition for Qualifying Family Member of a U-1 Nonimmigrant",
+    "description": "Edition Date: 04/01/24. Starting June 3, 2024, we will accept only the 04/01/24 edition. Until then, you can also use the 08/31/21 edition. You can find the edition date at the bottom of the page on the form and instructions. <br />\n<br />\nThe new filing fee is effective for filings postmarked April 1, 2024, and later. If you are filing an acceptable prior form edition, you must include the new filing fee.",
+    "link": "https://www.uscis.gov/i-929",
+    "category": "Forms Updates",
+    "pub_date": "Mon, 01 Apr 24 18:16:14 -0400",
+    "date_pulled": "08-05-2024_10-30-16"
   }
 }
