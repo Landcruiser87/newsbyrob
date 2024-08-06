@@ -159,6 +159,8 @@ class NumpyArrayEncoder(json.JSONEncoder):
             return float(obj)
         elif isinstance(obj, np.ndarray):
             return obj.tolist()
+        elif isinstance(obj, str):
+            return obj
         elif isinstance(obj, datetime.datetime):
             return datetime.datetime.strftime(obj, "%m-%d-%Y_%H-%M-%S")
         else:
@@ -196,9 +198,10 @@ def add_spin_subt(prog:Progress, msg:str, howmanysleeps:int):
 ################################# Date/Load/Save Funcs ####################################
 
 #FUNCTION Convert Date
-def date_convert(time_big:datetime)->datetime:
-    dateOb = datetime.datetime.strptime(time_big,'%Y-%m-%dT%H:%M:%S.%f')
+def date_convert(str_time:str)->datetime:
+    dateOb = datetime.datetime.strptime(str_time,'%m-%d-%Y_%H-%M-%S')
     return dateOb
+
 
 #FUNCTION Save Data
 def save_data(jsond:dict):
@@ -213,4 +216,8 @@ def load_historical(fp:str)->json:
     if exists(fp):
         with open(fp, "r") as f:
             jsondata = json.loads(f.read())
+            #Quick format the pub date strings back to dates. 
+            #We need them as dates to sort them on the save above.
+            for key in jsondata.keys():
+                jsondata[key]["pub_date"] = date_convert(jsondata[key]["pub_date"])
             return jsondata	

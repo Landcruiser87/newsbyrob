@@ -203,7 +203,6 @@ def main():
     console = Console(color_system="auto")
     log_path = PurePath(Path.cwd(), Path("./data/logs"))
     logger = support.get_logger(log_path, console=console)
-    # layout, progbar, task, main_table = support.make_rich_display(totalstops)
 
     #Load im_updates.json
     if exists(fp):
