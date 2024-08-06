@@ -13,6 +13,16 @@
     "country": "PS",
     "keyword": "advisory"
   },
+  "https://www.cbp.gov/node/429742": {
+    "source": "https://www.cbp.gov",
+    "creator": "U.S. Customs and Border Protection",
+    "title": "CBP Field Ops Intercepts 266 Pounds of Cocaine in Port Huron ",
+    "description": "PORT HURON, Mich. \u2013 U.S. Customs and Border Protection\u2019s (CBP) Office of Field Operations intercepted 266 pounds of cocaine at the Blue Water Bridge port of entry, Aug. 1.&nbsp;\n\n\n  \n\n\n\n\nAn x-ray scan of an outbound tractor trailer and subsequent\u2026",
+    "link": "https://www.cbp.gov/newsroom/local-media-release/cbp-field-ops-intercepts-266-pounds-cocaine-port-huron",
+    "category": "Newsroom",
+    "pub_date": "08-06-2024_11-56-45",
+    "pull_date": "08-06-2024_11-59-57"
+  },
   "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bangladesh-travel-advisory.html": {
     "source": "https://travel.state.gov",
     "creator": null,

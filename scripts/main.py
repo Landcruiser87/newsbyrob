@@ -68,7 +68,7 @@ def log_time(fn):
 ################################# Main Funcs ####################################
 #FUNCTION Add Data
 def add_data(data:list, siteinfo:tuple):
-    """Adds Data to JSON Historical file
+    """Adds data to JSON Historical file
 
     Args:
         data (list): List of NewArticle objects that are new (not in the historical)
@@ -87,7 +87,7 @@ def add_data(data:list, siteinfo:tuple):
     #update main data container
     jsondata.update(new_dict)
     
-    #make tuples of (urls, site, category) for emailing
+    #make tuples of (urls, site, category, title) for emailing
     newurls = [(new_dict[idx].get("link"), siteinfo[0], siteinfo[1], new_dict[idx].get("title")) for idx in new_dict.keys()]
     #Extend the newstories global list
     newstories.extend(newurls)
@@ -143,7 +143,8 @@ def check_changes(data:list)->list:
                 logger.warning(f"Updated information found for\n{newarticle.title}\n{newarticle.id} ")
                 newdata.append(newarticle)
         else:
-            newdata.append(newarticle) 
+            #if key doesn't exist in the jsondata container, add the record
+            newdata.append(newarticle)
     if newdata:
         return newdata
     else:
