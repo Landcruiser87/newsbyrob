@@ -202,12 +202,11 @@ def date_convert(str_time:str)->datetime:
     dateOb = datetime.datetime.strptime(str_time,'%m-%d-%Y_%H-%M-%S')
     return dateOb
 
-
 #FUNCTION Save Data
 def save_data(jsond:dict):
     #Sort by published date
-    jsond = dict(sorted(jsond.items(), key=lambda x: datetime.datetime.strftime(x[1]["pub_date"], "%d %m %Y"), reverse=True))
-    out_json = json.dumps(jsond, indent=2, cls=NumpyArrayEncoder)
+    sorted_dict = dict(sorted(jsond.items(), key=lambda x:datetime.datetime.strftime(x[1]["pub_date"], "%Y-%m-%d").split("-"), reverse=True))
+    out_json = json.dumps(sorted_dict, indent=2, cls=NumpyArrayEncoder)
     with open("./data/im_updates.json", "w") as out_f:
         out_f.write(out_json)
 
