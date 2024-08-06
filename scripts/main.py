@@ -223,7 +223,7 @@ def main():
         # Send gmail alerting of new articles
         support.save_data(jsondata)
         links_html = support.urlformat(newstories)
-        support.send_email_update(links_html)
+        # support.send_email_update(links_html)
         logger.warning(f"{len(newstories)} new articles found.  Email sent")
 
     else:
