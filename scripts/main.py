@@ -3,9 +3,8 @@ import numpy as np
 import logging
 import time
 import datetime
-# from rich.logging import RichHandler
-# from rich.live import Live
 from rich.console import Console
+from rich.progress import Progress
 from dataclasses import dataclass, field
 from os.path import exists
 from random import shuffle
@@ -152,7 +151,7 @@ def check_changes(data:list)->list:
         return None
 
 #FUNCTION Scrape data
-def parse_feed(site:str, siteinfo:tuple):
+def parse_feed(site:str, siteinfo:tuple, prog:Progress, bigjob:Progress):
     """This function will iterate through different categories on each RSS feed. Ingesting
     only the material that we deem important
 
@@ -162,16 +161,16 @@ def parse_feed(site:str, siteinfo:tuple):
     """
     for cat in CATEGORIES.get(site):
         if cat:
-            #Update and advance the overall progressbar
-            # progbar.advance(task)
-            # progbar.update(task_id=task, description=f"{neigh}:{site[0]}")
+            # Update and advance the overall progressbar
+            prog.advance(bigjob)
+            prog.update(task_id=bigjob, description=f"{site}")
             
             logger.info(f"Parsing {site} for {cat}")
             data = siteinfo[1].ingest_xml(cat, siteinfo[0], logger, NewArticle)
 
             #Take a lil nap.  Be nice to the servers!
-            time.sleep(np.random.randint(4, 6))
-            # support.run_sleep(np.random.randint(3,8), f'Napping at {site[0]}', layout)
+            support.add_spin_subt(prog, "server nap", np.random.randint(3, 6))
+            prog.advance(bigjob)
 
             #If data was returned
             if data:
@@ -185,7 +184,6 @@ def parse_feed(site:str, siteinfo:tuple):
                     logger.info(f"New data found, cleaning and storing {len(datacheck)} new links")
                     data = datacheck
                     del datacheck
-                    # layout["find_count"].update(support.update_count(len(data), layout))
 
                     #Add the articles to the jsondata dict. 
                     add_data(data, (site, cat))
@@ -202,7 +200,7 @@ def main():
     global newstories, jsondata
     newstories = []
     fp = "./data/im_updates.json"
-    # totalstops = len(CATEGORIES) * len(SITES)
+    totalstops = sum([len(x) for x in CATEGORIES.values()])
 
     global logger, console
     console = Console(color_system="auto")
@@ -218,11 +216,12 @@ def main():
         jsondata = {}
         logger.warning("No historical data found")
 
-    # with Live(layout, refresh_per_second=10, screen=True, transient=True) as live:
-    #     logger.addHandler(support.MainTableHandler(main_table, layout, logger.level))
-    for site, info in SITES.items():
-        parse_feed(site, info)
-        time.sleep(np.random.randint(3, 6))
+    prog = support.mainspinner()
+    bigjob = support.run_main_spinner(prog, totalstops)
+    while not prog.finished:
+        for site, info in SITES.items():
+            parse_feed(site, info, prog, bigjob)
+            support.add_spin_subt(prog, "server nap", np.random.randint(3, 6))
 
     if newstories:
         # If new articles are found, save the data to the json file, 

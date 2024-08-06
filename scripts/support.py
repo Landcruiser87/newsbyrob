@@ -163,6 +163,36 @@ class NumpyArrayEncoder(json.JSONEncoder):
             return datetime.datetime.strftime(obj, "%m-%d-%Y_%H-%M-%S")
         else:
             return super(NumpyArrayEncoder, self).default(obj)
+        
+################################# Rich Spinner Control ####################################
+
+#FUNCTION sleep progbar
+def mainspinner():
+    my_progress_bar = Progress(
+        TextColumn("{task.description}"),
+        SpinnerColumn("pong"),
+        BarColumn(),
+        TextColumn("*"),
+        "time remain:",
+        TextColumn("*"),
+        TimeRemainingColumn(),
+        TextColumn("*"),
+        TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+        transient=True,
+        refresh_per_second=10
+    )
+    return my_progress_bar
+
+def run_main_spinner(prog:Progress, totalstops:int):
+    bigjob = prog.add_task("[green]Checking RSS Feeds", total=totalstops)
+    return bigjob
+
+def add_spin_subt(prog:Progress, msg:str, howmanysleeps:int):
+    liljob = prog.add_task(f"[magenta]{msg}", total = howmanysleeps)
+    for _ in range(howmanysleeps):
+        time.sleep(1)
+        prog.advance(liljob)
+
 
 ################################# Date/Load/Save Funcs ####################################
 
