@@ -101,8 +101,6 @@ Copy data to data directory
 
 [x] Add function to handle all cases in support.py
 
-[ ] Add any additional users to dislist
+[x] Add any additional users to dislist
 
-[ ] Total Progress bar
-
-[ ] Something else cool
+[x] Total Progress bar

@@ -158,6 +158,8 @@ def parse_feed(site:str, siteinfo:tuple, prog:Progress, jobtask:int):
     Args:
         site (str): abbrev RSS feed we want to ingest
         siteinfo (tuple): Tuple of site address and file to import
+        prog (Progress): Overall progress bar
+        jobtask (int): jobid for the main overall task
     """
     for cat in CATEGORIES.get(site):
         if cat:

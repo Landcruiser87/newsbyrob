@@ -160,7 +160,7 @@ class NumpyArrayEncoder(json.JSONEncoder):
         elif isinstance(obj, np.ndarray):
             return obj.tolist()
         elif isinstance(obj, str):
-            return obj
+            return str(obj)
         elif isinstance(obj, datetime.datetime):
             return datetime.datetime.strftime(obj, "%m-%d-%Y_%H-%M-%S")
         else:
@@ -170,6 +170,16 @@ class NumpyArrayEncoder(json.JSONEncoder):
 
 #FUNCTION sleep progbar
 def mainspinner(console:Console, totalstops:int):
+    """Load a rich Progress bar for however many categories that will be searched
+
+    Args:
+        console (Console): reference to the terminal
+        totalstops (int): Amount of categories searched
+
+    Returns:
+        my_progress_bar (Progress): Progress bar for tracking overall progress
+        jobtask (int): Job id for the main scraping job
+    """    
     my_progress_bar = Progress(
         TextColumn("{task.description}"),
         SpinnerColumn("pong"),
@@ -188,30 +198,64 @@ def mainspinner(console:Console, totalstops:int):
     return my_progress_bar, jobtask
 
 def add_spin_subt(prog:Progress, msg:str, howmanysleeps:int):
+    """Adds a secondary job to the main progress bar that will take a nap at each of the servers that are visited
+
+    Args:
+        prog (Progress): Main progress bar
+        msg (str): Message to update secondary progress bar
+        howmanysleeps (int): How long to let the timer sleep
+    """
+    #Add secondary task to progbar
     liljob = prog.add_task(f"[magenta]{msg}", total = howmanysleeps)
+    #Run job for random sleeps
     for _ in range(howmanysleeps):
         time.sleep(1)
         prog.update(liljob, advance=1)
+    #Hide secondary progress bar
     prog.update(liljob, visible=False)
 
 
 ################################# Date/Load/Save Funcs ####################################
 
-#FUNCTION Convert Date
-def date_convert(str_time:str)->datetime:
-    dateOb = datetime.datetime.strptime(str_time,'%m-%d-%Y_%H-%M-%S')
-    return dateOb
-
 #FUNCTION Save Data
 def save_data(jsond:dict):
-    #Sort by published date
+    """This function saves the dictionary to a JSON file. 
+
+    Args:
+        jsond (dict): Main dictionary container
+    """    
+    # Sort by published date. U Have to sort it by string because some of the
+    # datetimes stored are timezone aware, some are not therefore you have to
+    # turn it into a Y-M-D string then split it on the ("-") so you can first 
+    # sort by year, then month, then day.
     sorted_dict = dict(sorted(jsond.items(), key=lambda x:datetime.datetime.strftime(x[1]["pub_date"], "%Y-%m-%d").split("-"), reverse=True))
     out_json = json.dumps(sorted_dict, indent=2, cls=NumpyArrayEncoder)
     with open("./data/im_updates.json", "w") as out_f:
         out_f.write(out_json)
 
+#FUNCTION Convert Date
+def date_convert(str_time:str)->datetime:
+    """When Loading the historical data.  Turn all the published dates into datetime objects so they can be sorted in the save routine. 
+
+    Args:
+        str_time (str): Converts a string to a datetime object 
+
+    Returns:
+        dateOb (datetime): str_time as a datetime object
+    """    
+    dateOb = datetime.datetime.strptime(str_time,'%m-%d-%Y_%H-%M-%S')
+    return dateOb
+
 #FUNCTION Load Historical
 def load_historical(fp:str)->json:
+    """Loads the saved JSON of previously scraped data.
+
+    Args:
+        fp (str): File path for saving
+
+    Returns:
+        jsondata (JSON): dictionary version of saved JSON
+    """    
     if exists(fp):
         with open(fp, "r") as f:
             jsondata = json.loads(f.read())
