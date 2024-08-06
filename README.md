@@ -97,10 +97,10 @@ Copy data to data directory
 
 ## TODO
 
-[x] Ensure published dates are in a unified date format (spoiler, they're not)
+- [x] Ensure published dates are in a unified date format (spoiler, they're not)
 
-[x] Add function to handle all cases in support.py
+- [x] Add function to handle all cases in support.py
 
-[x] Add any additional users to dislist
+- [x] Add any additional users to dislist
 
-[x] Total Progress bar
+- [x] Total Progress bar
