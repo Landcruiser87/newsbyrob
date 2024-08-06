@@ -82,9 +82,14 @@ While in root directory run commands below
 ```
 $ mkdir data
 $ mkdir scripts
+$ mkdir secret
 ```
 
-Copy data to data directory
+Within the secret folder, make a file called `login.txt`
+Enter the following on the first 3 lines separated by a `colon`
+1. username:str of email
+2. pwd:str of pwd
+3. recipient emails:sep str of emails
 
 ## Sites Searched
 
@@ -97,10 +102,4 @@ Copy data to data directory
 
 ## TODO
 
-- [x] Ensure published dates are in a unified date format (spoiler, they're not)
-
-- [x] Add function to handle all cases in support.py
-
-- [x] Add any additional users to dislist
-
-- [x] Total Progress bar
+- [x] All Done!
