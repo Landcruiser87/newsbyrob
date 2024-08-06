@@ -151,7 +151,7 @@ def check_changes(data:list)->list:
         return None
 
 #FUNCTION Scrape data
-def parse_feed(site:str, siteinfo:tuple, prog:Progress, bigjob:Progress):
+def parse_feed(site:str, siteinfo:tuple, prog:Progress, jobtask:int):
     """This function will iterate through different categories on each RSS feed. Ingesting
     only the material that we deem important
 
@@ -162,15 +162,12 @@ def parse_feed(site:str, siteinfo:tuple, prog:Progress, bigjob:Progress):
     for cat in CATEGORIES.get(site):
         if cat:
             # Update and advance the overall progressbar
-            prog.advance(bigjob)
-            prog.update(task_id=bigjob, description=f"{site}")
-            
+            prog.update(task_id=jobtask, description=f"[red]{site}:{cat}", advance=1)
             logger.info(f"Parsing {site} for {cat}")
             data = siteinfo[1].ingest_xml(cat, siteinfo[0], logger, NewArticle)
 
             #Take a lil nap.  Be nice to the servers!
             support.add_spin_subt(prog, "server nap", np.random.randint(3, 6))
-            prog.advance(bigjob)
 
             #If data was returned
             if data:
@@ -208,7 +205,7 @@ def main():
     logger = support.get_logger(log_path, console=console)
     # layout, progbar, task, main_table = support.make_rich_display(totalstops)
 
-    #Load rental_list.json
+    #Load im_updates.json
     if exists(fp):
         jsondata = support.load_historical(fp)
         logger.info("historical data loaded")
@@ -216,12 +213,10 @@ def main():
         jsondata = {}
         logger.warning("No historical data found")
 
-    prog = support.mainspinner()
-    bigjob = support.run_main_spinner(prog, totalstops)
-    while not prog.finished:
+    prog, task = support.mainspinner(console, totalstops)
+    with prog:
         for site, info in SITES.items():
-            parse_feed(site, info, prog, bigjob)
-            support.add_spin_subt(prog, "server nap", np.random.randint(3, 6))
+            parse_feed(site, info, prog, task)
 
     if newstories:
         # If new articles are found, save the data to the json file, 

@@ -167,31 +167,30 @@ class NumpyArrayEncoder(json.JSONEncoder):
 ################################# Rich Spinner Control ####################################
 
 #FUNCTION sleep progbar
-def mainspinner():
+def mainspinner(console:Console, totalstops:int):
     my_progress_bar = Progress(
         TextColumn("{task.description}"),
         SpinnerColumn("pong"),
         BarColumn(),
         TextColumn("*"),
-        "time remain:",
+        "time elapsed:",
         TextColumn("*"),
-        TimeRemainingColumn(),
+        TimeElapsedColumn(),
         TextColumn("*"),
         TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
         transient=True,
+        console=console,
         refresh_per_second=10
     )
-    return my_progress_bar
-
-def run_main_spinner(prog:Progress, totalstops:int):
-    bigjob = prog.add_task("[green]Checking RSS Feeds", total=totalstops)
-    return bigjob
+    jobtask = my_progress_bar.add_task("[green]Checking RSS Feeds", total=totalstops)
+    return my_progress_bar, jobtask
 
 def add_spin_subt(prog:Progress, msg:str, howmanysleeps:int):
     liljob = prog.add_task(f"[magenta]{msg}", total = howmanysleeps)
     for _ in range(howmanysleeps):
         time.sleep(1)
-        prog.advance(liljob)
+        prog.update(liljob, advance=1)
+    prog.update(liljob, visible=False)
 
 
 ################################# Date/Load/Save Funcs ####################################
