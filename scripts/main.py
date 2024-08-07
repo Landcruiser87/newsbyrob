@@ -22,7 +22,7 @@ SITES = {
 CATEGORIES = {
     "DOS"  : ["main_feed"], 
     "USCIS": ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
-    "CBP"  : ["Travel updates","Trusted traveler updates","Border Security updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
+    "CBP"  : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
     "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"],
 }
 
@@ -152,7 +152,7 @@ def check_changes(data:list)->list:
         logger.info("No updates from article(s) stored in im_updates.json") 
         return None
 
-#FUNCTION Scrape data
+#FUNCTION Parse Feed
 def parse_feed(site:str, siteinfo:tuple, prog:Progress, jobtask:int):
     """This function will iterate through different categories on each RSS feed. Ingesting
     only the material that we deem important

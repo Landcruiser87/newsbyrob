@@ -79,7 +79,6 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     feeds = {
         "Travel updates"          :"https://www.cbp.gov/rss/travel",
         "Trusted traveler updates":"https://www.cbp.gov/rss/ttp",
-        "Border Security updates" :"https://www.cbp.gov/rss/border-security",
         "Newsroom"                :"https://www.cbp.gov/rss/newsroom",
         "Border Security"         :"https://www.cbp.gov/rss/border-security"
     }
