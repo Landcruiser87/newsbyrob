@@ -67,7 +67,7 @@ def log_time(fn):
 
 ################################# Main Funcs ####################################
 #FUNCTION Add Data
-def add_data(data:list, siteinfo:tuple):
+def add_data(data:list, site:str, cat:str):
     """Adds data to JSON Historical file
 
     Args:
@@ -80,7 +80,7 @@ def add_data(data:list, siteinfo:tuple):
     new_dict = {data[x].id : data[x].__dict__ for x in range(len(data))}
     #Pop the id from the dict underneath (no need to store it twice)
     [new_dict[x].pop("id") for x in ids]
-    if siteinfo[0] != "DOS":
+    if site != "DOS":
         for val in ["identifier","threat_level","country","keyword" ]:
             [new_dict[x].pop(val) for x in ids]
 
@@ -88,11 +88,11 @@ def add_data(data:list, siteinfo:tuple):
     jsondata.update(new_dict)
     
     #make tuples of (urls, site, category, title) for emailing
-    newurls = [(new_dict[idx].get("link"), siteinfo[0], siteinfo[1], new_dict[idx].get("title")) for idx in new_dict.keys()]
+    newurls = [(new_dict[idx].get("link"), site, cat, new_dict[idx].get("title")) for idx in new_dict.keys()]
     #Extend the newstories global list
     newstories.extend(newurls)
 
-    logger.info(f"data added for {siteinfo[0]} in {siteinfo[1]}")
+    logger.info(f"data added for {site} in {cat}")
     logger.info(f"These ids were added or altered\n{ids}")
     
 #FUNCTION Check IDs
@@ -186,7 +186,7 @@ def parse_feed(site:str, siteinfo:tuple, prog:Progress, jobtask:int):
                     del datacheck
 
                     #Add the articles to the jsondata dict. 
-                    add_data(data, (site, cat))
+                    add_data(data, site, cat)
                     del data
             else:
                 logger.info(f"No new data found on {site}")
