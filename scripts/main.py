@@ -108,6 +108,7 @@ def check_ids(data:list):
     Returns:
         data (list): List of only new NewArticle objects
     """	
+    #Set comparison of jsondata ids and new data ids
     j_ids = set(jsondata.keys())
     n_ids = set([data[x].id for x in range(len(data))])
     newids = n_ids - j_ids
@@ -133,7 +134,7 @@ def check_changes(data:list)->list:
     Returns:
         newdata (list): list of new ids
     """    
-    #BUG - How am I going to track travel changes over time for each country?  Or do i really?  Unsure
+    #BUG - How am I going to track travel changes over time for each country?  Or do i need too?  Unsure
     newdata = []
     for newarticle in data:
         if newarticle.id in jsondata.keys():
