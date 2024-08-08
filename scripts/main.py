@@ -166,7 +166,7 @@ def parse_feed(site:str, siteinfo:tuple, prog:Progress, jobtask:int):
     for cat in CATEGORIES.get(site):
         if cat:
             # Update and advance the overall progressbar
-            prog.update(task_id=jobtask, description=f"[red]{site}:{cat}", advance=1)
+            prog.update(task_id=jobtask, description=f"[green]{site}:{cat}", advance=1)
             logger.info(f"Parsing {site} for {cat}")
             data = siteinfo[1].ingest_xml(cat, siteinfo[0], logger, NewArticle)
 

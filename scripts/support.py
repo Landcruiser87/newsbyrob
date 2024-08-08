@@ -194,7 +194,7 @@ def mainspinner(console:Console, totalstops:int):
         console=console,
         refresh_per_second=10
     )
-    jobtask = my_progress_bar.add_task("[green]Checking RSS Feeds", total=totalstops)
+    jobtask = my_progress_bar.add_task("[green]Checking RSS Feeds", total=totalstops + 1)
     return my_progress_bar, jobtask
 
 def add_spin_subt(prog:Progress, msg:str, howmanysleeps:int):
