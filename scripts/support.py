@@ -64,7 +64,7 @@ def send_email_update(urls:str):
         html = """
         <html>
             <body>
-                <p>Greetings!<br>
+                <p>Helloooooooooooo,<br>
                 Rob wanted you to look at these new articles!<br>
                 """ + urls + """
                 </p>
