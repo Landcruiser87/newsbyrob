@@ -13,6 +13,36 @@
     "country": "UK",
     "keyword": "advisory"
   },
+  "https://www.cbp.gov/node/429876": {
+    "source": "https://www.cbp.gov",
+    "creator": "U.S. Customs and Border Protection",
+    "title": "CBP officers seize $701K in narcotics at Eagle Pass Port of Entry",
+    "description": "EAGLE PASS, Texas\u2014U.S. Customs and Border Protection, Office of Field Operations officers at Eagle Pass Port of Entry this weekend seized more than $701,000 in narcotics in a single enforcement action.&nbsp;\n\n\u201cOur frontline officers continue to\u2026",
+    "link": "https://www.cbp.gov/newsroom/local-media-release/cbp-officers-seize-701k-narcotics-eagle-pass-port-entry",
+    "category": "Newsroom",
+    "pub_date": "09-03-2024_16-45-05",
+    "pull_date": "09-04-2024_08-01-45"
+  },
+  "https://www.cbp.gov/node/429875": {
+    "source": "https://www.cbp.gov",
+    "creator": "U.S. Customs and Border Protection",
+    "title": "Port of San Luis CBP Officers Foil Child Smuggling Attempt",
+    "description": "San Luis, Ariz.&nbsp;\u2013 U.S. Customs and Border Protection (CBP) officers at the Area Port of San Luis uncovered an alleged child smuggling attempt involving two minors and arrested a woman in connection with the failed attempt.&nbsp;\n\nOn August 29,\u2026",
+    "link": "https://www.cbp.gov/newsroom/local-media-release/port-san-luis-cbp-officers-foil-child-smuggling-attempt",
+    "category": "Newsroom",
+    "pub_date": "09-03-2024_16-31-54",
+    "pull_date": "09-04-2024_08-01-45"
+  },
+  "https://www.cbp.gov/node/429871": {
+    "source": "https://www.cbp.gov",
+    "creator": "U.S. Customs and Border Protection",
+    "title": "CBP, FURA seize 588 pounds of cocaine, arrest two US Citizens near Rincon, Puerto Rico",
+    "description": "AGUADILLA, Puerto Rico \u2013 U.S. Customs and Border Protection (CBP) and the Puerto Rico Police Joint Forces for Rapid Action (FURA, for its Spanish acronym) intercepted a vessel Sunday, seizing 226 of cocaine weighing of 588 pounds (267 kilograms) and\u2026",
+    "link": "https://www.cbp.gov/newsroom/local-media-release/cbp-fura-seize-588-pounds-cocaine-arrest-two-us-citizens-near-rincon",
+    "category": "Newsroom",
+    "pub_date": "09-03-2024_14-36-54",
+    "pull_date": "09-04-2024_08-01-45"
+  },
   "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mauritius-travel-advisory.html": {
     "source": "https://travel.state.gov",
     "creator": null,
