@@ -141,7 +141,7 @@ def get_logger(log_dir:Path, console:Console)->logging.Logger:
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
     logger.addHandler(get_file_handler(log_dir)) 
-    logger.addHandler(get_rich_handler(console))  #Was causing flickering error in the rendering because the log statments kept trying to print
+    logger.addHandler(get_rich_handler(console))  
     logger.propagate = False
     return logger
 
