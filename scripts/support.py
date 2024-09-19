@@ -23,7 +23,6 @@ from rich.text import Text
 from rich.console import Console
 from pathlib import Path
 
-
 ################################# Emailing Funcs ####################################
 
 #FUNCTION URL Format
