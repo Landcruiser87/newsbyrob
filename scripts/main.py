@@ -134,7 +134,6 @@ def check_changes(data:list)->list:
     Returns:
         newdata (list): list of new ids
     """    
-    #BUG - How am I going to track travel changes over time for each country?  Or do i need too?  Unsure
     newdata = []
     for newarticle in data:
         if newarticle.id in jsondata.keys():
