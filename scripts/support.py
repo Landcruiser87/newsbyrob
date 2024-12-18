@@ -84,7 +84,10 @@ def send_email_update(urls:str):
     html = inputdatlink(urls)
 
     message = MIMEMultipart("alternative")
-    message["Subject"] = "Immigration Updates ala Rob!"
+    if "Forms Updates" in urls:
+        message["Subject"] = "Immigration Updates ala Rob! (FORMS FORMS FORMS!!!)"
+    else:
+        message["Subject"] = "Immigration Updates ala Rob!"
     message["From"] = sender_email
     message["To"] = ", ".join(receiver_email)   
     attachment = MIMEText(html, "html")
