@@ -85,7 +85,7 @@ def send_email_update(urls:str):
 
     message = MIMEMultipart("alternative")
     if "Forms Updates" in urls:
-        message["Subject"] = "Immigration Updates ala Rob! (FORMS FORMS FORMS!!!)"
+        message["Subject"] = "FORMS FORMS FORMS!!! -> Immigration updates from Rob!"
     else:
         message["Subject"] = "Immigration Updates ala Rob!"
     message["From"] = sender_email
