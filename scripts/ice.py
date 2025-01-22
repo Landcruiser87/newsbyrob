@@ -81,7 +81,10 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     feeds = {
         "Management and Administration":"https://www.ice.gov/rss/news/373",
         "Operational"                  :"https://www.ice.gov/rss/news/370",
-        "Profesional Responsibility"   :"https://www.ice.gov/rss/news/358"
+        "Profesional Responsibility"   :"https://www.ice.gov/rss/news/358",
+        "National Security"            :"https://www.ice.gov/rss/news/375",
+        "Partnership and Engagement"   :"https://www.ice.gov/rss/news/923",
+        "Enforcement and Removal"      :"https://www.ice.gov/rss/news/356",
     }
     new_articles = []
     url = feeds.get(cat)
