@@ -300,7 +300,7 @@ def inital_scan(base_parent_uri:str):
         question = f"You're about to download {total} files and folders?\nIf so enter a file path ie:./data/nasa,\nOtherwise type no to exit"
         fold_choice = console.input(f"{question}")
         if fold_choice == "no":
-            logger.warning("Run Away")
+            logger.warning("Run Away!!!!!")
             raise ValueError("Input Error!")
         else:
             save_fp = PurePath(Path.cwd(), Path(fold_choice)) #Path("./secret")
@@ -359,7 +359,7 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
                         #Try saving the meta data
                         try:
                             save_json(PurePath(Path(make_path), Path(item_name.replace(".IMG", ".json"))), item["_source"]["archive"])
-                            logger.info(f"json saved 4 {item_name}")
+                            logger.info(f"json saved {item_name}")
 
                         except Exception as e:
                             logger.warning(f"Error saving {item_uri}: {e}")
@@ -395,7 +395,7 @@ def main():
     base_parent_uri = "/mars2020_mastcamz_sci_calibrated/data" #This is what changes
     global prog, task, save_path
     save_path, total_files = inital_scan(base_parent_uri)
-    prog, task = mainspinner(console, total_files*2)
+    prog, task = mainspinner(console, total_files*2) #x2 because all our sub folders have 2 folders (iof, rad)
     with prog:
         directory = map_api_directory(base_parent_uri)
     
