@@ -18,6 +18,8 @@ from rich.progress import (
 from rich.logging import RichHandler
 from rich.console import Console
 
+
+################################# Globals ####################################
 HEADERS = {
     'Upgrade-Insecure-Requests': '1',
     'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
@@ -192,20 +194,24 @@ def save_json(spath:str, nasa_j:dict):
         out_f.write(out_json)
 
 def download_image(image_uri:str, save_path:Path, release_id:int=0):
+    """This function will download the individual image to the directory
+
+    Args:
+        image_uri (str): full uri for the image to be downloaded
+        save_path (Path): full save path
+        release_id (int, optional): I couldn't get this to work, but we might need it later. Defaults to 0.
+    """    
     url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}"
     # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}?"
-    #BUG.  I'm not sure how to get the release ID for the photo.  Its in the GUI on the website, but not included in the JSON query. 
-        #I'll need to dig around in the docs some more to fix it. 
-
+        #BUG.  I'm not sure how to get the release ID for the photo.  Its in the
+            #GUI on the website, but not included in the JSON query. I'll need
+            #to dig around in the docs some more to fix it. 
     
-    response = requests.get(
-        url = url,
-        stream=True
-    )
+    response = requests.get(url)
 
     #Just in case we piss someone off
     if response.status_code != 200:
-        # If there's an error, log it and return no data for that site
+        # If there's an error, log it and return no data for that request
         logger.warning(f'Status code: {response.status_code}')
         logger.warning(f'Reason: {response.reason}')
         logger.warning(f"Image {image_uri} not downloaded")
@@ -271,17 +277,12 @@ def inital_scan(base_parent_uri:str):
     else:
         total = nasa_json["hits"]["total"]["value"]
         question = f"You're about to download {total} files and folders?\nIf so enter a file path ie:./data/nasa,\nOtherwise type no to exit"
-        file_choice = "123" #console.input(f"{question}")
-        if file_choice == "no":
+        fold_choice = console.input(f"{question}")
+        if fold_choice == "no":
             logger.warning("Run Away")
             raise ValueError("Input Error!")
-
         else:
-            # warning = f"Are you sure you want to proceed with downloading {total*2} files and folders?"
-            # are_you_sure = console.input(f"{warning}")
-            # if are_you_sure == "yes":
-            save_fp = PurePath(Path.cwd(), Path("./secret"))
-            # save_fp = PurePath(Path.cwd(), Path(file_choice))
+            save_fp = PurePath(Path.cwd(), Path(fold_choice)) #Path("./secret")
             if Path(save_fp).exists():
                 logger.info("Let the downloads begin!")
                 return save_fp, total
@@ -296,7 +297,7 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
             data = ping_that_nasa(parent_uri)
             directory, files = {}, []
             pileofsomething = data["hits"]["hits"]
-            prog.update(task_id=task, description=f"[green]{parent_uri}", advance=1)
+            prog.update(task_id=task, description=f"[green]searching [red]{parent_uri}[/red]", advance=1)
             make_path = PurePath(Path(save_path), Path(f"./{parent_uri}") )
             os.makedirs(make_path, exist_ok=True)
             logger.info(f"new dir -> {make_path}")
@@ -322,13 +323,14 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
                         #Try downloading the image
                         try: #replace(".IMG", ".png")
                             download_image(uri, PurePath(Path(make_path), Path(item_name)))
-                            logger.info(f"downloaded file{item_name} from {parent_uri}")
+                            logger.info(f"downloaded file {item_name} from {parent_uri}")
                         except Exception as e:
                             logger.warning(f"Error downloading {item_uri}: {e}")
                         
-                        #Try saving the json data
+                        #Try saving the meta data
                         try:
                             save_json(PurePath(Path(make_path), Path(item_name.replace(".IMG", ".json"))), item["_source"]["archive"])
+                            logger.info(f"json saved 4 {item_name}")
 
                         except Exception as e:
                             logger.warning(f"Error saving {item_uri}: {e}")
@@ -368,7 +370,8 @@ def main():
     with prog:
         directory = map_api_directory(base_parent_uri)
     
-    logger.info(f"directory structure downloaded\n{directory}") #?Might need to unpack the directory dict
+    #?Might need to unpack the directory dict.  Whoever runs this first let me know if it works.  Lol
+    logger.info(f"directory structure downloaded\n{directory}") 
     logger.warning("YOU'VE DONE IT.  All files downloaded.  TIME FOR A BEER")
 
 if __name__ == "__main__":
