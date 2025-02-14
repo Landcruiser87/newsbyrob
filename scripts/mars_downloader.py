@@ -73,7 +73,7 @@ def get_file_handler(log_dir:Path)->logging.FileHandler:
     """	
     LOG_FORMAT = "%(asctime)s|%(levelname)-8s|%(lineno)-3d|%(funcName)-19s|%(message)-130s|" 
     current_date = time.strftime("%m-%d-%Y_%H-%M-%S")
-    log_file = log_dir + "/" + f"{current_date}.log"
+    log_file = log_dir / f"{current_date}.log"
     file_handler = logging.FileHandler(log_file)
     file_handler.setFormatter(logging.Formatter(LOG_FORMAT, "%m-%d-%Y %H:%M:%S"))
     return file_handler
@@ -389,7 +389,7 @@ def main():
     #load logger and funcs
     global logger, console
     console = Console(color_system="truecolor")
-    logger = get_logger("./secret", console)
+    logger = get_logger(Path().cwd(), console)
     
     #Load baseparent uri
     base_parent_uri = "/mars2020_mastcamz_sci_calibrated/data" #This is what changes
