@@ -1,0 +1,375 @@
+#Import libraries
+import numpy as np
+import os
+import logging
+import time
+import requests
+import json
+import datetime
+from pathlib import Path, PurePath
+from rich.progress import (
+    Progress,
+    BarColumn,
+    SpinnerColumn,
+    TextColumn,
+    TimeRemainingColumn,
+    TimeElapsedColumn
+)
+from rich.logging import RichHandler
+from rich.console import Console
+
+HEADERS = {
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
+    'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
+    'accept': 'application/json',
+    'content-type': 'application/x-www-form-urlencoded',
+}
+POST_URL = 'https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search?filter_path=hits.hits._source.archive,hits.hits._source.uri,hits.total,aggregations'
+
+
+################################# Timing Func ####################################
+def log_time(fn):
+    """Decorator timing function.  Accepts any function and returns a logging
+    statement with the amount of time it took to run. DJ, I use this code everywhere still.  Thank you bud!
+
+    Args:
+        fn (function): Input function you want to time
+    """	
+    def inner(*args, **kwargs):
+        tnow = time.time()
+        out = fn(*args, **kwargs)
+        te = time.time()
+        took = round(te - tnow, 2)
+        if took <= 60:
+            logging.warning(f"{fn.__name__} ran in {took:.2f}s")
+        elif took <= 3600:
+            logging.warning(f"{fn.__name__} ran in {(took)/60:.2f}m")		
+        else:
+            logging.warning(f"{fn.__name__} ran in {(took)/3600:.2f}h")
+        return out
+    return inner
+################################# Size Funcs ############################################
+
+def sizeofobject(totalsize)->str:
+    for unit in ["B", "KB", "MB", "GB"]:
+        if abs(totalsize) < 1024:
+            return f"{totalsize:4.1f} {unit}"
+        totalsize /= 1024.0
+    return f"{totalsize:.1f} PB"
+
+################################# Logging funcs ####################################
+
+def get_file_handler(log_dir:Path)->logging.FileHandler:
+    """Assigns the saved file logger format and location to be saved
+
+    Args:
+        log_dir (Path): Path to where you want the log saved
+
+    Returns:
+        filehandler(handler): This will handle the logger's format and file management
+    """	
+    LOG_FORMAT = "%(asctime)s|%(levelname)-8s|%(lineno)-3d|%(funcName)-19s|%(message)-130s|" 
+    current_date = time.strftime("%m-%d-%Y_%H-%M-%S")
+    log_file = log_dir + "/" + f"{current_date}.log"
+    file_handler = logging.FileHandler(log_file)
+    file_handler.setFormatter(logging.Formatter(LOG_FORMAT, "%m-%d-%Y %H:%M:%S"))
+    return file_handler
+
+def get_rich_handler(console:Console):
+    """Assigns the rich format that prints out to your terminal
+
+    Args:
+        console (Console): Reference to your terminal
+
+    Returns:
+        rh(RichHandler): This will format your terminal output
+    """
+    FORMAT_RICH = "|%(funcName)-20s|%(message)s "
+    rh = RichHandler(level=logging.WARNING, console=console)
+    rh.setFormatter(logging.Formatter(FORMAT_RICH))
+    return rh
+
+def get_logger(log_dir:Path, console:Console)->logging.Logger:
+    """Loads logger instance.  When given a path and access to the terminal output.  The logger will save a log of all records, as well as print it out to your terminal. Propogate set to False assigns all captured log messages to both handlers.
+
+    Args:
+        log_dir (Path): Path you want the logs saved
+        console (Console): Reference to your terminal
+
+    Returns:
+        logger: Returns custom logger object.  Info level reporting with a file handler and rich handler to properly terminal print
+    """	
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logging.INFO)
+    logger.addHandler(get_file_handler(log_dir)) 
+    logger.addHandler(get_rich_handler(console))  
+    logger.propagate = False
+    return logger
+
+
+################################# Rich Spinner Control ####################################
+
+#FUNCTION sleep progbar
+def mainspinner(console:Console, totalstops:int):
+    """Load a rich Progress bar for however many categories that will be searched
+
+    Args:
+        console (Console): reference to the terminal
+        totalstops (int): Amount of categories searched
+
+    Returns:
+        my_progress_bar (Progress): Progress bar for tracking overall progress
+        jobtask (int): Job id for the main job
+    """    
+    my_progress_bar = Progress(
+        TextColumn("{task.description}"),
+        SpinnerColumn("earth"),
+        BarColumn(),
+        TextColumn("*"),
+        "time elapsed:",
+        TextColumn("*"),
+        TimeElapsedColumn(),
+        TextColumn("*"),
+        TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+        transient=True,
+        console=console,
+        refresh_per_second=10
+    )
+    jobtask = my_progress_bar.add_task("[green]Downloading Images", total=totalstops + 1)
+    return my_progress_bar, jobtask
+
+def add_spin_subt(prog:Progress, msg:str, howmanysleeps:int):
+    """Adds a secondary job to the main progress bar that will take track a secondary job to the main progress should you need it. 
+
+    Args:
+        prog (Progress): Main progress bar
+        msg (str): Message to update secondary progress bar
+        howmanysleeps (int): How long to let the timer sleep
+    """
+    #Add secondary task to progbar
+    liljob = prog.add_task(f"[magenta]{msg}", total = howmanysleeps)
+    #Run job for random sleeps
+    for _ in range(howmanysleeps):
+        time.sleep(1)
+        prog.update(liljob, advance=1)
+    #Hide secondary progress bar
+    prog.update(liljob, visible=False)
+
+################################  Saving functions ############################################
+
+#CLASS Numpy encoder
+class NumpyArrayEncoder(json.JSONEncoder):
+    """Custom numpy JSON Encoder.  Takes in any type from an array and formats it to something that can be JSON serialized.
+    Source Code found here.  https://pynative.com/python-serialize-numpy-ndarray-into-json/
+    Args:
+        json (object): Json serialized format
+    """	
+    def default(self, obj):
+        if isinstance(obj, np.integer):
+            return int(obj)
+        elif isinstance(obj, np.floating):
+            return float(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        elif isinstance(obj, str):
+            return str(obj)
+        elif isinstance(obj, datetime.datetime):
+            return datetime.datetime.strftime(obj, "%m-%d-%Y_%H-%M-%S")
+        else:
+            return super(NumpyArrayEncoder, self).default(obj)
+        
+#FUNCTION Save Configs
+def save_json(spath:str, nasa_j:dict):
+    """This function saves the configs dictionary to a JSON file.     
+
+    Args:
+        spath (str): Path to save the json
+        nasa_j (dict): Dictionary to save
+    """
+    out_json = json.dumps(nasa_j, indent=2, cls=NumpyArrayEncoder)
+    with open(spath, "w") as out_f:
+        out_f.write(out_json)
+
+def download_image(image_uri:str, save_path:Path, release_id:int=0):
+    url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}"
+    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}?"
+    #BUG.  I'm not sure how to get the release ID for the photo.  Its in the GUI on the website, but not included in the JSON query. 
+        #I'll need to dig around in the docs some more to fix it. 
+
+    
+    response = requests.get(
+        url = url,
+        stream=True
+    )
+
+    #Just in case we piss someone off
+    if response.status_code != 200:
+        # If there's an error, log it and return no data for that site
+        logger.warning(f'Status code: {response.status_code}')
+        logger.warning(f'Reason: {response.reason}')
+        logger.warning(f"Image {image_uri} not downloaded")
+        return 
+    
+    with open(save_path, "wb") as f:
+        for chunk in response.iter_content(chunk_size=8192):
+            f.write(chunk)
+
+    #Quick nap so we don't hammer NASA servers
+    time.sleep(1)
+
+
+################################ API functions ############################################
+
+def ping_that_nasa(parent_uri:str):
+    # uri = "mars2020_mastcamz_sci_calibrated/data"
+    # release_id = 0
+    # resize = False
+    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{uri}/::{release_id}?"
+    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{uri}/::{release_id}?:{resize}?"
+    #'https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search?filter_path=hits.hits._source.archive,hits.hits._source.uri,hits.total,aggregations' -H 'accept: application/json' --data-raw '{"query":{"bool":{"must":[{"match":{"archive.parent_uri":"atlas:pds4:mars_2020:perseverance:/mars2020_cachecam_ops_calibrated/data"}}]}},"sort":[{"archive.name":"asc"}]}'
+
+    data = {
+        "query": {
+            "bool": {
+                "must":[
+                    {"match":{"archive.parent_uri":f"atlas:pds4:mars_2020:perseverance:{parent_uri}"}}
+                ]
+            }
+        },
+        "sort":[{"archive.name":"asc"}],
+        "size":10000
+    }
+    # data = '{"query":{"bool":{"must":[{"match":{"archive.parent_uri":"atlas:pds4:mars_2020:perseverance:/mars2020_mastcamz_sci_calibrated/data"}}]}},"sort":[{"archive.name":"asc"}],"size":10000}'
+
+    response = requests.post(
+        url = POST_URL,
+        headers=HEADERS,
+        data=json.dumps(data),
+    )
+
+    #Just in case we piss someone off
+    if response.status_code != 200:
+        # If there's an error, log it and return no data for that site
+        logger.warning(f'Status code: {response.status_code}')
+        logger.warning(f'Reason: {response.reason}')
+        return None
+    
+    #Quick nap so we don't hammer servers
+    time.sleep(1)
+    resp_json = response.json()
+    return resp_json
+
+def inital_scan(base_parent_uri:str):
+    try:
+        nasa_json = ping_that_nasa(base_parent_uri)
+
+    except IndexError:
+        logger.warning("Gah something happened, run away!")
+        raise IndexError("An Index of errors, I blame myself")
+
+    else:
+        total = nasa_json["hits"]["total"]["value"]
+        question = f"You're about to download {total} files and folders?\nIf so enter a file path ie:./data/nasa,\nOtherwise type no to exit"
+        file_choice = "123" #console.input(f"{question}")
+        if file_choice == "no":
+            logger.warning("Run Away")
+            raise ValueError("Input Error!")
+
+        else:
+            # warning = f"Are you sure you want to proceed with downloading {total*2} files and folders?"
+            # are_you_sure = console.input(f"{warning}")
+            # if are_you_sure == "yes":
+            save_fp = PurePath(Path.cwd(), Path("./secret"))
+            # save_fp = PurePath(Path.cwd(), Path(file_choice))
+            if Path(save_fp).exists():
+                logger.info("Let the downloads begin!")
+                return save_fp, total
+            else:
+                logger.warning("File Location doesn't exist")
+                raise ValueError("Select a location that exists")
+
+def map_api_directory(base_parent_uri:str) -> PurePath:
+    def _traverse_n_recurse(parent_uri:str):
+        try:
+            logger.warning(f"ping {parent_uri}")
+            data = ping_that_nasa(parent_uri)
+            directory, files = {}, []
+            pileofsomething = data["hits"]["hits"]
+            prog.update(task_id=task, description=f"[green]{parent_uri}", advance=1)
+            make_path = PurePath(Path(save_path), Path(f"./{parent_uri}") )
+            os.makedirs(make_path, exist_ok=True)
+            logger.info(f"new dir -> {make_path}")
+            
+            for item in pileofsomething:
+                uri = item["_source"]["uri"]
+                item_uri = uri.split(":")[-1]
+                item_type = item["_source"]["archive"]["fs_type"]
+                item_name = PurePath(item_uri).name if item_type=="file" else item["_source"]["archive"]["name"]
+                item_ext = item["_source"]["archive"].get("file_extension")
+                if not item_name:
+                    logger.warning(f"fname mising in {item_uri}")
+                    item_name = "file_from_uri"
+                
+                if item_type == "directory":
+                    logger.info("recursion")
+                    subdir = _traverse_n_recurse(item_uri)
+                    directory[item_name] = subdir
+
+                elif item_type  == "file":
+                    if item_ext == 'img':
+                        files.append(item_name)
+                        #Try downloading the image
+                        try: #replace(".IMG", ".png")
+                            download_image(uri, PurePath(Path(make_path), Path(item_name)))
+                            logger.info(f"downloaded file{item_name} from {parent_uri}")
+                        except Exception as e:
+                            logger.warning(f"Error downloading {item_uri}: {e}")
+                        
+                        #Try saving the json data
+                        try:
+                            save_json(PurePath(Path(make_path), Path(item_name.replace(".IMG", ".json"))), item["_source"]["archive"])
+
+                        except Exception as e:
+                            logger.warning(f"Error saving {item_uri}: {e}")
+
+                else:
+                    logger.warning(f"unknown item type: {item_type}")
+
+            directory[parent_uri] = files
+
+            return directory
+
+        except requests.exceptions.RequestException as e:
+            logger.warning(f"error requesting data: {e}")
+            return None  
+        except json.JSONDecodeError as e:
+            logger.warning(f"error decoding JSON: {e}")
+            return None
+        except Exception as e:
+            logger.warning(f"a general error has occured {e}")
+            return None
+    
+    return _traverse_n_recurse(base_parent_uri)
+        
+
+@log_time
+def main():
+    #load logger and funcs
+    global logger, console
+    console = Console(color_system="truecolor")
+    logger = get_logger("./secret", console)
+    
+    #Load baseparent uri
+    base_parent_uri = "/mars2020_mastcamz_sci_calibrated/data" #This is what changes
+    global prog, task, save_path
+    save_path, total_files = inital_scan(base_parent_uri)
+    prog, task = mainspinner(console, total_files*2)
+    with prog:
+        directory = map_api_directory(base_parent_uri)
+    
+    logger.info(f"directory structure downloaded\n{directory}") #?Might need to unpack the directory dict
+    logger.warning("YOU'VE DONE IT.  All files downloaded.  TIME FOR A BEER")
+
+if __name__ == "__main__":
+    main()
