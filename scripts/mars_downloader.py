@@ -228,6 +228,14 @@ def download_image(image_uri:str, save_path:Path, release_id:int=0):
 ################################ API functions ############################################
 
 def ping_that_nasa(parent_uri:str):
+    """Function to ping the NASA Atlas API
+
+    Args:
+        parent_uri (str): as stated
+
+    Returns:
+        _type_: _description_
+    """    
     # uri = "mars2020_mastcamz_sci_calibrated/data"
     # release_id = 0
     # resize = False
@@ -267,6 +275,19 @@ def ping_that_nasa(parent_uri:str):
     return resp_json
 
 def inital_scan(base_parent_uri:str):
+    """This just does an initial scan to get a folder count in /data
+
+    Args:
+        base_parent_uri (str): starting URI point
+
+    Raises:
+        IndexError: _description_
+        ValueError: _description_
+        ValueError: _description_
+
+    Returns:
+        _type_: _description_
+    """    
     try:
         nasa_json = ping_that_nasa(base_parent_uri)
 
@@ -292,6 +313,14 @@ def inital_scan(base_parent_uri:str):
 
 def map_api_directory(base_parent_uri:str) -> PurePath:
     def _traverse_n_recurse(parent_uri:str):
+        """Recursive internal function that descends the folder structure by file type
+
+        Args:
+            parent_uri (str): URI that you started with
+
+        Returns:
+            directory (dict): Don't really need this anymore, but not sure if the recursion needs it. 
+        """        
         try:
             logger.warning(f"ping {parent_uri}")
             data = ping_that_nasa(parent_uri)
