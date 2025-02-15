@@ -192,17 +192,16 @@ def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0
     """This function will download the individual image to the directory
 
     Args:
-        image_uri (str): full uri for the image to be downloaded
+        image_uri (str) : full uri for the image to be downloaded
         save_path (Path): full save path
-        release_id (int, optional): I couldn't get this to work, but we might need it later. Defaults to 0.
-    """    
+        item_uri (str)  : partial folder location of the files
+        release_id (int): Release version of the file (not working)
+        resize (str)    : Whether to resize the file (not working)
+    """
     # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}"
     # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}?"
     # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}:{resize}?"
 
-        #BUG.  I'm not sure how to get the release ID for the photo.  Its in the
-            #GUI on the website, but not included in the JSON query. I'll need
-            #to dig around in the docs some more to fix it. 
     custom_headers = {
         'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
         'accept-language': 'en-US,en;q=0.9',
@@ -217,19 +216,6 @@ def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0
         'sec-fetch-site': 'cross-site',
         'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
     }
-
-    # custom_headers = {
-    #     'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
-    #     'accept-language': 'en-US,en;q=0.9',
-    #     'priority': 'i',
-    #     'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
-    #     'sec-ch-ua-mobile': '?1',
-    #     'sec-ch-ua-platform': '"Android"',
-    #     'sec-fetch-dest': 'image',
-    #     'sec-fetch-mode': 'no-cors',
-    #     'sec-fetch-site': 'same-origin',
-    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
-    # }
 
     # /mars2020_mastcamz_sci_calibrated/data/0001/iof/ZL0_0001_0667035659_000IOF_N0010052AUT_04096_0260LMA03.IMG-
         #need to replace img with png and data with browse.
