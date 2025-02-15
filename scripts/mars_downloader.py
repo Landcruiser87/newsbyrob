@@ -188,7 +188,7 @@ def save_json(spath:str, nasa_j:dict):
     with open(spath, "w") as out_f:
         out_f.write(out_json)
 
-def download_image(image_uri:str, save_path:Path, release_id:int=0, resize:str="lg"):
+def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0, resize:str="lg"):
     """This function will download the individual image to the directory
 
     Args:
@@ -198,49 +198,56 @@ def download_image(image_uri:str, save_path:Path, release_id:int=0, resize:str="
     """    
     # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}"
     # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}?"
-    url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}:{resize}?"
+    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}:{resize}?"
 
         #BUG.  I'm not sure how to get the release ID for the photo.  Its in the
             #GUI on the website, but not included in the JSON query. I'll need
             #to dig around in the docs some more to fix it. 
-    # custom_headers = {
-    #     'accept': '*/*',
-    #     'accept-language': 'en-US,en;q=0.9',
-    #     'origin': 'https://pds-imaging.jpl.nasa.gov',
-    #     'priority': 'u=1, i',
-    #     'referer': 'https://pds-imaging.jpl.nasa.gov/',
-    #     'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
-    #     'sec-ch-ua-mobile': '?1',
-    #     'sec-ch-ua-platform': '"Android"',
-    #     'sec-fetch-dest': 'empty',
-    #     'sec-fetch-mode': 'cors',
-    #     'sec-fetch-site': 'cross-site',
-    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
-    # }
-
     custom_headers = {
         'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
         'accept-language': 'en-US,en;q=0.9',
-        'priority': 'i',
+        'origin': 'https://pds-imaging.jpl.nasa.gov',
+        'priority': 'u=1, i',
+        'referer': 'https://pds-imaging.jpl.nasa.gov/',
         'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
         'sec-ch-ua-mobile': '?1',
         'sec-ch-ua-platform': '"Android"',
-        'sec-fetch-dest': 'image',
-        'sec-fetch-mode': 'no-cors',
-        'sec-fetch-site': 'same-origin',
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'cross-site',
         'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
     }
 
-    # mars2020_mastcamz_sci_calibrated/data/0001/iof/ZL0_0001_0667035659_000IOF_N0010052AUT_04096_0260LMA03.IMG-
-    #'referer': 'https://pds-imaging.jpl.nasa.gov/beta/archive-explorer?mission=mars_2020&instrument=mastcamz&bundle=mars2020_mastcamz_sci_calibrated&uri=atlas:pds4:mars_2020:perseverance:/mars2020_mastcamz_sci_calibrated/data/0001/iof/ZL0_0001_0667035659_000IOF_N0010052AUT_04096_0260LMA03.IMG-',
-    
-    # url = 'https://pds-imaging.jpl.nasa.gov/archive/m20/cumulative/' 
-    # /mars2020_mastcamz_sci_calibrated/browse/0002/rad/ZL0_0002_0667131328_646RAD_N0010052ZCAM00012_0630LUA02.png
+    # custom_headers = {
+    #     'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+    #     'accept-language': 'en-US,en;q=0.9',
+    #     'priority': 'i',
+    #     'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
+    #     'sec-ch-ua-mobile': '?1',
+    #     'sec-ch-ua-platform': '"Android"',
+    #     'sec-fetch-dest': 'image',
+    #     'sec-fetch-mode': 'no-cors',
+    #     'sec-fetch-site': 'same-origin',
+    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
+    # }
+
+    # /mars2020_mastcamz_sci_calibrated/data/0001/iof/ZL0_0001_0667035659_000IOF_N0010052AUT_04096_0260LMA03.IMG-
+        #need to replace img with png and data with browse.
+    # /mars2020_mastcamz_sci_calibrated/browse/0001/iof/ZL0_0001_0667035659_000IOF_N0010052AUT_04096_0260LMA03.png
         #  f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}"
 
-    # response = requests.get(url=url, headers=custom_headers, stream=True)
+    #'referer': 'https://pds-imaging.jpl.nasa.gov/beta/archive-explorer?mission=mars_2020&instrument=mastcamz&bundle=mars2020_mastcamz_sci_calibrated&uri=atlas:pds4:mars_2020:perseverance:/mars2020_mastcamz_sci_calibrated/data/0001/iof/ZL0_0001_0667035659_000IOF_N0010052AUT_04096_0260LMA03.IMG-',
+    # url = 'https://pds-imaging.jpl.nasa.gov/archive/m20/cumulative/' 
+    
 
-    response = requests.get(url=url, stream=True)
+    archive_root = 'https://pds-imaging.jpl.nasa.gov/archive/m20/cumulative' 
+    url = archive_root + item_uri
+    logger.info(f"requesting {url}")
+    response = requests.get(url=url, headers=custom_headers, stream=True)
+
+    # response = requests.get(url=url, stream=True)
+
+
     #Just in case we piss someone off
     if response.status_code != 200:
         # If there's an error, log it and return no data for that request
@@ -364,9 +371,9 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
             os.makedirs(make_path, exist_ok=True)
             logger.info(f"new dir -> {make_path}")
             
-            typecheck = all([item["_source"]["archive"]["fs_type"]=="file" for item in data["hits"]["hits"]])
+            typecheck = all([item["_source"]["archive"]["fs_type"]=="file" for item in pileofsomething])
             if typecheck:
-                liljob = add_spin_subt(prog, f"downloading images", len(pileofsomething))
+                liljob = add_spin_subt(prog, f"downloading images", len(pileofsomething) // 2)
 
             for item in pileofsomething:
                 uri = item["_source"]["uri"]
@@ -385,18 +392,20 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
 
                 elif item_type  == "file":
                     if item_ext == "img":
+                        item_name = item_name.replace(".IMG", ".png")
                         prog.update(liljob, description=f"[green]downloading[/green] [red]{item_name}[/red]", advance=1)
                         files.append(item_name)
                         #Try downloading the image
-                        try: #replace(".IMG", ".png")
-                            download_image(uri, PurePath(Path(make_path), Path(item_name)))
+                        try:
+                            item_uri = item_uri.replace("data", "browse").replace(".IMG", ".png")
+                            download_image(uri, PurePath(Path(make_path), Path(item_name)), item_uri)
                             logger.info(f"downloaded file {item_name} from {parent_uri}")
                         except Exception as e:
                             logger.warning(f"Error downloading {item_uri}: {e}")
                         
                         #Try saving the meta data
                         try:
-                            save_json(PurePath(Path(make_path), Path(item_name.replace(".IMG", ".json"))), item["_source"]["archive"])
+                            save_json(PurePath(Path(make_path), Path(item_name.replace(".png", ".json"))), item["_source"]["archive"])
                             logger.info(f"json saved {item_name}")
 
                         except Exception as e:
