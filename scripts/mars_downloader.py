@@ -415,8 +415,6 @@ def recurse_tree(parent_uri:str):
         logger.warning(f"a general error has occured {e}")
         return None
     
-        
-
 @log_time
 def main():
     #load logger and funcs
