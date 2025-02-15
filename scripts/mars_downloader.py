@@ -141,22 +141,17 @@ def mainspinner(console:Console, totalstops:int):
     jobtask = my_progress_bar.add_task("[green]Downloading Images", total=totalstops + 1)
     return my_progress_bar, jobtask
 
-def add_spin_subt(prog:Progress, msg:str, howmanysleeps:int):
+def add_spin_subt(prog:Progress, msg:str, howmany:int):
     """Adds a secondary job to the main progress bar that will take track a secondary job to the main progress should you need it. 
 
     Args:
         prog (Progress): Main progress bar
         msg (str): Message to update secondary progress bar
-        howmanysleeps (int): How long to let the timer sleep
+        howmany (int): How many tasks to add to sub spinner
     """
     #Add secondary task to progbar
-    liljob = prog.add_task(f"[magenta]{msg}", total = howmanysleeps)
-    #Run job for random sleeps
-    for _ in range(howmanysleeps):
-        time.sleep(1)
-        prog.update(liljob, advance=1)
-    #Hide secondary progress bar
-    prog.update(liljob, visible=False)
+    liltask = prog.add_task(f"[magenta]{msg}", total = howmany)
+    return liltask
 
 ################################  Saving functions ############################################
 
@@ -193,7 +188,7 @@ def save_json(spath:str, nasa_j:dict):
     with open(spath, "w") as out_f:
         out_f.write(out_json)
 
-def download_image(image_uri:str, save_path:Path, release_id:int=0):
+def download_image(image_uri:str, save_path:Path, release_id:int=0, resize:str="lg"):
     """This function will download the individual image to the directory
 
     Args:
@@ -201,14 +196,51 @@ def download_image(image_uri:str, save_path:Path, release_id:int=0):
         save_path (Path): full save path
         release_id (int, optional): I couldn't get this to work, but we might need it later. Defaults to 0.
     """    
-    url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}"
+    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}"
     # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}?"
+    url = f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}::{release_id}:{resize}?"
+
         #BUG.  I'm not sure how to get the release ID for the photo.  Its in the
             #GUI on the website, but not included in the JSON query. I'll need
             #to dig around in the docs some more to fix it. 
-    
-    response = requests.get(url)
+    # custom_headers = {
+    #     'accept': '*/*',
+    #     'accept-language': 'en-US,en;q=0.9',
+    #     'origin': 'https://pds-imaging.jpl.nasa.gov',
+    #     'priority': 'u=1, i',
+    #     'referer': 'https://pds-imaging.jpl.nasa.gov/',
+    #     'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
+    #     'sec-ch-ua-mobile': '?1',
+    #     'sec-ch-ua-platform': '"Android"',
+    #     'sec-fetch-dest': 'empty',
+    #     'sec-fetch-mode': 'cors',
+    #     'sec-fetch-site': 'cross-site',
+    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
+    # }
 
+    custom_headers = {
+        'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+        'accept-language': 'en-US,en;q=0.9',
+        'priority': 'i',
+        'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
+        'sec-ch-ua-mobile': '?1',
+        'sec-ch-ua-platform': '"Android"',
+        'sec-fetch-dest': 'image',
+        'sec-fetch-mode': 'no-cors',
+        'sec-fetch-site': 'same-origin',
+        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Mobile Safari/537.36',
+    }
+
+    # mars2020_mastcamz_sci_calibrated/data/0001/iof/ZL0_0001_0667035659_000IOF_N0010052AUT_04096_0260LMA03.IMG-
+    #'referer': 'https://pds-imaging.jpl.nasa.gov/beta/archive-explorer?mission=mars_2020&instrument=mastcamz&bundle=mars2020_mastcamz_sci_calibrated&uri=atlas:pds4:mars_2020:perseverance:/mars2020_mastcamz_sci_calibrated/data/0001/iof/ZL0_0001_0667035659_000IOF_N0010052AUT_04096_0260LMA03.IMG-',
+    
+    # url = 'https://pds-imaging.jpl.nasa.gov/archive/m20/cumulative/' 
+    # /mars2020_mastcamz_sci_calibrated/browse/0002/rad/ZL0_0002_0667131328_646RAD_N0010052ZCAM00012_0630LUA02.png
+        #  f"https://pds-imaging.jpl.nasa.gov/api/data/{image_uri}"
+
+    # response = requests.get(url=url, headers=custom_headers, stream=True)
+
+    response = requests.get(url=url, stream=True)
     #Just in case we piss someone off
     if response.status_code != 200:
         # If there's an error, log it and return no data for that request
@@ -218,8 +250,9 @@ def download_image(image_uri:str, save_path:Path, release_id:int=0):
         return 
     
     with open(save_path, "wb") as f:
-        for chunk in response.iter_content(chunk_size=8192):
-            f.write(chunk)
+        f.write(response.content)
+        # for chunk in response.iter_content(chunk_size=8192):
+        #     f.write(chunk)
 
     #Quick nap so we don't hammer NASA servers
     time.sleep(1)
@@ -297,7 +330,7 @@ def inital_scan(base_parent_uri:str):
 
     else:
         total = nasa_json["hits"]["total"]["value"]
-        question = f"You're about to download {total} files and folders?\nIf so enter a file path ie:./data/nasa,\nOtherwise type no to exit"
+        question = f"\n\nYou're about to scan {total} folders and files?\nIf so enter a file path ie:\n./data/nasa\nOtherwise type no to exit\n"
         fold_choice = console.input(f"{question}")
         if fold_choice == "no":
             logger.warning("Run Away!!!!!")
@@ -312,7 +345,7 @@ def inital_scan(base_parent_uri:str):
                 raise ValueError("Select a location that exists")
 
 def map_api_directory(base_parent_uri:str) -> PurePath:
-    def _traverse_n_recurse(parent_uri:str):
+    def _recurse_tree(parent_uri:str):
         """Recursive internal function that descends the folder structure by file type
 
         Args:
@@ -331,6 +364,10 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
             os.makedirs(make_path, exist_ok=True)
             logger.info(f"new dir -> {make_path}")
             
+            typecheck = all([item["_source"]["archive"]["fs_type"]=="file" for item in data["hits"]["hits"]])
+            if typecheck:
+                liljob = add_spin_subt(prog, f"downloading images", len(pileofsomething))
+
             for item in pileofsomething:
                 uri = item["_source"]["uri"]
                 item_uri = uri.split(":")[-1]
@@ -342,12 +379,13 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
                     item_name = "file_from_uri"
                 
                 if item_type == "directory":
-                    logger.info("recursion")
-                    subdir = _traverse_n_recurse(item_uri)
+                    logger.info("descend w recursion")
+                    subdir = _recurse_tree(item_uri)
                     directory[item_name] = subdir
 
                 elif item_type  == "file":
-                    if item_ext == 'img':
+                    if item_ext == "img":
+                        prog.update(liljob, description=f"[green]downloading[/green] [red]{item_name}[/red]", advance=1)
                         files.append(item_name)
                         #Try downloading the image
                         try: #replace(".IMG", ".png")
@@ -368,6 +406,8 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
                     logger.warning(f"unknown item type: {item_type}")
 
             directory[parent_uri] = files
+            if typecheck:
+                prog.update(liljob, visible=False)
 
             return directory
 
@@ -381,7 +421,7 @@ def map_api_directory(base_parent_uri:str) -> PurePath:
             logger.warning(f"a general error has occured {e}")
             return None
     
-    return _traverse_n_recurse(base_parent_uri)
+    return _recurse_tree(base_parent_uri)
         
 
 @log_time
@@ -399,7 +439,7 @@ def main():
     with prog:
         directory = map_api_directory(base_parent_uri)
     
-    #?Might need to unpack the directory dict.  Whoever runs this first let me know if it works.  Lol
+    #?Might need to unpack the directory dict.  Whoever runs this first let me know if this prints to the log.  Lol
     logger.info(f"directory structure downloaded\n{directory}") 
     logger.warning("YOU'VE DONE IT.  All files downloaded.  TIME FOR A BEER")
 
