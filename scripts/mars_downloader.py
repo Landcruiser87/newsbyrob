@@ -71,7 +71,7 @@ def get_file_handler(log_dir:Path)->logging.FileHandler:
     Returns:
         filehandler(handler): This will handle the logger's format and file management
     """	
-    LOG_FORMAT = "%(asctime)s|%(levelname)-8s|%(lineno)-3d|%(funcName)-19s|%(message)-130s|" 
+    LOG_FORMAT = "%(asctime)s|%(levelname)-8s|%(lineno)-3d|%(funcName)-19s|%(message)-175s|" 
     current_date = time.strftime("%m-%d-%Y_%H-%M-%S")
     log_file = log_dir / f"{current_date}.log"
     file_handler = logging.FileHandler(log_file)
@@ -323,7 +323,7 @@ def inital_scan(base_parent_uri:str):
 
     else:
         total = nasa_json["hits"]["total"]["value"]
-        question = f"\n\nYou're about to scan {total} folders and files?\nIf so enter a file path ie:\n./data/nasa\nOtherwise type no to exit\n"
+        question = f"\n\nDo you want to scan {total} folders and files?\nIf so enter a file path ie:\n./data/nasa\nOtherwise type no to exit\n"
         fold_choice = console.input(f"{question}")
         if fold_choice == "no":
             logger.warning("Run Away!!!!!")
