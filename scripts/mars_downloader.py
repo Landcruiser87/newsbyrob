@@ -337,86 +337,84 @@ def inital_scan(base_parent_uri:str):
                 logger.warning("File Location doesn't exist")
                 raise ValueError("Select a location that exists")
 
-def map_api_directory(base_parent_uri:str) -> PurePath:
-    def _recurse_tree(parent_uri:str):
-        """Recursive internal function that descends the folder structure by file type
+def recurse_tree(parent_uri:str):
+    """Recursive internal function that descends the folder structure by file type
 
-        Args:
-            parent_uri (str): URI that you started with
+    Args:
+        parent_uri (str): URI that you started with
 
-        Returns:
-            directory (dict): Don't really need this anymore, but not sure if the recursion needs it. 
-        """        
-        try:
-            logger.warning(f"ping {parent_uri}")
-            data = ping_that_nasa(parent_uri)
-            directory, files = {}, []
-            pileofsomething = data["hits"]["hits"]
-            prog.update(task_id=task, description=f"[green]searching [red]{parent_uri}[/red]", advance=1)
-            make_path = PurePath(Path(save_path), Path(f"./{parent_uri}") )
-            os.makedirs(make_path, exist_ok=True)
-            logger.info(f"new dir -> {make_path}")
+    Returns:
+        directory (dict): Don't really need this anymore, but not sure if the recursion needs it. 
+    """        
+    try:
+        logger.warning(f"ping {parent_uri}")
+        data = ping_that_nasa(parent_uri)
+        directory, files = {}, []
+        pileofsomething = data["hits"]["hits"]
+        prog.update(task_id=task, description=f"[green]searching [red]{parent_uri}[/red]", advance=1)
+        make_path = PurePath(Path(save_path), Path(f"./{parent_uri}") )
+        os.makedirs(make_path, exist_ok=True)
+        logger.info(f"new dir -> {make_path}")
+        
+        typecheck = all([item["_source"]["archive"]["fs_type"]=="file" for item in pileofsomething])
+        if typecheck:
+            liljob = add_spin_subt(prog, f"downloading images", len(pileofsomething) // 2) #Div by 2 because we don't want the xml files
+
+        for item in pileofsomething:
+            uri = item["_source"]["uri"]
+            item_uri = uri.split(":")[-1]
+            item_type = item["_source"]["archive"]["fs_type"]
+            item_name = PurePath(item_uri).name if item_type=="file" else item["_source"]["archive"]["name"]
+            item_ext = item["_source"]["archive"].get("file_extension")
+            if not item_name:
+                logger.warning(f"fname mising in {item_uri}")
+                item_name = "file_from_uri"
             
-            typecheck = all([item["_source"]["archive"]["fs_type"]=="file" for item in pileofsomething])
-            if typecheck:
-                liljob = add_spin_subt(prog, f"downloading images", len(pileofsomething) // 2)
+            if item_type == "directory":
+                logger.info("descend w recursion")
+                subdir = recurse_tree(item_uri)
+                directory[item_name] = subdir
 
-            for item in pileofsomething:
-                uri = item["_source"]["uri"]
-                item_uri = uri.split(":")[-1]
-                item_type = item["_source"]["archive"]["fs_type"]
-                item_name = PurePath(item_uri).name if item_type=="file" else item["_source"]["archive"]["name"]
-                item_ext = item["_source"]["archive"].get("file_extension")
-                if not item_name:
-                    logger.warning(f"fname mising in {item_uri}")
-                    item_name = "file_from_uri"
-                
-                if item_type == "directory":
-                    logger.info("descend w recursion")
-                    subdir = _recurse_tree(item_uri)
-                    directory[item_name] = subdir
+            elif item_type  == "file":
+                if item_ext == "img":
+                    item_name = item_name.replace(".IMG", ".png")
+                    prog.update(liljob, description=f"[green]downloading[/green] [red]{item_name}[/red]", advance=1)
+                    files.append(item_name)
+                    #Try downloading the image
+                    try:
+                        item_uri = item_uri.replace("data", "browse").replace(".IMG", ".png")
+                        download_image(uri, PurePath(Path(make_path), Path(item_name)), item_uri)
+                        logger.info(f"downloaded file {item_name} from {parent_uri}")
+                    except Exception as e:
+                        logger.warning(f"Error downloading {item_uri}: {e}")
+                    
+                    #Try saving the meta data
+                    try:
+                        save_json(PurePath(Path(make_path), Path(item_name.replace(".png", ".json"))), item["_source"]["archive"])
+                        logger.info(f"json saved {item_name}")
 
-                elif item_type  == "file":
-                    if item_ext == "img":
-                        item_name = item_name.replace(".IMG", ".png")
-                        prog.update(liljob, description=f"[green]downloading[/green] [red]{item_name}[/red]", advance=1)
-                        files.append(item_name)
-                        #Try downloading the image
-                        try:
-                            item_uri = item_uri.replace("data", "browse").replace(".IMG", ".png")
-                            download_image(uri, PurePath(Path(make_path), Path(item_name)), item_uri)
-                            logger.info(f"downloaded file {item_name} from {parent_uri}")
-                        except Exception as e:
-                            logger.warning(f"Error downloading {item_uri}: {e}")
-                        
-                        #Try saving the meta data
-                        try:
-                            save_json(PurePath(Path(make_path), Path(item_name.replace(".png", ".json"))), item["_source"]["archive"])
-                            logger.info(f"json saved {item_name}")
+                    except Exception as e:
+                        logger.warning(f"Error saving {item_uri}: {e}")
 
-                        except Exception as e:
-                            logger.warning(f"Error saving {item_uri}: {e}")
+            else:
+                logger.warning(f"unknown item type: {item_type}")
 
-                else:
-                    logger.warning(f"unknown item type: {item_type}")
+        directory[parent_uri] = files
+        if typecheck:
+            prog.update(liljob, visible=False)
 
-            directory[parent_uri] = files
-            if typecheck:
-                prog.update(liljob, visible=False)
+        return directory
 
-            return directory
-
-        except requests.exceptions.RequestException as e:
-            logger.warning(f"error requesting data: {e}")
-            return None  
-        except json.JSONDecodeError as e:
-            logger.warning(f"error decoding JSON: {e}")
-            return None
-        except Exception as e:
-            logger.warning(f"a general error has occured {e}")
-            return None
+    except requests.exceptions.RequestException as e:
+        logger.warning(f"error requesting data: {e}")
+        return None  
+    except json.JSONDecodeError as e:
+        logger.warning(f"error decoding JSON: {e}")
+        return None
+    except Exception as e:
+        logger.warning(f"a general error has occured {e}")
+        return None
     
-    return _recurse_tree(base_parent_uri)
         
 
 @log_time
@@ -432,7 +430,7 @@ def main():
     save_path, total_files = inital_scan(base_parent_uri)
     prog, task = mainspinner(console, total_files*2) #x2 because all our sub folders have 2 folders (iof, rad)
     with prog:
-        directory = map_api_directory(base_parent_uri)
+        directory = recurse_tree(base_parent_uri)
     
     #?Might need to unpack the directory dict.  Whoever runs this first let me know if this prints to the log.  Lol
     logger.info(f"directory structure downloaded\n{directory}") 
