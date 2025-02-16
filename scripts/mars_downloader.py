@@ -88,7 +88,7 @@ def get_rich_handler(console:Console):
     Returns:
         rh(RichHandler): This will format your terminal output
     """
-    FORMAT_RICH = "|%(funcName)-20s|%(message)s "
+    FORMAT_RICH = "|%(funcName)-14s|%(message)-175s "
     rh = RichHandler(level=logging.WARNING, console=console)
     rh.setFormatter(logging.Formatter(FORMAT_RICH))
     return rh
