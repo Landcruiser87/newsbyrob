@@ -400,14 +400,19 @@ def recurse_tree(parent_uri:str):
 
             elif item_type  == "file":
                 if item_ext == "img":
-                    total_mem += item["_source"]["archive"]["size"]
                     item_name = item_name.replace(".IMG", ".png")
+                    item_sp = PurePath(Path(make_path), Path(item_name))
+                    if Path(item_sp).exists():
+                        prog.update(liljob, description=f"[red]{item_name} stored locally[/red]", advance=1)    
+                        continue
+                    
+                    total_mem += item["_source"]["archive"]["size"]
                     prog.update(liljob, description=f"[yellow]{sizeofobject(total_mem)}[/yellow] [green]downloaded[/green] [red]{item_name}[/red]", advance=1)
                     files.append(item_name)
                     #Try downloading the image
                     try:
                         item_uri = item_uri.replace("data", "browse").replace(".IMG", ".png")
-                        invalid = download_image(uri, PurePath(Path(make_path), Path(item_name)), item_uri)
+                        invalid = download_image(uri, item_sp, item_uri)
                         if invalid:
                             logger.warning(f"{item_name} is blank")
                             item["_source"]["archive"]["valid"] = False
