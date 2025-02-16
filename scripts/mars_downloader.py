@@ -72,7 +72,7 @@ def get_file_handler(log_dir:Path)->logging.FileHandler:
     Returns:
         filehandler(handler): This will handle the logger's format and file management
     """	
-    LOG_FORMAT = "%(asctime)s|%(levelname)-8s|%(lineno)-3d|%(funcName)-19s|%(message)-175s|" 
+    LOG_FORMAT = "%(asctime)s|%(levelname)-8s|%(lineno)-3d|%(funcName)-14s|%(message)-175s|" 
     current_date = time.strftime("%m-%d-%Y_%H-%M-%S")
     log_file = log_dir / f"{current_date}.log"
     file_handler = logging.FileHandler(log_file)
@@ -254,13 +254,14 @@ def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0
     try:
         img = Image.open(save_path)
         img_array = np.array(img)
-        if img_array.ndim == 2:
-            pix_total = np.sum(img_array)
-        elif img_array.ndim == 3:
-            pix_total = np.sum(img_array[:,:,:3])
+        if img_array.ndim == 2: 
+            all_zeros = np.all(img_array == 0)
+        elif img_array.ndim == 3:  
+            all_zeros = np.all(img_array[:, :, :3] == 0)
         else:
             return None
-        return pix_total == 0
+
+        return all_zeros
         
     except FileNotFoundError:
         logger.warning(f"Error: File not found at {save_path}")
