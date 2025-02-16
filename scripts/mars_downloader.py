@@ -127,7 +127,7 @@ def mainspinner(console:Console, totalstops:int):
     """    
     my_progress_bar = Progress(
         TextColumn("{task.description}"),
-        SpinnerColumn("earth"),
+        SpinnerColumn("pong"),
         BarColumn(),
         TextColumn("*"),
         "time elapsed:",
@@ -403,7 +403,8 @@ def recurse_tree(parent_uri:str):
                     item_name = item_name.replace(".IMG", ".png")
                     item_sp = PurePath(Path(make_path), Path(item_name))
                     if Path(item_sp).exists():
-                        prog.update(liljob, description=f"[red]{item_name} stored locally[/red]", advance=1)    
+                        prog.update(liljob, description=f"[bold green]{item_name} stored locally[/bold green]", advance=1)    
+                        time.sleep(0.25)
                         continue
                     
                     total_mem += item["_source"]["archive"]["size"]
