@@ -17,6 +17,7 @@ from rich.progress import (
 )
 from rich.logging import RichHandler
 from rich.console import Console
+from PIL import Image
 
 
 ################################# Globals ####################################
@@ -242,13 +243,31 @@ def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0
         logger.warning(f"Image {image_uri} not downloaded")
         return 
     
-    with open(save_path, "wb") as f:
-        f.write(response.content)
-        # for chunk in response.iter_content(chunk_size=8192):
-        #     f.write(chunk)
-
     #Quick nap so we don't hammer NASA servers
     time.sleep(1)
+    
+    #Save file
+    with open(save_path, "wb") as f:
+        f.write(response.content)
+    
+    #Open it and check if its blank. 
+    try:
+        img = Image.open(save_path)
+        img_array = np.array(img)
+        if img_array.shape[1] == 2:
+            pix_total = np.sum(img_array)
+        elif img_array.shape[1] == 3:
+            pix_total = np.sum(img_array[:,:,:3])
+        else:
+            return None
+        return pix_total == 0
+        
+    except FileNotFoundError:
+        logger.warning(f"Error: File not found at {save_path}")
+        return None
+    except Exception as e: 
+        logger.warning(f"An error occurred: {e}")
+        return None
 
 
 ################################ API functions ############################################
@@ -383,8 +402,12 @@ def recurse_tree(parent_uri:str):
                     #Try downloading the image
                     try:
                         item_uri = item_uri.replace("data", "browse").replace(".IMG", ".png")
-                        download_image(uri, PurePath(Path(make_path), Path(item_name)), item_uri)
-                        logger.info(f"downloaded file {item_name} from {parent_uri}")
+                        valid = download_image(uri, PurePath(Path(make_path), Path(item_name)), item_uri)
+                        if valid:
+                            logger.info(f"downloaded file {item_name} from {parent_uri}")
+                        else:
+                            logger.warning(f"{item_name} is blank")
+                            
                     except Exception as e:
                         logger.warning(f"Error downloading {item_uri}: {e}")
                     
