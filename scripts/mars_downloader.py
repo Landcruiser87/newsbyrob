@@ -89,7 +89,7 @@ def get_rich_handler(console:Console):
         rh(RichHandler): This will format your terminal output
     """
     FORMAT_RICH = "|%(funcName)-14s|%(message)-175s "
-    rh = RichHandler(level=logging.WARNING, console=console)
+    rh = RichHandler(level=logging.INFO, console=console)
     rh.setFormatter(logging.Formatter(FORMAT_RICH))
     return rh
 
@@ -104,7 +104,7 @@ def get_logger(log_dir:Path, console:Console)->logging.Logger:
         logger: Returns custom logger object.  Info level reporting with a file handler and rich handler to properly terminal print
     """	
     logger = logging.getLogger(__name__)
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     logger.addHandler(get_file_handler(log_dir)) 
     logger.addHandler(get_rich_handler(console))  
     logger.propagate = False
@@ -279,7 +279,7 @@ def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0
 
     archive_root = 'https://pds-imaging.jpl.nasa.gov/archive/m20/cumulative' 
     url = archive_root + item_uri
-    logger.info(f"requesting {url}")
+    logger.debug(f"requesting {url}")
     response = requests.get(url=url, headers=custom_headers, stream=True)
 
     # response = requests.get(url=url, stream=True)
@@ -370,14 +370,14 @@ def recurse_tree(parent_uri:str):
     """
     global total_mem
     try:
-        logger.warning(f"ping {parent_uri}")
+        logger.info(f"ping {parent_uri}")
         data = ping_that_nasa(parent_uri)
         directory, files = {}, []
         pileofsomething = data["hits"]["hits"]
         prog.update(task_id=task, description=f"[green]searching [red]{parent_uri}[/red]", advance=1)
         make_path = PurePath(Path(save_path), Path(f"./{parent_uri}") )
         os.makedirs(make_path, exist_ok=True)
-        logger.info(f"new dir -> {make_path}")
+        logger.debug(f"new dir -> {make_path}")
         
         typecheck = all([item["_source"]["archive"]["fs_type"]=="file" for item in pileofsomething])
         if typecheck:
@@ -394,7 +394,7 @@ def recurse_tree(parent_uri:str):
                 item_name = "file_from_uri"
             
             if item_type == "directory":
-                logger.info("descend w recursion")
+                logger.debug("descend w recursion")
                 subdir = recurse_tree(item_uri)
                 directory[item_name] = subdir
 
@@ -404,7 +404,7 @@ def recurse_tree(parent_uri:str):
                     item_sp = PurePath(Path(make_path), Path(item_name))
                     if Path(item_sp).exists():
                         prog.update(liljob, description=f"[bold green]{item_name} stored locally[/bold green]", advance=1)    
-                        time.sleep(0.25)
+                        time.sleep(0.1)
                         continue
                     
                     total_mem += item["_source"]["archive"]["size"]
@@ -418,7 +418,7 @@ def recurse_tree(parent_uri:str):
                             logger.warning(f"{item_name} is blank")
                             item["_source"]["archive"]["valid"] = False
                         else:
-                            logger.info(f"downloaded file {item_name} from {parent_uri}")
+                            logger.debug(f"downloaded file {item_name} from {parent_uri}")
                             item["_source"]["archive"]["valid"] = True
 
                     except Exception as e:
@@ -427,7 +427,7 @@ def recurse_tree(parent_uri:str):
                     #Try saving the meta data
                     try:
                         save_json(PurePath(Path(make_path), Path(item_name.replace(".png", ".json"))), item["_source"]["archive"])
-                        logger.info(f"json saved {item_name}")
+                        logger.debug(f"json saved {item_name}")
 
                     except Exception as e:
                         logger.warning(f"Error saving {item_uri}: {e}")
@@ -469,7 +469,7 @@ def main():
         directory = recurse_tree(base_parent_uri)
     
     #?Might need to unpack the directory dict.  Whoever runs this first let me know if this prints to the log.  Lol
-    logger.info(f"directory structure downloaded\n{directory}") 
+    logger.debug(f"directory structure downloaded\n{directory}") 
     logger.warning("YOU'VE DONE IT.  All files downloaded.  TIME FOR A BEER")
 
 if __name__ == "__main__":
