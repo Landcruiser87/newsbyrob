@@ -29,7 +29,7 @@ HEADERS = {
     'content-type': 'application/x-www-form-urlencoded',
 }
 POST_URL = 'https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search?filter_path=hits.hits._source.archive,hits.hits._source.uri,hits.total,aggregations'
-
+NAPTIME = 0.5
 
 ################################# Timing Func ####################################
 def log_time(fn):
@@ -244,7 +244,7 @@ def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0
         return 
     
     #Quick nap so we don't hammer NASA servers
-    time.sleep(1)
+    time.sleep(NAPTIME)
     
     #Save file
     with open(save_path, "wb") as f:
@@ -316,7 +316,7 @@ def ping_that_nasa(parent_uri:str):
         return None
     
     #Quick nap so we don't hammer servers
-    time.sleep(1)
+    time.sleep(NAPTIME)
     resp_json = response.json()
     return resp_json
 
