@@ -29,7 +29,7 @@ HEADERS = {
     'content-type': 'application/x-www-form-urlencoded',
 }
 POST_URL = 'https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search?filter_path=hits.hits._source.archive,hits.hits._source.uri,hits.total,aggregations'
-NAPTIME = 0.5
+NAPTIME = 0.75
 
 ################################# Timing Func ####################################
 def log_time(fn):
@@ -189,6 +189,56 @@ def save_json(spath:str, nasa_j:dict):
     with open(spath, "w") as out_f:
         out_f.write(out_json)
 
+
+################################ API functions ############################################
+#FUNCTION Ping nasa
+def ping_that_nasa(parent_uri:str):
+    """Function that pings the Atlas API to read the folder structure
+
+    Args:
+        parent_uri (str): as stated
+
+    Returns:
+        _type_: _description_
+    """    
+    # uri = "mars2020_mastcamz_sci_calibrated/data"
+    # release_id = 0
+    # resize = False
+    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{uri}/::{release_id}?"
+    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{uri}/::{release_id}?:{resize}?"
+    #'https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search?filter_path=hits.hits._source.archive,hits.hits._source.uri,hits.total,aggregations' -H 'accept: application/json' --data-raw '{"query":{"bool":{"must":[{"match":{"archive.parent_uri":"atlas:pds4:mars_2020:perseverance:/mars2020_cachecam_ops_calibrated/data"}}]}},"sort":[{"archive.name":"asc"}]}'
+
+    data = {
+        "query": {
+            "bool": {
+                "must":[
+                    {"match":{"archive.parent_uri":f"atlas:pds4:mars_2020:perseverance:{parent_uri}"}}
+                ]
+            }
+        },
+        "sort":[{"archive.name":"asc"}],
+        "size":10000
+    }
+    # data = '{"query":{"bool":{"must":[{"match":{"archive.parent_uri":"atlas:pds4:mars_2020:perseverance:/mars2020_mastcamz_sci_calibrated/data"}}]}},"sort":[{"archive.name":"asc"}],"size":10000}'
+
+    response = requests.post(
+        url = POST_URL,
+        headers=HEADERS,
+        data=json.dumps(data),
+    )
+
+    #Just in case we piss someone off
+    if response.status_code != 200:
+        # If there's an error, log it and return no data for that site
+        logger.warning(f'Status code: {response.status_code}')
+        logger.warning(f'Reason: {response.reason}')
+        return None
+    
+    #Quick nap so we don't hammer servers
+    time.sleep(NAPTIME)
+    resp_json = response.json()
+    return resp_json
+#FUNCTION Download Image
 def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0, resize:str="lg"):
     """This function will download the individual image to the directory
 
@@ -270,56 +320,7 @@ def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0
         logger.warning(f"An error occurred: {e}")
         return None
 
-
-################################ API functions ############################################
-
-def ping_that_nasa(parent_uri:str):
-    """Function to ping the NASA Atlas API
-
-    Args:
-        parent_uri (str): as stated
-
-    Returns:
-        _type_: _description_
-    """    
-    # uri = "mars2020_mastcamz_sci_calibrated/data"
-    # release_id = 0
-    # resize = False
-    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{uri}/::{release_id}?"
-    # url = f"https://pds-imaging.jpl.nasa.gov/api/data/{uri}/::{release_id}?:{resize}?"
-    #'https://pds-imaging.jpl.nasa.gov/api/search/atlas/_search?filter_path=hits.hits._source.archive,hits.hits._source.uri,hits.total,aggregations' -H 'accept: application/json' --data-raw '{"query":{"bool":{"must":[{"match":{"archive.parent_uri":"atlas:pds4:mars_2020:perseverance:/mars2020_cachecam_ops_calibrated/data"}}]}},"sort":[{"archive.name":"asc"}]}'
-
-    data = {
-        "query": {
-            "bool": {
-                "must":[
-                    {"match":{"archive.parent_uri":f"atlas:pds4:mars_2020:perseverance:{parent_uri}"}}
-                ]
-            }
-        },
-        "sort":[{"archive.name":"asc"}],
-        "size":10000
-    }
-    # data = '{"query":{"bool":{"must":[{"match":{"archive.parent_uri":"atlas:pds4:mars_2020:perseverance:/mars2020_mastcamz_sci_calibrated/data"}}]}},"sort":[{"archive.name":"asc"}],"size":10000}'
-
-    response = requests.post(
-        url = POST_URL,
-        headers=HEADERS,
-        data=json.dumps(data),
-    )
-
-    #Just in case we piss someone off
-    if response.status_code != 200:
-        # If there's an error, log it and return no data for that site
-        logger.warning(f'Status code: {response.status_code}')
-        logger.warning(f'Reason: {response.reason}')
-        return None
-    
-    #Quick nap so we don't hammer servers
-    time.sleep(NAPTIME)
-    resp_json = response.json()
-    return resp_json
-
+#FUNCTION Intial Scan
 def inital_scan(base_parent_uri:str):
     """This just does an initial scan to get a folder count in /data
 
@@ -357,6 +358,7 @@ def inital_scan(base_parent_uri:str):
                 logger.warning("File Location doesn't exist")
                 raise ValueError("Select a location that exists")
 
+#FUNCTION Recurse Tree
 def recurse_tree(parent_uri:str):
     """Recursive internal function that descends the folder structure by file type
 
@@ -442,7 +444,8 @@ def recurse_tree(parent_uri:str):
     except Exception as e:
         logger.warning(f"a general error has occured {e}")
         return None
-    
+#################################### MAIN ##################################    
+
 @log_time
 def main():
     #load logger and funcs
