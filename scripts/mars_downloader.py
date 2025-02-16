@@ -254,9 +254,9 @@ def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0
     try:
         img = Image.open(save_path)
         img_array = np.array(img)
-        if img_array.shape[1] == 2:
+        if img_array.ndim == 2:
             pix_total = np.sum(img_array)
-        elif img_array.shape[1] == 3:
+        elif img_array.ndim == 3:
             pix_total = np.sum(img_array[:,:,:3])
         else:
             return None
@@ -364,7 +364,8 @@ def recurse_tree(parent_uri:str):
 
     Returns:
         directory (dict): Don't really need this anymore, but not sure if the recursion needs it. 
-    """        
+    """
+    global total_mem
     try:
         logger.warning(f"ping {parent_uri}")
         data = ping_that_nasa(parent_uri)
@@ -396,18 +397,21 @@ def recurse_tree(parent_uri:str):
 
             elif item_type  == "file":
                 if item_ext == "img":
+                    total_mem += item["_source"]["archive"]["size"]
                     item_name = item_name.replace(".IMG", ".png")
-                    prog.update(liljob, description=f"[green]downloading[/green] [red]{item_name}[/red]", advance=1)
+                    prog.update(liljob, description=f"[green]downloaded:[/green][yellow] {sizeofobject(total_mem)}[/yellow] [red]{item_name}[/red]", advance=1)
                     files.append(item_name)
                     #Try downloading the image
                     try:
                         item_uri = item_uri.replace("data", "browse").replace(".IMG", ".png")
-                        valid = download_image(uri, PurePath(Path(make_path), Path(item_name)), item_uri)
-                        if valid:
-                            logger.info(f"downloaded file {item_name} from {parent_uri}")
-                        else:
+                        invalid = download_image(uri, PurePath(Path(make_path), Path(item_name)), item_uri)
+                        if invalid:
                             logger.warning(f"{item_name} is blank")
-                            
+                            item["_source"]["archive"]["valid"] = False
+                        else:
+                            logger.info(f"downloaded file {item_name} from {parent_uri}")
+                            item["_source"]["archive"]["valid"] = True
+
                     except Exception as e:
                         logger.warning(f"Error downloading {item_uri}: {e}")
                     
@@ -447,7 +451,8 @@ def main():
     
     #Load baseparent uri
     base_parent_uri = "/mars2020_mastcamz_sci_calibrated/data" #This is what changes
-    global prog, task, save_path
+    global prog, task, save_path, total_mem
+    total_mem = 0
     save_path, total_files = inital_scan(base_parent_uri)
     prog, task = mainspinner(console, total_files*2) #x2 because all our sub folders have 2 folders (iof, rad)
     with prog:
