@@ -238,6 +238,7 @@ def ping_that_nasa(parent_uri:str):
     time.sleep(NAPTIME)
     resp_json = response.json()
     return resp_json
+
 #FUNCTION Download Image
 def download_image(image_uri:str, save_path:Path, item_uri:str, release_id:int=0, resize:str="lg"):
     """This function will download the individual image to the directory
@@ -403,7 +404,8 @@ def recurse_tree(parent_uri:str):
                     item_name = item_name.replace(".IMG", ".png")
                     item_sp = PurePath(Path(make_path), Path(item_name))
                     if Path(item_sp).exists():
-                        prog.update(liljob, description=f"[bold green]{item_name} stored locally[/bold green]", advance=1)    
+                        prog.update(liljob, description=f"[bold green]{item_name} stored locally[/bold green]", advance=1) 
+                        logger.debug(f"skipping download on {item_name}")   
                         time.sleep(0.1)
                         continue
                     
