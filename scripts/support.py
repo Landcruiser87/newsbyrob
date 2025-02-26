@@ -80,7 +80,7 @@ def send_email_update(urls:str):
         
     # Establish a secure session with gmail's outgoing SMTP server using your gmail account
     smtp_server = "smtp.gmail.com"
-    port = 465
+    port = 465 #used for a secure connection with SSL encryption#  #587 is the newer ver with TLS
     html = inputdatlink(urls)
 
     message = MIMEMultipart("alternative")
@@ -89,7 +89,7 @@ def send_email_update(urls:str):
     else:
         message["Subject"] = "Immigration Updates ala Rob!"
     message["From"] = sender_email
-    message["To"] = ", ".join(receiver_email)   
+    message["To"] = ", ".join(receiver_email)   #multiple emails need to be comma separated strings
     attachment = MIMEText(html, "html")
     message.attach(attachment)
     context = ssl.create_default_context()

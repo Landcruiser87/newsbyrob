@@ -224,7 +224,7 @@ def main():
         # If new articles are found, save the data to the json file, 
         # format the list of dataclassses to a url 
         # Send gmail alerting of new articles
-        support.save_data(jsondata)
+        # support.save_data(jsondata)
         links_html = support.urlformat(newstories)
         support.send_email_update(links_html)
         logger.warning(f"{len(newstories)} new articles found.  Email sent")
@@ -238,3 +238,8 @@ if __name__ == "__main__":
     main()
     
 
+#Certain enterprise accounts will allow less secure passwords, but disabled since 2022.  
+#way around is here.  
+#https://stackoverflow.com/questions/73365098/how-to-turn-on-less-secure-app-access-on-google
+#generate an app password and use that as your login. 
+#Needs 2fa enabled to work
