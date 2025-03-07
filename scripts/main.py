@@ -13,7 +13,7 @@ import uscis, travel, ice, g_news, aila, boundless, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    # "AILA"     : ("https://www.aila.org", aila),
+    "AILA"     : ("https://www.aila.org", aila),
     # "boundless": ("https://www.aila.org", boundless),
     "Google"   : ("https://www.news.google.com", g_news),
     "DOS"      : ("https://travel.state.gov", travel),
@@ -23,11 +23,12 @@ SITES = {
 }
 
 CATEGORIES = {
-    "Google": ["US Immigration Changes", "UCSIS Updates"],
+    "AILA"  : ["AILA Daily News Update"],
+    "Google": ["US Immigration Changes", "UCSIS Updates"], #
     "DOS"   : ["main_feed"], 
     "USCIS" : ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
-    # "CBP"   : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
     "ICE"   : ["Management and Administration", "Operational", "Profesional Responsibility"] #"National Security", "Partnership and Engagement", "Enforcement and Removal"
+    #"CBP"  : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
 }
 
 #Define dataclass container
@@ -228,7 +229,7 @@ def main():
         # If new articles are found, save the data to the json file, 
         # format the list of dataclassses to a url 
         # Send gmail alerting of new articles
-        support.save_data(jsondata)
+        # support.save_data(jsondata)
         links_html = support.urlformat(newstories)
         support.send_email_update(links_html)
         logger.warning(f"{len(newstories)} new articles found.  Email sent")

@@ -33,11 +33,11 @@ def urlformat(urls:list)->str:
     
     links_html = "<ol>"
     if len(urls) > 1:
-        prev_site = None
+        prev_cat = None
         for link, site, cat, title in urls:
-            if prev_site != site and prev_site is not None:
-                links_html += "\n"
-            prev_site = site
+            if prev_cat != cat and prev_cat is not None:
+                links_html += "</ol>" + "\n" + "-" * 70 + "\n" + "<ol>"
+            prev_cat = cat
             links_html += f"<li><a href='{link}'> {site} - {cat} - {title} </a></li>"
     
     else:
