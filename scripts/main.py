@@ -13,13 +13,13 @@ import uscis, travel, ice, g_news, aila, boundless, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "AILA"     : ("https://www.aila.org", aila),
-    "boundless": ("https://www.aila.org", boundless),
+    # "AILA"     : ("https://www.aila.org", aila),
+    # "boundless": ("https://www.aila.org", boundless),
     "Google"   : ("https://www.news.google.com", g_news),
     "DOS"      : ("https://travel.state.gov", travel),
     "USCIS"    : ("https://www.uscis.gov", uscis),
     "ICE"      : ("https://www.ice.gov", ice),
-    # "CBP"    : ("https://www.cbp.gov", cbp),  #Sunsetting CBP 3-7-25.  They basically report only drug findings
+    # "CBP"    : ("https://www.cbp.gov", cbp),  #Sunsetting CBP 3-7-25.  They basically only report finding drugs at the border
 }
 
 CATEGORIES = {

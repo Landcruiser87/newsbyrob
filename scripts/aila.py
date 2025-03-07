@@ -124,6 +124,9 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     else:
         logger.warning(f"No articles returned on {source} / {cat}.  Moving to next feed")
 
+#Bex suggestions.  
+#Anywway to filter specifically for chicago based immigration news. 
+#Also wants to filter out asylum and removal updates.  Not sure how that might work. 
 
 #root url
 #https://www.aila.org/immigration-news
