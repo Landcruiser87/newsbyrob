@@ -75,62 +75,6 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     
     return articles
 
-def get_articles_old(results:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
-    """[Ingest XML of summary page for articles info]
-
-    Args:
-        result (BeautifulSoup object): html of apartments page
-        cat (str): category being searched
-        source (str): source website
-        logger (logging.logger): logger for Kenny loggin
-        NewArticle (dataclass) : Dataclass object for NewsArticle
-
-    Returns:
-        articles (list): [List of NewArticle objects]
-    """
-
-    articles = []
-    article_id = creator = title = description = url = pub_date = current_time = None
-
-    #Set the outer loop over each card returned. 
-    for card in results:
-        # Time of pull
-        current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
-        
-        card_contents = card.contents
-        for row in card_contents:
-            rname = row.name
-            if row == "\n":
-                continue
-            elif rname == "title":
-                title = row.text
-            elif rname == "link":
-                url = row.text
-            elif rname == "description":
-                description = row.text
-            elif rname == "pubDate":
-                pub_date = date_convert(row.text)
-            elif rname == "source url":
-                creator = row.text
-            elif rname == "guid":
-                article_id = row.text
-            
-        article = NewArticle(
-            id=article_id,
-            source=source,
-            creator=creator,
-            title=title,
-            description=description,
-            link=url,
-            category=cat,
-            pub_date=pub_date,
-            pull_date=current_time
-        )
-        articles.append(article)
-        article_id = creator = title = description = url = pub_date =  current_time = None
-    
-    return sorted(articles, key=lambda x:x.pub_date)[:5] 
-
 def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """[Outer scraping function to set up request pulls]
 
@@ -184,7 +128,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     results = bs4ob.find("div", class_="typography text rte")
     if results:
         new_articles = get_articles(results, cat, source, logger, NewArticle)
-        logger.info(f'{len(new_articles)} articles returned from {source} searching {cat}')
+        logger.info(f'{len(new_articles)} articles returned from {source}')
         return new_articles
             
     else:
