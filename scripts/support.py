@@ -33,11 +33,16 @@ def urlformat(urls:list)->str:
     
     links_html = "<ol>"
     if len(urls) > 1:
+        prev_site = None
         for link, site, cat, title in urls:
+            if prev_site != site and prev_site is not None:
+                links_html += "\n"
+            prev_site = site
             links_html += f"<li><a href='{link}'> {site} - {cat} - {title} </a></li>"
+    
     else:
         links_html = f"<li><a href='{urls[0][0]}'> {urls[0][1]} - {urls[0][2]} - {urls[0][3]} </a></li>"
-    links_html = links_html + "</ol>"
+    links_html += "</ol>"
     return links_html
 
 #FUNCTION Send email update

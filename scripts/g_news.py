@@ -66,7 +66,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
         articles.append(article)
         article_id = creator = title = description = url = pub_date =  current_time = None
     
-    return sorted(articles, key=lambda x:x.pub_date)[:5] #Only return top 5
+    return sorted(articles, key=lambda x:x.pub_date, reverse=True)[:5] #Only return top 5
 
 def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """[Outer scraping function to set up request pulls]
