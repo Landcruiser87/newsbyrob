@@ -9,7 +9,65 @@ def date_convert(time_str:str)->datetime:
     dateOb = datetime.datetime.strptime(time_str, "%a, %d %b %Y %H:%M:%S %Z")
     return dateOb
 
-def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
+def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
+    """[Ingest XML of summary page for articles info]
+
+    Args:
+        result (BeautifulSoup object): html of apartments page
+        cat (str): category being searched
+        source (str): source website
+        logger (logging.logger): logger for Kenny loggin
+        NewArticle (dataclass) : Dataclass object for NewsArticle
+
+    Returns:
+        articles (list): [List of NewArticle objects]
+    """
+
+    articles = []
+    article_id = creator = title = description = url = pub_date = current_time = None
+
+    #Set the outer loop over each card returned. 
+    for card in result.find_all("p"):
+        # Time of pull
+        current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
+        
+        # grab creator
+        creator = card.find("em").text
+
+        #grab the title
+        title = card.find("a").text
+        
+        #Description not available
+        description = None        
+        
+        #grab the url
+        url = card.find("a").get("href")
+            #Could put a subroutine to try and get a description and article ID out....
+            #Wrap it in a try catch block
+
+        #use url as key. #I know, messy, but there isn't a unique id stored on the page.
+        article_id = url
+        
+        #Not available either without digesting the downstream link
+        pub_date = None
+
+        article = NewArticle(
+            id=article_id,
+            source=source,
+            creator=creator,
+            title=title,
+            description=description,
+            link=url,
+            category=cat,
+            pub_date=pub_date,
+            pull_date=current_time
+        )
+        articles.append(article)
+        article_id = creator = title = description = url = pub_date =  current_time = None
+    
+    return articles
+
+def get_articles_old(results:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
     """[Ingest XML of summary page for articles info]
 
     Args:
@@ -79,7 +137,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """
     dt = datetime.datetime.now()
     day = dt.day
-    month = dt.month
+    month = dt.strftime("%B").lower()
     year = dt.year
     feeds = {
         "AILA Daily News Update":f"https://www.aila.org/library/daily-immigration-news-clips-{month}-{day}-{year}",
@@ -115,7 +173,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     bs4ob = BeautifulSoup(response.text, features="xml")
 
     #Find all records (item CSS)
-    results = bs4ob.find_all("item")
+    results = bs4ob.find("div", class_="typography text rte")
     if results:
         new_articles = get_articles(results, cat, source, logger, NewArticle)
         logger.info(f'{len(new_articles)} articles returned from {source}')

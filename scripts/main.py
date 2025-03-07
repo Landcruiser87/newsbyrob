@@ -14,7 +14,7 @@ import uscis, travel, ice, g_news, aila, boundless, support
 ################################# Global Variable Setup ####################################
 SITES = {
     "AILA"     : ("https://www.aila.org", aila),
-    # "boundless": ("https://www.aila.org", boundless),
+    # "boundless": ("https://www.boundless.com", boundless),
     "Google"   : ("https://www.news.google.com", g_news),
     "DOS"      : ("https://travel.state.gov", travel),
     "USCIS"    : ("https://www.uscis.gov", uscis),
