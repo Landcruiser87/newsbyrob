@@ -38,7 +38,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         title = card.find("a").text
         
         #Description not available
-        description = None        
+        description = "National"
         
         #grab the url
         url = card.find("a").get("href")

@@ -37,6 +37,7 @@ class NewArticle():
     id          : str
     source      : str
     creator     : str
+    author      : str
     title       : str
     description : str
     link        : str
