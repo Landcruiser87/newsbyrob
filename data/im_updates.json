@@ -1,4 +1,14 @@
 {
+  "https://www.cbp.gov/node/431183": {
+    "source": "https://www.cbp.gov",
+    "creator": "U.S. Customs and Border Protection",
+    "title": "AMO Officially Dedicates the Michel O. Maceda Marine Unit in Southwestern Puerto Rico ",
+    "description": "SAN JUAN, Puerto Rico\u2014Air and Marine Operations (AMO), an operational component of U.S. Customs and Border Protection, made the official dedication Thursday of the Michel O. Maceda Marine Unit, honoring the sacrifice of Marine Interdiction Agent who\u2026",
+    "link": "https://www.cbp.gov/newsroom/local-media-release/amo-officially-dedicates-michel-o-maceda-marine-unit-southwestern",
+    "category": "Newsroom",
+    "pub_date": "03-07-2025_07-11-45",
+    "pull_date": "03-07-2025_08-01-47"
+  },
   "https://www.cbp.gov/node/431175": {
     "source": "https://www.cbp.gov",
     "creator": "U.S. Customs and Border Protection",
@@ -8,6 +18,50 @@
     "category": "Newsroom",
     "pub_date": "03-06-2025_07-10-16",
     "pull_date": "03-06-2025_08-01-31"
+  },
+  "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/djibouti-travel-advisory.html": {
+    "source": "https://travel.state.gov",
+    "creator": null,
+    "title": "Djibouti - Level 2: Exercise Increased Caution",
+    "description": "\n<p><b><i>Updated to remove Crime indicator and to include area-specific Level 3 advisory for the border with Eritrea.</i></b></p>\n<p>Exercise increased caution in Djibouti due to&nbsp;<b>terrorism</b>. Some areas have increased risk. Read the entire Travel Advisory.<b></b></p>\n<p><b>Reconsider travel to:</b></p>\n<ul>\n<li>Areas bordering Eritrea due to<b> border tensions</b></li>\n</ul>\n<p><b>Terrorists</b> may attack with little or no warning. Terrorists target public areas including:</p>\n<ul>\n<li>Tourist locations</li>\n<li>Transportation centers (airports)</li>\n<li>Government buildings</li>\n<li>Markets and shopping malls</li>\n<li>Hotels, clubs, and restaurants</li>\n<li>Places of worship and schools</li>\n<li>Parks and public areas</li>\n<li>Major sporting and cultural events</li>\n<li>Hospitals</li>\n</ul>\n<p>Read the&nbsp;<a href=\"https://travel.state.gov/content/passports/en/country/djibouti.html\">Country Information Page</a> for more information on travel to Djibouti.</p>\n<p>If you decide to travel to Djibouti:</p>\n<ul>\n<li>Stay aware of your surroundings.</li>\n<li>Check local media for breaking news. Be prepared to adjust your plans.</li>\n<li>Enroll in the&nbsp;<a href=\"https://step.state.gov/step/\">Smart Traveler Enrollment Program</a>&nbsp;(<a href=\"https://step.state.gov/step/\">STEP</a>) to receive alerts from the U.S. Embassy. It makes it easier to locate you in an emergency.</li>\n<li>Review the&nbsp;<a href=\"https://www.osac.gov/Content/Report/85c702b3-caa5-4490-8fdb-1d1697d44b6f\">Country Security Report</a>&nbsp;for Djibouti.</li>\n<li>Prepare a backup plan for emergency situations. &nbsp;Review the&nbsp;<a href=\"https://travel.state.gov/content/passports/en/go/checklist.html\">Traveler&#8217;s Checklist</a>.</li>\n<li>Visit the CDC page for the latest&nbsp;<a href=\"https://wwwnc.cdc.gov/travel/destinations/traveler/none/djibouti?s_cid=ncezid-dgmq-travel-single-001\">Travel Health Information</a>&nbsp;related to your travel and return to the United States.</li>\n<li>We highly recommend that you buy insurance before you travel.&nbsp; Check with your&nbsp;<a href=\"https://travel.state.gov/content/travel/en/international-travel/before-you-go/your-health-abroad/Insurance_Coverage_Overseas.html\">travel insurance provider</a>&nbsp;about evacuation assistance, medical insurance, and trip cancellation coverage.</li>\n</ul>\n<p><b>Border with Eritrea - Level 3: Reconsider Travel</b></p>\n<p>U.S. citizens should reconsider travel within 10 miles of the border with Eritrea in the Tadjoura and Obock regions due to government of Djibouti restrictions.</p>\n<p>The U.S. government has limited ability to provide emergency services to U.S. citizens in the region. U.S. government employees are prohibited from travelling after dark anywhere within 10 miles of the Eritrean border region.</p>\n<p>Visit our website for <a href=\"https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/high-risk-travelers.html\">Travel to High-Risk Areas</a>.</p>\n",
+    "link": "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/djibouti-travel-advisory.html",
+    "category": "main_feed",
+    "pub_date": "03-06-2025_00-00-00",
+    "pull_date": "03-07-2025_08-01-00",
+    "identifier": "DJ,advisory",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "country": "DJ",
+    "keyword": "advisory"
+  },
+  "bbe12a6e-d431-4b88-858b-b93d8ca29400": {
+    "source": "https://www.uscis.gov",
+    "creator": "USCIS",
+    "title": "Form G-1055, Fee Schedule",
+    "description": "Edition Date: 03/06/25. You can find the edition date at the bottom of the page of Form G-1055, Fee Schedule.",
+    "link": "https://www.uscis.gov/g-1055",
+    "category": "Forms Updates",
+    "pub_date": "03-06-2025_12-29-53",
+    "pull_date": "03-07-2025_08-01-27"
+  },
+  "https://www.cbp.gov/node/431182": {
+    "source": "https://www.cbp.gov",
+    "creator": "U.S. Customs and Border Protection",
+    "title": "Disabling fire stops smuggling attempt at sea",
+    "description": "SAN DIEGO \u2014 Air and Marine Operations (AMO), an operational component of U.S. Customs and Border Protection, arrested nine illegal aliens in failed nighttime smuggling attempt off the coast of California.\n\n\n  \n\n\n\n\nMarine Interdiction Agents deployed\u2026",
+    "link": "https://www.cbp.gov/newsroom/local-media-release/disabling-fire-stops-smuggling-attempt-sea",
+    "category": "Newsroom",
+    "pub_date": "03-06-2025_14-34-19",
+    "pull_date": "03-07-2025_08-01-47"
+  },
+  "https://www.cbp.gov/node/431181": {
+    "source": "https://www.cbp.gov",
+    "creator": "U.S. Customs and Border Protection",
+    "title": "Local Brothers Cram Aliens into Car During Smuggling Incident",
+    "description": "TUCSON, Ariz. \u2013 Tucson Sector Border Patrol agents arrested two Nogales men for transporting seven illegal aliens west of Nogales, Arizona, Saturday evening.&nbsp;\n\nOn Mar. 1, agents assigned to the Nogales Station observed a Ford Fusion they\u2026",
+    "link": "https://www.cbp.gov/newsroom/local-media-release/local-brothers-cram-aliens-car-during-smuggling-incident",
+    "category": "Newsroom",
+    "pub_date": "03-06-2025_14-04-31",
+    "pull_date": "03-07-2025_08-01-47"
   },
   "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/singapore-travel-advisory.html": {
     "source": "https://travel.state.gov",
@@ -10969,20 +11023,6 @@
     "identifier": "ML,advisory",
     "threat_level": "Level 4: Do Not Travel",
     "country": "ML",
-    "keyword": "advisory"
-  },
-  "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/djibouti-travel-advisory.html": {
-    "source": "https://travel.state.gov",
-    "creator": null,
-    "title": "Djibouti - Level 2: Exercise Increased Caution",
-    "description": "\n<p><b><i>Reissued with obsolete COVID-19 page links removed.</i></b></p>\n<p>Exercise increased caution in Djibouti due to <b>terrorism and crime</b>.</p>\n<p>Terrorists may attack with little or no warning, targeting tourist locations, transportation hubs, markets, shopping malls, government facilities, hotels, clubs, restaurants, places of worship, parks, major sporting and cultural events, educational institutions, airports, hospitals, and other public areas.</p>\n<p>Read the <a href=\"https://travel.state.gov/content/passports/en/country/djibouti.html\">country information page</a>.</p>\n<p>If you decide to travel to Djibouti:</p>\n<ul>\n<li>Be aware of your surroundings when traveling to tourist locations and crowded public venues.</li>\n<li>Follow the instructions of local authorities.</li>\n<li>Monitor local media for breaking events and adjust your plans based on new information.</li>\n<li>Enroll in the <a href=\"https://step.state.gov/step/\">Smart Traveler Enrollment Program</a> (<a href=\"https://step.state.gov/step/\">STEP</a>) to receive Alerts and make it easier to locate you in an emergency.</li>\n<li>Follow the Department of State on <a href=\"https://www.facebook.com/travelgov\">Facebook</a> and <a href=\"https://twitter.com/StateDept?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\">Twitter</a>.</li>\n<li>Review the <a href=\"https://www.osac.gov/Content/Report/85c702b3-caa5-4490-8fdb-1d1697d44b6f\">Country Security Report</a> for Djibouti.</li>\n<li>Prepare a contingency plan for emergency situations.&nbsp; Review the <a href=\"https://travel.state.gov/content/passports/en/go/checklist.html\">Traveler&#8217;s Checklist</a>.</li>\n<li>Visit the CDC page for the latest <a href=\"https://wwwnc.cdc.gov/travel/destinations/list\">Travel Health Information</a> related to your travel.</li>\n</ul>\n",
-    "link": "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/djibouti-travel-advisory.html",
-    "category": "main_feed",
-    "pub_date": "07-31-2023_00-00-00",
-    "pull_date": "08-05-2024_17-14-27",
-    "identifier": "DJ,advisory",
-    "threat_level": "Level 2: Exercise Increased Caution",
-    "country": "DJ",
     "keyword": "advisory"
   },
   "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/liberia-travel-advisory.html": {
