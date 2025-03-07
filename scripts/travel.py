@@ -24,7 +24,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
     """
 
     articles = []
-    article_id = creator = title = description = url = pub_date = current_time = identifier = threat_level = country = keyword = None
+    article_id = creator = _author = title = description = url = pub_date = current_time = identifier = threat_level = country = keyword = None
 
     #Set the outer loop over each card returned. 
     for card in results:
@@ -60,6 +60,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
             id=article_id,
             source=source,
             creator=creator,
+            author = _author,
             title=title,
             description=description,
             link=url,
@@ -73,7 +74,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
         )
 
         articles.append(article)
-        article_id = creator = title = description = url = pub_date = current_time = identifier = threat_level = country = keyword = None
+        article_id = creator = _author = title = description = url = pub_date = current_time = identifier = threat_level = country = keyword = None
 
     return articles
 

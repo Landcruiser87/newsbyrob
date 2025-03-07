@@ -28,7 +28,7 @@ CATEGORIES = {
     "DOS"   : ["main_feed"], 
     "USCIS" : ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
     "ICE"   : ["Management and Administration", "Operational", "Profesional Responsibility"] #"National Security", "Partnership and Engagement", "Enforcement and Removal"
-    #"CBP"  : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
+        #"CBP"  : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
 }
 
 #Define dataclass container

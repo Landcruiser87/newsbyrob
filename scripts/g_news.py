@@ -27,7 +27,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
     """
 
     articles = []
-    article_id = creator = title = description = url = pub_date = current_time = None
+    article_id = creator = _author = title = description = url = pub_date = current_time = None
 
     #Set the outer loop over each card returned. 
     for card in results:
@@ -56,6 +56,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
             id=article_id,
             source=source,
             creator=creator,
+            author = _author,
             title=title,
             description=description,
             link=url,
@@ -64,7 +65,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
             pull_date=current_time
         )
         articles.append(article)
-        article_id = creator = title = description = url = pub_date =  current_time = None
+        article_id = creator = _author = title = description = url = pub_date =  current_time = None
     
     return sorted(articles, key=lambda x:x.pub_date, reverse=True)[:5] #Only return top 5
 

@@ -24,26 +24,33 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     """
 
     articles = []
-    article_id = creator = title = description = url = pub_date = current_time = None
+    article_id = creator = author = title = description = url = pub_date = current_time = None
 
     #Set the outer loop over each card returned. 
-    for card in result.find_all("p"):
+    for child in result.contents:
+        #Description not available.  Putting regional info here
+        if child.name == "h2":
+            descript = child.find("em").text
+            continue
+        if not child.name:
+            continue
+
         # Time of pull
         current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
         
         # grab creator
-        creator = card.find("em").text
+        creator = child.find("a").text
+
+        # Grab the author
+        author = child.text.split("\n")[1].strip("By ")
 
         #grab the title
-        title = card.find("a").text
+        title = child.find("a").text
         
-        #Description not available
-        description = "National"
-        
+        #Put section in description
+        description = descript
         #grab the url
-        url = card.find("a").get("href")
-            #Could put a subroutine to try and get a description and article ID out....
-            #Wrap it in a try catch block
+        url = child.find("a").get("href")
 
         #use url as key. #I know, messy, but there isn't a unique id stored on the page.
         article_id = url
@@ -55,6 +62,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
             id=article_id,
             source=source,
             creator=creator,
+            author=author,
             title=title,
             description=description,
             link=url,
@@ -63,7 +71,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
             pull_date=current_time
         )
         articles.append(article)
-        article_id = creator = title = description = url = pub_date =  current_time = None
+        article_id = creator = author = title = description = url = pub_date =  current_time = None
     
     return articles
 
@@ -170,7 +178,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         return None
 
     #Parse the XML
-    bs4ob = BeautifulSoup(response.text, features="xml")
+    bs4ob = BeautifulSoup(response.text, features="lxml")
 
     #Find all records (item CSS)
     results = bs4ob.find("div", class_="typography text rte")
