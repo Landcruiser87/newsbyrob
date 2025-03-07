@@ -92,32 +92,31 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     }
     new_articles = []
     url = feeds.get(cat)
-    # headers = {
-    #     'accept': 'text/html,application/xhtml+xml,application/xml',
-    #     'accept-language': 'en-US,en;q=0.9',
-    #     'cache-control': 'max-age=0',
-    #     'priority': 'u=0, i',
-    #     'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
-    #     'sec-ch-ua-mobile': '?1',
-    #     'sec-ch-ua-platform': '"Android"',
-    #     'sec-fetch-dest': 'document',
-    #     'sec-fetch-mode': 'navigate',
-    #     'sec-fetch-site': 'none',
-    #     'sec-fetch-user': '?1',
-    #     'upgrade-insecure-requests': '1',
-    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
-
-    # }
     headers = {
-        'Upgrade-Insecure-Requests': '1',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
-        'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
+        'accept': '*/*',
+        'accept-language': 'en-US,en;q=0.9',
+        'content-type': 'text/plain;charset=UTF-8',
+        'origin': 'https://www.boundless.com',
+        'priority': 'u=1, i',
+        'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
         'sec-ch-ua-mobile': '?1',
         'sec-ch-ua-platform': '"Android"',
-        'referer': url,
-        'origin':source,
-        'Content-Type': 'text/html,application/xhtml+xml,application/xml'
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'same-origin',
+        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
     }
+    
+    # headers = {
+    #     'upgrade-insecure-requests': '1',
+    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
+    #     'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
+    #     'sec-ch-ua-mobile': '?1',
+    #     'sec-ch-ua-platform': '"Android"',
+    #     'referer': url,
+    #     'origin':source,
+    #     'content-type': 'text/html,application/xhtml+xml,application/xml'
+    # }
     if url:
         response = requests.get(url, headers=headers)
     else:
