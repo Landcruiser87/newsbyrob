@@ -184,7 +184,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     results = bs4ob.find("div", class_="typography text rte")
     if results:
         new_articles = get_articles(results, cat, source, logger, NewArticle)
-        logger.info(f'{len(new_articles)} articles returned from {source}')
+        logger.info(f'{len(new_articles)} articles returned from {source} searching {cat}')
         return new_articles
             
     else:
