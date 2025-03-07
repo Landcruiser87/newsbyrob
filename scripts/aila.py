@@ -93,7 +93,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     year = dt.year
     feeds = {
         "AILA Daily News Update":f"https://www.aila.org/library/daily-immigration-news-clips-{month}-{day}-{year}",
-        # "Aaila Blog"   :f"https://www.aila.org/library/daily-immigration-news-clips-march-6-2025",
+        #"Aaila Blog"           :f"https://www.aila.org/library/daily-immigration-news-clips-march-6-2025",
     }
     # 
 

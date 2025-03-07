@@ -13,21 +13,23 @@ import uscis, travel, ice, g_news, aila, boundless, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
+    "Boundless": ("https://www.boundless.com", boundless),
     "USCIS"    : ("https://www.uscis.gov", uscis),
     "DOS"      : ("https://travel.state.gov", travel),
     "ICE"      : ("https://www.ice.gov", ice),
-    # "boundless": ("https://www.boundless.com", boundless),
+
     "Google"   : ("https://www.news.google.com", g_news),
     "AILA"     : ("https://www.aila.org", aila),
     # "CBP"    : ("https://www.cbp.gov", cbp),  #Sunsetting CBP 3-7-25.  They basically only report finding drugs at the border
 }
 
 CATEGORIES = {
-    "USCIS" : ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
-    "DOS"   : ["main_feed"], 
-    "ICE"   : ["Management and Administration", "Operational", "Profesional Responsibility"], #"National Security", "Partnership and Engagement", "Enforcement and Removal"
-    "Google": ["US Immigration Changes", "UCSIS Updates"], #
-    "AILA"  : ["AILA Daily News Update"],
+    "USCIS"    : ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
+    "DOS"      : ["main_feed"], 
+    "ICE"      : ["Management and Administration", "Operational", "Profesional Responsibility"], #"National Security", "Partnership and Engagement", "Enforcement and Removal"
+    "Boundless": ["Boundless Blog"],
+    "Google"   : ["US Immigration Changes", "UCSIS Updates"], #
+    "AILA"     : ["AILA Daily News Update"],
         #"CBP"  : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
 }
 
