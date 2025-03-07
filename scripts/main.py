@@ -9,21 +9,25 @@ from dataclasses import dataclass, field
 from os.path import exists
 from random import shuffle
 from pathlib import Path, PurePath
-import uscis, cbp, travel, ice, support
+import uscis, travel, ice, g_news, aila, boundless, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "DOS"  : ("https://travel.state.gov", travel),
-    "USCIS": ("https://www.uscis.gov", uscis),
-    "CBP"  : ("https://www.cbp.gov", cbp),
-    "ICE"  : ("https://www.ice.gov", ice),
+    "AILA"     : ("https://www.aila.org", aila),
+    "boundless": ("https://www.aila.org", boundless),
+    "Google"   : ("https://www.news.google.com", g_news),
+    "DOS"      : ("https://travel.state.gov", travel),
+    "USCIS"    : ("https://www.uscis.gov", uscis),
+    "ICE"      : ("https://www.ice.gov", ice),
+    # "CBP"    : ("https://www.cbp.gov", cbp),  #Sunsetting CBP 3-7-25.  They basically report only drug findings
 }
 
 CATEGORIES = {
-    "DOS"  : ["main_feed"], 
-    "USCIS": ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
-    "CBP"  : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
-    "ICE"  : ["Management and Administration", "Operational", "Profesional Responsibility"], #"National Security", "Partnership and Engagement", "Enforcement and Removal"
+    "Google": ["US Immigration Changes", "UCSIS Updates"],
+    "DOS"   : ["main_feed"], 
+    "USCIS" : ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
+    # "CBP"   : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
+    "ICE"   : ["Management and Administration", "Operational", "Profesional Responsibility"] #"National Security", "Partnership and Engagement", "Enforcement and Removal"
 }
 
 #Define dataclass container

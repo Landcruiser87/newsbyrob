@@ -1,6 +1,3 @@
-# Use RSS feeds and search topics to 
-# return top articles in various categories of 
-# interest.  
 import logging
 from bs4 import BeautifulSoup
 import requests
@@ -66,7 +63,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
         articles.append(article)
         article_id = creator = title = description = url = pub_date =  current_time = None
     
-    return sorted(articles, key=lambda x:x.pub_date)[:5] #Only return top 5
+    return sorted(articles, key=lambda x:x.pub_date)[:5] 
 
 def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """[Outer scraping function to set up request pulls]
@@ -80,10 +77,16 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     Returns:
         new_articles (list): List of dataclass objects
     """
+    dt = datetime.datetime.now()
+    day = dt.day
+    month = dt.month
+    year = dt.year
     feeds = {
-        "US Immigration Changes":"https://news.google.com/rss/search?q=US+immigration+changes",
-        "UCSIS Updates"         :"https://news.google.com/rss/search?q=UCSIS+updates",
+        "Aila daily news":f"https://www.aila.org/library/daily-immigration-news-clips-{month}-{day}-{year}",
+        # "Aaila Blog"   :f"https://www.aila.org/library/daily-immigration-news-clips-march-6-2025",
     }
+    # 
+
     new_articles = []
     url = feeds.get(cat)
     headers = {
@@ -120,3 +123,15 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
             
     else:
         logger.warning(f"No articles returned on {source} / {cat}.  Moving to next feed")
+
+
+#root url
+#https://www.aila.org/immigration-news
+#
+# Basic URl structure of searching postings
+#https://www.aila.org/recent-postings?FromDate=2025-02-28&ToDate=2025-03-07&limit=50
+
+#Lol.  Or i caould just grab the hardcoded 
+#news summary they already have
+#https://www.aila.org/library/daily-immigration-news-clips-march-6-2025
+#Def doing that. 
