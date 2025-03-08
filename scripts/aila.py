@@ -56,7 +56,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         article_id = url
         
         #Not available either without digesting the downstream link
-        pub_date = None
+        pub_date = current_time
 
         article = NewArticle(
             id=article_id,
