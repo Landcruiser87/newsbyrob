@@ -9,11 +9,12 @@ from dataclasses import dataclass, field
 from os.path import exists
 from random import shuffle
 from pathlib import Path, PurePath
-import uscis, travel, ice, g_news, aila, boundless, cbp, support
+import uscis, travel, ice, g_news, aila, boundless, support #cbp,
+from support import log_time
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    # "Boundless": ("https://www.boundless.com", boundless),
+    "Boundless": ("https://www.boundless.com", boundless),
     "USCIS"    : ("https://www.uscis.gov", uscis),
     "DOS"      : ("https://travel.state.gov", travel),
     "ICE"      : ("https://www.ice.gov", ice),
@@ -49,28 +50,6 @@ class NewArticle():
     threat_level: str = ""
     country     : str = ""
     keyword     : str = ""
-
-################################# Timing Func ####################################
-def log_time(fn):
-    """Decorator timing function.  Accepts any function and returns a logging
-    statement with the amount of time it took to run. DJ, I use this code everywhere still.  Thank you bud!
-
-    Args:
-        fn (function): Input function you want to time
-    """	
-    def inner(*args, **kwargs):
-        tnow = time.time()
-        out = fn(*args, **kwargs)
-        te = time.time()
-        took = round(te - tnow, 2)
-        if took <= 60:
-            logging.warning(f"{fn.__name__} ran in {took:.2f}s")
-        elif took <= 3600:
-            logging.warning(f"{fn.__name__} ran in {(took)/60:.2f}m")		
-        else:
-            logging.warning(f"{fn.__name__} ran in {(took)/3600:.2f}h")
-        return out
-    return inner
 
 ################################# Main Funcs ####################################
 #FUNCTION Add Data
