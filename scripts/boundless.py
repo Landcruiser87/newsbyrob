@@ -56,7 +56,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         article_id = url
         
         #Not available either without digesting the downstream link
-        pub_date = None
+        pub_date = datetime.datetime.now()
 
         article = NewArticle(
             id=article_id,
@@ -89,24 +89,26 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """
     feeds = {
         "Boundless Blog"  :"https://www.boundless.com/blog/category/immigration-news/",
-        "Boundless Weekly":"https://www.boundless.com/blog/boundless-weekly-immigration-news/"
+        # "Boundless Weekly":"https://www.boundless.com/blog/boundless-weekly-immigration-news/"
     }
     new_articles = []
     url = feeds.get(cat)
-    # pre_headers = {
-    #     'accept': '*/*',
-    #     'accept-language': 'en-US,en;q=0.9',
-    #     'content-type': 'text/plain;charset=UTF-8',
-    #     'origin': 'https://www.boundless.com',
-    #     'priority': 'u=1, i',
-    #     'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
-    #     'sec-ch-ua-mobile': '?1',
-    #     'sec-ch-ua-platform': '"Android"',
-    #     'sec-fetch-dest': 'empty',
-    #     'sec-fetch-mode': 'cors',
-    #     'sec-fetch-site': 'same-origin',
-    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
-    # }
+    headers = {
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'accept-language': 'en-US,en;q=0.9',
+        'cache-control': 'max-age=0',
+        'priority': 'u=0, i',
+        'referer': 'https://www.boundless.com/privacy/',
+        'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
+        'sec-ch-ua-mobile': '?1',
+        'sec-ch-ua-platform': '"Android"',
+        'sec-fetch-dest': 'document',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-user': '?1',
+        'upgrade-insecure-requests': '1',
+        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36',
+    }
     # headers = {
     #     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     #     'accept-language': 'en-US,en;q=0.9',
@@ -119,8 +121,8 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     # }
 
     if url:
-        response = requests.get(url)
-        # response = requests.get(url, headers=headers)
+        # response = requests.get(url)
+        response = requests.get(url, headers=headers)
     else:
         raise ValueError("Your URL isn't being loaded correctly")
     
