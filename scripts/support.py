@@ -21,7 +21,7 @@ from pathlib import Path
 ################################# Emailing Funcs ####################################
 
 #FUNCTION URL Format
-def urlformat(urls:list)->str:
+def orig_urlformat(urls:list)->str:
     """This formats each of the list items into an html list for easy ingestion into the email server
 
     Args:
@@ -43,6 +43,37 @@ def urlformat(urls:list)->str:
     else:
         links_html = f"<li><a href='{urls[0][0]}'> {urls[0][1]} - {urls[0][2]} - {urls[0][3]} </a></li>"
     links_html += "</ol>"
+    return links_html
+
+def urlformat(urls: list) -> str:
+    """
+    Formats the list of URLs into an HTML list with site and category printed once per group,
+    followed by a list of titles as links.
+
+    Args:
+        urls (list): List of new listings found, where each item is a tuple:
+                     (link, site, category, title).
+
+    Returns:
+        str: HTML formatted string for emailing.
+    """
+
+    if not urls:
+        return "<p>No new links found.</p>"
+
+    links_html = ""
+    prev_site_cat = None
+
+    for link, site, cat, title in urls:
+        current_site_cat = (site, cat)
+        if current_site_cat != prev_site_cat:
+            if prev_site_cat is not None:
+                links_html += "</ol>\n" + "-" * 45 + "\n" # add a seperator if a previous cat existed
+            links_html += f"<i><b>{site} - {cat}</b></i>\n<ol>"
+            prev_site_cat = current_site_cat
+        links_html += f"<li><a href='{link}'>{title}</a></li>"
+
+    links_html += "</ol>" # close the final list.
     return links_html
 
 #FUNCTION Send email update
