@@ -13,7 +13,7 @@ import uscis, travel, ice, g_news, aila, boundless, cbp, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "Boundless": ("https://www.boundless.com", boundless),
+    # "Boundless": ("https://www.boundless.com", boundless),
     "USCIS"    : ("https://www.uscis.gov", uscis),
     "DOS"      : ("https://travel.state.gov", travel),
     "ICE"      : ("https://www.ice.gov", ice),
@@ -231,7 +231,7 @@ def main():
         # If new articles are found, save the data to the json file, 
         # format the list of dataclassses to a url 
         # Send gmail alerting of new articles
-        support.save_data(jsondata)
+        # support.save_data(jsondata)
         links_html = support.urlformat(newstories)
         support.send_email_update(links_html)
         logger.warning(f"{len(newstories)} new articles found.  Email sent")

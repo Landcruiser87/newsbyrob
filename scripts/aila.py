@@ -88,6 +88,11 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """
     dt = datetime.datetime.now()
     day = dt.day
+    weekend = dt.weekday() > 4
+    if weekend:
+        logger.info("Baby its the weekend, bout to have me some fun")
+        return None
+    
     month = dt.strftime("%B").lower()
     year = dt.year
     feeds = {
