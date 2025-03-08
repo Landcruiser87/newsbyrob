@@ -68,8 +68,8 @@ def urlformat(urls: list) -> str:
         current_site_cat = (site, cat)
         if current_site_cat != prev_site_cat:
             if prev_site_cat is not None:
-                links_html += "</ol>\n" + "-" * 45 + "\n" # add a seperator if a previous cat existed
-            links_html += f"<i><b>{site} - {cat}</b></i>\n<ol>"
+                links_html += "</ol>\n" + "-" * 45 + "\n" 
+            links_html += f"<br><i><b>{site} - {cat}</b></i>\n<ol>"
             prev_site_cat = current_site_cat
         links_html += f"<li><a href='{link}'>{title}</a></li>"
 
