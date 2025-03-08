@@ -13,7 +13,7 @@ import uscis, travel, ice, g_news, aila, boundless, cbp, support
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    # "Boundless": ("https://www.boundless.com", boundless),
+    "Boundless": ("https://www.boundless.com", boundless),
     "USCIS"    : ("https://www.uscis.gov", uscis),
     "DOS"      : ("https://travel.state.gov", travel),
     "ICE"      : ("https://www.ice.gov", ice),
@@ -26,8 +26,8 @@ CATEGORIES = {
     "USCIS"    : ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
     "DOS"      : ["main_feed"], 
     "ICE"      : ["Management and Administration", "Operational", "Profesional Responsibility"], #"National Security", "Partnership and Engagement", "Enforcement and Removal"
-    "Boundless": ["Boundless Blog"],
-    "Google"   : ["US Immigration Changes", "UCSIS Updates"], #
+    "Boundless": ["Boundless Blog", "Boundless Weekly"],#
+    "Google"   : ["US Immigration Changes", "UCSIS Updates"],
     "AILA"     : ["AILA Daily News Update"],
     #"CBP"     : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
 }

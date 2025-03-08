@@ -44,7 +44,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         author = child.text.split("\n")[1].strip("By ")
 
         #grab the title
-        title = child.find("a").text
+        title = child.find("a").text + " - " + creator
         
         #Put section in description
         description = descript

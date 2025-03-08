@@ -88,25 +88,39 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         new_articles (list): List of dataclass objects
     """
     feeds = {
-        "Boundless Blog":"https://www.boundless.com/blog/category/immigration-news/",
+        "Boundless Blog"  :"https://www.boundless.com/blog/category/immigration-news/",
+        "Boundless Weekly":"https://www.boundless.com/blog/boundless-weekly-immigration-news/"
     }
     new_articles = []
     url = feeds.get(cat)
-
-    headers = {
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'accept-language': 'en-US,en;q=0.9',
-        'priority': 'u=0, i',
-        'origin':'https://www.boundless.com',
-        'referer': 'https://www.boundless.com/blog/category/immigration-news/',
-        'sec-ch-ua': '"Not(A:Brand";v="90", "Google Chrome";v="122", "Chromium";v="122"',
-        'content-type':'application/x-www-form-urlencoded, multipart/form-data',
-        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
-        'X-WP-Nonce':''
-    }
+    # pre_headers = {
+    #     'accept': '*/*',
+    #     'accept-language': 'en-US,en;q=0.9',
+    #     'content-type': 'text/plain;charset=UTF-8',
+    #     'origin': 'https://www.boundless.com',
+    #     'priority': 'u=1, i',
+    #     'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
+    #     'sec-ch-ua-mobile': '?1',
+    #     'sec-ch-ua-platform': '"Android"',
+    #     'sec-fetch-dest': 'empty',
+    #     'sec-fetch-mode': 'cors',
+    #     'sec-fetch-site': 'same-origin',
+    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
+    # }
+    # headers = {
+    #     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    #     'accept-language': 'en-US,en;q=0.9',
+    #     'priority': 'u=0, i',
+    #     'origin':'https://www.boundless.com',
+    #     'referer': url,
+    #     'sec-ch-ua': '"Not(A:Brand";v="90", "Google Chrome";v="122", "Chromium";v="122"',
+    #     'content-type':'application/x-www-form-urlencoded, multipart/form-data',
+    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
+    # }
 
     if url:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url)
+        # response = requests.get(url, headers=headers)
     else:
         raise ValueError("Your URL isn't being loaded correctly")
     
