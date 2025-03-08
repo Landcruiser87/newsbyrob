@@ -21,30 +21,6 @@ from pathlib import Path
 ################################# Emailing Funcs ####################################
 
 #FUNCTION URL Format
-def orig_urlformat(urls:list)->str:
-    """This formats each of the list items into an html list for easy ingestion into the email server
-
-    Args:
-        urls (list): List of new listings found
-
-    Returns:
-        str: HTML formatted string for emailing
-    """	
-    
-    links_html = "<ol>"
-    if len(urls) > 1:
-        prev_cat = None
-        for link, site, cat, title in urls:
-            if prev_cat != cat and prev_cat is not None:
-                links_html += "</ol>" + "\n" + "-" * 70 + "\n" + "<ol>"
-            prev_cat = cat
-            links_html += f"<li><a href='{link}'> {site} - {cat} - {title} </a></li>"
-    
-    else:
-        links_html = f"<li><a href='{urls[0][0]}'> {urls[0][1]} - {urls[0][2]} - {urls[0][3]} </a></li>"
-    links_html += "</ol>"
-    return links_html
-
 def urlformat(urls: list) -> str:
     """
     Formats the list of URLs into an HTML list with site and category printed once per group,
