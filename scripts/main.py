@@ -29,7 +29,7 @@ CATEGORIES = {
     "Boundless": ["Boundless Blog"],
     "Google"   : ["US Immigration Changes", "UCSIS Updates"], #
     "AILA"     : ["AILA Daily News Update"],
-        #"CBP"  : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
+    #"CBP"     : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
 }
 
 #Define dataclass container

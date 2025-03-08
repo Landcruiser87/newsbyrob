@@ -5,7 +5,6 @@ import time
 import datetime
 
 def date_convert(time_str:str)->datetime:
-    # _.strftime("%a, %d %b %y %H:%M:%S %z") #To verify correct converstion
     dateOb = datetime.datetime.strptime(time_str, "%a, %d %b %Y %H:%M:%S %Z")
     return dateOb
 
@@ -56,7 +55,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         article_id = url
         
         #Not available either without digesting the downstream link
-        pub_date = current_time
+        pub_date = datetime.datetime.now()
 
         article = NewArticle(
             id=article_id,
@@ -71,7 +70,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
             pull_date=current_time
         )
         articles.append(article)
-        article_id = creator = author = title = description = url = pub_date =  current_time = None
+        article_id = creator = author = title = description = url = pub_date = current_time = None
     
     return articles
 
