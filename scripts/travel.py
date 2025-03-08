@@ -127,3 +127,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
             
     else:
         logger.warning(f"No articles returned on {source} / {cat}.  Moving to next feed")
+
+
+#possibly add department of state?
+#https://www.state.gov/rss-feeds/
