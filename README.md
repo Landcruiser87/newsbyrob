@@ -79,8 +79,7 @@ Order of operations of above terminal commands.
 ## File Setup
 While in root directory run commands below
 ```
-$ mkdir data
-$ mkdir scripts
+$ mkdir data data/logs
 $ mkdir secret
 ```
 
@@ -92,7 +91,7 @@ Enter the following on the first 3 lines separated by a `colon`
 
 ## Sites Searched
 
-- Aggregate news data from these sources.  Looks as though some have an RSS feed you can tap right into.  Easier than scraping so going that way.
+- Aggregate news data from these sources.  
 - Sites searched are:
   - [Boundless](https://www.boundless.com)
   - [USCIS](https://www.uscis.gov/news/rss-feed/59144)
