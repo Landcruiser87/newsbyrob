@@ -170,7 +170,7 @@ def get_logger(log_dir:Path, console:Console)->logging.Logger:
         logger: Returns custom logger object.  Info level reporting with a file handler and rich handler to properly terminal print
     """	
     logger = logging.getLogger(__name__)
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
     # logger.addHandler(get_file_handler(log_dir)) 
     logger.addHandler(get_rich_handler(console))  
     logger.propagate = False

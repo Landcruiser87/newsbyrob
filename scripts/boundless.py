@@ -4,10 +4,12 @@ import datetime
 import numpy as np
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
+from playwright._impl._errors import Error as PlaywrightError
 
 def date_convert(time_str:str)->datetime:
     # _.strftime("%a, %d %b %y %H:%M:%S %z") #To verify correct converstion
-    dateOb = datetime.datetime.strptime(time_str, "%a, %d %b %Y %H:%M:%S %Z")
+    # dateOb = datetime.datetime.strptime(time_str, "%a, %d %b %Y %H:%M:%S %Z")
+    dateOb = datetime.datetime.strptime(time_str, "%B %d, %Y")
     return dateOb
 
 def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
@@ -28,36 +30,31 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     article_id = creator = author = title = description = url = pub_date = current_time = None
 
     #Set the outer loop over each card returned. 
-    for child in result.contents:
-        #Description not available.  Putting regional info here
-        if child.name == "h2":
-            descript = child.find("em").text
-            continue
-        if not child.name:
+    for child in result:
+        article_id = child.get("id", "")
+        #If no ID found, move along!
+        if not article_id: 
+            logger.warning("Article missing ID")
             continue
 
         # Time of pull
         current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
         
         # grab creator
-        creator = child.find("a").text
+        creator = "www.boundless.com"
 
         # Grab the author
-        author = child.text.split("\n")[1].strip("By ")
+        author = "www.boundless.com"
 
         #grab the title
-        title = child.find("a").text
+        title = child.find("a").get("title", "")
         
-        #Put section in description
-        description = descript
         #grab the url
-        url = child.find("a").get("href")
+        url = child.find("a").get("href", "")
 
-        #use url as key. #I know, messy, but there isn't a unique id stored on the page.
-        article_id = url
-        
+        description = child.find("p", class_=lambda x: x and x.startswith("o-block")).text.strip()
         #Not available either without digesting the downstream link
-        pub_date = datetime.datetime.now()
+        pub_date = date_convert(child.find("span", class_=lambda x: x and x.startswith("o-block")).text.strip())
 
         article = NewArticle(
             id=article_id,
@@ -76,7 +73,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     
     return articles
 
-def get_html(url: str, logger: logging, retries=3, delay=5):
+def get_html(url: str, logger: logging, retries:int = 3, delay:int = 5):
     for attempt in range(retries):
         try:
             with sync_playwright() as p:
@@ -105,7 +102,7 @@ def get_html(url: str, logger: logging, retries=3, delay=5):
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                 time.sleep(2)
 
-                page.wait_for_selector("body", timeout=15000)
+                page.wait_for_selector("section", timeout=15000)
                 html = page.content()
                 logger.info("HTML retrieved")
                 return html
@@ -117,12 +114,15 @@ def get_html(url: str, logger: logging, retries=3, delay=5):
             time.sleep(delay)
             delay *= 2
         finally:
-            if 'browser' in locals() and browser:
+            if browser: #check if the browser object exists.
                 try:
                     browser.close()
                     logger.debug("Browser closed")
+                except PlaywrightError as pe: #Catch the playwright error specifically.
+                    logger.warning(f"Error closing browser (PlaywrightError): {pe}")
                 except Exception as close_error:
                     logger.warning(f"Error closing browser: {close_error}")
+                
     return None
 
 def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
@@ -148,7 +148,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
 
     #Parse the XML
     if response:
-        bs4ob = BeautifulSoup(response.text, features="lxml")
+        bs4ob = BeautifulSoup(response, features="lxml")
 
         #Find all records (item CSS)
         results = bs4ob.find_all("article", class_=lambda x: x and x.startswith("o-grid"))
