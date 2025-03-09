@@ -90,7 +90,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     day = dt.day
     weekend = dt.weekday() > 4
     if weekend:
-        logger.warning("AILA only posts on weekdays. No soup for you!")
+        logger.info("AILA only posts on weekdays. No soup for you!")
         return None
     
     month = dt.strftime("%B").lower()
@@ -132,11 +132,11 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     results = bs4ob.find("div", class_="typography text rte")
     if results:
         new_articles = get_articles(results, cat, source, logger, NewArticle)
-        logger.info(f'{len(new_articles)} articles returned from {source}')
+        logger.debug(f'{len(new_articles)} articles returned from {source}')
         return new_articles
             
     else:
-        logger.warning(f"No articles returned on {source} / {cat}.  Moving to next feed")
+        logger.info(f"No articles returned on {source} / {cat}.  Moving to next feed")
 
 #Bex suggestions.  
 #Anywway to filter specifically for chicago based immigration news. 
