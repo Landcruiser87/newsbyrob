@@ -94,11 +94,13 @@ Enter the following on the first 3 lines separated by a `colon`
 ## Sites Searched
 
 - Aggregate news data from these sources.  Looks as though some have an RSS feed you can tap right into.  Easier than scraping so going that way.
-- Sites to search are
-  - [UCIS](https://www.uscis.gov/news/rss-feed/59144)
-  - [CBP](https://www.cbp.gov/rss)
-  - [travel](https://travel.state.gov/_res/rss/TAsTWs.xml#.html)
-  - [ICE](https://www.ice.gov/rss)
+- Sites searched are:
   - [Boundless](https://www.boundless.com)
+  - [UCIS](https://www.uscis.gov/news/rss-feed/59144)
+  - [DOS](https://travel.state.gov/_res/rss/TAsTWs.xml#.html)
+  - [ICE](https://www.ice.gov/rss)
+  - [Google News](https://news.google.com/rss)
   - [AILA](https://aila.org)
-  - [Google News](https://news.google.com)
+
+- Sunsetted sites
+  - [CBP](https://www.cbp.gov/rss)
