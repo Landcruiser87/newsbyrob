@@ -14,12 +14,12 @@ from support import log_time
 
 ################################# Global Variable Setup ####################################
 SITES = {
+    "Google"   : ("https://www.news.google.com", g_news),
     "Boundless": ("https://www.boundless.com", boundless),
     "USCIS"    : ("https://www.uscis.gov", uscis),
     "DOS"      : ("https://travel.state.gov", travel),
     "ICE"      : ("https://www.ice.gov", ice),
-    "Google"   : ("https://www.news.google.com", g_news),
-    "AILA"     : ("https://www.aila.org", aila),
+    "AILA"     : ("https://www.aila.org", aila)
     # "CBP"    : ("https://www.cbp.gov", cbp),  #Sunsetting CBP 3-7-25.  They basically only report finding drugs at the border
 }
 
