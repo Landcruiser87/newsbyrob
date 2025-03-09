@@ -99,9 +99,6 @@ Enter the following on the first 3 lines separated by a `colon`
   - [CBP](https://www.cbp.gov/rss)
   - [travel](https://travel.state.gov/_res/rss/TAsTWs.xml#.html)
   - [ICE](https://www.ice.gov/rss)
-
-## TODO
-
-- [ ] All Done!
-- [ ] Format email header so that when a form update happens, include a notification in the email subject such as "FORMS UPDATE!!"
-  
+  - [Boundless](https://www.boundless.com)
+  - [AILA](https://aila.org)
+  - [Google News](https://news.google.com)
