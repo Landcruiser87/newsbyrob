@@ -90,7 +90,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     day = dt.day
     weekend = dt.weekday() > 4
     if weekend:
-        logger.info("Baby its the weekend, bout to have me some fun")
+        logger.warning("AILA only posts on weekdays. No soup for you!")
         return None
     
     month = dt.strftime("%B").lower()
