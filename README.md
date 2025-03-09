@@ -13,11 +13,10 @@ listings of different and interesting changes in US immigration law. Sadly, he
 recently passed away and as a present to my fiancee I wanted to recreate that
 information exchange so that she could both remember/honor him and stay up to
 date on any changes that may influence her work.  In general, it is difficult to
-track these changes as they're spread across 4 different sites and have
+track these changes as they're spread across 7 different sites and have
 different categories that all need manual inspection for quality. This software
-has the capability to ingest that information from all 4 sites RSS feeds.  (via
-xml).  It then emails you any new findings after it scans the targeted RSS
-feeds.  
+has the capability to ingest that information from these sites via RSS feeds.  (via
+xml).  One blog it has to use a different structure, but that's a special use case and isolated to that script.  After aggregating all new articles, it emails you any new findings.
 
 If there are other immigration lawyers who are in need of this information.
 Feel free to clone and use the repo for your own purposes.  You will need to
