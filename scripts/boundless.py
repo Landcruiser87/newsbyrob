@@ -1,9 +1,9 @@
+import time
 import logging
+import datetime
+import numpy as np
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
-import requests
-import time
-import datetime
 
 def date_convert(time_str:str)->datetime:
     # _.strftime("%a, %d %b %y %H:%M:%S %z") #To verify correct converstion
@@ -76,25 +76,54 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     
     return articles
 
-def get_html(url:str, logger:logging):
-    with sync_playwright() as p:
-        browser = p.chromium.launch()
-        page = browser.new_page()
+def get_html(url: str, logger: logging, retries=3, delay=5):
+    for attempt in range(retries):
         try:
-            response = page.goto(url)
-            if response.status != 200:
-                logger.warning(f"Status code: {response.status}")
-                logger.warning(f"Status text: {response.status_text}")
-                return None
+            with sync_playwright() as p:
+                logger.debug("Playwright launched")
+                browser = p.chromium.launch(headless=True)
+                logger.debug("Browser launched")
+                context = browser.new_context(
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                )
+                logger.debug("Context created")
+                page = context.new_page()
+                logger.debug(f"Navigating to {url}")
+                response = page.goto(url)
 
-            page.wait_for_selector("body", timeout=15000)
-            html = page.content()
-            return html
+                if response.status == 403:
+                    logger.warning(f"Attempt {attempt + 1} - 403 Forbidden. Retrying in {delay} seconds.")
+                    time.sleep(delay)
+                    delay *= 2
+                    continue
+
+                if response.status != 200:
+                    logger.warning(f"Status code: {response.status}")
+                    logger.warning(f"Reason: {response.status_text}")
+                    return None
+
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                time.sleep(2)
+
+                page.wait_for_selector("body", timeout=15000)
+                html = page.content()
+                logger.info("HTML retrieved")
+                return html
+
         except Exception as e:
-            logger.warning(f"Error: {e}")
-            return None
+            logger.warning(f"Attempt {attempt + 1} - Error: {e}")
+            if attempt + 1 == retries:
+                return None
+            time.sleep(delay)
+            delay *= 2
         finally:
-            browser.close()
+            if 'browser' in locals() and browser:
+                try:
+                    browser.close()
+                    logger.debug("Browser closed")
+                except Exception as close_error:
+                    logger.warning(f"Error closing browser: {close_error}")
+    return None
 
 def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """[Outer scraping function to set up request pulls]
@@ -115,12 +144,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     new_articles = []
     url = feeds.get(cat)
     if url:
-        try:
-            response = get_html(url, logger)
-
-        except Exception as e:
-            logger.warning(f"Error on {url}\n\n{e}")
-            return None
+        response = get_html(url, logger)
 
     #Parse the XML
     if response:
