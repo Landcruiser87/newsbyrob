@@ -1,5 +1,6 @@
 import logging
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 import requests
 import time
 import datetime
@@ -75,6 +76,26 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     
     return articles
 
+def get_html(url:str, logger:logging):
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
+        try:
+            response = page.goto(url)
+            if response.status != 200:
+                logger.warning(f"Status code: {response.status}")
+                logger.warning(f"Status text: {response.status_text}")
+                return None
+
+            page.wait_for_selector("body", timeout=15000)
+            html = page.content()
+            return html
+        except Exception as e:
+            logger.warning(f"Error: {e}")
+            return None
+        finally:
+            browser.close()
+
 def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """[Outer scraping function to set up request pulls]
 
@@ -93,55 +114,23 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     }
     new_articles = []
     url = feeds.get(cat)
-    headers = {
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'accept-language': 'en-US,en;q=0.9',
-        'cache-control': 'max-age=0',
-        'priority': 'u=0, i',
-        'referer': 'https://www.boundless.com/privacy/',
-        'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
-        'sec-ch-ua-mobile': '?1',
-        'sec-ch-ua-platform': '"Android"',
-        'sec-fetch-dest': 'document',
-        'sec-fetch-mode': 'navigate',
-        'sec-fetch-site': 'same-origin',
-        'sec-fetch-user': '?1',
-        'upgrade-insecure-requests': '1',
-        'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36',
-    }
-    # headers = {
-    #     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    #     'accept-language': 'en-US,en;q=0.9',
-    #     'priority': 'u=0, i',
-    #     'origin':'https://www.boundless.com',
-    #     'referer': url,
-    #     'sec-ch-ua': '"Not(A:Brand";v="90", "Google Chrome";v="122", "Chromium";v="122"',
-    #     'content-type':'application/x-www-form-urlencoded, multipart/form-data',
-    #     'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
-    # }
-
     if url:
-        # response = requests.get(url)
-        response = requests.get(url, headers=headers)
-    else:
-        raise ValueError("Your URL isn't being loaded correctly")
-    
-    #Just in case we piss someone off
-    if response.status_code != 200:
-        # If there's an error, log it and return no data for that site
-        logger.warning(f'Status code: {response.status_code}')
-        logger.warning(f'Reason: {response.reason}')
-        return None
+        try:
+            response = get_html(url, logger)
+
+        except Exception as e:
+            logger.warning(f"Error on {url}\n\n{e}")
+            return None
 
     #Parse the XML
-    bs4ob = BeautifulSoup(response.text, features="lxml")
+    if response:
+        bs4ob = BeautifulSoup(response.text, features="lxml")
 
-    #Find all records (item CSS)
-    results = bs4ob.find_all("article", class_=lambda x: x and x.startswith("o-grid"))
-    if results:
-        new_articles = get_articles(results, cat, source, logger, NewArticle)
-        logger.info(f'{len(new_articles)} articles returned from {source}')
-        return new_articles
-            
+        #Find all records (item CSS)
+        results = bs4ob.find_all("article", class_=lambda x: x and x.startswith("o-grid"))
+        if results:
+            new_articles = get_articles(results, cat, source, logger, NewArticle)
+            logger.info(f'{len(new_articles)} articles returned from {source}')
+            return new_articles
     else:
         logger.warning(f"No articles returned on {source} / {cat}.  Moving to next feed")
