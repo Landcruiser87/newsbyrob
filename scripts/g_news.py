@@ -109,7 +109,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         return None
 
     #Parse the XML
-    bs4ob = BeautifulSoup(response.text, features="lxml")
+    bs4ob = BeautifulSoup(response.text, features="xml")
 
     #Find all records (item CSS)
     results = bs4ob.find_all("item")
