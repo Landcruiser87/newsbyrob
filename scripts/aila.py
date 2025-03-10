@@ -118,6 +118,15 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     else:
         raise ValueError("Your URL isn't being loaded correctly")
     
+    #Trap the not found specifically return because it looks like they don't post this until later in the day.  
+        #So this might not be a good morning news source. 
+
+    if response.status_code == 404:
+        logger.warning(f'Status code: {response.status_code}')
+        logger.warning(f'Reason: {response.reason}')
+        logger.warning(f"Daily news not up yet for {source}.  Check again later")
+        return None
+    
     #Just in case we piss someone off
     if response.status_code != 200:
         # If there's an error, log it and return no data for that site
