@@ -82,7 +82,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     """
     feeds = {
         "US Immigration Changes":"https://news.google.com/rss/search?q=US+immigration+changes",
-        "UCSIS Updates"         :"https://news.google.com/rss/search?q=UCSIS+updates",          #removing for now.  Returns older articles
+        "USCIS Updates"         :"https://news.google.com/rss/search?q=USCIS+updates",          #removing for now.  Returns older articles
     }
     new_articles = []
     url = feeds.get(cat)
