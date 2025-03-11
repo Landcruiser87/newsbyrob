@@ -27,7 +27,7 @@ CATEGORIES = {
     "USCIS"    : ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
     "DOS"      : ["main_feed"], 
     "Boundless": ["Boundless Blog"],#, "Boundless Weekly"
-    "Google"   : ["US Immigration Changes", "USCIS Updates"],
+    "Google"   : ["US Immigration Change", "USCIS Update"],
     "AILA"     : ["AILA Daily News Update"],
     "ICE"      : ["Management and Administration", "Operational", "Profesional Responsibility"], #"National Security", "Partnership and Engagement", "Enforcement and Removal"
     #"CBP"     : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
