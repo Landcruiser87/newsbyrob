@@ -81,8 +81,8 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         new_articles (list): List of dataclass objects
     """
     feeds = {
-        "US Immigration Change":"https://news.google.com/rss/search?q=US+immigration+change",
-        "USCIS Update"         :"https://news.google.com/rss/search?q=USCIS+update",        
+        "US Immigration Changes":"https://news.google.com/rss/search?q=US+immigration+changes",
+        "USCIS Updates"         :"https://news.google.com/rss/search?q=USCIS+updates",        
     }
     new_articles = []
     url = feeds.get(cat)
