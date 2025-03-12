@@ -41,8 +41,11 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         creator = child.find("a").text
 
         # Grab the author
-        author = child.text.split("\n")[1].strip("By ")
-
+        if "By" in child.text:
+            author = child.text.split("\n")[1].strip("By ")
+        else:
+            author = None
+            
         #grab the title
         title = child.find("a").text + " - " + creator
         
