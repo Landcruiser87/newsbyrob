@@ -28,7 +28,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     #Set the outer loop over each card returned. 
     for child in result.contents:
         #Description not available.  Putting regional info here
-        if child.name == "h2":
+        if child.name == "h2" or child.name == "h3":
             descript = child.find("em").text
             continue
         if not child.name:
@@ -38,7 +38,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
         
         # grab creator
-        creator = child.find("a").text
+        creator = child.find("em").text
 
         # Grab the author
         if "By" in child.text:
@@ -46,11 +46,13 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         else:
             author = None
             
-        #grab the title
-        title = child.find("a").text + " - " + creator
         
         #Put section in description
         description = descript
+
+        #grab the title
+        title = description + " - " + creator + " - " + child.find("a").text
+        
         #grab the url
         url = child.find("a").get("href")
 
