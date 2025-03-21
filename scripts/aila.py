@@ -28,7 +28,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     #Set the outer loop over each card returned. 
     for child in result.contents:
         #Description not available.  Putting regional info here
-        if child.name == "h2" or child.name == "h3":
+        if child.name == "h2" or child.name == "h3" or child.name == "h4":
             descript = child.find("em").text
             continue
         if not child.name:
