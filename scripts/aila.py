@@ -38,7 +38,10 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
         
         # grab creator
-        creator = child.find("em").text
+        if child.find("em"):
+            creator = child.find("em").text
+        else:
+            creator = "none"
 
         # Grab the author
         if "By" in child.text:
