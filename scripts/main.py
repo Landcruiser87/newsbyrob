@@ -1,7 +1,5 @@
 #Import libraries
 import numpy as np
-import logging
-import time
 import datetime
 from rich.console import Console
 from rich.progress import Progress
