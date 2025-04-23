@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import time
 import datetime
+import numpy as np
 
 def date_convert(time_str:str)->datetime:
     dateOb = datetime.datetime.strptime(time_str, "%a, %d %b %Y %H:%M:%S %Z")
@@ -41,10 +42,10 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         if child.find("em"):
             creator = child.find("em").text
         else:
-            creator = "none"
+            creator = None
 
         # Grab the author
-        if "By" in child.text:
+        if child.find("br"):
             author = child.text.split("\n")[1].strip("By ")
         else:
             author = None
@@ -111,10 +112,11 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
 
     new_articles = []
     url = feeds.get(cat)
+    chrome_version = np.random.randint(120, 132)
     headers = {
         'Upgrade-Insecure-Requests': '1',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
-        'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
+        'User-Agent': f'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{chrome_version}.0.0.0 Mobile Safari/537.36',
+        'sec-ch-ua': f'"Not)A;Brand";v="99", "Google Chrome";v={chrome_version}, "Chromium";v={chrome_version}',
         'sec-ch-ua-mobile': '?1',
         'sec-ch-ua-platform': '"Android"',
         'referer': url,
@@ -126,10 +128,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
     else:
         raise ValueError("Your URL isn't being loaded correctly")
     
-    #Trap the not found specifically return because it looks like they don't post this until later in the day.  
-        #So this might not be a good morning news source. 
-
-    if response.status_code == 404:
+    if response.status_code != 200:
         logger.warning(f'Status code: {response.status_code}')
         logger.warning(f'Reason: {response.reason}')
         logger.warning(f"Daily news not up yet for {source}.  Check again later")
