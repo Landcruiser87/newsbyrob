@@ -12,19 +12,19 @@ from support import log_time
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    # "USCIS"    : ("https://www.uscis.gov", uscis),
-    # "DOS"      : ("https://travel.state.gov", travel),
-    # "Boundless": ("https://www.boundless.com", boundless),
-    # "Google"   : ("https://www.news.google.com", g_news),
+    "USCIS"    : ("https://www.uscis.gov", uscis),
+    "DOS"      : ("https://travel.state.gov", travel),
+    "Boundless": ("https://www.boundless.com", boundless),
+    "Google"   : ("https://www.news.google.com", g_news),
     "AILA"     : ("https://www.aila.org", aila),
-    # "ICE"      : ("https://www.ice.gov", ice),
+    "ICE"      : ("https://www.ice.gov", ice),
     # "CBP"    : ("https://www.cbp.gov", cbp),  #Sunsetting CBP 3-7-25.  They basically only report finding drugs at the border
 }
 
 CATEGORIES = {
     "USCIS"    : ["Fact Sheets", "News Releases", "Stakeholder Messages", "Alerts", "Forms Updates"], 
     "DOS"      : ["main_feed"], 
-    "Boundless": ["Boundless Blog"],#, "Boundless Weekly"
+    "Boundless": ["Boundless Blog"], #, "Boundless Weekly"
     "Google"   : ["US Immigration Changes", "USCIS Updates"],
     "AILA"     : ["AILA Daily News Update"],
     "ICE"      : ["Management and Administration", "Operational", "Profesional Responsibility"], #"National Security", "Partnership and Engagement", "Enforcement and Removal"
