@@ -21,7 +21,7 @@ xml).  One blog it has to use a different structure, but that's a special use ca
 If there are other immigration lawyers who are in need of this information.
 Feel free to clone and use the repo for your own purposes.  You will need to
 create a dummy gmail account for utilizing the email function.  Information as
-to how to do that can be found here.  
+to how to do that can be found here.
 
 [Real Python Article](https://realpython.com/python-send-email/)
 
