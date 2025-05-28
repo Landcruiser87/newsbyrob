@@ -25,14 +25,18 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
 
     articles = []
     article_id = creator = author = title = description = url = pub_date = current_time = None
-
+    #BUG - So.... This time they decided to next multiple articles underneath a p tag????
+        #Not sure if that was a mistake as i've never seen them do that.  
+        #Keep an eye on the format and see if that shifts. 
+        #https://www.aila.org/library/daily-immigration-news-clips-
+        
     #Set the outer loop over each card returned. 
     for child in result.contents:
         #Description not available.  Putting regional info here
         if child.name == "h2" or child.name == "h3" or child.name == "h4":
             descript = child.find("em").text
             continue
-        if not child.name:
+        if not child.name or child.text == "\xa0":
             continue
 
         # Time of pull
@@ -42,13 +46,13 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         if child.find("em"):
             creator = child.find("em").text
         else:
-            creator = None
+            creator = ""
 
         # Grab the author
         if child.find("br"):
             author = child.text.split("\n")[1].strip("By ")
         else:
-            author = None
+            author = ""
             
         
         #Put section in description
