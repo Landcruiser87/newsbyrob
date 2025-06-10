@@ -136,7 +136,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         logger.warning(f'Status code: {response.status_code}')
         logger.warning(f'Reason: {response.reason}')
         logger.warning(f"Daily news not up yet for {source}.  Check again later")
-        return None
+        raise ValueError("NO AILA NEWS YO")
     
     #Just in case we piss someone off
     if response.status_code != 200:
