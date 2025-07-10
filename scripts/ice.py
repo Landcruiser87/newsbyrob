@@ -35,18 +35,19 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
             rname = row.name
             if row == "\n":
                 continue
-            elif rname == "title":
-                title = row.text
-            elif rname == "link":
-                url = row.text
-            elif rname == "description":
-                description = row.text
-            elif rname == "pubDate":
-                pub_date = date_convert(row.text)
-            elif rname == "source":
-                creator = row.text
-            elif rname == "guid":
-                article_id = row.text
+            match rname:
+                case "title":
+                    title = row.text
+                case "link":
+                    url = row.text
+                case "description":
+                    description = row.text
+                case "pubDate":
+                    pub_date = date_convert(row.text)
+                case "source":
+                    creator = row.text
+                case "guid":
+                    article_id = row.text
 
         article = NewArticle(
             id=article_id,
@@ -86,6 +87,7 @@ def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
         "National Security"            :"https://www.ice.gov/rss/news/375",
         "Partnership and Engagement"   :"https://www.ice.gov/rss/news/923",
         "Enforcement and Removal"      :"https://www.ice.gov/rss/news/356",
+        "Transnational Gangs"          :"https://www.ice.gov/rss/news/166"
     }
     new_articles = []
     url = feeds.get(cat)

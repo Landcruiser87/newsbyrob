@@ -3,7 +3,7 @@ import numpy as np
 import datetime
 from rich.console import Console
 from rich.progress import Progress
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from os.path import exists
 from random import shuffle
 from pathlib import Path, PurePath
@@ -27,7 +27,7 @@ CATEGORIES = {
     "Boundless": ["Boundless Blog"], #, "Boundless Weekly"
     "Google"   : ["US Immigration Changes", "USCIS Updates"],
     "AILA"     : ["AILA Daily News Update"],
-    "ICE"      : ["Management and Administration", "Operational", "Profesional Responsibility"], #"National Security", "Partnership and Engagement", "Enforcement and Removal"
+    "ICE"      : ["Management and Administration", "Operational", "Profesional Responsibility", "National Security", "Partnership and Engagement", "Enforcement and Removal", "Transnational Gangs"]
     #"CBP"     : ["Travel updates","Trusted traveler updates","Border Security","Newsroom"], #"Border wait time feeds" currently down, Also security might be redundant here
 }
 
