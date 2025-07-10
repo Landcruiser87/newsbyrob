@@ -5,7 +5,6 @@ from rich.console import Console
 from rich.progress import Progress
 from dataclasses import dataclass
 from os.path import exists
-from random import shuffle
 from pathlib import Path, PurePath
 import uscis, travel, ice, g_news, aila, boundless, support #cbp,
 from support import log_time
