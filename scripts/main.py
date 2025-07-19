@@ -184,7 +184,6 @@ def main():
     newstories = []
     fp = "./data/im_updates.json"
     totalstops = sum([len(x) for x in CATEGORIES.values()])
-
     global logger, console
     console = Console(color_system="auto")
     log_path = PurePath(Path.cwd(), Path("./data/logs"))
