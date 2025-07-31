@@ -131,7 +131,7 @@ dmypy.json
 #Project specific folders
 /secret
 /scrap
-/.news_venv
+/.venv
 /.vscode
 .Rhistory
 .DS_Store
