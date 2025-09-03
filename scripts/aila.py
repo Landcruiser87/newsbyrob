@@ -24,7 +24,8 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     """
 
     articles = []
-    article_id = creator = author = title = description = url = pub_date = current_time = None
+    default_val = None
+    # article_id = creator = author = title = description = url = pub_date = current_time = None
     #BUG - So.... This time they decided to next multiple articles underneath a p tag????
         #Not sure if that was a mistake as i've never seen them do that.  
         #Keep an eye on the format and see if that shifts. 
@@ -32,6 +33,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         
     #Set the outer loop over each card returned. 
     for child in result.contents:
+        article = NewArticle()
         #Description not available.  Putting regional info here
         if child.name == "h2" or child.name == "h3" or child.name == "h4":
             descript = child.find("em").text
@@ -40,50 +42,51 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
             continue
 
         # Time of pull
-        current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
+        article.pull_date = time.strftime("%m-%d-%Y_%H-%M-%S")
         
         # grab creator
         if child.find("em"):
-            creator = child.find("em").text
+            article.creator = child.find("em").text
         else:
-            creator = ""
+            article.creator = ""
 
         # Grab the author
         if child.find("br"):
-            author = child.text.split("\n")[1].strip("By ")
+            article.author = child.text.split("\n")[1].strip("By ")
         else:
-            author = ""
-            
+            article.author = ""
+        # Assign category
+        article.category = cat
+        
+        # Assign source
+        article.source = source
         
         #Put section in description
-        description = descript
+        article.description = descript
 
         #grab the title
-        title = description + " - " + creator + " - " + child.find("a").text
+        article.title = article.description + " - " + article.creator + " - " + child.find("a").text
         
         #grab the url
-        url = child.find("a").get("href")
+        article.link = child.find("a").get("href", default_val)
 
-        #use url as key. #I know, messy, but there isn't a unique id stored on the page.
-        article_id = url
-        
         #Not available either without digesting the downstream link
-        pub_date = datetime.datetime.now()
+        article.pub_date = None
 
-        article = NewArticle(
-            id=article_id,
-            source=source,
-            creator=creator,
-            author=author,
-            title=title,
-            description=description,
-            link=url,
-            category=cat,
-            pub_date=pub_date,
-            pull_date=current_time
-        )
+        # article = NewArticle(
+        #     id=article_id,
+        #     source=source,
+        #     creator=creator,
+        #     author=author,
+        #     title=title,
+        #     description=description,
+        #     link=url,
+        #     category=cat,
+        #     pub_date=pub_date,
+        #     pull_date=current_time
+        # )
         articles.append(article)
-        article_id = creator = author = title = description = url = pub_date = current_time = None
+        # article_id = creator = author = title = description = url = pub_date = current_time = None
     
     return articles
 

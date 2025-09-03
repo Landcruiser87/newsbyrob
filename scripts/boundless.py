@@ -49,6 +49,9 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         
         # Assign category
         article.category = cat
+        
+        # Assign source
+        article.source = source
 
         #grab the title
         article.title = child.find("a").get("title", default_val)
