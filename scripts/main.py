@@ -11,9 +11,10 @@ from support import log_time
 
 ################################# Global Variable Setup ####################################
 SITES = {
+    "Boundless": ("https://www.boundless.com", boundless),
     "USCIS"    : ("https://www.uscis.gov", uscis),
     "DOS"      : ("https://travel.state.gov", travel),
-    "Boundless": ("https://www.boundless.com", boundless),
+    
     "Google"   : ("https://www.news.google.com", g_news),
     "AILA"     : ("https://www.aila.org", aila),
     "ICE"      : ("https://www.ice.gov", ice),
@@ -33,16 +34,16 @@ CATEGORIES = {
 #Define dataclass container
 @dataclass
 class NewArticle():
-    id          : str
-    source      : str
-    creator     : str
-    author      : str
-    title       : str
-    description : str
-    link        : str
-    category    : str
-    pub_date    : datetime.datetime
-    pull_date   : datetime.datetime
+    id          : str = None
+    source      : str = None
+    creator     : str = None
+    author      : str = None
+    title       : str = None
+    description : str = None
+    link        : str = None
+    category    : str = None
+    pub_date    : datetime.datetime = None
+    pull_date   : datetime.datetime = None
     identifier  : str = ""
     threat_level: str = ""
     country     : str = ""

@@ -27,49 +27,41 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
     """
 
     articles = []
-    article_id = creator = author = title = description = url = pub_date = current_time = None
+    default_val = None
 
     #Set the outer loop over each card returned. 
     for child in result:
-        article_id = child.get("id", "")
+        article = NewArticle()
+        article.id = child.get("id", default_val)
         #If no ID found, move along!
-        if not article_id: 
+        if not article.id: 
             logger.warning("Article missing ID")
             continue
 
         # Time of pull
-        current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
+        article.pull_date = time.strftime("%m-%d-%Y_%H-%M-%S")
         
         # grab creator
-        creator = "www.boundless.com"
+        article.creator = "www.boundless.com"
 
         # Grab the author
-        author = "www.boundless.com"
+        article.author = "www.boundless.com"
+        
+        # Assign category
+        article.category = cat
 
         #grab the title
-        title = child.find("a").get("title", "")
+        article.title = child.find("a").get("title", default_val)
         
         #grab the url
-        url = child.find("a").get("href", "")
+        article.link = child.find("a").get("href", default_val)
 
-        description = child.find("p", class_=lambda x: x and x.startswith("o-block")).text.strip()
+        article.description = child.find("p", class_=lambda x: x and x.startswith("o-block")).text.strip()
+        
         #Not available either without digesting the downstream link
-        pub_date = date_convert(child.find("span", class_=lambda x: x and x.startswith("o-block")).text.strip())
+        article.pub_date  = date_convert(child.find("span", class_=lambda x: x and x.startswith("o-block")).text.strip())
 
-        article = NewArticle(
-            id=article_id,
-            source=source,
-            creator=creator,
-            author=author,
-            title=title,
-            description=description,
-            link=url,
-            category=cat,
-            pub_date=pub_date,
-            pull_date=current_time
-        )
         articles.append(article)
-        article_id = creator = author = title = description = url = pub_date =  current_time = None
     
     return articles
 
