@@ -24,44 +24,32 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
     """
 
     articles = []
-    article_id = creator = _author = title = description = url = pub_date = current_time = None
-
     #Set the outer loop over each card returned. 
     for card in results:
+        article = NewArticle()
         # Time of pull
-        current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
-        
+        article.pull_date = time.strftime("%m-%d-%Y_%H-%M-%S")
         for row in card.contents:
             rname = row.name
             if row == "\n":
                 continue
             elif rname == "title":
-                title = row.text
+                article.title = row.text
             elif rname == "link":
-                url = row.text
+                article.link = row.text
             elif rname == "description":
-                description = row.text
+                article.description = row.text
             elif rname == "pubDate":
-                pub_date = date_convert(row.text)
+                article.pub_date = date_convert(row.text)
             elif rname == "source url":
-                creator = row.text
+                article.creator = row.text
             elif rname == "guid":
-                article_id = row.text
-            
-        article = NewArticle(
-            id=article_id,
-            source=source,
-            creator=creator,
-            author = _author,
-            title=title,
-            description=description,
-            link=url,
-            category=cat,
-            pub_date=pub_date,
-            pull_date=current_time
-        )
+                article.id = row.text
+        # Assign category
+        article.category = cat
+        # Assign source
+        article.source = source
         articles.append(article)
-        article_id = creator = _author = title = description = url = pub_date =  current_time = None
     
     return sorted(articles, key=lambda x:x.pub_date, reverse=True)[:5] #Only return top 5
 

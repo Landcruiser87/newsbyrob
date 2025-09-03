@@ -25,7 +25,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
 
     articles = []
     default_val = None
-    # article_id = creator = author = title = description = url = pub_date = current_time = None
+
     #BUG - So.... This time they decided to next multiple articles underneath a p tag????
         #Not sure if that was a mistake as i've never seen them do that.  
         #Keep an eye on the format and see if that shifts. 
@@ -73,20 +73,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         #Not available either without digesting the downstream link
         article.pub_date = None
 
-        # article = NewArticle(
-        #     id=article_id,
-        #     source=source,
-        #     creator=creator,
-        #     author=author,
-        #     title=title,
-        #     description=description,
-        #     link=url,
-        #     category=cat,
-        #     pub_date=pub_date,
-        #     pull_date=current_time
-        # )
         articles.append(article)
-        # article_id = creator = author = title = description = url = pub_date = current_time = None
     
     return articles
 
