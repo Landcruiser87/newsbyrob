@@ -24,57 +24,42 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
     """
 
     articles = []
-    article_id = creator = _author = title = description = url = pub_date = current_time = identifier = threat_level = country = keyword = None
 
     #Set the outer loop over each card returned. 
     for card in results:
+        article = NewArticle()
         # Time of pull
-        current_time = time.strftime("%m-%d-%Y_%H-%M-%S")
-        card_contents = card.contents
-        for row in card_contents:
+        article.pull_date = time.strftime("%m-%d-%Y_%H-%M-%S")
+        for row in card.contents:
             rname = row.name
             if row == "\n":
                 continue
             elif rname == "title":
-                title = row.text
+                article.title = row.text
             elif rname == "link":
-                url = row.text
+                article.url = row.text
             elif rname == "description":
-                description = row.text
+                article.description = row.text
             elif rname == "pubDate":
-                pub_date = date_convert(row.text)
+                article.pub_date = date_convert(row.text)
             elif rname == "creator":
-                creator = row.text
+                article.creator = row.text
             elif rname == "guid":
-                article_id = row.text
+                article.id = row.text
             elif rname == "identifier":
-                identifier = row.text.strip("\n")
+                article.identifier = row.text.strip("\n")
             elif row.attrs["domain"] == "Threat-Level":
-                threat_level = row.text
+                article.threat_level = row.text
             elif row.attrs["domain"] == "Country-Tag":
-                country = row.text
+                article.country = row.text
             elif row.attrs["domain"] == "Keyword":
-                keyword = row.text
+                article.keyword = row.text
 
-        article = NewArticle(
-            id=article_id,
-            source=source,
-            creator=creator,
-            author = _author,
-            title=title,
-            description=description,
-            link=url,
-            category=cat,
-            pub_date=pub_date,
-            pull_date=current_time,
-            identifier=identifier,
-            threat_level=threat_level,
-            country=country,
-            keyword=keyword
-        )
-
+        # Assign category
+        article.category = cat
+        # Assign source
+        article.source = source
         articles.append(article)
-        article_id = creator = _author = title = description = url = pub_date = current_time = identifier = threat_level = country = keyword = None
 
     return articles
 
