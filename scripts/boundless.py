@@ -66,7 +66,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, NewArticle)->list:
     
     return articles
 
-def get_html(url: str, logger: logging, retries:int = 3, delay:int = 5):
+def get_html(url: str, retries:int = 3, delay:int = 5):
     for attempt in range(retries):
         try:
             with sync_playwright() as p:
@@ -136,7 +136,7 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
     new_articles = []
     url = feeds.get(cat)
     if url:
-        response = get_html(url, logger)
+        response = get_html(url)
 
     #Parse the XML
     if response:
@@ -145,7 +145,7 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
         #Find all records (item CSS)
         results = bs4ob.find_all("article", class_=lambda x: x and x.startswith("o-grid"))
         if results:
-            new_articles = get_articles(results, cat, source, logger, NewArticle)
+            new_articles = get_articles(results, cat, source, NewArticle)
             logger.info(f'{len(new_articles)} articles returned from {source}')
             return new_articles
     else:

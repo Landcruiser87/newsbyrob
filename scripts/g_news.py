@@ -98,7 +98,7 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
     #Find all records (item CSS)
     results = bs4ob.find_all("item")
     if results:
-        new_articles = get_articles(results, cat, source, logger, NewArticle)
+        new_articles = get_articles(results, cat, source, NewArticle)
         logger.info(f'{len(new_articles)} articles returned from {source} searching {cat}')
         return new_articles
             
