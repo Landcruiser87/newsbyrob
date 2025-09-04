@@ -62,7 +62,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         article.description = child.find("p", class_=lambda x: x and x.startswith("o-block")).text.strip()
         
         #Not available either without digesting the downstream link
-        article.pub_date  = date_convert(child.find("span", class_=lambda x: x and x.startswith("o-block")).text.strip())
+        article.pub_date = date_convert(child.find("span", class_=lambda x: x and x.startswith("o-block")).text.strip())
 
         articles.append(article)
     
