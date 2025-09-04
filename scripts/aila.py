@@ -75,7 +75,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         article.id = article.link
 
         #Not available either without digesting the downstream link
-        article.pub_date = None
+        article.pub_date = ""
 
         articles.append(article)
     

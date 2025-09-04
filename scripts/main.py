@@ -41,8 +41,8 @@ class NewArticle():
     description : str = None
     link        : str = None
     category    : str = None
-    pub_date    : datetime.datetime = None
-    pull_date   : datetime.datetime = None
+    pub_date    : datetime.datetime = ""
+    pull_date   : datetime.datetime = ""
     identifier  : str = ""
     threat_level: str = ""
     country     : str = ""

@@ -30,8 +30,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
         # Time of pull
         article.pull_date = time.strftime("%m-%d-%Y_%H-%M-%S")
         
-        card_contents = card.contents
-        for row in card_contents:
+        for row in card.contents:
             rname = row.name
             if row == "\n":
                 continue
