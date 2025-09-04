@@ -61,6 +61,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         # Assign source
         article.source = source
         
+
         #Put section in description
         article.description = descript
 
@@ -69,6 +70,9 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, logger:logging, NewA
         
         #grab the url
         article.link = child.find("a").get("href", default_val)
+        
+        #assign id
+        article.id = article.link
 
         #Not available either without digesting the downstream link
         article.pub_date = None
