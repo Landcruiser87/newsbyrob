@@ -5,9 +5,9 @@ from rich.console import Console
 from rich.progress import Progress
 from dataclasses import dataclass
 from os.path import exists
-from pathlib import Path, PurePath
+
 import uscis, travel, ice, g_news, aila, boundless, support #cbp,
-from support import log_time
+from support import log_time, logger, console
 
 ################################# Global Variable Setup ####################################
 SITES = {
@@ -150,7 +150,7 @@ def parse_feed(site:str, siteinfo:tuple, prog:Progress, jobtask:int):
             # Update and advance the overall progressbar
             prog.update(task_id=jobtask, description=f"[green]{site}:{cat}", advance=1)
             logger.info(f"Parsing {site} for {cat}")
-            data = siteinfo[1].ingest_xml(cat, siteinfo[0], logger, NewArticle)
+            data = siteinfo[1].ingest_xml(cat, siteinfo[0], NewArticle)
 
             #Take a lil nap.  Be nice to the servers!
             support.add_spin_subt(prog, "server nap", np.random.randint(3, 6))
@@ -184,10 +184,6 @@ def main():
     newstories = []
     fp = "./data/im_updates.json"
     totalstops = sum([len(x) for x in CATEGORIES.values()])
-    global logger, console
-    console = Console(color_system="auto")
-    log_path = PurePath(Path.cwd(), Path("./data/logs"))
-    logger = support.get_logger(log_path, console=console)
 
     #Load im_updates.json
     if exists(fp):

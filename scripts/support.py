@@ -16,7 +16,7 @@ from rich.progress import (
 )
 from rich.logging import RichHandler
 from rich.console import Console
-from pathlib import Path
+from pathlib import Path, PurePath
 
 ################################# Emailing Funcs ####################################
 
@@ -175,6 +175,12 @@ def get_logger(log_dir:Path, console:Console)->logging.Logger:
     logger.addHandler(get_rich_handler(console))  
     logger.propagate = False
     return logger
+
+################################# Global Vars ####################################
+
+console = Console(color_system="auto")
+log_path = PurePath(Path.cwd(), Path("./data/logs"))
+logger = get_logger(log_path, console=console)
 
 #CLASS Numpy encoder
 class NumpyArrayEncoder(json.JSONEncoder):

@@ -1,22 +1,21 @@
-import logging
-from bs4 import BeautifulSoup
-import requests
 import time
 import datetime
+import requests
+from support import logger
+from bs4 import BeautifulSoup
 
 def date_convert(time_str:str)->datetime:
     # _.strftime("%a, %d %b %y %H:%M:%S %z") #To verify correct converstion
     dateOb = datetime.datetime.strptime(time_str, "%a, %d %b %Y %H:%M:%S %Z")
     return dateOb
 
-def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, NewArticle)->list:
+def get_articles(results:BeautifulSoup, cat:str, source:str, NewArticle)->list:
     """[Ingest XML of summary page for articles info]
 
     Args:
         result (BeautifulSoup object): html of apartments page
         cat (str): category being searched
         source (str): source website
-        logger (logging.logger): logger for Kenny loggin
         NewArticle (dataclass) : Dataclass object for NewsArticle
 
     Returns:
@@ -54,13 +53,12 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
     
     return sorted(articles, key=lambda x:x.pub_date, reverse=True)[:5] #Only return top 5
 
-def ingest_xml(cat:str, source:str, logger:logging, NewArticle)->list:
+def ingest_xml(cat:str, source:str, NewArticle)->list:
     """[Outer scraping function to set up request pulls]
 
     Args:
         cat (str): category of site to be searched
         source (str): RSS feed origin
-        logger (logging.logger): logger for Kenny loggin
         NewArticle (dataclass): Custom data object
 
     Returns:
