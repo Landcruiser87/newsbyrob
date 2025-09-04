@@ -11,8 +11,8 @@ from support import log_time
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "DOS"      : ("https://travel.state.gov", travel),
     "USCIS"    : ("https://www.uscis.gov", uscis),
+    "DOS"      : ("https://travel.state.gov", travel),
     "Boundless": ("https://www.boundless.com", boundless),
     "Google"   : ("https://www.news.google.com", g_news),
     "AILA"     : ("https://www.aila.org", aila),    

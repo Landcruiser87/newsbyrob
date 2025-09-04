@@ -49,13 +49,14 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
                     article.id = row.text
                 case "identifier":
                     article.identifier = row.text.strip("\n")
-                    
-            if row.attrs["domain"] == "Threat-Level":
-                article.threat_level = row.text
-            elif row.attrs["domain"] == "Country-Tag":
-                article.country = row.text
-            elif row.attrs["domain"] == "Keyword":
-                article.keyword = row.text
+            if "domain" in row.attrs:
+                match row.attrs["domain"]:
+                    case "Threat-Level":
+                        article.threat_level = row.text
+                    case "Country-Tag":
+                        article.country = row.text
+                    case "Keyword":
+                        article.keyword = row.text
 
         # Assign category
         article.category = cat
