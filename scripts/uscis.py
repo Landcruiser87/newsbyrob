@@ -35,18 +35,19 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
             rname = row.name
             if row == "\n":
                 continue
-            elif rname == "title":
-                article.title = row.text
-            elif rname == "link":
-                article.url = row.text
-            elif rname == "description":
-                article.description = row.text
-            elif rname == "pubDate":
-                article.pub_date = date_convert(row.text)
-            elif rname == "creator":
-                article.creator = row.text
-            elif rname == "guid":
-                article.id = row.text
+            match rname:
+                case "title":
+                    article.title = row.text
+                case "link":
+                    article.url = row.text
+                case "description":
+                    article.description = row.text
+                case "pubDate":
+                    article.pub_date = date_convert(row.text)
+                case "creator":
+                    article.creator = row.text
+                case "guid":
+                    article.id = row.text
         # Assign category
         article.category = cat
         # Assign source

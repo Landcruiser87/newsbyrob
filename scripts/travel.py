@@ -34,21 +34,23 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, logger:logging, New
             rname = row.name
             if row == "\n":
                 continue
-            elif rname == "title":
-                article.title = row.text
-            elif rname == "link":
-                article.url = row.text
-            elif rname == "description":
-                article.description = row.text
-            elif rname == "pubDate":
-                article.pub_date = date_convert(row.text)
-            elif rname == "creator":
-                article.creator = row.text
-            elif rname == "guid":
-                article.id = row.text
-            elif rname == "identifier":
-                article.identifier = row.text.strip("\n")
-            elif row.attrs["domain"] == "Threat-Level":
+            match rname:
+                case "title":
+                    article.title = row.text
+                case "link":
+                    article.url = row.text
+                case "description":
+                    article.description = row.text
+                case "pubDate":
+                    article.pub_date = date_convert(row.text)
+                case "creator":
+                    article.creator = row.text
+                case "guid":
+                    article.id = row.text
+                case "identifier":
+                    article.identifier = row.text.strip("\n")
+                    
+            if row.attrs["domain"] == "Threat-Level":
                 article.threat_level = row.text
             elif row.attrs["domain"] == "Country-Tag":
                 article.country = row.text
