@@ -64,8 +64,10 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, NewArticle)->list:
         article.description = descript
 
         #grab the title
-        article.title = article.description + " - " + article.creator + " - " + child.find("a").text
-        
+        if child.find("a"):
+            article.title = article.description + " - " + article.creator + " - " + child.find("a").text
+        else:
+            article.title = ""
         #grab the url
         article.link = child.find("a").get("href", default_val)
         
