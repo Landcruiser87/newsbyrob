@@ -1,6 +1,9 @@
+import os
+import time
+import json
+import shutil
 import datetime
 import numpy as np
-import time
 import json
 from os.path import exists
 import logging
@@ -127,8 +130,8 @@ def log_time(fn):
         return out
     return inner
 
-################################# Logging Funcs ####################################
-
+################################# Logger functions ####################################
+#FUNCTION Logging Futures
 def get_file_handler(log_dir:Path)->logging.FileHandler:
     """Assigns the saved file logger format and location to be saved
 
@@ -138,14 +141,12 @@ def get_file_handler(log_dir:Path)->logging.FileHandler:
     Returns:
         filehandler(handler): This will handle the logger's format and file management
     """	
-    LOG_FORMAT = "%(asctime)s|%(levelname)-8s|%(lineno)-3d|%(funcName)-14s|%(message)s|" 
-    current_date = time.strftime("%m-%d-%Y_%H-%M-%S")
-    log_file = log_dir / f"{current_date}.log"
-    file_handler = logging.FileHandler(log_file)
-    file_handler.setFormatter(logging.Formatter(LOG_FORMAT, "%m-%d-%Y %H:%M:%S"))
+    log_format = "%(asctime)s|%(levelname)-8s|%(lineno)-3d|%(funcName)-14s|%(message)s|" 
+    file_handler = logging.FileHandler(log_dir)
+    file_handler.setFormatter(logging.Formatter(log_format, "%m-%d-%Y %H:%M:%S"))
     return file_handler
 
-def get_rich_handler(console:Console):
+def get_rich_handler(console:Console)-> RichHandler:
     """Assigns the rich format that prints out to your terminal
 
     Args:
@@ -154,12 +155,12 @@ def get_rich_handler(console:Console):
     Returns:
         rh(RichHandler): This will format your terminal output
     """
-    FORMAT_RICH = "|%(funcName)-14s|%(message)s "
-    rh = RichHandler(level=logging.DEBUG, console=console)
-    rh.setFormatter(logging.Formatter(FORMAT_RICH))
+    rich_format = "|%(funcName)-14s|%(message)s "
+    rh = RichHandler(console=console)
+    rh.setFormatter(logging.Formatter(rich_format))
     return rh
 
-def get_logger(log_dir:Path, console:Console)->logging.Logger:
+def get_logger(console:Console, log_dir:Path)->logging.Logger:
     """Loads logger instance.  When given a path and access to the terminal output.  The logger will save a log of all records, as well as print it out to your terminal. Propogate set to False assigns all captured log messages to both handlers.
 
     Args:
@@ -169,18 +170,49 @@ def get_logger(log_dir:Path, console:Console)->logging.Logger:
     Returns:
         logger: Returns custom logger object.  Info level reporting with a file handler and rich handler to properly terminal print
     """	
-    logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
-    logger.addHandler(get_file_handler(log_dir)) 
-    logger.addHandler(get_rich_handler(console))  
+    #Load logger and set basic level
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+    #Load file handler for how to format the log file.
+    file_handler = get_file_handler(log_dir)
+    file_handler.setLevel(logging.INFO)
+    logger.addHandler(file_handler)
+    rich_handler = get_rich_handler(console)
+    rich_handler.setLevel(logging.INFO)
+    logger.addHandler(rich_handler)
     logger.propagate = False
     return logger
 
-################################# Global Vars ####################################
+#FUNCTION get time
+def get_time():
+    """Function for getting current time
 
-console = Console(color_system="auto")
-log_path = PurePath(Path.cwd(), Path("./data/logs"))
-logger = get_logger(log_path, console=console)
+    Returns:
+        t_adjusted (str): String of current time
+    """
+    current_t_s = datetime.datetime.now().strftime("%m-%d-%Y-%H-%M-%S")
+    current_t = datetime.datetime.strptime(current_t_s, "%m-%d-%Y-%H-%M-%S")
+    return current_t
+
+def move_log():
+    ts = datetime.datetime.strptime(start_time, "%m-%d-%Y_%H-%M-%S")
+    year = ts.year
+    month = ts.month
+    destination_path = PurePath(
+        Path(f"./data/logs"),
+        Path(f"{year}"),
+        Path(f"{month}")
+    )
+    if not exists(destination_path):
+        os.makedirs(destination_path)
+    shutil.move(log_dir, destination_path)
+
+
+################################# Global Vars ####################################
+start_time = get_time().strftime("%m-%d-%Y_%H-%M-%S")
+console = Console(color_system="auto", stderr=True)
+log_dir = PurePath(Path.cwd(), Path(f'./data/logs/{start_time}.log'))
+logger = get_logger(log_dir=log_dir, console=console)
 
 #Additional USER agents
 USER_AGENTS = [

@@ -1,13 +1,14 @@
 #Import libraries
 import numpy as np
 import datetime
+import logging
 from rich.console import Console
 from rich.progress import Progress
 from dataclasses import dataclass
 from os.path import exists
 
 import uscis, travel, ice, g_news, aila, boundless, support #cbp,
-from support import log_time, logger, console
+from support import log_time, logger, console, move_log
 
 ################################# Global Variable Setup ####################################
 SITES = {
@@ -202,9 +203,9 @@ def main():
         # If new articles are found, save the data to the json file, 
         # format the list of dataclassses to a url 
         # Send gmail alerting of new articles
-        support.save_data(jsondata)
+        # support.save_data(jsondata)
         links_html = support.urlformat(newstories)
-        support.send_email_update(links_html)
+        # support.send_email_update(links_html)
         logger.warning(f"{len(newstories)} new articles found.  Email sent")
 
     else:
@@ -214,6 +215,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+    logging.shutdown()
+    move_log()
 
 #Certain enterprise accounts will allow less secure passwords, but disabled since 2022 way around is here.
 #https://stackoverflow.com/questions/73365098/how-to-turn-on-less-secure-app-access-on-google
