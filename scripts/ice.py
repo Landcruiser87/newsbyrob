@@ -37,7 +37,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, NewArticle)->list:
                 case "title":
                     article.title = row.text
                 case "link":
-                    article.url = row.text
+                    article.link = row.text
                 case "description":
                     article.description = row.text
                 case "pubDate":

@@ -222,3 +222,5 @@ if __name__ == "__main__":
 #https://stackoverflow.com/questions/73365098/how-to-turn-on-less-secure-app-access-on-google
 #generate an app password and use that as your login. 
 #Needs 2fa enabled to work
+
+#TODO - Links on USCIS and ICE aren't functioning.  Or some of the articles don't have links?  maybe
