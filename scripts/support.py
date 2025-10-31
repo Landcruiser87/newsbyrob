@@ -301,7 +301,6 @@ def add_spin_subt(prog:Progress, msg:str, howmanysleeps:int):
     #Hide secondary progress bar
     prog.update(liljob, visible=False)
 
-
 ################################# Date/Load/Save Funcs ####################################
 
 #FUNCTION Save Data

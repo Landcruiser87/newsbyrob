@@ -2,7 +2,6 @@
 import numpy as np
 import datetime
 import logging
-from rich.console import Console
 from rich.progress import Progress
 from dataclasses import dataclass
 from os.path import exists
