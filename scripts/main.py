@@ -199,12 +199,11 @@ def main():
             parse_feed(site, info, prog, task)
 
     if newstories:
-        # If new articles are found, save the data to the json file, 
-        # format the list of dataclassses to a url, send gmail alerting of new articles
+        # If new articles are found, save the data to the json file, format the list of dataclassses to a url, send gmail alerting of new articles
+        
         # support.save_data(jsondata)
         # links_html = support.urlformat(newstories)
         # support.send_email_update(links_html)
-        
         logger.warning(f"{len(newstories)} new articles found.  Email sent")
 
     else:
