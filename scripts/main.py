@@ -33,20 +33,20 @@ CATEGORIES = {
 #Define dataclass container
 @dataclass
 class NewArticle():
-    id          : str = None
-    source      : str = None
-    creator     : str = None
     author      : str = None
-    title       : str = None
-    description : str = None
-    link        : str = None
     category    : str = None
+    country     : str = ""
+    creator     : str = None
+    description : str = None
+    id          : str = None
+    identifier  : str = ""
+    keyword     : str = ""
+    link        : str = None
     pub_date    : datetime.datetime = ""
     pull_date   : datetime.datetime = ""
-    identifier  : str = ""
+    source      : str = None
     threat_level: str = ""
-    country     : str = ""
-    keyword     : str = ""
+    title       : str = None
 
 ################################# Main Funcs ####################################
 #FUNCTION Add Data
