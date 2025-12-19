@@ -1,0 +1,23 @@
+[project]
+name = "immigration_news"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "landcruiser87",email = "andyheroy@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4 (>=4.14.3,<5.0.0)",
+    "lxml (>=6.0.2,<7.0.0)",
+    "numpy (>=2.3.5,<3.0.0)",
+    "playwright (>=1.57.0,<2.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "rich (>=14.2.0,<15.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
