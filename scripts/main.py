@@ -218,4 +218,4 @@ if __name__ == "__main__":
 #Certain enterprise accounts will allow less secure passwords, but disabled since 2022 way around is here.
 #https://stackoverflow.com/questions/73365098/how-to-turn-on-less-secure-app-access-on-google
 #generate an app password and use that as your login. 
-#Needs 2fa enabled to work
+#Needs 2fa enabled to work 
