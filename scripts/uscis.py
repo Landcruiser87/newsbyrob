@@ -1,6 +1,7 @@
 import time
 import datetime
 import requests
+import curl_cffi as cf
 from support import logger, USER_AGENTS, chrome_version
 from bs4 import BeautifulSoup
 
@@ -90,8 +91,8 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
         'Origin':source,
     }
 
-    response = requests.get(url, headers=headers)
-
+    # response = requests.get(url, headers=headers)
+    response = cf.requests(url, headers=headers, impersonate="chrome", timeout=5)
     #Just in case we piss someone off
     if response.status_code != 200:
         # If there's an error, log it and return no data for that site
