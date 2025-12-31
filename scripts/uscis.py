@@ -76,8 +76,10 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
     new_articles = []
     url = feeds.get(cat)
     headers = {
-        'Content-Type': 'text/html,application/xhtml+xml,application/xml',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'Accept-Language': 'en-US,en;q=0.9',
         'Connection': 'keep-alive',
+        'Content-Type': 'text/html,application/xhtml+xml,application/xml',
         'Referer':'https://www.google.com/',
         # 'referer': url,
         'Sec-Ch-Ua': f'"Not)A;Brand";v="99", "Google Chrome";v="{chrome_version}", "Chromium";v="{chrome_version}"',
