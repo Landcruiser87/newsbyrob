@@ -1,7 +1,7 @@
 import time
 import datetime
 import requests
-from support import logger
+from support import logger, USER_AGENTS, chrome_version
 from bs4 import BeautifulSoup
 
 def date_convert(time_str:str)->datetime:
@@ -76,14 +76,16 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
     new_articles = []
     url = feeds.get(cat)
     headers = {
+        'Content-Type': 'text/html,application/xhtml+xml,application/xml',
+        'Connection': 'keep-alive',
+        'Referer':'https://www.google.com/',
+        # 'referer': url,
+        'Sec-Ch-Ua': f'"Not)A;Brand";v="99", "Google Chrome";v="{chrome_version}", "Chromium";v="{chrome_version}"',
+        'Sec-Ch-Ua-Mobile': '?0',
+        'Sec-Ch-Ua-Platform': '"Windows"',
         'Upgrade-Insecure-Requests': '1',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
-        'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
-        'sec-ch-ua-mobile': '?1',
-        'sec-ch-ua-platform': '"Android"',
-        'referer': url,
-        'origin':source,
-        'Content-Type': 'text/html,application/xhtml+xml,application/xml'
+        'User-Agent': USER_AGENTS[9],
+        'Origin':source,
     }
 
     response = requests.get(url, headers=headers)
