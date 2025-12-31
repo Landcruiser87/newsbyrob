@@ -210,7 +210,7 @@ def move_log():
 
 ################################# Global Vars ####################################
 start_time = get_time().strftime("%m-%d-%Y_%H-%M-%S")
-console = Console(color_system="auto", stderr=True)
+console = Console(color_system="auto", stderr=True, width=200)
 log_dir = PurePath(Path.cwd(), Path(f'./data/logs/{start_time}.log'))
 logger = get_logger(log_dir=log_dir, console=console)
 chrome_version = np.random.randint(130, 142)
