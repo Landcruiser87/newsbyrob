@@ -94,7 +94,7 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
     }
     # response = requests.get(url, headers=headers)
     with cf.requests.Session(impersonate="chrome") as session:
-        response = session.get(url=url,headers=headers, impersonate="chrome", timeout=5)
+        response = session.get(url=url,headers=headers, impersonate="chrome", timeout=10)
         #Just in case we piss someone off
         if response.status_code != 200:
             # If there's an error, log it and return no data for that site
