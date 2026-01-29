@@ -92,16 +92,19 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
         'User-Agent': USER_AGENTS[9],
         'Origin':source,
     }
-    # response = requests.get(url, headers=headers)
-    with cf.requests.Session(impersonate="chrome") as session:
-        response = session.get(url=url,headers=headers, impersonate="chrome", timeout=10)
-        #Just in case we piss someone off
-        if response.status_code != 200:
-            # If there's an error, log it and return no data for that site
-            logger.warning(f'Status code: {response.status_code}')
-            logger.warning(f'Reason: {response.reason}')
-            return None
-
+    try:
+        with cf.requests.Session(impersonate="chrome") as session:
+            response = session.get(url=url,headers=headers, impersonate="chrome", timeout=10)
+            #Just in case we piss someone off
+            if response.status_code != 200:
+                # If there's an error, log it and return no data for that site
+                logger.warning(f'Status code: {response.status_code}')
+                logger.warning(f'Reason: {response.reason}')
+                return None
+    except Exception as e:            
+        logger.warning(f"Error {e}")
+        return None
+    
     #Parse the XML
     bs4ob = BeautifulSoup(response.text, features="xml")
 

@@ -121,17 +121,18 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
         'origin':source,
         'Content-Type': 'text/html,application/xhtml+xml,application/xml'
     }
-    if url:
+    try:
         response = requests.get(url, headers=headers)
-    else:
-        raise ValueError("Your URL isn't being loaded correctly")
     
-    if response.status_code != 200:
-        logger.warning(f'Status code: {response.status_code}')
-        logger.warning(f'Reason: {response.reason}')
-        logger.warning(f"Daily news not up yet for {source}.  Check again later")
+        if response.status_code != 200:
+            logger.warning(f'Status code: {response.status_code}')
+            logger.warning(f'Reason: {response.reason}')
+            logger.warning(f"Daily news not up yet for {source}.  Check again later")
+            return None
+    except Exception as e:            
+        logger.warning(f"Error {e}")
         return None
-
+        
     #Parse the XML
     bs4ob = BeautifulSoup(response.text, features="lxml")
 

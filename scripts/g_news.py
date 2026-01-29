@@ -68,39 +68,41 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
         "US Immigration Changes":"https://news.google.com/rss/search?q=US+immigration+changes",
         "USCIS Updates"         :"https://news.google.com/rss/search?q=USCIS+updates",        
     }
-    new_articles = []
-    url = feeds.get(cat)
-    headers = {
-        'Upgrade-Insecure-Requests': '1',
-        'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
-        'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
-        'sec-ch-ua-mobile': '?1',
-        'sec-ch-ua-platform': '"Android"',
-        'referer': url,
-        'origin':source,
-        'Content-Type': 'text/html,application/xhtml+xml,application/xml'
-    }
-    if url:
-        response = requests.get(url, headers=headers)
-    else:
-        raise ValueError("Your URL isn't being loaded correctly")
-    
-    #Just in case we piss someone off
-    if response.status_code != 200:
-        # If there's an error, log it and return no data for that site
-        logger.warning(f'Status code: {response.status_code}')
-        logger.warning(f'Reason: {response.reason}')
-        return None
-
-    #Parse the XML
-    bs4ob = BeautifulSoup(response.text, features="xml")
-
-    #Find all records (item CSS)
-    results = bs4ob.find_all("item")
-    if results:
-        new_articles = get_articles(results, cat, source, NewArticle)
-        logger.info(f'{len(new_articles)} articles returned from {source} searching {cat}')
-        return new_articles
+    for feed in feeds.keys():
+        new_articles = []
+        url = feeds.get(feed)
+        headers = {
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36',
+            'sec-ch-ua': '"Not)A;Brand";v="99", "Google Chrome";v="122", "Chromium";v="122"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'referer': url,
+            'origin':source,
+            'Content-Type': 'text/html,application/xhtml+xml,application/xml'
+        }
+        try:
+            response = requests.get(url, headers=headers)
+            #Just in case we piss someone off
+            if response.status_code != 200:
+                # If there's an error, log it and return no data for that site
+                logger.warning(f'Status code: {response.status_code}')
+                logger.warning(f'Reason: {response.reason}')
+                return None
             
-    else:
-        logger.warning(f"No articles returned on {source} / {cat}.  Moving to next feed")
+        except Exception as e:            
+            logger.warning(f"Error {e}")
+            return None
+            
+        #Parse the XML
+        bs4ob = BeautifulSoup(response.text, features="xml")
+
+        #Find all records (item CSS)
+        results = bs4ob.find_all("item")
+        if results:
+            new_articles = get_articles(results, cat, source, NewArticle)
+            logger.info(f'{len(new_articles)} articles returned from {source} searching {cat}')
+            return new_articles
+                
+        else:
+            logger.warning(f"No articles returned on {source} / {cat}.  Moving to next feed")

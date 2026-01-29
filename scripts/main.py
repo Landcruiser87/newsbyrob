@@ -172,7 +172,7 @@ def parse_feed(site:str, siteinfo:tuple, prog:Progress, jobtask:int):
                     add_data(data, site, cat)
                     del data
             else:
-                logger.info(f"No new data found on {site}")
+                logger.info(f"No data found on {site}")
 
         else:
             logger.warning(f"{site} is not in validated search list")

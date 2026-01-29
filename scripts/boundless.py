@@ -135,9 +135,12 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
     }
     new_articles = []
     url = feeds.get(cat)
-    if url:
+    try:
         response = get_html(url)
-
+    except Exception as e:            
+        logger.warning(f"Error {e}")
+        return None
+    
     #Parse the XML
     if response:
         bs4ob = BeautifulSoup(response, features="lxml")

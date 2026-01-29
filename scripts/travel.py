@@ -92,15 +92,20 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
         'Content-Type': 'text/html,application/xhtml+xml,application/xml'
     }
 
-    response = requests.get(url, headers=headers)
+    try:
+        response = requests.get(url, headers=headers)
 
-    #Just in case we piss someone off
-    if response.status_code != 200:
-        # If there's an error, log it and return no data for that site
-        logger.warning(f'Status code: {response.status_code}')
-        logger.warning(f'Reason: {response.reason}')
+        #Just in case we piss someone off
+        if response.status_code != 200:
+            # If there's an error, log it and return no data for that site
+            logger.warning(f'Status code: {response.status_code}')
+            logger.warning(f'Reason: {response.reason}')
+            return None
+        
+    except Exception as e:            
+        logger.warning(f"Error {e}")
         return None
-
+    
     #Parse the XML
     bs4ob = BeautifulSoup(response.text, features="xml")
 
