@@ -90,7 +90,7 @@ $ python manage.py createsuperuser
 The original script is still available under `scripts/main.py`. You can run it via `python -m scripts.main` if you need the old progress bar behavior, but picture it as another way to feed `data/im_updates.json`. The source of truth is now the SQLite-backed Django web app.
 
 ## Running tests
-Run Django’s test suite (empty for now, but keep it handy for future coverage) with:
+Run Django’s test suite with:
 
 ```bash
 $ python manage.py test newsfeed
