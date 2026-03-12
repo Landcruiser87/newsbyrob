@@ -11,12 +11,11 @@ from support import log_time, logger, console, move_log
 
 ################################# Global Variable Setup ####################################
 SITES = {
-    "AILA"     : ("https://www.aila.org", aila),    
     "USCIS"    : ("https://www.uscis.gov", uscis),
     "DOS"      : ("https://travel.state.gov", travel),
     "Boundless": ("https://www.boundless.com", boundless),
     "Google"   : ("https://www.news.google.com", g_news),
-    
+    "AILA"     : ("https://www.aila.org", aila),    
     "ICE"      : ("https://www.ice.gov", ice),
     # "CBP"    : ("https://www.cbp.gov", cbp),  #Sunsetting CBP 3-7-25.  They basically only report finding drugs at the border
 }
@@ -201,9 +200,9 @@ def main():
 
     if newstories:
         # If new articles are found, save the data to the json file, format the list of dataclassses to a url, send gmail alerting of new articles
-        support.save_data(jsondata)
+        # support.save_data(jsondata)
         links_html = support.urlformat(newstories)
-        support.send_email_update(links_html)
+        # support.send_email_update(links_html)
         logger.warning(f"{len(newstories)} new articles found.  Email sent")
 
     else:
