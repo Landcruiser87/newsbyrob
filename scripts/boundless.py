@@ -30,7 +30,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, NewArticle)->list:
     #Set the outer loop over each card returned. 
     for child in result:
         article = NewArticle()
-        article.id = child.find("a").get("data-wf-element-id", default_val)
+        article.id = child.find("a").get("data-wf-cms-context", default_val)
         #If no ID found, move along!
         if not article.id: 
             logger.warning("Article missing ID")
