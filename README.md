@@ -8,7 +8,7 @@
 </p>
 
 ## Purpose
-A dear friend of my fiancee, Rob, used to circulate and currate his own email
+A dear friend of my wife, Rob Gard, used to circulate and currate his own email
 listings of different and interesting changes in US immigration law. Sadly, he
 recently passed away and as a present to my fiancee I wanted to recreate that
 information exchange so that she could both remember/honor him and stay up to
