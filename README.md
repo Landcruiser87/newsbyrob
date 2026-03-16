@@ -10,7 +10,7 @@
 ## Purpose
 A dear friend of my wife, Rob Gard, used to circulate and currate his own email
 listings of different and interesting changes in US immigration law. Sadly, he
-recently passed away and as a present to my fiancee I wanted to recreate that
+recently passed away and as a present to my wife, I wanted to recreate that
 information exchange so that she could both remember/honor him and stay up to
 date on any changes that may influence her work.  In general, it is difficult to
 track these changes as they're spread across 7 different sites and have
