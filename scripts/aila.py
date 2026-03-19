@@ -36,7 +36,9 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, NewArticle)->list:
         #Description not available.  Putting regional info here
         if child.name == "h2" or child.name == "h3" or child.name == "h4":
             descript = child.find("em").text
-
+            continue
+            #this is there to skip to the next record because this is just a header dumb dumb
+            
         if not child.name or child.text == "\xa0":
             continue
 
