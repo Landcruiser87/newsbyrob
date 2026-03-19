@@ -36,7 +36,7 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, NewArticle)->list:
         #Description not available.  Putting regional info here
         if child.name == "h2" or child.name == "h3" or child.name == "h4":
             descript = child.find("em").text
-            continue
+
         if not child.name or child.text == "\xa0":
             continue
 
@@ -68,7 +68,8 @@ def get_articles(result:BeautifulSoup, cat:str, source:str, NewArticle)->list:
             article.title = article.description + " - " + article.creator + " - " + child.find("a").text
         else:
             logger.warning("No title found on article")
-            continue
+            article.title = None
+            
         #grab the url
         article.link = child.find("a").get("href", default_val)
         
@@ -136,7 +137,7 @@ def ingest_xml(cat:str, source:str, NewArticle)->list:
     #Parse the XML
     bs4ob = BeautifulSoup(response.text, features="lxml")
 
-    #Find all records (item CSS)
+    #Find all records
     results = bs4ob.find("div", class_="typography text rte")
     if results:
         new_articles = get_articles(results, cat, source, NewArticle)

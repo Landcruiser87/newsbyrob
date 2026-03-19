@@ -14,7 +14,7 @@ def get_articles(results:BeautifulSoup, cat:str, source:str, NewArticle)->list:
     """[Ingest XML of summary page for articles info]
 
     Args:
-        result (BeautifulSoup object): html of apartments page
+        result (BeautifulSoup object): html 
         cat (str): category being searched
         source (str): source website
         NewArticle (dataclass) : Dataclass object for NewsArticle
