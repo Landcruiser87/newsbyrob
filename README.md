@@ -8,7 +8,7 @@
 </p>
 
 ## Purpose
-A dear friend of my wife, Rob Gard, used to circulate and currate his own email
+A dear friend of my wife, Rob Gard, circulated and currated his own email
 listings of different and interesting changes in US immigration law. Sadly, he
 recently passed away and as a present to my wife, I wanted to recreate that
 information exchange so that she could both remember/honor him and stay up to
@@ -104,3 +104,7 @@ Enter the following on the first 3 lines separated by a `colon`
 
 - Sunsetted sites
   - [CBP](https://www.cbp.gov/rss)
+
+## TODO 
+  1. [ ] Refactor in the style of https://github.com/kyungminlee/events-aggregate
+  2. [ ] Deploy to github actions
