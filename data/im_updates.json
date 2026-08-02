@@ -14,6 +14,21 @@
     "country": "OD",
     "keyword": "advisory"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "BB",
+    "creator": null,
+    "description": "Exercise normal precautionSummary not available",
+    "identifier": "BB,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
+    "pub_date": "08-02-2026_00-00-00",
+    "pull_date": "08-02-2026_15-27-58",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Barbados - Level 1: Exercise Normal Precautions"
+  },
   "CBMisAFBVV95cUxNOTdkRTBSSkNBUmswZUVhQ201RDJaYkVmUGtha054MVRkYm00M2FCQlNEWTFwOWFJR0VTM1BmaXZzRGhZUGNETXlZc0ZzdG1BSkFXZWJXTWI0WjJ1TW9hY2s1UXdMZ3U0MW1FZXlQeHF3TFBKYXJjWkROaW9JelU4VjQyMzlsUFhyRE5vTm5YZzdoLXZ5akNHcW9jUXJlSk8yRjBKNzFfYy1xc1pHUVZtNQ": {
     "author": null,
     "category": "US Immigration Changes",
@@ -13530,21 +13545,6 @@
     "pull_date": "04-12-2026_13-11-39",
     "source": "https://www.news.google.com",
     "title": "ICE Quietly Changes I-9 Offenses, Raising Employer Fine Risk - Law360"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "BB",
-    "creator": null,
-    "description": "Exercise normal precaution<p>in <b>Barbados</b>.</p>\n<p>Barbados is generally a safe destination for travelers.</p>\n<ul>\n<li>Petty crime is common, especially in popular tourist locations. Stay aware of your surroundings.</li>\n<li>Most crimes against foreigners are crimes of opportunity, like purse snatching and pickpocketing.</li>\n</ul>\n<p>Review our <a href='/en/international-travel/travel-advisories/barbados.html#requirements'>travel guidance</a> for Barbados to learn how to prepare for a safe trip.</p>",
-    "identifier": "BB,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
-    "pub_date": "04-10-2026_00-00-00",
-    "pull_date": "07-31-2026_15-17-03",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Barbados - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bermuda-travel-advisory.html": {
     "author": null,
