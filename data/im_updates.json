@@ -1,4 +1,114 @@
 {
+  "23aeb49d-e8e0-40e0-b0d0-8f2183ddc40f": {
+    "author": null,
+    "category": "Alerts",
+    "creator": "USCIS",
+    "description": "On Sept. 15, 2026, U.S. Citizenship and Immigration Services will publish revised editions of&nbsp;Form I-539, Application to Extend/Change Nonimmigrant Status, and Form I-765, Application for Employment Authorization (edition date for both: 09/15/26). The forms have been revised to align with the recently published&nbsp;Establishing a Fixed Time Period of Admission and an Extension of Stay Procedure for Nonimmigrant Academic Students, Exchange Visitors, and Representatives of Foreign Information Media&nbsp;final rule.",
+    "link": "https://www.uscis.gov/newsroom/alerts/uscis-to-publish-new-editions-of-form-i-539-and-form-i-765-older-editions-will-be-rejected-starting",
+    "pub_date": "08-14-2026_09-08-30",
+    "pull_date": "08-14-2026_15-19-10",
+    "source": "https://www.uscis.gov",
+    "title": "USCIS to Publish New Editions of Form I-539 and Form I-765; Older Editions Will Be Rejected Starting Sept. 15"
+  },
+  "https://www.politico.com/news/2026/08/14/trump-administration-reducing-immigration-pathways-children-01036734": {
+    "author": "Eric Bazail-Eimil",
+    "category": "AILA Daily News Update",
+    "creator": "Politico",
+    "description": "National",
+    "link": "https://www.politico.com/news/2026/08/14/trump-administration-reducing-immigration-pathways-children-01036734",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "National - Politico -  The Trump administration is reducing legal pathways for immigrant kids to stay in the US"
+  },
+  "https://apnews.com/article/military-families-ice-soldier-jaramillo-8fd49a323642f278add1c9ce39d131c3": {
+    "author": "Jack Brook and Safiyah Riddle",
+    "category": "AILA Daily News Update",
+    "creator": "Associated Press",
+    "description": "National",
+    "link": "https://apnews.com/article/military-families-ice-soldier-jaramillo-8fd49a323642f278add1c9ce39d131c3",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "National - Associated Press - Wife of US soldier is removed from deportation flight and released from federal immigration custody"
+  },
+  "https://www.newsweek.com/daca-advance-parole-green-card-update-immigration-12319674": {
+    "author": "Dan Gooding",
+    "category": "AILA Daily News Update",
+    "creator": "Newsweek ",
+    "description": "National",
+    "link": "https://www.newsweek.com/daca-advance-parole-green-card-update-immigration-12319674",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "National - Newsweek  - Green Card Update: Major Immigration Change in DACA Travel Protections"
+  },
+  "https://thehill.com/opinion/immigration/6026416-immigration-shocks-labor-force/": {
+    "author": "Harry J. Holzer",
+    "category": "AILA Daily News Update",
+    "creator": "The Hill",
+    "description": "National",
+    "link": "https://thehill.com/opinion/immigration/6026416-immigration-shocks-labor-force/",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "National - The Hill - Current immigration policy is hurting the workforce and economy"
+  },
+  "https://www.wgcu.org/2026-08-14/grandmothers-landscapers-even-kids-swept-into-states-shadowy-immigration-database": {
+    "author": "Alice Herman, Michael Barfield, Youn-Joo Park",
+    "category": "AILA Daily News Update",
+    "creator": "WGCU ",
+    "description": "Local",
+    "link": "https://www.wgcu.org/2026-08-14/grandmothers-landscapers-even-kids-swept-into-states-shadowy-immigration-database",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "Local - WGCU  - Grandmothers, landscapers, even kids, swept into Florida\u2019s shadowy immigration database"
+  },
+  "https://spectrumlocalnews.com/ca/california/politics/2026/08/13/advocacy-groups-lawyers-call-for-restrictions-on-warrantless-immigration-arrests-in-socal-": {
+    "author": "Maryssa Rillo",
+    "category": "AILA Daily News Update",
+    "creator": "Spectrum News ",
+    "description": "Local",
+    "link": "https://spectrumlocalnews.com/ca/california/politics/2026/08/13/advocacy-groups-lawyers-call-for-restrictions-on-warrantless-immigration-arrests-in-socal-",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "Local - Spectrum News  - Advocacy groups call for restrictions on warrantless immigration arrests in SoCal"
+  },
+  "https://abc7.com/post/west-hollywood-man-detained-during-immigration-check/19676168/": {
+    "author": "Liz Nag",
+    "category": "AILA Daily News Update",
+    "creator": "ABC 7",
+    "description": "Local",
+    "link": "https://abc7.com/post/west-hollywood-man-detained-during-immigration-check/19676168/",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "Local - ABC 7 -  West Hollywood man detained by ICE during immigration check-in"
+  },
+  "https://www.npr.org/2026/08/14/nx-s1-5911838/ice-immigration-enforcement-local-police": {
+    "author": "Jaclyn Diaz, Marisa Pe\u00f1aloza",
+    "category": "AILA Daily News Update",
+    "creator": "NPR",
+    "description": "Local",
+    "link": "https://www.npr.org/2026/08/14/nx-s1-5911838/ice-immigration-enforcement-local-police",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "Local - NPR -  ICE uses controversial program to boost deportations. Here's how it works in 1 county"
+  },
+  "https://www.ms.now/news/trump-immigration-crackdown-killing-small-business-ice": {
+    "author": "Jillian Frankel and Jack Pedigo",
+    "category": "AILA Daily News Update",
+    "creator": "MS Now ",
+    "description": "Local",
+    "link": "https://www.ms.now/news/trump-immigration-crackdown-killing-small-business-ice",
+    "pub_date": "08-14-2026_15-19-51",
+    "pull_date": "08-14-2026_15-19-51",
+    "source": "https://www.aila.org",
+    "title": "Local - MS Now  - Trump\u2019s immigration crackdown is killing small business as patrons avoid ICE deployments"
+  },
   "CBMixgFBVV95cUxOV29CMURsVFYwMDJiVFVqdEo1emlIRTk0UzA2RXpNck9FRWVXUDVPREFrLURfendrOUVRVzdpS1lmdnNSMy1LdDdWN3BGX2poaEduZHRTcmFYSDZVY1dwT21XUFFZT0JVUWZrLWZFOGdLYVNjMWVnTGZGazJYUzZIYXVudnVUWEFnMlB3VGhpdFRia3pFNGlDbjJ6U1NxZnlVZVJzVGdMeExYakxNanhyMGM4bWEtVHJVN1AzSS1PbG1BUXoyaVE": {
     "author": null,
     "category": "US Immigration Changes",
@@ -86,6 +196,17 @@
     "pull_date": "08-13-2026_15-22-17",
     "source": "https://www.aila.org",
     "title": "Local - Newsweek - ICE Detains Dad in US for 26 Years as Neighbors Rally in Support"
+  },
+  "CBMitAFBVV95cUxNeklYOHlNQXVmdjIxbzVBWnFHYzZHNnc0UEcydG45bkhCenBrVldTZzdYOG1tR1lTdWthbjgtQWFfWTdIWnU2TXczY2U5NmlxVjkwb1Z1czhTVkF3cDJFT0VaM0pMZzk1bW9IT0k5a2ZBZzNKd1E5ZUl4RmhiQXJFd1F1QmR0RjdRM3VkcGJvejhWaXpaeHdKX25obHVPRTFqc0RGT0pNTHFTZ1ZnWW1nYjRORXg": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxNeklYOHlNQXVmdjIxbzVBWnFHYzZHNnc0UEcydG45bkhCenBrVldTZzdYOG1tR1lTdWthbjgtQWFfWTdIWnU2TXczY2U5NmlxVjkwb1Z1czhTVkF3cDJFT0VaM0pMZzk1bW9IT0k5a2ZBZzNKd1E5ZUl4RmhiQXJFd1F1QmR0RjdRM3VkcGJvejhWaXpaeHdKX25obHVPRTFqc0RGT0pNTHFTZ1ZnWW1nYjRORXg?oc=5\" target=\"_blank\">Mamdani, Hochul, James Oppose Changes to Federal Immigration Funding</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BKReader</font>",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeklYOHlNQXVmdjIxbzVBWnFHYzZHNnc0UEcydG45bkhCenBrVldTZzdYOG1tR1lTdWthbjgtQWFfWTdIWnU2TXczY2U5NmlxVjkwb1Z1czhTVkF3cDJFT0VaM0pMZzk1bW9IT0k5a2ZBZzNKd1E5ZUl4RmhiQXJFd1F1QmR0RjdRM3VkcGJvejhWaXpaeHdKX25obHVPRTFqc0RGT0pNTHFTZ1ZnWW1nYjRORXg?oc=5",
+    "pub_date": "08-13-2026_15-30-00",
+    "pull_date": "08-14-2026_15-19-42",
+    "source": "https://www.news.google.com",
+    "title": "Mamdani, Hochul, James Oppose Changes to Federal Immigration Funding - BKReader"
   },
   "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2ftfquwQdWOi8%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,YIz8zFejwXpboWx68rH_lyVVc1WQD2AI4yA2ZtjLWFuAj--pPmhYkrfdTBMnSsHNROPErsHrRcZ932jRqAEAEJ1Bs3-RJD8-eJVz5EcCrGhfVOv9u6RE&typo=1": {
     "author": "Jonathan Stempel",
@@ -1939,6 +2060,21 @@
     "source": "https://travel.state.gov",
     "threat_level": "Level 2: Exercise Increased Caution",
     "title": "Laos - Level 2: Exercise Increased Caution"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ury.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "UR",
+    "creator": null,
+    "description": "Exercise increased caution<p>in <b>Uruguay </b>due to <b>crime</b>.</p>\n<p><b>Exercise increased caution</b> in <b>Uruguay </b>due to <b>crime</b>.</p>\n<p>Crime is most common in these departments:</p>\n<ul>\n<li>Montevideo</li>\n<li>Canelones</li>\n<li>Maldonado</li>\n<li>Rivera</li>\n</ul>\n<p>Violent crime occurs across the country. Crimes include homicide, armed robbery, carjacking and theft. These crimes can happen at any time and have affected U.S. citizens.</p>\n<p>Criminals often travel in pairs on motorcycles. They may approach victims with a weapon and demand personal belongings. Armed criminals also target grocery stores, restaurants, financial centers, and small businesses. Sometimes innocent bystanders become victims.&nbsp;<span style='white-space: initial;'>Review our </span><a href='/en/international-travel/travel-advisories/uruguay.html#requirements' title='Travel Guidance for Uruguay'>Travel Guidance for Uruguay</a><span style='white-space: initial;'> to learn how to prepare for a safe trip.</span></p>",
+    "identifier": "UR,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ury.html",
+    "pub_date": "07-28-2026_00-00-00",
+    "pull_date": "08-14-2026_15-19-20",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Uruguay - Level 2: Exercise Increased Caution"
   },
   "6cb32b1f-d5c7-4442-8669-dcc45acc03b1": {
     "author": null,
@@ -3969,6 +4105,21 @@
     "threat_level": "Level 2: Exercise Increased Caution",
     "title": "Eswatini - Level 2: Exercise Increased Caution"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lca.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "LC",
+    "creator": null,
+    "description": "Exercise increased caution<p>\u00c2\u00a0in <b>Saint Lucia</b> due to risk of <b>crime</b>.</p>\n<p>Violent crime can occur anywhere in Saint Lucia. U.S. citizens and other foreigners in Saint Lucia have been victims of armed robbery, assault, burglary, and rape.&nbsp;<span style='font-size: 18.24px; white-space: initial;'>In some cases, U.S. citizens have been killed.</span></p>\n<h5><b>Crime</b></h5>\n<ul>\n<li>Guests at tourist resorts have been victims of violent crimes.</li>\n<li>Police response times are not as fast as in the United States.</li>\n<li>Petty crime is common, especially in popular tourist locations. Stay aware of your surroundings.</li>\n<li>Most crimes against foreigners are crimes of opportunity, like purse snatching and pickpocketing.</li>\n<li>Tourists should beware of overcharging and scams in tourist areas. You may encounter aggressive vendors. Most sites have tourist police available to help in uncomfortable situations.</li>\n</ul>\n<h5><b>Hurricanes</b></h5>\n<ul>\n<li>Saint Lucia regularly experiences hurricanes. Review our information on Weather and Natural Disasters in Saint Lucia.</li>\n</ul>",
+    "identifier": "LC,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lca.html",
+    "pub_date": "07-10-2026_00-00-00",
+    "pull_date": "08-14-2026_15-19-20",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Saint Lucia - Level 2: Exercise Increased Caution"
+  },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/malta-travel-advisory.html": {
     "author": null,
     "category": "main_feed",
@@ -5564,6 +5715,21 @@
     "pull_date": "07-03-2026_15-08-39",
     "source": "https://www.news.google.com",
     "title": "Current Status of DACA: Explainer - National Immigration Forum"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.maf.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "MA",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>French Saint Martin</b>.</p>\n<p>French Saint Martin is generally a safe destination for travelers.</p>\n<p>French Saint Martin regularly experiences hurricanes. Review our information on <a href='/en/international-travel/travel-advisories/french-west-indies.html#weather' title='Weather and Natural Disasters'>Weather and Natural Disasters</a> in French Saint Martin.</p>\n<p>Review our <a title='Saint Martin Travel Guidance' href='/en/international-travel/travel-advisories/french-west-indies.html#requirements'>Travel Guidance</a> for French Saint Martin to learn how to prepare for a safe trip.</p>",
+    "identifier": "MA,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.maf.html",
+    "pub_date": "06-30-2026_00-00-00",
+    "pull_date": "08-14-2026_15-19-20",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "French Saint Martin - Level 1: Exercise Normal Precautions"
   },
   "2dc7d0fb-48fb-4473-8e37-f9d5d28d07f0": {
     "author": null,
@@ -9320,6 +9486,21 @@
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "Cyprus - Level 1: Exercise Normal Precautions"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cyp.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "CY",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>Cyprus</b>. Some areas have increased risk. Read the entire Travel Advisory.</p>\n<p>Cyprus is generally a safe destination for travelers.</p>\n<p><b>United Nations Buffer Zone</b></p>\n<p>Do not try to enter the United Nations buffer zone anywhere other than a designated crossing point. Police and UN peacekeeping forces strictly enforce this restriction.</p>\n<p><b>Armed Conflict&nbsp;</b></p>\n<p>Following the onset of hostilities between the United States and Iran on February 28, there were significant disruptions to commercial flights.&nbsp;&nbsp;</p>\n<p>A drone struck a building on the British Sovereign Base Area on Cyprus on March 2, 2026.</p>\n<p>Review our <a href='/en/international-travel/travel-advisories/cyprus.html#requirements'>Travel Guidance</a> for Cyprus to learn how to prepare for a safe trip.</p>",
+    "identifier": "CY,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cyp.html",
+    "pub_date": "06-01-2026_00-00-00",
+    "pull_date": "08-14-2026_15-19-20",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Cyprus - Level 1: Exercise Normal Precautions"
+  },
   "CBMiggFBVV95cUxOYmZ1TGxlU21TZlBlSVpiQy1oY1NBWTlELTlpREZHU2VJWTJLVUp0Zk1qcWN5T2taOFRKR3U1cjBZVDVxbk9vTDFHN0tzdjhwVElBUDE2dDl0LWxKdzZTWWRxbHppZS1wYmNyRmFpTTVkLVk1cUNtWDdVSUU0S2lhc1FR": {
     "author": null,
     "category": "US Immigration Changes",
@@ -9385,6 +9566,21 @@
     "pull_date": "05-31-2026_15-28-00",
     "source": "https://www.news.google.com",
     "title": "Trump Squeezes Immigrants by Cutting Them Off From Jobs, Health Care and Housing - The New York Times"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.aus.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "AU",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>Australia</b>.</p>\n<p>Australia is generally a safe destination for travelers.</p>\n<p>Review our <a href='/en/international-travel/travel-advisories/australia.html#requirements'>Travel Guidance</a> for Australia to learn how to prepare for a safe trip.</p>",
+    "identifier": "AU,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.aus.html",
+    "pub_date": "05-30-2026_00-00-00",
+    "pull_date": "08-14-2026_15-19-20",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Australia - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mex.html": {
     "author": null,
@@ -10187,6 +10383,21 @@
     "link": "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/british-virgin-islands-travel-advisory.html",
     "pub_date": "05-22-2026_00-00-00",
     "pull_date": "08-04-2026_15-30-49",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "British Virgin Islands - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vgb.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "VG",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in the <b>British Virgin Islands</b>.</p>\n<p>British Virgin Islands is generally a safe destination for travelers.</p>\n<ul>\n<li>British Virgin Islands regularly experiences hurricanes.\u00c2\u00a0</li>\n<li>Review our information on <a href='/en/international-travel/travel-advisories/british-virgin-islands.html#weather' title='Weather and Natural Disasters'>W<u>eather and Natural Disasters</u></a> in British Virgin Islands.</li>\n<li>Review our <u><a href='/en/international-travel/travel-advisories/british-virgin-islands.html#requirements' title='Travel Guidance'>Travel Guidance for British Virgin Islands</a></u> to learn how to prepare for a safe trip.</li>\n</ul>",
+    "identifier": "VG,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vgb.html",
+    "pub_date": "05-22-2026_00-00-00",
+    "pull_date": "08-14-2026_15-19-20",
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "British Virgin Islands - Level 1: Exercise Normal Precautions"
@@ -54526,6 +54737,21 @@
     "pub_date": "07-16-2025_15-58-18",
     "pull_date": "07-17-2025_14-07-35"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lby.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "LB",
+    "creator": null,
+    "description": "Do not travel<p>\u00c2\u00a0to <b>Libya </b>for any reason due to <b>crime</b>, <b>terrorism</b>,<b> unexploded landmine</b>s, <b>civil unrest,</b> <b>kidnapping</b>, and<b> armed conflict</b>.\u00c2\u00a0Read entire Travel Advisory.</p>\n<h5><b>Terrorism</b></h5>\n<p>There is risk of terrorist violence, including terrorist attacks and other activity in Libya. Visit the U.S. Department of State's <a href='https://www.state.gov/reports/country-reports-on-terrorism-2023/libya/' target='_blank' title='DOS Country Reports on Terrorism'>country reports on terrorism</a> to learn more. Terrorist attacks could occur with little or no warning, targeting public spaces like tourist locations, hotels, transportation hubs, markets/shopping malls, and government facilities.</p>\n<h5><b>Kidnapping</b></h5>\n<p>Kidnapping is widespread, and victims have included U.S. citizens.</p>\n<p>Kidnappers may take advantage of unplanned opportunities. Criminal or armed individuals or groups have threatened to and/or have seized or detained and threatened to kill, injure, or continue to detain individuals in order to compel a third party (including a governmental organization) to do or abstain from doing something as a condition of release.</p>\n<h5><b>Unexploded landmines</b></h5>\n<p>Unexploded landmines, cluster munitions, and unexploded ammunition are a hazard throughout Libya. Heed land mine warning signs. Do not venture off the road into areas marked with red and white plastic tape. &nbsp;Avoid roadside ditches, shoulders, and unmarked trails. Never touch anything resembling unexploded munitions. Landmines do exist in populated areas due to numerous ground offensives in the last decade.</p>\n<h5><b>Civil unrest</b></h5>\n<p>Outbreaks of violence between competing armed groups can occur with little warning and have the potential to impact U.S. citizens. The capital, Tripoli, and other cities, such as Surman, Al-Jufra, Misrata, Ajdabiya, Benghazi, and Zuwara, have witnessed fighting among armed groups. &nbsp;Hotels and airports frequented by U.S. citizens have been the targets of these attacks. Even demonstrations intended to be peaceful can turn confrontational and escalate into violence.</p>\n<h5><b>Armed conflict</b></h5>\n<p>Armed groups sometimes detain travelers for arbitrary reasons, do not grant detainees access to lawyers or legal processes, and do not allow detainees to inform others of their status. U.S. citizens should carry proof of citizenship and valid immigration status at all times, but having these documents does not guarantee fair treatment.</p>\n<p>While there are operational international airports in Libya with regular domestic and international flights, flights are often delayed, rerouted, and cancelled without warning. The U.S. government prohibits U.S. commercial aviation operations within Libyan airspace.</p>\n<p>Due to risks to civil aviation operating within or in the vicinity of Libya, the Federal Aviation Administration (FAA) has issued a Notice to Air Missions (NOTAM) and a Special Federal Aviation Regulation (SFAR). For more information U.S. citizens should consult the <a href='https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/libya-travel-advisory.html' target='_blank'>Federal Aviation Administration\u00e2\u0080\u0099s Prohibitions, Restrictions and Notices</a>.</p>\n<ul>\n<li>The Commandant of the U.S. Coast Guard has determined that effective anti-terrorism measures are not in place in Libyan ports and has imposed conditions of entry on vessels that arrive in U.S. ports having visited ports in Libya. Mariners and passengers traveling through the ports of Libya should exercise caution.</li>\n<li>U.S. citizens in Libya in need of routine consular services should contact the <a href='https://tn.usembassy.gov/u-s-citizen-services/' target='_blank' title='U.S. Embassy in Tunis, Tunisia'>U.S. Embassy in Tunis, Tunisia</a> for assistance.</li>\n<li>U.S. citizens who are in Libya are urged to depart as soon as possible via commercial means if possible.</li>\n<li>The Department of State will continue to provide information via the <a href='/en/international-travel/travel-advisories/smart-traveler-enrollment-program.html' title='Smart Traveler Enrollment Program'>Smart Traveler Enrollment Program</a> (STEP), <a href='https://ly.usembassy.gov/' target='_blank' title='U.S. Embassy of Libya'>Embassy Libya's web page</a>, <a href='https://travel.state.gov/content/travel.html' title='Travel State Website'>Travel.State.Gov</a>, <a href='https://www.facebook.com/travelgov/' target='_blank' title='TSG Facebook'>Facebook</a>, and <a href='https://x.com/TravelGov' target='_blank' title='TSG Twiiter (X)'>X</a>.</li>\n<li>Read the <a href='/en/international-travel/travel-advisories/libya.html#requirements' title='Libya Travel Guidance'>Travel Guidance</a> for additional information on travel to Libya.</li>\n</ul>",
+    "identifier": "LB,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lby.html",
+    "pub_date": "07-16-2025_00-00-00",
+    "pull_date": "08-14-2026_15-19-21",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 4: Do Not Travel",
+    "title": "Libya - Level 4: Do Not Travel"
+  },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mauritania-travel-advisory.html": {
     "author": null,
     "category": "main_feed",
@@ -65517,6 +65743,21 @@
     "pub_date": "05-08-2025_12-58-54",
     "pull_date": "05-08-2025_12-58-54"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.phl.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "PH",
+    "creator": null,
+    "description": "Exercise increased caution<p>in the <b>Philippines </b>due to<b> crime, terrorism, civil unres</b>t, and <b>kidnapping</b>. Some areas have increased risk. Read the entire Travel Advisory.\u00c2\u00a0</p>\n<p>Terrorists and armed groups have carried out kidnappings, bombings, and other attacks targeting public areas like tourist sites, markets, and local government facilities in the Philippines.\u00c2\u00a0 Violent crimes are also common in the Philippines such as robbery, kidnappings, and physical assaults.\u00c2\u00a0 Protests happen in the Philippines and could turn violent and/or result in traffic jams and road closures with limited capacity of the local government to respond.\u00c2\u00a0</p>\n<p>Due to the risks, U.S. government employees working in the Philippines must obtain special authorization to travel to certain areas of the country as stated below.\u00c2\u00a0</p>\n<p>Read the <a href='/en/international-travel/travel-advisories/philippines.html#requirements'>Travel Guidance</a> section for additional formation on travel to the Philippines.</p>\n<p><b>Do Not Travel</b> to:</p>\n<ul>\n<li>The Sulu Archipelago, including the southern Sulu Sea, due to <b>crime, terrorism, civil unrest</b>, and <b>kidnapping</b>.</li>\n<li>Marawi City in Mindanao due to <b>terrorism </b>and <b>civil unrest</b>.</li>\n</ul>\n<p><b>Reconsider Travel</b> to:</p>\n<ul>\n<li>Other areas of Mindanao due to <b>crime, terrorism, civil unrest</b>, and <b>kidnapping</b>.</li>\n</ul>",
+    "identifier": "PH,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.phl.html",
+    "pub_date": "05-08-2025_00-00-00",
+    "pull_date": "08-14-2026_15-19-21",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Philippines - Level 2: Exercise Increased Caution"
+  },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/cuba-travel-advisory.html": {
     "author": null,
     "category": "main_feed",
@@ -68334,6 +68575,21 @@
     "category": "US Immigration Changes",
     "pub_date": "04-21-2025_23-32-22",
     "pull_date": "04-22-2025_12-51-04"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mar.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "MA",
+    "creator": null,
+    "description": "Exercise increased caution<p>in<b> Morocco</b> due to <b>terrorism</b>.</p>\n<p>Terrorist groups continue plotting possible attacks in Morocco. Terrorists may attack with little or no warning. &nbsp;They target tourist locations, transportation hubs, markets, shopping malls, and local government facilities.</p>\n<p>Review the <a title='Travel Guidances' href='/en/international-travel/travel-advisories/morocco.html#requirements'>Travel Guidances</a> for additional information on travel to Morocco.</p>",
+    "identifier": "MA,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mar.html",
+    "pub_date": "04-21-2025_00-00-00",
+    "pull_date": "08-14-2026_15-19-21",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Morocco - Level 2: Exercise Increased Caution"
   },
   "CBMiyAFBVV95cUxOeXlLaUplcFdnQ3hBRmhSX2hubzhFVW5hdS1UTGxOT3BYcExiR1puWEhiRmM5SW5ZVGxPOUVoRm1uVzVFTkVVaXhsOEw2cVRZc3I4ekk4ZnMwUUN1czZBLWM2cXQ0TXVnSUxlbENfZ1B4X2VnMkdPSHg0MlFiejYzTzlObmdWazVPNVVQUmZwR3NCRkxlMUhFenFyRjFLS2FNcUs0eTc3ODV6UUo4UnZuRUdPWkx0Q09sNkEzZ0tqNTJqNGJNQldocQ": {
     "source": "https://www.news.google.com",
@@ -78452,6 +78708,21 @@
     "threat_level": "Level 2: Exercise Increased Caution",
     "title": "Costa Rica - Level 2: Exercise Increased Caution"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hnd.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "HN",
+    "creator": null,
+    "description": "Reconsider travel<p>to <b>Honduras </b>due to <b>crime</b>. Read the entire Travel Advisory.</p>\n<p>In December 2022, the Government of Honduras declared a \u00e2\u0080\u009cState of Exception\u00e2\u0080\u009d in response to high levels of extortion and other crimes. The declaration remains in effect and has been modified to include more cities. It allows the police to suspend constitutional rights in 226 of the country\u00e2\u0080\u0099s 298 municipalities.&nbsp;</p>\n<p>The Honduran Ministry of Health declared in June 2024 a national emergency in Honduras due to an increase in dengue cases. The Ministry of Health has carried out dengue prevention, control, and surveillance activities, along with the promotion of preventive measures through the media and educational campaigns. It also carried out clean-up operations and campaigns, including the use of chemical and biological agents for vector control.</p>\n<ul>\n<li>Review the <a href='https://wwwnc.cdc.gov/travel/destinations/traveler/none/honduras?s_cid=ncezid-dgmq-travel-single-001' target='_blank'>U.S. Centers for Disease Control and Prevention (CDC)</a> website and <a href='http://wwwnc.cdc.gov' target='_blank'>CDC Global Dengue</a> for further information.</li>\n</ul>\n<h5>Crime</h5>\n<ul>\n<li>Violent crime, such as homicide, armed robbery, and kidnapping, remains common. Violent gang activity, such as extortion, violent street crime, rape, narcotics, and human trafficking, is widespread.&nbsp;</li>\n<li>Local authorities may lack sufficient resources to respond effectively to serious crime incidents. Around resort areas in the Bay Islands, which include Roatan, Utila, and Guanaja, there is a concentration of resources, and these areas are better policed.</li>\n</ul>\n<h5>Demonstrations</h5>\n<p>Occur regularly throughout the country and can be about a variety of political or economic issues.</p>\n<ul>\n<li>Protests, demonstrations, tire burnings, and roadblocks are frequent, unpredictable, and can turn violent. They can shutdown roads and highways, often without prior notice or estimated reopening timelines.&nbsp;</li>\n</ul>\n<p><b>Do not travel to</b>:</p>\n<ul>\n<li><b>Gracias a Dios Department</b>, most eastern department, due to <b>crime</b>.</li>\n</ul>",
+    "identifier": "HN,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hnd.html",
+    "pub_date": "12-10-2024_00-00-00",
+    "pull_date": "08-14-2026_15-19-21",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 3: Reconsider Travel",
+    "title": "Honduras - Level 3: Reconsider Travel"
+  },
   "71f646f8-d623-441d-a361-97a30b3ac7da": {
     "source": "https://www.uscis.gov",
     "creator": "USCIS",
@@ -82657,6 +82928,21 @@
     "pub_date": "08-19-2024_15-42-47",
     "pull_date": "08-21-2024_08-00-56"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.abw.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "AB",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>Aruba</b></p>\n<p>Aruba is generally a safe destination for travelers.</p>\n<p>Review our <a href='/en/international-travel/travel-advisories/aruba.html#requirements'>Travel Guidance</a> for Aruba to learn how to prepare for a safe trip.</p>",
+    "identifier": "AB,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.abw.html",
+    "pub_date": "08-19-2024_00-00-00",
+    "pull_date": "08-14-2026_15-19-21",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Aruba - Level 1: Exercise Normal Precautions"
+  },
   "3b8fc862-a462-4ec7-8c36-12d6755958bf": {
     "source": "https://www.uscis.gov",
     "creator": "USCIS",
@@ -82837,6 +83123,21 @@
     "pub_date": "08-09-2024_10-35-53",
     "pull_date": "08-10-2024_08-01-12"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nld.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "NL",
+    "creator": null,
+    "description": "Exercise increased caution<p>in the Netherlands due to <b>terrorism</b>.</p>\n<p>Terrorists continue plotting possible attacks in the Netherlands. Terrorists may attack with little or no warning, targeting tourist locations, transportation hubs, markets/shopping malls, local government facilities, hotels, clubs, restaurants, places of worship, parks, major sporting and cultural events, educational institutions, airports, and other public areas.</p>\n<p>Review our <a href='/en/international-travel/travel-advisories/netherlands.html#requirements'>Travel Guidance</a> for the Netherlands to learn how to prepare for a safe trip.\u00c2\u00a0</p>\n<p>\u00c2\u00a0</p>",
+    "identifier": "NL,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nld.html",
+    "pub_date": "08-09-2024_00-00-00",
+    "pull_date": "08-14-2026_15-19-21",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Netherlands - Level 2: Exercise Increased Caution"
+  },
   "https://www.cbp.gov/node/429757": {
     "source": "https://www.cbp.gov",
     "creator": "U.S. Customs and Border Protection",
@@ -83016,6 +83317,21 @@
     "category": "Newsroom",
     "pub_date": "08-05-2024_13-20-50",
     "pull_date": "08-05-2024_17-15-23"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kaz.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "KA",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in Kazakhstan.&nbsp;</p>\n<p>Kazakhstan is generally a safe destination for travelers.</p>\n<p>Review our <a href='/en/international-travel/travel-advisories/kazakhstan.html#requirements'>Travel Guidance</a> for Mongolia to learn how to prepare for a safe trip.</p>",
+    "identifier": "KA,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kaz.html",
+    "pub_date": "08-05-2024_00-00-00",
+    "pull_date": "08-14-2026_15-19-21",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Kazakhstan - Level 1: Exercise Normal Precautions"
   },
   "https://www.cbp.gov/node/429736": {
     "source": "https://www.cbp.gov",
