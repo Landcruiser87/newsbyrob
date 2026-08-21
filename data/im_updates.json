@@ -1,18 +1,81 @@
 {
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html": {
+  "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkmenistan-travel-advisory.html": {
     "author": null,
     "category": "main_feed",
-    "country": "NS",
+    "country": "TX",
     "creator": null,
-    "description": "Exercise normal precautionSummary not available",
-    "identifier": "NS,advisory",
+    "description": "<p><b>There were no changes to the advisory level or risk indicators. Advisory summary was updated.</b></p>\n<p>Exercise normal precautions in Turkmenistan.</p>\n<p><b>Advisory summary</b></p>\n<p>Turkmenistan is generally a safe destination for travelers.</p>\n<p>Medical services for routine and emergency procedures are limited.</p>\n<ul>\n<li>Review the <a adhocenable=\"false\" href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Turkmenistan.html\">Health section of the Travel Guidance</a> on this page for more information.</li>\n</ul>\n<p>Turkmenistan is located in a seismically active zone.</p>\n<ul>\n<li>Review our information on <a adhocenable=\"false\" href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Turkmenistan.html\">Weather and Natural Distasters</a>.&nbsp;</li>\n<li>Review our <a adhocenable=\"false\" href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Turkmenistan.html\">Travel Guidance for Turkmenistan</a>&nbsp;to learn how to prepare for a safe trip.</li>\n</ul>\n<p><b>If you decide to travel to Turkmenistan:</b></p>\n<ul>\n<li>Enroll in the <a href=\"https://mytravel.state.gov/s/step\">Smart Traveler Enrollment Program (STEP)</a> to get important updates and alerts from the U.S. embassy or consulate. Enrolling helps the U.S. embassy or consulate contact you or your emergency contact in an emergency.</li>\n<li>Review the <a href=\"https://www.osac.gov/Content/Report/3112ae3a-90da-49a9-8ace-1c245ebc376f\">Country Security Report</a> for Turkmenistan.</li>\n<li>Visit the Centers for Disease Control and Prevention (CDC) website for the <a href=\"https://wwwnc.cdc.gov/travel/destinations/traveler/none/turkmenistan\">latest Travel Health Information</a> for Turkmenistan.</li>\n<li>Whether you&#8217;re a first time or frequent traveler, use the <a href=\"https://travel.state.gov/en/international-travel/planning/checklist.html\">International Travel Checklist</a>.</li>\n<li>We highly recommend that you buy travel insurance before you travel. Check with your <a href=\"https://travel.state.gov/en/international-travel/planning/guidance/insurance.html\">travel insurance provider</a> about evacuation assistance, medical insurance, and trip cancelation coverage.</li>\n</ul>",
+    "identifier": "TX,advisory",
     "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html",
-    "pub_date": "08-20-2026_00-00-00",
-    "pull_date": "08-20-2026_15-13-01",
+    "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkmenistan-travel-advisory.html",
+    "pub_date": "08-21-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Suriname - Level 1: Exercise Normal Precautions"
+    "title": "Turkmenistan - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/austria-travel-advisory.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "AU",
+    "creator": null,
+    "description": "<p><b>There were no changes to the advisory level or risk indicators. Advisory summary was updated.</b></p>\n<p><b>Advisory summary</b></p>\n<p>Austria is generally a safe destination for travelers.</p>\n<p>Read our <a href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Austria.html\">Travel Guidance</a> for additional information on travel to Austria.</p>\n<p><b>If you decide to travel to Austria:</b></p>\n<ul>\n<li>Enroll in the <a href=\"https://mytravel.state.gov/s/step\">Smart Traveler Enrollment Program (STEP)</a> to get important updates and alerts from the U.S. embassy or consulate. Enrolling helps the U.S. embassy or consulate contact you or your emergency contact in an emergency.</li>\n<li>Review the <a href=\"https://www.osac.gov/Country/Austria/Detail\">Country Security Report</a> for Austria.</li>\n<li>Visit the Centers for Disease Control and Prevention (CDC) website for the <a href=\"https://wwwnc.cdc.gov/travel/destinations/list\">latest Travel Health Information</a> for Austria.</li>\n<li>Whether you&#8217;re a first time or frequent traveler, use the <a href=\"https://travel.state.gov/en/international-travel/planning/checklist.html\">International Travel Checklist</a>.</li>\n<li>We highly recommend that you buy travel insurance before you travel, as many insurance plans, including Medicare and Medicaid, do not cover medical costs overseas. &nbsp;Check with your <a href=\"https://travel.state.gov/en/international-travel/planning/guidance/insurance.html\">travel insurance provider</a> about evacuation assistance, medical insurance, and trip cancelation coverage.</li>\n</ul>",
+    "identifier": "AU,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/austria-travel-advisory.html",
+    "pub_date": "08-21-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Austria - Level 1: Exercise Normal Precautions"
+  },
+  "1649f2be-03d0-4431-98cb-f17d08de0987": {
+    "author": null,
+    "category": "News Releases",
+    "creator": "USCIS",
+    "description": "A Chinese alien residing in Andover, Mass., was arrested for submitting a fraudulent voter registration and ballot in the 2024 presidential election using the name of another Chinese alien.",
+    "link": "https://www.uscis.gov/newsroom/news-releases/chinese-alien-charged-with-voter-fraud-in-massachusetts",
+    "pub_date": "08-21-2026_15-07-40",
+    "pull_date": "08-21-2026_15-08-50",
+    "source": "https://www.uscis.gov",
+    "title": "Chinese Alien Charged with Voter Fraud in Massachusetts"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.moz.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "MO",
+    "creator": null,
+    "description": "Exercise increased caution<p>to <b>Mozambique </b>due to <b>terrorism, crime, health,</b> and <b>unrest</b>. Some areas have increased risk. Read the entire Travel Advisory.</p>\n<p><b>Terrorism</b></p>\n<p>Terrorist groups in northern Mozambique are active. Attackers may strike public areas and tourist destinations with little or no warning, sometimes taking hostages. Terrorists have targeted upscale lodges in remote areas where international big-game hunters stay. Security and police forces may be slow to respond.</p>\n<p>There is risk of terrorist violence, including terrorist attacks and other activity in Mozambique. Visit the <b>U.S. Department of State's</b> <a href='https://www.state.gov/country-reports-on-terrorism/'>country reports on terrorism</a> to learn more.</p>\n<p><b>Crime</b></p>\n<p>Violent crime, such as mugging, is common. Petty crime is common in popular tourist locations. Stay aware of your surroundings.</p>\n<p><b>Health</b></p>\n<p>Mozambique\u00e2\u0080\u0099s health infrastructure is weak. Medicine availability is variable and often in short supply. Local medical facilities may lack basic resources and supplies. Some health facilities may ask for cash payment up front.&nbsp;</p>\n<p>Medical services for routine and emergency procedures are limited. Read the Health section of the <a href='#health'>Travel Guidance</a> for more information.&nbsp;</p>\n<p><b>Unrest</b></p>\n<p>Unplanned protests are possible throughout the country. They can quickly become violent. Protests may temporarily block major roads, including toll booths and border crossings.</p>\n<p><b>Do Not Travel</b> to the following areas due to <b>terrorism</b>:</p>\n<ul>\n<li>Cabo Delgado Province</li>\n<li>Niassa Special Reserve inside Niassa Province</li>\n<li>Certain districts in the north of Nampula Province</li>\n</ul>",
+    "identifier": "MO,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.moz.html",
+    "pub_date": "08-21-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Mozambique - Level 2: Exercise Increased Caution"
+  },
+  "CBMi2AFBVV95cUxOUVdCRFFmY2RUazdiMzA2M0FVSWJZM1gxaVZwNzRZTmIteDRlVFVqeHVCeFY1MUlNdHozVkNDTnFxWkZYQ3E4VW5UZ1JyT1d6T2lUQVZYdFRxaEI2ODgyZ3VRbDJ0dFVZOXUzTm8xazE0NnFERWNpdVNLazh4Y3FyOUtya1VYZFNBVHZvb2RNSUYxeFV5dEt6T3FnbEZXcnBlaWZKWWIyeWRVWllhd3A0OWoybUVRekpQV2ZoNkRnNGNnRWdNYWV3VkxQUWI2WGVIUGpoc3c0em8": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVdCRFFmY2RUazdiMzA2M0FVSWJZM1gxaVZwNzRZTmIteDRlVFVqeHVCeFY1MUlNdHozVkNDTnFxWkZYQ3E4VW5UZ1JyT1d6T2lUQVZYdFRxaEI2ODgyZ3VRbDJ0dFVZOXUzTm8xazE0NnFERWNpdVNLazh4Y3FyOUtya1VYZFNBVHZvb2RNSUYxeFV5dEt6T3FnbEZXcnBlaWZKWWIyeWRVWllhd3A0OWoybUVRekpQV2ZoNkRnNGNnRWdNYWV3VkxQUWI2WGVIUGpoc3c0em8?oc=5\" target=\"_blank\">USCIS changes immigration rules: applications could now be denied without a request for more evidence</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Cronista</font>",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUVdCRFFmY2RUazdiMzA2M0FVSWJZM1gxaVZwNzRZTmIteDRlVFVqeHVCeFY1MUlNdHozVkNDTnFxWkZYQ3E4VW5UZ1JyT1d6T2lUQVZYdFRxaEI2ODgyZ3VRbDJ0dFVZOXUzTm8xazE0NnFERWNpdVNLazh4Y3FyOUtya1VYZFNBVHZvb2RNSUYxeFV5dEt6T3FnbEZXcnBlaWZKWWIyeWRVWllhd3A0OWoybUVRekpQV2ZoNkRnNGNnRWdNYWV3VkxQUWI2WGVIUGpoc3c0em8?oc=5",
+    "pub_date": "08-21-2026_18-40-10",
+    "pull_date": "08-21-2026_15-09-33",
+    "source": "https://www.news.google.com",
+    "title": "USCIS changes immigration rules: applications could now be denied without a request for more evidence - El Cronista"
+  },
+  "CBMi4wFBVV95cUxQMDJxVTExWWdack54TnR6YVlBV1VfbjlpUmlRTjJlOGtURWhJQWpqVW5EMFB3aEdGRUVjb3RONVlrNXN3SUJlOXpLY2pYWS0weUJTc3dEV2FmR00ycnkzR0lGNjNpY1RLYlRTWWNaTFdyajdKSlNOUnBHUzl4WjE5MVgyWHVrV0RUWWJPclJXUlJPNmdlcmpoTnhLTWxDbTNwT051S2hmSEdLMmR5cEU2V1BKUXl0S0dPaWN1VFVKSEgzSDNkbmw4bjhBRE5iZWpVSnlKZktiUnAtX2lfeUwyc2tZNA": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMDJxVTExWWdack54TnR6YVlBV1VfbjlpUmlRTjJlOGtURWhJQWpqVW5EMFB3aEdGRUVjb3RONVlrNXN3SUJlOXpLY2pYWS0weUJTc3dEV2FmR00ycnkzR0lGNjNpY1RLYlRTWWNaTFdyajdKSlNOUnBHUzl4WjE5MVgyWHVrV0RUWWJPclJXUlJPNmdlcmpoTnhLTWxDbTNwT051S2hmSEdLMmR5cEU2V1BKUXl0S0dPaWN1VFVKSEgzSDNkbmw4bjhBRE5iZWpVSnlKZktiUnAtX2lfeUwyc2tZNA?oc=5\" target=\"_blank\">A seemingly technical change to international student visas could disrupt teaching and research at US universities</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Conversation</font>",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMDJxVTExWWdack54TnR6YVlBV1VfbjlpUmlRTjJlOGtURWhJQWpqVW5EMFB3aEdGRUVjb3RONVlrNXN3SUJlOXpLY2pYWS0weUJTc3dEV2FmR00ycnkzR0lGNjNpY1RLYlRTWWNaTFdyajdKSlNOUnBHUzl4WjE5MVgyWHVrV0RUWWJPclJXUlJPNmdlcmpoTnhLTWxDbTNwT051S2hmSEdLMmR5cEU2V1BKUXl0S0dPaWN1VFVKSEgzSDNkbmw4bjhBRE5iZWpVSnlKZktiUnAtX2lfeUwyc2tZNA?oc=5",
+    "pub_date": "08-21-2026_12-35-33",
+    "pull_date": "08-21-2026_15-09-33",
+    "source": "https://www.news.google.com",
+    "title": "A seemingly technical change to international student visas could disrupt teaching and research at US universities - The Conversation"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/sint-eustatius-travel-advisory.html": {
     "author": null,
@@ -84,6 +147,73 @@
     "pull_date": "08-20-2026_15-13-31",
     "source": "https://www.news.google.com",
     "title": "ICE, Iran quietly worked together on deporting Iranians to Iran, emails show - CBS News"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "GL",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>Guadeloupe.</b></p>\n<p>\u00c2\u00a0</p>\n<p>Guadeloupe is generally a safe destination for travelers.</p>\n<ul>\n<li>Guadeloupe regularly experiences hurricanes. Review our information on <a href='/en/international-travel/travel-advisories/guadeloupe.html#weather' title='Weather and Natural Disasters in Guadeloupe'>Weather and Natural Disasters</a> in Guadeloupe.\u00c2\u00a0</li>\n<li><span>Review our </span><a href='/en/international-travel/travel-advisories/guadeloupe.html#requirements' title='Travel Guidance for Guadeloupe'>Travel Guidance for Guadeloupe</a><span> to learn how to prepare for a safe trip.</span></li>\n</ul>",
+    "identifier": "GL,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html",
+    "pub_date": "08-20-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Guadeloupe - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mtq.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "MT",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in Martinique.\u00c2\u00a0</p>\n<p>Martinique is generally a safe destination for travelers.</p>\n<p>Martinique regularly experiences hurricanes. Review our information on <a href='#weather'>Weather and Natural Disasters</a> in Martinique.</p>\n<p>Review our <a href='#requirements'>Travel Guidance for Martinique</a> to learn how to prepare for a safe trip.</p>",
+    "identifier": "MT,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mtq.html",
+    "pub_date": "08-20-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Martinique - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.blm.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "BL",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in\u00c2\u00a0Saint Barth\u00c3\u00a9lemy.</p>\n<p>Saint Barth\u00c3\u00a9lemy is generally a safe destination for travelers.</p>\n<p>Saint Barth\u00c3\u00a9lemy regularly experiences hurricanes. </p>\n<ul>\n<li>Review our information on <a href='#weather'>Weather and Natural Disasters</a> in Saint Barth\u00c3\u00a9lemy.</li>\n<li>Review our <a href='#requirements'>Travel Guidance for Saint Barth\u00c3\u00a9lemy</a><span style='font-size: 18.24px; white-space: initial;'> to learn how to prepare for a safe trip.</span></li>\n</ul>",
+    "identifier": "BL,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.blm.html",
+    "pub_date": "08-20-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Saint Barthelemy - Level 1: Exercise Normal Precautions"
+  },
+  "CBMipgFBVV95cUxOcTVZZm5TTmRZbkZINTZ4NHBjN2NucHg0Wlc2YkxoZUhQczVyTzdzdDUxQW43SFpqcnozREJKYUtjY2VocHlJZ1kzNW40YmdpMnd4NFBBclFVZ29nV0JaTnFiNHhBanEzQ3ZNdk91TWhGbjhoLTZLWFVFelBnYTQ4NkM2QzFUTmhqRzFtc2xHX2hCeUU2OG1TMmJyMFhPbE12dTRaQVB3": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxOcTVZZm5TTmRZbkZINTZ4NHBjN2NucHg0Wlc2YkxoZUhQczVyTzdzdDUxQW43SFpqcnozREJKYUtjY2VocHlJZ1kzNW40YmdpMnd4NFBBclFVZ29nV0JaTnFiNHhBanEzQ3ZNdk91TWhGbjhoLTZLWFVFelBnYTQ4NkM2QzFUTmhqRzFtc2xHX2hCeUU2OG1TMmJyMFhPbE12dTRaQVB3?oc=5\" target=\"_blank\">Venezuela TPS and Immigration Changes: My Conversation With Uni\u00f3n Radio Noticias</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Arias Villa Law</font>",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcTVZZm5TTmRZbkZINTZ4NHBjN2NucHg0Wlc2YkxoZUhQczVyTzdzdDUxQW43SFpqcnozREJKYUtjY2VocHlJZ1kzNW40YmdpMnd4NFBBclFVZ29nV0JaTnFiNHhBanEzQ3ZNdk91TWhGbjhoLTZLWFVFelBnYTQ4NkM2QzFUTmhqRzFtc2xHX2hCeUU2OG1TMmJyMFhPbE12dTRaQVB3?oc=5",
+    "pub_date": "08-20-2026_20-22-57",
+    "pull_date": "08-21-2026_15-09-33",
+    "source": "https://www.news.google.com",
+    "title": "Venezuela TPS and Immigration Changes: My Conversation With Uni\u00f3n Radio Noticias - Arias Villa Law"
+  },
+  "CBMitgFBVV95cUxQSjFXNC0zRGl1aU5TUTZiMzRNTy15MFRLeWxIRFdITVZMRzRxLUtRbE5ES2lqbnppU1oxZDRNb2JPLXA5QVlxbkt3dm5WWjZXZnBvN0U3cVlWd05YaXVndllXdjZzYkJvLW0tRDhZeUVzQkpab2w1SndzcVNnVkZHdnJyXzlqSlNROURvVDVOMzFTNkQ0MGhCUVpZUlVKMGZsc3dRXzEwLUdZVmh3RUtoUW1OV1lPUQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQSjFXNC0zRGl1aU5TUTZiMzRNTy15MFRLeWxIRFdITVZMRzRxLUtRbE5ES2lqbnppU1oxZDRNb2JPLXA5QVlxbkt3dm5WWjZXZnBvN0U3cVlWd05YaXVndllXdjZzYkJvLW0tRDhZeUVzQkpab2w1SndzcVNnVkZHdnJyXzlqSlNROURvVDVOMzFTNkQ0MGhCUVpZUlVKMGZsc3dRXzEwLUdZVmh3RUtoUW1OV1lPUQ?oc=5\" target=\"_blank\">ICE changes location of Tennessee call center site from Adams to Nashville</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Tennessee Lookout</font>",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSjFXNC0zRGl1aU5TUTZiMzRNTy15MFRLeWxIRFdITVZMRzRxLUtRbE5ES2lqbnppU1oxZDRNb2JPLXA5QVlxbkt3dm5WWjZXZnBvN0U3cVlWd05YaXVndllXdjZzYkJvLW0tRDhZeUVzQkpab2w1SndzcVNnVkZHdnJyXzlqSlNROURvVDVOMzFTNkQ0MGhCUVpZUlVKMGZsc3dRXzEwLUdZVmh3RUtoUW1OV1lPUQ?oc=5",
+    "pub_date": "08-20-2026_10-04-57",
+    "pull_date": "08-21-2026_15-09-33",
+    "source": "https://www.news.google.com",
+    "title": "ICE changes location of Tennessee call center site from Adams to Nashville - Tennessee Lookout"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/paraguay-travel-advisory.html": {
     "author": null,
@@ -268,6 +398,21 @@
     "pull_date": "08-19-2026_15-23-40",
     "source": "https://www.ice.gov",
     "title": "ICE Boston arrests previously removed criminal alien arraigned for vehicular homicide"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pan.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "PA",
+    "creator": null,
+    "description": "Exercise increased caution<p>in <b>Panama </b>due to <b>crime.&nbsp;</b>&nbsp;Some areas have increased risk. Read the entire travel advisory.</p>\n<p>U.S. government employees working in Panama need special authorization to travel to the Mosquito Gulf and the Dari\u00c3\u00a9n Region due to safety risks. The U.S. government has limited ability to offer emergency services to U.S. citizens in these areas.</p>\n<h5>Crime</h5>\n<p>Crime occurs in Panama, including theft and residential break-ins. Crimes of opportunity such as pickpocketing and purse snatching can happen in tourist areas. The U.S. embassy receives occasional reports of residential break-ins, especially during the holiday season.</p>\n<h5>Unrest</h5>\n<p>Large-scale demonstrations related to the local political situation may occur with little notice. Demonstrations may disrupt transportation and other essential services.</p>\n<p><b>Do not travel to:</b></p>\n<ul>\n<li>The <b>Mosquito Gulf </b>due to <b>crime</b>.</li>\n<li>Parts of the <b>Dari\u00c3\u00a9n Region</b> due to <b>crime</b>.</li>\n</ul>\n<p><span>&nbsp;</span></p>",
+    "identifier": "PA,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pan.html",
+    "pub_date": "08-19-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Panama - Level 2: Exercise Increased Caution"
   },
   "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bol.html": {
     "author": null,
@@ -5749,6 +5894,51 @@
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "Saint Kitts and Nevis - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "KN",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in Saint Kitts and Nevis.</p>\n<p>Saint Kitts and Nevis is generally a safe destination for travelers.</p>\n<p><span>Saint Kitts and Nevis regularly experiences hurricanes. Review our information on <a href='#weather'>Weather and Natural Disasters</a> in Saint Kitts and Nevis.</span></p>\n<ul>\n<li><span>Review our <a href='#requirements'>Travel Guidance</a> for Saint Kitts and Nevis to learn how to prepare for a safe trip.</span></li>\n</ul>",
+    "identifier": "KN,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html",
+    "pub_date": "07-07-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Saint Kitts and Nevis - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vct.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "VC",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in<b> Saint Vincent and the Grenadines</b>.</p>\n<p>Saint Vincent and the Grenadines is generally a safe destination for travelers.</p>\n<p>Saint Vincent and the Grenadines regularly experiences hurricanes. Review our information on <a href='#weather'>Weather and Natural Disasters</a> in Saint Vincent and the Grenadines.</p>\n<ul>\n<li>Review our <a href='#requirements'>Travel Guidance</a> for Saint Vincent and the Grenadines to learn how to prepare for a safe trip.</li>\n</ul>\n<p>If you decide to travel to Saint Vincent and the Grenadines:</p>",
+    "identifier": "VC,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vct.html",
+    "pub_date": "07-07-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Saint Vincent and the Grenadines - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tha.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "TH",
+    "creator": null,
+    "description": "Exercise normal precaution<p>\u00c2\u00a0in <b>Thailand</b>.\u00c2\u00a0Some areas have increased risk. Read the entire Travel Advisory.</p>\n<p>Thailand is generally a safe destination for travelers.\u00c2\u00a0<span style=''>Review our </span><a href='/en/international-travel/travel-advisories/thailand.html#requirements' title='Travel guidance for Thailand'>Travel Guidance for Thailand</a><span style=''> to learn how to prepare for a safe trip.</span></p>\n<ul>\n<li><b>Exercise Increased Caution</b> near the <b>Thai-Cambodian border</b> due to the risk of<b> armed conflict</b>.</li>\n<li><span><b>Exercise Increased Caution</b> in the <b>Yala</b>, <b>Pattani</b>, and <b>Narathiwat provinces</b> due to the risk of <b>unrest</b>.</span></li>\n</ul>\n<p><span>&nbsp;</span></p>",
+    "identifier": "TH,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tha.html",
+    "pub_date": "07-07-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Thailand - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/norway-travel-advisory.html": {
     "author": null,
@@ -11681,6 +11871,21 @@
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "Dominica - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.atg.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "AT",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in\u00c2\u00a0<b>Antigua and Barbuda.</b></p>\n<p>Antigua and Barbuda is generally a safe destination for travelers.</p>\n<ul>\n<li>Antigua and Barbuda regularly experiences hurricanes. Review our information on <a href='/en/international-travel/travel-advisories/antigua-and-barbuda.html#weather'>Weather and Natural Disaster</a>s in Antigua and Barbuda.</li>\n<li>Review our <a href='/en/international-travel/travel-advisories/antigua-and-barbuda.html#requirements'>Travel Guidance</a> for Antigua and Barbuda to learn how to prepare for a safe trip.</li>\n</ul>",
+    "identifier": "AT,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.atg.html",
+    "pub_date": "05-20-2026_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Antigua and Barbuda - Level 1: Exercise Normal Precautions"
   },
   "CBMimwFBVV95cUxNTmtFX2dIaEVGcnFoWnRYVV9WS29QS0NNSXV0Tl95VWlJQTJ2MGFzNjRxeUtSX0tEeUFoYkJHcC1sM09OR2hYelhWQ3FNWWk3YjREMmZaUEd2b2VjRzMtWVpxQTZEZW10NXVoM3c4ZjFGempWRWZLUXh4RGtLV0t1WVMyRkZyUjNvWGVvYUs0ZUVtbk5scDI1M1ZsSQ": {
     "author": null,
@@ -62096,6 +62301,21 @@
     "pub_date": "06-05-2025_22-01-00",
     "pull_date": "06-07-2025_12-41-52"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pol.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "PO",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in Poland.</p>\n<p>Poland is generally a safe destination for travelers<i>.</i></p>\n<p>Review our <a href='#requirements'>Travel Guidance</a> for Poland to learn how to prepare for a safe trip.</p>",
+    "identifier": "PO,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pol.html",
+    "pub_date": "06-05-2025_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Poland - Level 1: Exercise Normal Precautions"
+  },
   "5fdfa166-1dd0-427a-b49a-078c412cb7bf": {
     "source": "https://www.uscis.gov",
     "creator": "USCIS",
@@ -64938,6 +65158,21 @@
     "category": "National Security",
     "pub_date": "05-16-2025_17-50-43",
     "pull_date": "07-10-2025_11-37-03"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.per.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "PE",
+    "creator": null,
+    "description": "Exercise increased caution<p>in <b>Peru </b>due to\u00e2\u0080\u00af<b>crime</b>, <b>civil unrest</b>, and the risk of <b>kidnapping</b>. Some areas have increased risk. Read the entire Travel Advisory.</p>\n<p>Crime is common in Peru. Petty theft, carjackings, muggings, assaults, and other violent crime often happen even in daylight hours and with many witnesses around. Kidnapping is rare, but it does occur. The risk of crime increases at night. Criminal groups sometimes set up roadblocks to rob people in areas outside of Lima.&nbsp;</p>\n<h5><b>Ayahuasca and Kambo Usage</b></h5>\n<p>U.S. travelers should not use Ayahuasca or Kambo because of the known dangers. U.S. citizens have suffered serious illness and, in some cases, died after taking these drugs. They have also been sexually assaulted, injured, or robbed while under the influence of these substances.&nbsp; &nbsp;</p>\n<h5><b>Demonstrations</b></h5>\n<p>Demonstrations occur regularly throughout the country. Public demonstrations can take place for a variety of political and economic issues.&nbsp;&nbsp; Demonstrations can shut down local roads, trains, and major highways. This often happens without warning or clear information on reopening times.&nbsp; Road closures can limit access to public transportation and airports. Closures may also disrupt travel in and between cities.</p>\n<p><b>Due to road safety risks, U.S. government employees working in Peru are prohibited from nighttime driving</b> except within cities, between Lima and Huacho (to the north), and Lima and Paracas (to the south). U.S. government employees working in Peru may travel at night with commercial bus companies along the Pan-American Highway, to Huaraz, and on the Lima-Arequipa-Cusco corridor.</p>\n<ul>\n<li>Review the <a href='/en/international-travel/travel-advisories/peru.html#requirements' title='Travel Guidance for Peru'>Travel Guidance</a>&nbsp;for additional information on travel to Peru.</li>\n</ul>\n<p><b>Do not travel to:</b></p>\n<ul>\n<li>The Colombia-Peru border area in the Loreto Region due to\u00e2\u0080\u00afcrime.\u00c2\u00a0</li>\n<li>The Valley of the Apur\u00c3\u00admac, Ene, and Mantaro Rivers (VRAEM), which includes Vilcabamba, due to\u00e2\u0080\u00afcrime\u00e2\u0080\u00afand threats of terrorism.\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0</li>\n<li>Some areas within the regions of Ayacucho, Cusco*, Huancavelica, and Jun\u00c3\u00adn, due to\u00e2\u0080\u00afcrime\u00e2\u0080\u00afand threats of terrorism.<br />\n<br />\n<b>* The city of Cusco and popular tourist sites nearby, like the Sacred Valley, the Inca Trail, and Machu Picchu, are not located in the affected area.<br />\n\u00c2\u00a0\u00c2\u00a0</b></li>\n</ul>",
+    "identifier": "PE,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.per.html",
+    "pub_date": "05-16-2025_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Peru - Level 2: Exercise Increased Caution"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/japan-travel-advisory.html": {
     "author": null,
@@ -76528,21 +76763,6 @@
     "pub_date": "03-03-2025_17-34-03",
     "pull_date": "07-10-2025_11-37-14"
   },
-  "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkmenistan-travel-advisory.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "TX",
-    "creator": null,
-    "description": "<p><b><i>Reissued after periodic review with no changes.</i></b></p>\n<p>Exercise normal precautions in Turkmenistan.</p>\n<p>Please read the <a href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Turkmenistan.html\">country information page</a> for additional information on travel to Turkmenistan.</p>\n<p>If you decide to travel to Turkmenistan:</p>\n<ul>\n<li>Enroll in the <a href=\"http://step.state.gov/\">Smart Traveler Enrollment Program (STEP)</a> to receive security messages and make it easier to locate you in an emergency.</li>\n<li>Review the <a href=\"https://www.osac.gov/Content/Report/3112ae3a-90da-49a9-8ace-1c245ebc376f\">Country Security Report</a> for Turkmenistan.</li>\n<li>Prepare a backup plan for emergency situations. Review the <a href=\"https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-checklist.html\">Traveler&#8217;s Checklist</a>.</li>\n<li>Visit the CDC page for the latest <a href=\"https://wwwnc.cdc.gov/travel/destinations/list\">Travel Health Information</a> related to your travel.</li>\n<li>We highly recommend that you buy insurance before you travel.&#8239;Check with your&#8239;<a href=\"https://travel.state.gov/content/travel/en/international-travel/before-you-go/your-health-abroad/Insurance_Coverage_Overseas.html\">travel insurance provider</a>&#8239;about evacuation assistance, medical insurance, and trip cancellation coverage.</li>\n</ul>",
-    "identifier": "TX,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkmenistan-travel-advisory.html",
-    "pub_date": "02-28-2025_00-00-00",
-    "pull_date": "07-21-2026_15-27-18",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Turkmenistan - Level 1: Exercise Normal Precautions"
-  },
   "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkmenistan-travel-advisory.html": {
     "author": null,
     "category": "main_feed",
@@ -78937,6 +79157,21 @@
     "category": "Newsroom",
     "pub_date": "12-16-2024_09-08-47",
     "pull_date": "12-17-2024_08-01-44"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "NS",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>Suriname</b>.</p>\n<p>Exercise normal precautions in Suriname. Review the <a title='Suriname Travel Guidance' href='/en/international-travel/travel-advisories/suriname.html#requirements'>Travel Guidance</a> for additional information on travel to Suriname.</p>",
+    "identifier": "NS,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html",
+    "pub_date": "12-13-2024_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Suriname - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/suriname-travel-advisory.html": {
     "author": null,
@@ -82998,21 +83233,6 @@
     "pub_date": "08-25-2024_14-34-40",
     "pull_date": "08-26-2024_06-59-16"
   },
-  "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/austria-travel-advisory.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "AU",
-    "creator": null,
-    "description": "<p><b><i>Reissued after periodic review without changes.</i></b></p>\n<p>Exercise normal precautions in Austria.</p>\n<p>Read&nbsp;the <a href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Austria.html\">country information page</a> for additional information on travel to Austria.</p>\n<p>If you decide to travel to Austria:</p>\n<ul>\n<li>Enroll in the&nbsp;<a href=\"https://step.state.gov/step/\">Smart Traveler Enrollment Program</a>&nbsp;(<a href=\"https://step.state.gov/step/\">STEP</a>) to receive Alerts and make it easier to locate you in an emergency.</li>\n<li>Follow the Department of State on&nbsp;<a href=\"http://www.facebook.com/travelgov\">Facebook</a>&nbsp;and&nbsp;<a href=\"http://www.twitter.com/travelgov\">X/Twitter</a>.</li>\n<li>Review the&nbsp;<a href=\"https://www.osac.gov/Country/Austria/Detail\">Country Security Report</a>&nbsp;for Austria.</li>\n<li>Visit the CDC page for the latest <a href=\"https://wwwnc.cdc.gov/travel/destinations/list\">Travel Health Information</a> related to your travel.</li>\n<li>Prepare a contingency plan for emergency situations. Review the&nbsp;<a href=\"https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-checklist.html\">Traveler&#8217;s Checklist</a>.</li>\n</ul>\n<p><b><i>&nbsp;</i></b></p>",
-    "identifier": "AU,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/austria-travel-advisory.html",
-    "pub_date": "08-23-2024_00-00-00",
-    "pull_date": "07-21-2026_15-27-18",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Austria - Level 1: Exercise Normal Precautions"
-  },
   "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/austria-travel-advisory.html": {
     "author": null,
     "category": "main_feed",
@@ -83362,6 +83582,21 @@
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "Aruba - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sxm.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "SX",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in Sint Maarten</p>\n<ul>\n<li>Sint Maarten is generally a safe destination for travelers.</li>\n<li>Review our <a href='#requirements'>Travel Guidance</a> for Sint Maarten to learn how to prepare for a safe trip.</li>\n</ul>",
+    "identifier": "SX,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sxm.html",
+    "pub_date": "08-19-2024_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Sint Maarten - Level 1: Exercise Normal Precautions"
   },
   "3b8fc862-a462-4ec7-8c36-12d6755958bf": {
     "source": "https://www.uscis.gov",
@@ -87026,6 +87261,21 @@
     "link": "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/zimbabwe-travel-advisory.html",
     "pub_date": "06-27-2023_00-00-00",
     "pull_date": "08-04-2026_15-30-49",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Zimbabwe - Level 2: Exercise Increased Caution"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.zwe.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "ZW",
+    "creator": null,
+    "description": "Exercise increased caution<p>in <b>Zimbabwe </b>due to <b>crime </b>and <b>official harassment of U.S. citizen</b>s.</p>\n<p>Opportunistic crime, such as pickpocketing, theft, and smashing of car windows with intent to steal, is common. Violent crime, such as assault, carjacking, and home invasion, also occurs. Criminals often target foreigners and residents suspected of having large sums of cash.</p>\n<p>Demonstrations may occur and increase in frequency around political events, such as elections. Large gatherings are often restricted by the government and can quickly escalate to violence.</p>\n<ul>\n<li>Foreigners, journalists, and non-governmental organizations may be subject to heightened scrutiny in Zimbabwe.</li>\n<li>Review the <a title='Travel Guidance for Zimbabwee' href='/en/international-travel/travel-advisories/zimbabwe.html#requirements'>Travel Guidance</a> for additional information on travel to Zimbabwe.</li>\n</ul>",
+    "identifier": "ZW,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.zwe.html",
+    "pub_date": "06-27-2023_00-00-00",
+    "pull_date": "08-21-2026_15-09-12",
     "source": "https://travel.state.gov",
     "threat_level": "Level 2: Exercise Increased Caution",
     "title": "Zimbabwe - Level 2: Exercise Increased Caution"
