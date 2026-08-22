@@ -1,4 +1,30 @@
 {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "FM",
+    "creator": null,
+    "description": "Exercise normal precautionSummary not available",
+    "identifier": "FM,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html",
+    "pub_date": "08-22-2026_00-00-00",
+    "pull_date": "08-22-2026_15-08-29",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Federated States of Micronesia - Level 1: Exercise Normal Precautions"
+  },
+  "CBMijAFBVV95cUxNU3QzdFBWOFAyY3VIcXNHMmN2aDVtU3hZTHBFZ0pfd2ROamZ2TUd3RWdnQUR4Q2JOTUQyYVNILVJMYmZYUEZpTXJhSjNHdXVSaWZzbEVxQWF4Tks5b3ZCdkluLXIyRENKN1M1V3VEb3BLbkRqZlhBeGFXdnI2OS1fM09zYkpTQmJpT2FGbA": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNU3QzdFBWOFAyY3VIcXNHMmN2aDVtU3hZTHBFZ0pfd2ROamZ2TUd3RWdnQUR4Q2JOTUQyYVNILVJMYmZYUEZpTXJhSjNHdXVSaWZzbEVxQWF4Tks5b3ZCdkluLXIyRENKN1M1V3VEb3BLbkRqZlhBeGFXdnI2OS1fM09zYkpTQmJpT2FGbA?oc=5\" target=\"_blank\">US Postal Service rule tightens mail-in voting despite court orders blocking changes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Guardian</font>",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU3QzdFBWOFAyY3VIcXNHMmN2aDVtU3hZTHBFZ0pfd2ROamZ2TUd3RWdnQUR4Q2JOTUQyYVNILVJMYmZYUEZpTXJhSjNHdXVSaWZzbEVxQWF4Tks5b3ZCdkluLXIyRENKN1M1V3VEb3BLbkRqZlhBeGFXdnI2OS1fM09zYkpTQmJpT2FGbA?oc=5",
+    "pub_date": "08-22-2026_02-06-00",
+    "pull_date": "08-22-2026_15-08-50",
+    "source": "https://www.news.google.com",
+    "title": "US Postal Service rule tightens mail-in voting despite court orders blocking changes - The Guardian"
+  },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkmenistan-travel-advisory.html": {
     "author": null,
     "category": "main_feed",
@@ -76,6 +102,28 @@
     "pull_date": "08-21-2026_15-09-33",
     "source": "https://www.news.google.com",
     "title": "A seemingly technical change to international student visas could disrupt teaching and research at US universities - The Conversation"
+  },
+  "CBMijwFBVV95cUxNVDFEZmtUTDZOQUlOc0xpN09MeWYtSzlhdUstREVNekZlclozRXpKT2R1WWJHbko2Vnhjbi04NVRsbGR3ZFN0WndsX3JmcHpzdm1XUnVkS3Z4dDRvV2JWcnZxSXFud0ZlVVMwbzNiNmNZZUt5VkpmcEVHLUJRWkhUWFhMYlFhcXFGRkphbEtaOA": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxNVDFEZmtUTDZOQUlOc0xpN09MeWYtSzlhdUstREVNekZlclozRXpKT2R1WWJHbko2Vnhjbi04NVRsbGR3ZFN0WndsX3JmcHpzdm1XUnVkS3Z4dDRvV2JWcnZxSXFud0ZlVVMwbzNiNmNZZUt5VkpmcEVHLUJRWkhUWFhMYlFhcXFGRkphbEtaOA?oc=5\" target=\"_blank\">TPS terminations prompt hiring, training changes for waste industry</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Waste Dive</font>",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVDFEZmtUTDZOQUlOc0xpN09MeWYtSzlhdUstREVNekZlclozRXpKT2R1WWJHbko2Vnhjbi04NVRsbGR3ZFN0WndsX3JmcHpzdm1XUnVkS3Z4dDRvV2JWcnZxSXFud0ZlVVMwbzNiNmNZZUt5VkpmcEVHLUJRWkhUWFhMYlFhcXFGRkphbEtaOA?oc=5",
+    "pub_date": "08-21-2026_15-50-30",
+    "pull_date": "08-22-2026_15-08-50",
+    "source": "https://www.news.google.com",
+    "title": "TPS terminations prompt hiring, training changes for waste industry - Waste Dive"
+  },
+  "70179": {
+    "author": null,
+    "category": "Profesional Responsibility",
+    "creator": "ICE Headline News Feed by Category - Professional Responsibility",
+    "description": "Officers with ICE Denver helped an injured motorist Aug. 7 after a collision between an SUV and a commercial motor vehicle on U.S. Highway 54 in Lincoln County, New Mexico.",
+    "link": "https://www.ice.gov/news/releases/ice-officers-render-aid-after-devastating-crash-new-mexico",
+    "pub_date": "08-21-2026_15-56-35",
+    "pull_date": "08-22-2026_15-09-12",
+    "source": "https://www.ice.gov",
+    "title": "ICE officers render aid after devastating crash in New Mexico"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/sint-eustatius-travel-advisory.html": {
     "author": null,
@@ -5714,21 +5762,6 @@
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "Samoa - Level 1: Exercise Normal Precautions"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "FS",
-    "creator": null,
-    "description": "Exercise normal precaution<p>in the <b>Federated States of Micronesia (FSM)</b>.</p>\n<p>The Federated States of Micronesia (FSM) is generally a safe destination for travelers.&nbsp;&nbsp;</p>\n<ul>\n<li>Review our <a title='Travel Guidance' href='/en/international-travel/travel-advisories/federated-states-of-micronesia.html#requirements'>Travel Guidance</a> for the FSM to learn how to prepare for a safe trip.</li>\n</ul>",
-    "identifier": "FS,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html",
-    "pub_date": "07-07-2026_00-00-00",
-    "pull_date": "07-16-2026_15-06-36",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Federated States of Micronesia - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.msr.html": {
     "author": null,
