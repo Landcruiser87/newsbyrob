@@ -1,18 +1,18 @@
 {
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html": {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html": {
     "author": null,
     "category": "main_feed",
-    "country": "FM",
+    "country": "KN",
     "creator": null,
     "description": "Exercise normal precautionSummary not available",
-    "identifier": "FM,advisory",
+    "identifier": "KN,advisory",
     "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html",
-    "pub_date": "08-22-2026_00-00-00",
-    "pull_date": "08-22-2026_15-08-29",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html",
+    "pub_date": "08-23-2026_00-00-00",
+    "pull_date": "08-23-2026_15-29-29",
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Federated States of Micronesia - Level 1: Exercise Normal Precautions"
+    "title": "Saint Kitts and Nevis - Level 1: Exercise Normal Precautions"
   },
   "CBMijAFBVV95cUxNU3QzdFBWOFAyY3VIcXNHMmN2aDVtU3hZTHBFZ0pfd2ROamZ2TUd3RWdnQUR4Q2JOTUQyYVNILVJMYmZYUEZpTXJhSjNHdXVSaWZzbEVxQWF4Tks5b3ZCdkluLXIyRENKN1M1V3VEb3BLbkRqZlhBeGFXdnI2OS1fM09zYkpTQmJpT2FGbA": {
     "author": null,
@@ -5311,6 +5311,21 @@
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "French Guiana - Level 1: Exercise Normal Precautions"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "FM",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in the <b>Federated States of Micronesia (FSM)</b>.</p>\n<p>The Federated States of Micronesia (FSM) is generally a safe destination for travelers.&nbsp;&nbsp;</p>\n<ul>\n<li>Review our <a title='Travel Guidance' href='/en/international-travel/travel-advisories/federated-states-of-micronesia.html#requirements'>Travel Guidance</a> for the FSM to learn how to prepare for a safe trip.</li>\n</ul>",
+    "identifier": "FM,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html",
+    "pub_date": "07-07-2026_00-00-00",
+    "pull_date": "08-23-2026_15-29-29",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Federated States of Micronesia - Level 1: Exercise Normal Precautions"
+  },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/thailand-travel-advisory.html": {
     "author": null,
     "category": "main_feed",
@@ -5924,21 +5939,6 @@
     "link": "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/saint-kitts-and-nevis-travel-advisory.html",
     "pub_date": "07-07-2026_00-00-00",
     "pull_date": "08-04-2026_15-30-49",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Saint Kitts and Nevis - Level 1: Exercise Normal Precautions"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "KN",
-    "creator": null,
-    "description": "Exercise normal precaution<p>in Saint Kitts and Nevis.</p>\n<p>Saint Kitts and Nevis is generally a safe destination for travelers.</p>\n<p><span>Saint Kitts and Nevis regularly experiences hurricanes. Review our information on <a href='#weather'>Weather and Natural Disasters</a> in Saint Kitts and Nevis.</span></p>\n<ul>\n<li><span>Review our <a href='#requirements'>Travel Guidance</a> for Saint Kitts and Nevis to learn how to prepare for a safe trip.</span></li>\n</ul>",
-    "identifier": "KN,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html",
-    "pub_date": "07-07-2026_00-00-00",
-    "pull_date": "08-21-2026_15-09-12",
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "Saint Kitts and Nevis - Level 1: Exercise Normal Precautions"
