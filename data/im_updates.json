@@ -1,18 +1,47 @@
 {
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html": {
+  "19a8da9e-15b0-455f-a4f4-8a616f0e178f": {
     "author": null,
-    "category": "main_feed",
-    "country": "KN",
+    "category": "News Releases",
+    "creator": "USCIS",
+    "description": "The Department of Homeland Security (DHS) is proposing to establish a $103,265 fee for all H-1B cap-subject petitions, including those eligible for the advanced degree exemption.",
+    "link": "https://www.uscis.gov/newsroom/news-releases/dhs-proposes-additional-h-1b-fee",
+    "pub_date": "08-24-2026_13-50-23",
+    "pull_date": "08-24-2026_15-27-20",
+    "source": "https://www.uscis.gov",
+    "title": "DHS Proposes Additional H-1B Fee"
+  },
+  "CBMijgJBVV95cUxQZTRpUHpNQ3VMR0tWYmtyVmlxdUNoZ1NaNUxPWVhDdE5ad0hPbEE2N2VhWnVVSmltVlBfZnI4MUp0MDhXVks5VFFvNWFyVUNFRUx5Rzg0aHRWb3gxVXFTd290U1pOYUlhclZXNTAtR3ptY0VVNTJHM0hRcndEcUpwblpwOEFQNE9IUWVOZWlROS1tZlk4SjdrMjBEZ25JSU9LX04zQ19YQU91QkFQUUtjdnp2eUdXeWJIUHZkMVZreTI2Z0xmNExhMlRCaVN1clZaWXdVUVl0alN3dklLN2NsZFlkR3lQdGNTaXFkNU1tR0tEMWlOcjBEdElNUU5kNklYbzQxZVFNa2cxQzJPNkHSAZMCQVVfeXFMUFhNUzQ4RVV5VXJqNXh0UU4tcmpnV19VLVNITzlxWElXckdlWnJCd2xqaFJZdHlrbS1uY3NBTXZER1NjMGRXMGVxOV94dkxMbHQ3TlhxWnIyZjhpbXY4Mjk5eGFPM0Q3dmxydkpielJIRjZTNHJSMDNkel9lbDBWem00X1pmUmZCWTZDa3pfTFhwYVYxbVkyYTk3Yi1OZHlZdVdNM01ZeXZSc3RzZU91blRQNHVOU281bEhLbFJESU5HRFJvQVFubWdUM3hwNHgxZDRuM2lsOVdENC0takFGc2hfQzBENUhFUHR0enFlWHpUWk9yaXZaaXh5TFFROHljWDlCa2JxNUxjZk04b3dTRjVZbWc": {
+    "author": null,
+    "category": "US Immigration Changes",
     "creator": null,
-    "description": "Exercise normal precautionSummary not available",
-    "identifier": "KN,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html",
-    "pub_date": "08-23-2026_00-00-00",
-    "pull_date": "08-23-2026_15-29-29",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Saint Kitts and Nevis - Level 1: Exercise Normal Precautions"
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMijgJBVV95cUxQZTRpUHpNQ3VMR0tWYmtyVmlxdUNoZ1NaNUxPWVhDdE5ad0hPbEE2N2VhWnVVSmltVlBfZnI4MUp0MDhXVks5VFFvNWFyVUNFRUx5Rzg0aHRWb3gxVXFTd290U1pOYUlhclZXNTAtR3ptY0VVNTJHM0hRcndEcUpwblpwOEFQNE9IUWVOZWlROS1tZlk4SjdrMjBEZ25JSU9LX04zQ19YQU91QkFQUUtjdnp2eUdXeWJIUHZkMVZreTI2Z0xmNExhMlRCaVN1clZaWXdVUVl0alN3dklLN2NsZFlkR3lQdGNTaXFkNU1tR0tEMWlOcjBEdElNUU5kNklYbzQxZVFNa2cxQzJPNkHSAZMCQVVfeXFMUFhNUzQ4RVV5VXJqNXh0UU4tcmpnV19VLVNITzlxWElXckdlWnJCd2xqaFJZdHlrbS1uY3NBTXZER1NjMGRXMGVxOV94dkxMbHQ3TlhxWnIyZjhpbXY4Mjk5eGFPM0Q3dmxydkpielJIRjZTNHJSMDNkel9lbDBWem00X1pmUmZCWTZDa3pfTFhwYVYxbVkyYTk3Yi1OZHlZdVdNM01ZeXZSc3RzZU91blRQNHVOU281bEhLbFJESU5HRFJvQVFubWdUM3hwNHgxZDRuM2lsOVdENC0takFGc2hfQzBENUhFUHR0enFlWHpUWk9yaXZaaXh5TFFROHljWDlCa2JxNUxjZk04b3dTRjVZbWc?oc=5\" target=\"_blank\">'Nothing changes yet': Immigration lawyer explains new $103,265 H-1B fee rule is not final; there will be</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Times of India</font>",
+    "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQZTRpUHpNQ3VMR0tWYmtyVmlxdUNoZ1NaNUxPWVhDdE5ad0hPbEE2N2VhWnVVSmltVlBfZnI4MUp0MDhXVks5VFFvNWFyVUNFRUx5Rzg0aHRWb3gxVXFTd290U1pOYUlhclZXNTAtR3ptY0VVNTJHM0hRcndEcUpwblpwOEFQNE9IUWVOZWlROS1tZlk4SjdrMjBEZ25JSU9LX04zQ19YQU91QkFQUUtjdnp2eUdXeWJIUHZkMVZreTI2Z0xmNExhMlRCaVN1clZaWXdVUVl0alN3dklLN2NsZFlkR3lQdGNTaXFkNU1tR0tEMWlOcjBEdElNUU5kNklYbzQxZVFNa2cxQzJPNkHSAZMCQVVfeXFMUFhNUzQ4RVV5VXJqNXh0UU4tcmpnV19VLVNITzlxWElXckdlWnJCd2xqaFJZdHlrbS1uY3NBTXZER1NjMGRXMGVxOV94dkxMbHQ3TlhxWnIyZjhpbXY4Mjk5eGFPM0Q3dmxydkpielJIRjZTNHJSMDNkel9lbDBWem00X1pmUmZCWTZDa3pfTFhwYVYxbVkyYTk3Yi1OZHlZdVdNM01ZeXZSc3RzZU91blRQNHVOU281bEhLbFJESU5HRFJvQVFubWdUM3hwNHgxZDRuM2lsOVdENC0takFGc2hfQzBENUhFUHR0enFlWHpUWk9yaXZaaXh5TFFROHljWDlCa2JxNUxjZk04b3dTRjVZbWc?oc=5",
+    "pub_date": "08-24-2026_17-08-00",
+    "pull_date": "08-24-2026_15-28-13",
+    "source": "https://www.news.google.com",
+    "title": "'Nothing changes yet': Immigration lawyer explains new $103,265 H-1B fee rule is not final; there will be - The Times of India"
+  },
+  "CBMimwFBVV95cUxQQUE3R1JWbU00RzhmdmJhSE1lX1dWNERtdWZ1cEw2Y1RwbGhEeHRsMllJelZUd0dQSWs1b2RuSkQtamhHWUNDZWVPN2hiY2txSGQxbDZrYXBudEFZbjdWR3h5WjZOYW9GcGpsWjRjM25keV9tRnotN2tkM1NmWTBWUFJrVnY3a1ZmakJYQjZNRlNfOEc0anhpcFlyWQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQQUE3R1JWbU00RzhmdmJhSE1lX1dWNERtdWZ1cEw2Y1RwbGhEeHRsMllJelZUd0dQSWs1b2RuSkQtamhHWUNDZWVPN2hiY2txSGQxbDZrYXBudEFZbjdWR3h5WjZOYW9GcGpsWjRjM25keV9tRnotN2tkM1NmWTBWUFJrVnY3a1ZmakJYQjZNRlNfOEc0anhpcFlyWQ?oc=5\" target=\"_blank\">Immigration Changes Discussed on TVV International with Jessica Morales</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Arias Villa Law</font>",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQUE3R1JWbU00RzhmdmJhSE1lX1dWNERtdWZ1cEw2Y1RwbGhEeHRsMllJelZUd0dQSWs1b2RuSkQtamhHWUNDZWVPN2hiY2txSGQxbDZrYXBudEFZbjdWR3h5WjZOYW9GcGpsWjRjM25keV9tRnotN2tkM1NmWTBWUFJrVnY3a1ZmakJYQjZNRlNfOEc0anhpcFlyWQ?oc=5",
+    "pub_date": "08-24-2026_15-40-43",
+    "pull_date": "08-24-2026_15-28-13",
+    "source": "https://www.news.google.com",
+    "title": "Immigration Changes Discussed on TVV International with Jessica Morales - Arias Villa Law"
+  },
+  "CBMinAFBVV95cUxOaHh2b3ViNUJ0WkFBOGItc2NobTJ1YVNBUDFpVmdOZzJ0ZVl5ZlhKSmlFOC1hMDlXaE8tdFdMN3dNUVNnVzQ3cUxTdi1vYXhvdFR6QTRoeGNjc3h1UUdEaklienJ5UG5lREJBMm9OcHdRRWpROEJuSUVsLWJIbnNSVUxqN2wyQlRZdHRqZVBZRmxvdEFmblN4WHZ2UHo": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxOaHh2b3ViNUJ0WkFBOGItc2NobTJ1YVNBUDFpVmdOZzJ0ZVl5ZlhKSmlFOC1hMDlXaE8tdFdMN3dNUVNnVzQ3cUxTdi1vYXhvdFR6QTRoeGNjc3h1UUdEaklienJ5UG5lREJBMm9OcHdRRWpROEJuSUVsLWJIbnNSVUxqN2wyQlRZdHRqZVBZRmxvdEFmblN4WHZ2UHo?oc=5\" target=\"_blank\">Measuring foreign-born population over nation\u2019s 250-year history</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Lake County News,California</font>",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOaHh2b3ViNUJ0WkFBOGItc2NobTJ1YVNBUDFpVmdOZzJ0ZVl5ZlhKSmlFOC1hMDlXaE8tdFdMN3dNUVNnVzQ3cUxTdi1vYXhvdFR6QTRoeGNjc3h1UUdEaklienJ5UG5lREJBMm9OcHdRRWpROEJuSUVsLWJIbnNSVUxqN2wyQlRZdHRqZVBZRmxvdEFmblN4WHZ2UHo?oc=5",
+    "pub_date": "08-24-2026_08-32-05",
+    "pull_date": "08-24-2026_15-28-13",
+    "source": "https://www.news.google.com",
+    "title": "Measuring foreign-born population over nation\u2019s 250-year history - Lake County News,California"
   },
   "CBMijAFBVV95cUxNU3QzdFBWOFAyY3VIcXNHMmN2aDVtU3hZTHBFZ0pfd2ROamZ2TUd3RWdnQUR4Q2JOTUQyYVNILVJMYmZYUEZpTXJhSjNHdXVSaWZzbEVxQWF4Tks5b3ZCdkluLXIyRENKN1M1V3VEb3BLbkRqZlhBeGFXdnI2OS1fM09zYkpTQmJpT2FGbA": {
     "author": null,
@@ -124,6 +153,17 @@
     "pull_date": "08-22-2026_15-09-12",
     "source": "https://www.ice.gov",
     "title": "ICE officers render aid after devastating crash in New Mexico"
+  },
+  "CBMijAFBVV95cUxNb3FscDI0OEd5UjFBRTFlSjZHLXpwX016UWZ2dEozbU9SbURKTk02bmhrYkNhZUliNV9pRUg5c0VIVGJiNnJyMFNNQW81YUVSLWFwdzNZdVJndGt5YTlyOUpaRG9UQnltS1hnVjh3Z3E5NlFYdG5LYXNQeEN4VWZ2MFN2dFVRWUtHX1NNOQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNb3FscDI0OEd5UjFBRTFlSjZHLXpwX016UWZ2dEozbU9SbURKTk02bmhrYkNhZUliNV9pRUg5c0VIVGJiNnJyMFNNQW81YUVSLWFwdzNZdVJndGt5YTlyOUpaRG9UQnltS1hnVjh3Z3E5NlFYdG5LYXNQeEN4VWZ2MFN2dFVRWUtHX1NNOQ?oc=5\" target=\"_blank\">Remigration: A Far-Right Idea Influencing U.S. Immigration Policy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">HIAS</font>",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNb3FscDI0OEd5UjFBRTFlSjZHLXpwX016UWZ2dEozbU9SbURKTk02bmhrYkNhZUliNV9pRUg5c0VIVGJiNnJyMFNNQW81YUVSLWFwdzNZdVJndGt5YTlyOUpaRG9UQnltS1hnVjh3Z3E5NlFYdG5LYXNQeEN4VWZ2MFN2dFVRWUtHX1NNOQ?oc=5",
+    "pub_date": "08-21-2026_14-43-58",
+    "pull_date": "08-24-2026_15-28-13",
+    "source": "https://www.news.google.com",
+    "title": "Remigration: A Far-Right Idea Influencing U.S. Immigration Policy - HIAS"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/sint-eustatius-travel-advisory.html": {
     "author": null,
@@ -5310,6 +5350,21 @@
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "French Guiana - Level 1: Exercise Normal Precautions"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "KN",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in Saint Kitts and Nevis.</p>\n<p>Saint Kitts and Nevis is generally a safe destination for travelers.</p>\n<p><span>Saint Kitts and Nevis regularly experiences hurricanes. Review our information on <a href='#weather'>Weather and Natural Disasters</a> in Saint Kitts and Nevis.</span></p>\n<ul>\n<li><span>Review our <a href='#requirements'>Travel Guidance</a> for Saint Kitts and Nevis to learn how to prepare for a safe trip.</span></li>\n</ul>",
+    "identifier": "KN,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html",
+    "pub_date": "07-07-2026_00-00-00",
+    "pull_date": "08-24-2026_15-27-42",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Saint Kitts and Nevis - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html": {
     "author": null,
@@ -83256,6 +83311,21 @@
     "pub_date": "08-26-2024_08-25-32",
     "pull_date": "08-27-2024_07-20-03"
   },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sxm.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "SX",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in Sint Maarten</p>\n<ul>\n<li>Sint Maarten is generally a safe destination for travelers.</li>\n<li>Petty crime is most likely to occur in popular tourist locations. Stay aware of your surroundings.\u00c2\u00a0</li>\n<li>Most crimes against foreigners are crimes of opportunity, such as theft of unsecured property or vehicle break-ins.\u00c2\u00a0</li>\n<li>Beware of overcharges and scams in tourist areas. You may encounter aggressive vendors. Most sites have tourist police available to help in uncomfortable situations.\u00c2\u00a0</li>\n<li>Crime rates are low. However, armed robberies occur at businesses storing large amounts of cash or involved in drug or gang activities.\u00c2\u00a0</li>\n<li>It is illegal to bring guns, ammunition, and even spent shells or casings into Sint Maarten. You may face arrest and detention for long periods of time.\u00c2\u00a0</li>\n</ul>\n<p>Review our Travel Guidance for Sint Maarten to learn how to prepare for a safe tripReview our <a href='#requirements'>Travel Guidance</a> for Sint Maarten to learn how to prepare for a safe trip.</p>",
+    "identifier": "SX,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sxm.html",
+    "pub_date": "08-26-2024_00-00-00",
+    "pull_date": "08-24-2026_15-27-42",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Sint Maarten - Level 1: Exercise Normal Precautions"
+  },
   "https://www.cbp.gov/node/429836": {
     "source": "https://www.cbp.gov",
     "creator": "U.S. Customs and Border Protection",
@@ -83615,21 +83685,6 @@
     "source": "https://travel.state.gov",
     "threat_level": "Level 1: Exercise Normal Precautions",
     "title": "Aruba - Level 1: Exercise Normal Precautions"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sxm.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "SX",
-    "creator": null,
-    "description": "Exercise normal precaution<p>in Sint Maarten</p>\n<ul>\n<li>Sint Maarten is generally a safe destination for travelers.</li>\n<li>Review our <a href='#requirements'>Travel Guidance</a> for Sint Maarten to learn how to prepare for a safe trip.</li>\n</ul>",
-    "identifier": "SX,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sxm.html",
-    "pub_date": "08-19-2024_00-00-00",
-    "pull_date": "08-21-2026_15-09-12",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Sint Maarten - Level 1: Exercise Normal Precautions"
   },
   "3b8fc862-a462-4ec7-8c36-12d6755958bf": {
     "source": "https://www.uscis.gov",
