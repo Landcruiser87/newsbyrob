@@ -1,4 +1,52 @@
 {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "NS",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>Suriname</b>.</p>\n<p>Suriname is generally a safe destination for travelers</p>\n<p>Review the <a title='Suriname Travel Guidance' href='/en/international-travel/travel-advisories/suriname.html#requirements'>Travel Guidance</a>&nbsp;to learn how to prepare for a safe trip.</p>",
+    "identifier": "NS,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html",
+    "pub_date": "09-08-2026_00-00-00",
+    "pull_date": "09-08-2026_15-17-49",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Suriname - Level 1: Exercise Normal Precautions"
+  },
+  "CBMivAFBVV95cUxOZ3RTSzZXZEhXaThqOHhkT1p3dVJxQVJhalZJU3dXVWxhMWtpYUNUTWNHN2N3NUpNX1pzNms4ZlQxN2dNMDBhX3NWV3NoSlVrNEZkbDQ5bGhnMDFKT0xLWndsRTk1QXRQQWdBVlV3U25wclJnakpmR0hlTmtQSHFTcjFpbUx4VU90UE1aVW9FMkhVN3Q2UFpCLUNFVTVaZHBFTXF6bVVqLXBYTlFIRWw1M21WdmtLVno1NHNyaw": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ3RTSzZXZEhXaThqOHhkT1p3dVJxQVJhalZJU3dXVWxhMWtpYUNUTWNHN2N3NUpNX1pzNms4ZlQxN2dNMDBhX3NWV3NoSlVrNEZkbDQ5bGhnMDFKT0xLWndsRTk1QXRQQWdBVlV3U25wclJnakpmR0hlTmtQSHFTcjFpbUx4VU90UE1aVW9FMkhVN3Q2UFpCLUNFVTVaZHBFTXF6bVVqLXBYTlFIRWw1M21WdmtLVno1NHNyaw?oc=5\" target=\"_blank\">How Federal Immigration Policy Changes Could Threaten Older and Disabled People\u2019s Access to Direct Care</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Urban Institute</font>",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ3RTSzZXZEhXaThqOHhkT1p3dVJxQVJhalZJU3dXVWxhMWtpYUNUTWNHN2N3NUpNX1pzNms4ZlQxN2dNMDBhX3NWV3NoSlVrNEZkbDQ5bGhnMDFKT0xLWndsRTk1QXRQQWdBVlV3U25wclJnakpmR0hlTmtQSHFTcjFpbUx4VU90UE1aVW9FMkhVN3Q2UFpCLUNFVTVaZHBFTXF6bVVqLXBYTlFIRWw1M21WdmtLVno1NHNyaw?oc=5",
+    "pub_date": "09-08-2026_12-00-00",
+    "pull_date": "09-08-2026_15-18-09",
+    "source": "https://www.news.google.com",
+    "title": "How Federal Immigration Policy Changes Could Threaten Older and Disabled People\u2019s Access to Direct Care - Urban Institute"
+  },
+  "CBMingFBVV95cUxNN3BrQm1fb0E0THlPb09xRGdPV0lySUVWM3YtZHpycm0zcGRsZjFJT0JVZE5sc0p6UFJUOXRDeERWY0p2bW9wbk9mWl9qMmFGZXlSWHN2QlZIWXN3eExScnFNWE94QUNTMjZiM0dHUWpCVXVUVG9xUU5QeFBoNVNyckt5ODc1aHBrMnE0VDJTd01kT0R2RExEeTJjWlBhdw": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxNN3BrQm1fb0E0THlPb09xRGdPV0lySUVWM3YtZHpycm0zcGRsZjFJT0JVZE5sc0p6UFJUOXRDeERWY0p2bW9wbk9mWl9qMmFGZXlSWHN2QlZIWXN3eExScnFNWE94QUNTMjZiM0dHUWpCVXVUVG9xUU5QeFBoNVNyckt5ODc1aHBrMnE0VDJTd01kT0R2RExEeTJjWlBhdw?oc=5\" target=\"_blank\">Rule change allows Brazilian pastor to resume Texas pastorate</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">christiandaily.com</font>",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN3BrQm1fb0E0THlPb09xRGdPV0lySUVWM3YtZHpycm0zcGRsZjFJT0JVZE5sc0p6UFJUOXRDeERWY0p2bW9wbk9mWl9qMmFGZXlSWHN2QlZIWXN3eExScnFNWE94QUNTMjZiM0dHUWpCVXVUVG9xUU5QeFBoNVNyckt5ODc1aHBrMnE0VDJTd01kT0R2RExEeTJjWlBhdw?oc=5",
+    "pub_date": "09-08-2026_11-30-06",
+    "pull_date": "09-08-2026_15-18-09",
+    "source": "https://www.news.google.com",
+    "title": "Rule change allows Brazilian pastor to resume Texas pastorate - christiandaily.com"
+  },
+  "CBMiuwFBVV95cUxNSlBlQWo0cGkwTmFUYUg3VnRNMlVLZ3Zkbk55TW50MzdmZHpzLVV0VkY0d3oySGk1MEUzRVVWUzNiaHowWklqTmp3Y2dXTG1tcEgxbGx3UE5qZkZSZzVhUC1YTTI0ZjRva0xfUjJGSUhpVTl1akl6dl9kVnlSY3NmVDFLX0FHN2JHdWdyazJXb0ktUnBaQVdXZlVDSmxHTnZzLTIxRnNjcUd0UTJzVG9fbWNPUkZ0UHhoaTJN": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSlBlQWo0cGkwTmFUYUg3VnRNMlVLZ3Zkbk55TW50MzdmZHpzLVV0VkY0d3oySGk1MEUzRVVWUzNiaHowWklqTmp3Y2dXTG1tcEgxbGx3UE5qZkZSZzVhUC1YTTI0ZjRva0xfUjJGSUhpVTl1akl6dl9kVnlSY3NmVDFLX0FHN2JHdWdyazJXb0ktUnBaQVdXZlVDSmxHTnZzLTIxRnNjcUd0UTJzVG9fbWNPUkZ0UHhoaTJN?oc=5\" target=\"_blank\">Immigration attorneys discuss changes to Duration of Status Immigration Policy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Brown and White</font>",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSlBlQWo0cGkwTmFUYUg3VnRNMlVLZ3Zkbk55TW50MzdmZHpzLVV0VkY0d3oySGk1MEUzRVVWUzNiaHowWklqTmp3Y2dXTG1tcEgxbGx3UE5qZkZSZzVhUC1YTTI0ZjRva0xfUjJGSUhpVTl1akl6dl9kVnlSY3NmVDFLX0FHN2JHdWdyazJXb0ktUnBaQVdXZlVDSmxHTnZzLTIxRnNjcUd0UTJzVG9fbWNPUkZ0UHhoaTJN?oc=5",
+    "pub_date": "09-08-2026_03-08-48",
+    "pull_date": "09-08-2026_15-18-09",
+    "source": "https://www.news.google.com",
+    "title": "Immigration attorneys discuss changes to Duration of Status Immigration Policy - The Brown and White"
+  },
   "CBMilwFBVV95cUxPUW9UdXJicGpMX1FBNUJ0RENrQTlNRmM4N0hUV25oakgxb3pEQnpqcTJWbnZyaGhCTnIyZFc4Mk1KdmRkaUdqTjhObVFYeEpjWlNJVVI5cXNpMzVBanRWVlkxcVpQaUl2eGRHelVMNHVEWHU1eWZoM0RlVnd3MWRYUmkzak9ZWHV2NTRnNlRtalo1UXlRSXpR": {
     "author": null,
     "category": "US Immigration Changes",
@@ -80615,21 +80663,6 @@
     "category": "Newsroom",
     "pub_date": "12-16-2024_09-08-47",
     "pull_date": "12-17-2024_08-01-44"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "NS",
-    "creator": null,
-    "description": "Exercise normal precaution<p>in <b>Suriname</b>.</p>\n<p>Exercise normal precautions in Suriname. Review the <a title='Suriname Travel Guidance' href='/en/international-travel/travel-advisories/suriname.html#requirements'>Travel Guidance</a> for additional information on travel to Suriname.</p>",
-    "identifier": "NS,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html",
-    "pub_date": "12-13-2024_00-00-00",
-    "pull_date": "08-21-2026_15-09-12",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Suriname - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/suriname-travel-advisory.html": {
     "author": null,
