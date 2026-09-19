@@ -1,4 +1,30 @@
 {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "GP",
+    "creator": null,
+    "description": "Exercise normal precautionSummary not available",
+    "identifier": "GP,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html",
+    "pub_date": "09-19-2026_00-00-00",
+    "pull_date": "09-19-2026_15-15-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Guadeloupe - Level 1: Exercise Normal Precautions"
+  },
+  "CBMivAFBVV95cUxQUTlfMFE4S1pJbWJSZ1pSbFEzVzJzOUdWRExpcHFqUWd5b19LRmtzSGxiMF9Xazc1Y25iMjRDLWdJWjJ1MWpCLWpYRE9aWE96N1hRaXZHRWs5ZVFLZ0ktSTZWeE5PdFpLNFV3UDA5TC1sTUFPVUhVQ0hqaV92LW10WE5faG5OeTZ0N3RCX3c0UlNiUm5TSlpPd0F5NHY5VlNmVHhkc0ZXdzJFTTZIU2xySTBabm10cU91dHVMLQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxQUTlfMFE4S1pJbWJSZ1pSbFEzVzJzOUdWRExpcHFqUWd5b19LRmtzSGxiMF9Xazc1Y25iMjRDLWdJWjJ1MWpCLWpYRE9aWE96N1hRaXZHRWs5ZVFLZ0ktSTZWeE5PdFpLNFV3UDA5TC1sTUFPVUhVQ0hqaV92LW10WE5faG5OeTZ0N3RCX3c0UlNiUm5TSlpPd0F5NHY5VlNmVHhkc0ZXdzJFTTZIU2xySTBabm10cU91dHVMLQ?oc=5\" target=\"_blank\">New Green Card rules take effect: What changes for US-born children and immigrant families - CNBC TV18</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">LinkedIn</font>",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUTlfMFE4S1pJbWJSZ1pSbFEzVzJzOUdWRExpcHFqUWd5b19LRmtzSGxiMF9Xazc1Y25iMjRDLWdJWjJ1MWpCLWpYRE9aWE96N1hRaXZHRWs5ZVFLZ0ktSTZWeE5PdFpLNFV3UDA5TC1sTUFPVUhVQ0hqaV92LW10WE5faG5OeTZ0N3RCX3c0UlNiUm5TSlpPd0F5NHY5VlNmVHhkc0ZXdzJFTTZIU2xySTBabm10cU91dHVMLQ?oc=5",
+    "pub_date": "09-19-2026_11-46-26",
+    "pull_date": "09-19-2026_15-15-35",
+    "source": "https://www.news.google.com",
+    "title": "New Green Card rules take effect: What changes for US-born children and immigrant families - CNBC TV18 - LinkedIn"
+  },
   "190b0586-0b8f-443d-a5ef-22dc3e18c764": {
     "author": null,
     "category": "News Releases",
@@ -108,21 +134,6 @@
     "pull_date": "09-18-2026_15-25-57",
     "source": "https://www.ice.gov",
     "title": "ICE Boston arrests foreign fugitive wanted for aggravated homicide in El Salvador"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "BB",
-    "creator": null,
-    "description": "Exercise normal precautionSummary not available",
-    "identifier": "BB,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
-    "pub_date": "09-17-2026_00-00-00",
-    "pull_date": "09-17-2026_15-12-14",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Barbados - Level 1: Exercise Normal Precautions"
   },
   "CBMijAFBVV95cUxQbkdEZjhPS0ktcGlvMURfRkl6RjFsSmJhaC0wRDFrbkdydDNseHBQZXphMTZYNDBjbEs0VGZucmhJMC1lcjQ1d1VRY1IyZ0ZIbUV3bnQ5UEdCa05qR3dVcXBUYnBoNTlJX1NvdTh0QXBtZmpuemZmak0tVERxUVdIZng0NnNvR01KaDllag": {
     "author": null,
@@ -299,6 +310,17 @@
     "pull_date": "09-18-2026_15-24-48",
     "source": "https://www.uscis.gov",
     "title": "Immigration Attorney Arrested in Alleged Fraud Scheme"
+  },
+  "CBMizAFBVV95cUxPUG8ybjR3ZnNLRjlJNE1fZFZYcEVTdXQzYXhMaGNCWWNELTFDbDZiRnRzQWNocXdMUmNfcmE1c1lIdm5NTW9wdU1RUWhZT050NTdqaTJ0a19pSkZGOWZ6TnhlU3prNUtyYVpXdXU3Q1NINk10VmNGZTYyWlNWY2FtUEFZaFVKNS0yTTFhSElSdGptSDRkQlljSDRiT0VjbDhRMFFMUGl1MWRXdkNBWU9LNGdubHhCb0Q3QjhpRUQtcEVPank4WWk0d0JKeHI": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPUG8ybjR3ZnNLRjlJNE1fZFZYcEVTdXQzYXhMaGNCWWNELTFDbDZiRnRzQWNocXdMUmNfcmE1c1lIdm5NTW9wdU1RUWhZT050NTdqaTJ0a19pSkZGOWZ6TnhlU3prNUtyYVpXdXU3Q1NINk10VmNGZTYyWlNWY2FtUEFZaFVKNS0yTTFhSElSdGptSDRkQlljSDRiT0VjbDhRMFFMUGl1MWRXdkNBWU9LNGdubHhCb0Q3QjhpRUQtcEVPank4WWk0d0JKeHI?oc=5\" target=\"_blank\">Thousands of Immigrants Scheduled to Lose Medicare Coverage in the New Year</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medicare Rights Center</font>",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUG8ybjR3ZnNLRjlJNE1fZFZYcEVTdXQzYXhMaGNCWWNELTFDbDZiRnRzQWNocXdMUmNfcmE1c1lIdm5NTW9wdU1RUWhZT050NTdqaTJ0a19pSkZGOWZ6TnhlU3prNUtyYVpXdXU3Q1NINk10VmNGZTYyWlNWY2FtUEFZaFVKNS0yTTFhSElSdGptSDRkQlljSDRiT0VjbDhRMFFMUGl1MWRXdkNBWU9LNGdubHhCb0Q3QjhpRUQtcEVPank4WWk0d0JKeHI?oc=5",
+    "pub_date": "09-17-2026_21-06-42",
+    "pull_date": "09-19-2026_15-15-35",
+    "source": "https://www.news.google.com",
+    "title": "Thousands of Immigrants Scheduled to Lose Medicare Coverage in the New Year - Medicare Rights Center"
   },
   "CBMivAFBVV95cUxPNUFWWExnRjdEYzFSdi10VllVTzlaVVFqSDh4MUo4LVZJcnJKY2JzUVJ5UlZoVXlvelo2RnBLUlVJSHBUMmhITS0zYTN6SmE1NXhibTdDVlhObVRndjB5UlNWVUFyM0xDOWRrMUpsQ2tSVWF4SjcwU2RjR05CV0JXb1ZORkt3WHlhNEV0TlRlTkNkOFExdGZfUlVNeV9ISXJNcmZkNGZLOXlvUEdnZk56RkQ5ZmNRZjBXbERkVw": {
     "author": null,
@@ -2713,21 +2735,6 @@
     "pull_date": "08-20-2026_15-13-31",
     "source": "https://www.news.google.com",
     "title": "ICE, Iran quietly worked together on deporting Iranians to Iran, emails show - CBS News"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "GL",
-    "creator": null,
-    "description": "Exercise normal precaution<p>in <b>Guadeloupe.</b></p>\n<p>\u00c2\u00a0</p>\n<p>Guadeloupe is generally a safe destination for travelers.</p>\n<ul>\n<li>Guadeloupe regularly experiences hurricanes. Review our information on <a href='/en/international-travel/travel-advisories/guadeloupe.html#weather' title='Weather and Natural Disasters in Guadeloupe'>Weather and Natural Disasters</a> in Guadeloupe.\u00c2\u00a0</li>\n<li><span>Review our </span><a href='/en/international-travel/travel-advisories/guadeloupe.html#requirements' title='Travel Guidance for Guadeloupe'>Travel Guidance for Guadeloupe</a><span> to learn how to prepare for a safe trip.</span></li>\n</ul>",
-    "identifier": "GL,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html",
-    "pub_date": "08-20-2026_00-00-00",
-    "pull_date": "08-21-2026_15-09-12",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Guadeloupe - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mtq.html": {
     "author": null,
@@ -19456,6 +19463,21 @@
     "pull_date": "04-12-2026_13-11-39",
     "source": "https://www.news.google.com",
     "title": "ICE Quietly Changes I-9 Offenses, Raising Employer Fine Risk - Law360"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "BB",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>Barbados</b>.</p>\n<p>Barbados is generally a safe destination for travelers.</p>\n<ul>\n<li>Petty crime is common, especially in popular tourist locations. Stay aware of your surroundings.</li>\n<li>Most crimes against foreigners are crimes of opportunity, like purse snatching and pickpocketing.</li>\n</ul>\n<p>Review our <a href='/en/international-travel/travel-advisories/barbados.html#requirements'>travel guidance</a> for Barbados to learn how to prepare for a safe trip.</p>",
+    "identifier": "BB,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
+    "pub_date": "04-10-2026_00-00-00",
+    "pull_date": "09-19-2026_15-15-12",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Barbados - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bermuda-travel-advisory.html": {
     "author": null,
