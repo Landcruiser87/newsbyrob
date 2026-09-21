@@ -1,4 +1,74 @@
 {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "BE",
+    "creator": null,
+    "description": "Exercise normal precautionSummary not available",
+    "identifier": "BE,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html",
+    "pub_date": "09-21-2026_00-00-00",
+    "pull_date": "09-21-2026_15-08-04",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Belgium - Level 1: Exercise Normal Precautions"
+  },
+  "CBMifEFVX3lxTE1UNGJJV0o3WmlaWXRzRkIyZjM0a3FvX0p3VElqNmFsbHJLOTd3aDdjcnNOd0pMQ1ZTbWxTVnFsY3lZQzFVZVZab0xhbEJTTC1wb3FOWDFkWHdCUlM3WldtWTQ2R01hV3JGQm1vZzlJSzktTDlWU1NydGpraF8": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE1UNGJJV0o3WmlaWXRzRkIyZjM0a3FvX0p3VElqNmFsbHJLOTd3aDdjcnNOd0pMQ1ZTbWxTVnFsY3lZQzFVZVZab0xhbEJTTC1wb3FOWDFkWHdCUlM3WldtWTQ2R01hV3JGQm1vZzlJSzktTDlWU1NydGpraF8?oc=5\" target=\"_blank\">Federal change threatens Medicaid coverage for 25K legal immigrants in NJ</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">New Jersey Monitor</font>",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1UNGJJV0o3WmlaWXRzRkIyZjM0a3FvX0p3VElqNmFsbHJLOTd3aDdjcnNOd0pMQ1ZTbWxTVnFsY3lZQzFVZVZab0xhbEJTTC1wb3FOWDFkWHdCUlM3WldtWTQ2R01hV3JGQm1vZzlJSzktTDlWU1NydGpraF8?oc=5",
+    "pub_date": "09-21-2026_11-06-11",
+    "pull_date": "09-21-2026_15-08-35",
+    "source": "https://www.news.google.com",
+    "title": "Federal change threatens Medicaid coverage for 25K legal immigrants in NJ - New Jersey Monitor"
+  },
+  "CBMizwFBVV95cUxQN01BUjlSc2U1T25wcDBWZWRUX25qSDdGVWJMVG5TZjdCZ01qS3FLUUJpWkRuNEJwWDMxMnlCYkhsYWZ2b0JBZjVTdnY2MkJBWElYNGNpSm5DWkVRcW5EMDhRWmJNNHBCZml6dWVNYUQ1eXE2d3F0MW54MXFwQkpSR0QxY1ZjeEE0RS1ZcG9ObDhJdmU1SHFRbHI3OUFsbUVKTS1RQ1BZLUlHRk5lSEowU0RXRjM4ei1FNGRrWnVXdF9fSG9oa1djSU1YRnFkYmc": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxQN01BUjlSc2U1T25wcDBWZWRUX25qSDdGVWJMVG5TZjdCZ01qS3FLUUJpWkRuNEJwWDMxMnlCYkhsYWZ2b0JBZjVTdnY2MkJBWElYNGNpSm5DWkVRcW5EMDhRWmJNNHBCZml6dWVNYUQ1eXE2d3F0MW54MXFwQkpSR0QxY1ZjeEE0RS1ZcG9ObDhJdmU1SHFRbHI3OUFsbUVKTS1RQ1BZLUlHRk5lSEowU0RXRjM4ei1FNGRrWnVXdF9fSG9oa1djSU1YRnFkYmc?oc=5\" target=\"_blank\">Ottawa tightens rules for Atlantic Immigration Program applicants with employment changes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CIC News</font>",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQN01BUjlSc2U1T25wcDBWZWRUX25qSDdGVWJMVG5TZjdCZ01qS3FLUUJpWkRuNEJwWDMxMnlCYkhsYWZ2b0JBZjVTdnY2MkJBWElYNGNpSm5DWkVRcW5EMDhRWmJNNHBCZml6dWVNYUQ1eXE2d3F0MW54MXFwQkpSR0QxY1ZjeEE0RS1ZcG9ObDhJdmU1SHFRbHI3OUFsbUVKTS1RQ1BZLUlHRk5lSEowU0RXRjM4ei1FNGRrWnVXdF9fSG9oa1djSU1YRnFkYmc?oc=5",
+    "pub_date": "09-21-2026_11-04-12",
+    "pull_date": "09-21-2026_15-08-35",
+    "source": "https://www.news.google.com",
+    "title": "Ottawa tightens rules for Atlantic Immigration Program applicants with employment changes - CIC News"
+  },
+  "CBMi1AFBVV95cUxNalZMejA3cF8zN2xtbk5fQ2RYVzJ1WjFjY2hjWkN3OFQ4NElBMGVvcUQtQlJZVURZaThZT0VpeWtFVldLaHF4dFZtS09BSERFcmFkaHpZY0Z3aDBSOWtPeTYzQUlnZWlWN1VoenhEcHBweWNSWDhVLTZvY1UteW1NdEpsV3VpOHNqV1c3TFJWQkRFRU0tNVBKU1R0OVVjdTBidkZLem9wbDY4REVkYkc0OGFYWVl6aGJJY3FNTHYyaV84Y0hBUmxZRUN1M0l6c2lQbEV4LdIB2gFBVV95cUxQZDlwcEMtbmJDV3hYeHk3ZG13XzV0bnVnUmRzN0p0MUpoRmh1U01EQTkwbkI0dlcxNllUNFl2dlVacks2cV91UlZKOWFHT2d5ZlBtWS1MS1FscWhVVHJqVWhLa3AxSFI3aGtYTVN2a1hrRkdlM1hBMlA3TE9kTmtyd2xxdVpBWVFrMVRlSDgxc1VZM0FfLXpDSXVxNDlwUE5FS2M1T2hPaklQcS1tUmpuelduMDAyN1BUV3VxQi01Q0pudnZmVFVJS2pHbkVUelRCcS1nY2FwVVlFUQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNalZMejA3cF8zN2xtbk5fQ2RYVzJ1WjFjY2hjWkN3OFQ4NElBMGVvcUQtQlJZVURZaThZT0VpeWtFVldLaHF4dFZtS09BSERFcmFkaHpZY0Z3aDBSOWtPeTYzQUlnZWlWN1VoenhEcHBweWNSWDhVLTZvY1UteW1NdEpsV3VpOHNqV1c3TFJWQkRFRU0tNVBKU1R0OVVjdTBidkZLem9wbDY4REVkYkc0OGFYWVl6aGJJY3FNTHYyaV84Y0hBUmxZRUN1M0l6c2lQbEV4LdIB2gFBVV95cUxQZDlwcEMtbmJDV3hYeHk3ZG13XzV0bnVnUmRzN0p0MUpoRmh1U01EQTkwbkI0dlcxNllUNFl2dlVacks2cV91UlZKOWFHT2d5ZlBtWS1MS1FscWhVVHJqVWhLa3AxSFI3aGtYTVN2a1hrRkdlM1hBMlA3TE9kTmtyd2xxdVpBWVFrMVRlSDgxc1VZM0FfLXpDSXVxNDlwUE5FS2M1T2hPaklQcS1tUmpuelduMDAyN1BUV3VxQi01Q0pudnZmVFVJS2pHbkVUelRCcS1nY2FwVVlFUQ?oc=5\" target=\"_blank\">Thailand changes visa-free rules: What the 30-day limit means for Indians</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Business Standard</font>",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNalZMejA3cF8zN2xtbk5fQ2RYVzJ1WjFjY2hjWkN3OFQ4NElBMGVvcUQtQlJZVURZaThZT0VpeWtFVldLaHF4dFZtS09BSERFcmFkaHpZY0Z3aDBSOWtPeTYzQUlnZWlWN1VoenhEcHBweWNSWDhVLTZvY1UteW1NdEpsV3VpOHNqV1c3TFJWQkRFRU0tNVBKU1R0OVVjdTBidkZLem9wbDY4REVkYkc0OGFYWVl6aGJJY3FNTHYyaV84Y0hBUmxZRUN1M0l6c2lQbEV4LdIB2gFBVV95cUxQZDlwcEMtbmJDV3hYeHk3ZG13XzV0bnVnUmRzN0p0MUpoRmh1U01EQTkwbkI0dlcxNllUNFl2dlVacks2cV91UlZKOWFHT2d5ZlBtWS1MS1FscWhVVHJqVWhLa3AxSFI3aGtYTVN2a1hrRkdlM1hBMlA3TE9kTmtyd2xxdVpBWVFrMVRlSDgxc1VZM0FfLXpDSXVxNDlwUE5FS2M1T2hPaklQcS1tUmpuelduMDAyN1BUV3VxQi01Q0pudnZmVFVJS2pHbkVUelRCcS1nY2FwVVlFUQ?oc=5",
+    "pub_date": "09-21-2026_10-02-37",
+    "pull_date": "09-21-2026_15-08-35",
+    "source": "https://www.news.google.com",
+    "title": "Thailand changes visa-free rules: What the 30-day limit means for Indians - Business Standard"
+  },
+  "CBMi2wFBVV95cUxOSExScHpqZkNhNFA3Unl4eUQyeFp0NHBLU2xTSTFjZEVLcWVSamF6ejJSSExRLWlUN180ckZnenVVRUs3dE5Kejh5OFQ4ZHZCcVB0b05fVWNVTGpMNzUwZ1NueDVtQldIWEM2ZjRDbjlRUmhmd2RvaEZISE1PRUEwek96c242QWw1NldQaURvLV91enVkVGRGNU81dlJYc0ZXc1VhcVRpd1Uwc1NCalFlQl9faUhqbGlxNVU3WDA4VnFpUF85eUQzc01zZkRqMnZUaXd3d1ZNSU5YZknSAe4BQVVfeXFMTkFHd2Q1eUR5SUQxTDZRWVpkTkt4NGltOWdQYjM3S3BaRkFaOHlWcWR0NFR5WERoZ3NpckN5RHgyMjByek0zS3pBX1c1WnNSaGtmdHdURjd5RVBqcXNZUVNYS1ZHOEdyNEFhQ19vZnlVUFJEWWFtYVdlQmpFOHNrOVJ6YVRQNElJaVIwMENBbFBCSmFlVHNlejNsUDhyOTV4UFJqZW1mTmRqNWlEdGhvYk9LeHhERzB6b19maU05ZTBzVzJ6RG0wdlBLeHdUQVd2QVB1Q3Z0dThZRnZpVXZVTGp2a2FmVVBVX0tXQXhlQQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSExScHpqZkNhNFA3Unl4eUQyeFp0NHBLU2xTSTFjZEVLcWVSamF6ejJSSExRLWlUN180ckZnenVVRUs3dE5Kejh5OFQ4ZHZCcVB0b05fVWNVTGpMNzUwZ1NueDVtQldIWEM2ZjRDbjlRUmhmd2RvaEZISE1PRUEwek96c242QWw1NldQaURvLV91enVkVGRGNU81dlJYc0ZXc1VhcVRpd1Uwc1NCalFlQl9faUhqbGlxNVU3WDA4VnFpUF85eUQzc01zZkRqMnZUaXd3d1ZNSU5YZknSAe4BQVVfeXFMTkFHd2Q1eUR5SUQxTDZRWVpkTkt4NGltOWdQYjM3S3BaRkFaOHlWcWR0NFR5WERoZ3NpckN5RHgyMjByek0zS3pBX1c1WnNSaGtmdHdURjd5RVBqcXNZUVNYS1ZHOEdyNEFhQ19vZnlVUFJEWWFtYVdlQmpFOHNrOVJ6YVRQNElJaVIwMENBbFBCSmFlVHNlejNsUDhyOTV4UFJqZW1mTmRqNWlEdGhvYk9LeHhERzB6b19maU05ZTBzVzJ6RG0wdlBLeHdUQVd2QVB1Q3Z0dThZRnZpVXZVTGp2a2FmVVBVX0tXQXhlQQ?oc=5\" target=\"_blank\">US visa applicants face new social media rule from October 1: What UAE travellers need to know</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Gulf News</font>",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOSExScHpqZkNhNFA3Unl4eUQyeFp0NHBLU2xTSTFjZEVLcWVSamF6ejJSSExRLWlUN180ckZnenVVRUs3dE5Kejh5OFQ4ZHZCcVB0b05fVWNVTGpMNzUwZ1NueDVtQldIWEM2ZjRDbjlRUmhmd2RvaEZISE1PRUEwek96c242QWw1NldQaURvLV91enVkVGRGNU81dlJYc0ZXc1VhcVRpd1Uwc1NCalFlQl9faUhqbGlxNVU3WDA4VnFpUF85eUQzc01zZkRqMnZUaXd3d1ZNSU5YZknSAe4BQVVfeXFMTkFHd2Q1eUR5SUQxTDZRWVpkTkt4NGltOWdQYjM3S3BaRkFaOHlWcWR0NFR5WERoZ3NpckN5RHgyMjByek0zS3pBX1c1WnNSaGtmdHdURjd5RVBqcXNZUVNYS1ZHOEdyNEFhQ19vZnlVUFJEWWFtYVdlQmpFOHNrOVJ6YVRQNElJaVIwMENBbFBCSmFlVHNlejNsUDhyOTV4UFJqZW1mTmRqNWlEdGhvYk9LeHhERzB6b19maU05ZTBzVzJ6RG0wdlBLeHdUQVd2QVB1Q3Z0dThZRnZpVXZVTGp2a2FmVVBVX0tXQXhlQQ?oc=5",
+    "pub_date": "09-21-2026_09-11-57",
+    "pull_date": "09-21-2026_15-08-35",
+    "source": "https://www.news.google.com",
+    "title": "US visa applicants face new social media rule from October 1: What UAE travellers need to know - Gulf News"
+  },
+  "CBMiqAFBVV95cUxPeGc0dk9jTzdYMVlIWF9WajVEelRxdTA5SFpPTW96Z3ZfeG5LZEMxSGg3eVBKWlhZc0FRUlIwM1QxeGdiR3QwV0JTVDhDSFYtNllyVGs5bVpYNmhFdEVYZ290WFJwNTZmQ3pFUXpqTWRvMWFqeXNEbDJaYUE0eVZBNmN0S2s4c3dpdTBXTHlWV0pkX2VaU2M4MzdWbkp3OGxTSm52TDRTank": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeGc0dk9jTzdYMVlIWF9WajVEelRxdTA5SFpPTW96Z3ZfeG5LZEMxSGg3eVBKWlhZc0FRUlIwM1QxeGdiR3QwV0JTVDhDSFYtNllyVGs5bVpYNmhFdEVYZ290WFJwNTZmQ3pFUXpqTWRvMWFqeXNEbDJaYUE0eVZBNmN0S2s4c3dpdTBXTHlWV0pkX2VaU2M4MzdWbkp3OGxTSm52TDRTank?oc=5\" target=\"_blank\">How high is current immigration to the United States in historical perspective?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Our World in Data</font>",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPeGc0dk9jTzdYMVlIWF9WajVEelRxdTA5SFpPTW96Z3ZfeG5LZEMxSGg3eVBKWlhZc0FRUlIwM1QxeGdiR3QwV0JTVDhDSFYtNllyVGs5bVpYNmhFdEVYZ290WFJwNTZmQ3pFUXpqTWRvMWFqeXNEbDJaYUE0eVZBNmN0S2s4c3dpdTBXTHlWV0pkX2VaU2M4MzdWbkp3OGxTSm52TDRTank?oc=5",
+    "pub_date": "09-21-2026_05-34-24",
+    "pull_date": "09-21-2026_15-08-35",
+    "source": "https://www.news.google.com",
+    "title": "How high is current immigration to the United States in historical perspective? - Our World in Data"
+  },
   "CBMi3wFBVV95cUxNMHdWbkhsaVVWQXlKNm91a2s4el9mN2dGSW9GVEQ1UWV1bGFXblB0S2ZKREo5UngyV1gzWWNEakpzMGtodmU1RnBkSEktYzFqaHVXVmo5eG5Xb3RKU1FqT2VfNTJ2NlAyeFZaNDgzVUxlQTI5dVpjMlcxZjZPa1BlMkR0dE8xV1VuYUlhQ2x5eERNSGJVbGhVaThGRmpHQnY1Vkl6dER2ams5NkhKMms0SW92RWVQbFNrNUh1S1ROM05sMHplWDdaNzFXdXRjN3N6bUNCeS03MmUyMjB6ekpv": {
     "author": null,
     "category": "US Immigration Changes",
@@ -5719,21 +5789,6 @@
     "pull_date": "07-25-2026_15-17-49",
     "source": "https://www.news.google.com",
     "title": "US Grants Immigration Officers Broader Discretion to Deny Green Cards - Outbound Investment Group"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "BE",
-    "creator": null,
-    "description": "Exercise increased caution<p>in <b>Belgium </b>due to <b>crime</b>, <b>terrorism</b>, and <b>unrest</b>.</p>\n<h5>Crime</h5>\n<ul>\n<li>Petty crime is common, especially in popular tourist locations. Stay aware of your surroundings.</li>\n<li>Most crimes against foreigners are crimes of opportunity, like purse snatching and pickpocketing.</li>\n</ul>\n<h5>Terrorism</h5>\n<ul>\n<li>There is risk of terrorist violence, including terrorist attacks and other activity in Belgium.&nbsp;</li>\n<li>Visit the U.S. Department of State's <a href='https://www.state.gov/country-reports-on-terrorism/' target='_blank'>country reports on terrorism</a> to learn more.</li>\n</ul>\n<h5>Unrest</h5>\n<ul>\n<li>Large-scale, generally peaceful demonstrations related to the local political situation may occur. Demonstrations may disrupt transportation and other essential services.</li>\n<li>Review our <a href='/en/international-travel/travel-advisories/belgium.html#requirements' title='Travel Guidance'>Travel Guidance for Belgium</a><span style='font-size: 18.24px; white-space: initial;'> to learn how to prepare for a safe trip.</span></li>\n</ul>",
-    "identifier": "BE,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html",
-    "pub_date": "07-23-2026_00-00-00",
-    "pull_date": "07-31-2026_15-17-03",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 2: Exercise Increased Caution",
-    "title": "Belgium - Level 2: Exercise Increased Caution"
   },
   "http://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/belgium-travel-advisory.html": {
     "author": null,
