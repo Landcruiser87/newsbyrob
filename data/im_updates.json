@@ -1,4 +1,41 @@
 {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "BB",
+    "creator": null,
+    "description": "Exercise normal precautionSummary not available",
+    "identifier": "BB,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
+    "pub_date": "09-22-2026_00-00-00",
+    "pull_date": "09-22-2026_15-26-52",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Barbados - Level 1: Exercise Normal Precautions"
+  },
+  "6a7a2747-cd62-4c4d-8859-6e656fe37adf": {
+    "author": null,
+    "category": "News Releases",
+    "creator": "USCIS",
+    "description": "Two Chinese aliens turned themselves in Sept. 17 on charges that accuse one of a naturalization crime and both of a firearm crime. The U.S. Attorney\u2019s Office for the Eastern District of Missouri made the announcement.",
+    "link": "https://www.uscis.gov/newsroom/news-releases/chinese-aliens-indicted-on-naturalization-and-firearms-charges",
+    "pub_date": "09-22-2026_11-22-29",
+    "pull_date": "09-22-2026_15-26-37",
+    "source": "https://www.uscis.gov",
+    "title": "Chinese Aliens Indicted on Naturalization and Firearms Charges"
+  },
+  "6fc90d61-3cda-4421-bb06-f0748a8f819a": {
+    "author": null,
+    "category": "News Releases",
+    "creator": "USCIS",
+    "description": "U.S. Citizenship and Immigration Services provided vital assistance to an investigation that lead to the indictment of Miran Kostic, an alien and accused war criminal from Bosnia and Herzegovina.",
+    "link": "https://www.uscis.gov/newsroom/news-releases/bosnian-prisoner-abuser-charged-with-lying-to-get-us-citizenship",
+    "pub_date": "09-22-2026_11-09-42",
+    "pull_date": "09-22-2026_15-26-37",
+    "source": "https://www.uscis.gov",
+    "title": "Bosnian Prisoner Abuser Charged with Lying to Get US Citizenship"
+  },
   "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html": {
     "author": null,
     "category": "main_feed",
@@ -68,6 +105,28 @@
     "pull_date": "09-21-2026_15-08-35",
     "source": "https://www.news.google.com",
     "title": "How high is current immigration to the United States in historical perspective? - Our World in Data"
+  },
+  "CBMitAFBVV95cUxNeXZtOFlGQTZpSnRKWW5sdlhYcTAwSUh4UTdHR2RSbGphNmU3QnNzU2E5aURkZzZ5SnpSMlFKTDRpWTV2b3NqaHJudy12MW1LWnN4RVZBTGRDT3VHWTVTSW9ieDhrY1BubjF0NzNVLXpaRGg3TGZNdTdjSWZSRlozN3hwLTcwcXJsd3BLaU1XZzg4VnZxemNhclZReUVoLXc5TFVmeFpjalR6cEZyeGJTaVFJLXA": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxNeXZtOFlGQTZpSnRKWW5sdlhYcTAwSUh4UTdHR2RSbGphNmU3QnNzU2E5aURkZzZ5SnpSMlFKTDRpWTV2b3NqaHJudy12MW1LWnN4RVZBTGRDT3VHWTVTSW9ieDhrY1BubjF0NzNVLXpaRGg3TGZNdTdjSWZSRlozN3hwLTcwcXJsd3BLaU1XZzg4VnZxemNhclZReUVoLXc5TFVmeFpjalR6cEZyeGJTaVFJLXA?oc=5\" target=\"_blank\">Health advocates warn of MassHealth changes for immigrants coming Oct. 1</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WGBH</font>",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNeXZtOFlGQTZpSnRKWW5sdlhYcTAwSUh4UTdHR2RSbGphNmU3QnNzU2E5aURkZzZ5SnpSMlFKTDRpWTV2b3NqaHJudy12MW1LWnN4RVZBTGRDT3VHWTVTSW9ieDhrY1BubjF0NzNVLXpaRGg3TGZNdTdjSWZSRlozN3hwLTcwcXJsd3BLaU1XZzg4VnZxemNhclZReUVoLXc5TFVmeFpjalR6cEZyeGJTaVFJLXA?oc=5",
+    "pub_date": "09-21-2026_20-41-13",
+    "pull_date": "09-22-2026_15-27-24",
+    "source": "https://www.news.google.com",
+    "title": "Health advocates warn of MassHealth changes for immigrants coming Oct. 1 - WGBH"
+  },
+  "CBMizwFBVV95cUxQN01BUjlSc2U1T25wcDBWZWRUX25qSDdGVWJMVG5TZjdCZ01qS3FLUUJpWkRuNEJwWDMxMnlCYkhsYWZ2b0JBZjVTdnY2MkJBWElYNGNpSm5DWkVRcW5EMDhRWmJNNHBCZml6dWVNYUQ1eXE2d3F0MW54MXFwQkpSR0QxY1ZjeEE0RS1ZcG9ObDhJdmU1SHFRbHI3OUFsbUVKTS1RQ1BZLUlHRk5lSEowU0RXRjM4ei1FNGRrWnVXdF9fSG9oa1djSU1YRnFkYmfSAdQBQVVfeXFMTWpZRk9JRVhUbjQ4UUg4MlVrbkdmR1BScThuQW8tSVAtM1JBRUd6amI1MXk3RTJsa0lmdGhUaU9IVkRZLWxObElnbFpYY1hlTmtHNXozNDNsak13bWF3Tl9GcEF3VWxXOG1Ic2tNWGQyTnoyOUFXa25VSDk4S2d5RGMyQ0FIeXRRU0xqQU44UkJIbXBqVG1ZUjBpWmRNclNGU0FkMnJLR2VJR0FBUWJyRDhkQWQ5bkZqOUhsOTMzSVh1OHh6Y2owaFJGcmF1LU5HX1ZMUUM": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxQN01BUjlSc2U1T25wcDBWZWRUX25qSDdGVWJMVG5TZjdCZ01qS3FLUUJpWkRuNEJwWDMxMnlCYkhsYWZ2b0JBZjVTdnY2MkJBWElYNGNpSm5DWkVRcW5EMDhRWmJNNHBCZml6dWVNYUQ1eXE2d3F0MW54MXFwQkpSR0QxY1ZjeEE0RS1ZcG9ObDhJdmU1SHFRbHI3OUFsbUVKTS1RQ1BZLUlHRk5lSEowU0RXRjM4ei1FNGRrWnVXdF9fSG9oa1djSU1YRnFkYmfSAdQBQVVfeXFMTWpZRk9JRVhUbjQ4UUg4MlVrbkdmR1BScThuQW8tSVAtM1JBRUd6amI1MXk3RTJsa0lmdGhUaU9IVkRZLWxObElnbFpYY1hlTmtHNXozNDNsak13bWF3Tl9GcEF3VWxXOG1Ic2tNWGQyTnoyOUFXa25VSDk4S2d5RGMyQ0FIeXRRU0xqQU44UkJIbXBqVG1ZUjBpWmRNclNGU0FkMnJLR2VJR0FBUWJyRDhkQWQ5bkZqOUhsOTMzSVh1OHh6Y2owaFJGcmF1LU5HX1ZMUUM?oc=5\" target=\"_blank\">Ottawa tightens rules for Atlantic Immigration Program applicants with employment changes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CIC News</font>",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQN01BUjlSc2U1T25wcDBWZWRUX25qSDdGVWJMVG5TZjdCZ01qS3FLUUJpWkRuNEJwWDMxMnlCYkhsYWZ2b0JBZjVTdnY2MkJBWElYNGNpSm5DWkVRcW5EMDhRWmJNNHBCZml6dWVNYUQ1eXE2d3F0MW54MXFwQkpSR0QxY1ZjeEE0RS1ZcG9ObDhJdmU1SHFRbHI3OUFsbUVKTS1RQ1BZLUlHRk5lSEowU0RXRjM4ei1FNGRrWnVXdF9fSG9oa1djSU1YRnFkYmfSAdQBQVVfeXFMTWpZRk9JRVhUbjQ4UUg4MlVrbkdmR1BScThuQW8tSVAtM1JBRUd6amI1MXk3RTJsa0lmdGhUaU9IVkRZLWxObElnbFpYY1hlTmtHNXozNDNsak13bWF3Tl9GcEF3VWxXOG1Ic2tNWGQyTnoyOUFXa25VSDk4S2d5RGMyQ0FIeXRRU0xqQU44UkJIbXBqVG1ZUjBpWmRNclNGU0FkMnJLR2VJR0FBUWJyRDhkQWQ5bkZqOUhsOTMzSVh1OHh6Y2owaFJGcmF1LU5HX1ZMUUM?oc=5",
+    "pub_date": "09-21-2026_11-04-12",
+    "pull_date": "09-22-2026_15-27-24",
+    "source": "https://www.news.google.com",
+    "title": "Ottawa tightens rules for Atlantic Immigration Program applicants with employment changes - CIC News"
   },
   "CBMi3wFBVV95cUxNMHdWbkhsaVVWQXlKNm91a2s4el9mN2dGSW9GVEQ1UWV1bGFXblB0S2ZKREo5UngyV1gzWWNEakpzMGtodmU1RnBkSEktYzFqaHVXVmo5eG5Xb3RKU1FqT2VfNTJ2NlAyeFZaNDgzVUxlQTI5dVpjMlcxZjZPa1BlMkR0dE8xV1VuYUlhQ2x5eERNSGJVbGhVaThGRmpHQnY1Vkl6dER2ams5NkhKMms0SW92RWVQbFNrNUh1S1ROM05sMHplWDdaNzFXdXRjN3N6bUNCeS03MmUyMjB6ekpv": {
     "author": null,
@@ -19641,21 +19700,6 @@
     "pull_date": "04-12-2026_13-11-39",
     "source": "https://www.news.google.com",
     "title": "ICE Quietly Changes I-9 Offenses, Raising Employer Fine Risk - Law360"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "BB",
-    "creator": null,
-    "description": "Exercise normal precaution<p>in <b>Barbados</b>.</p>\n<p>Barbados is generally a safe destination for travelers.</p>\n<ul>\n<li>Petty crime is common, especially in popular tourist locations. Stay aware of your surroundings.</li>\n<li>Most crimes against foreigners are crimes of opportunity, like purse snatching and pickpocketing.</li>\n</ul>\n<p>Review our <a href='/en/international-travel/travel-advisories/barbados.html#requirements'>travel guidance</a> for Barbados to learn how to prepare for a safe trip.</p>",
-    "identifier": "BB,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
-    "pub_date": "04-10-2026_00-00-00",
-    "pull_date": "09-19-2026_15-15-12",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Barbados - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bermuda-travel-advisory.html": {
     "author": null,
