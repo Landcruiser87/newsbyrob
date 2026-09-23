@@ -1,18 +1,157 @@
 {
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html": {
+  "f5e2ce94-2dc6-4042-9dcd-7b96ddd7e933": {
     "author": null,
-    "category": "main_feed",
-    "country": "BB",
-    "creator": null,
-    "description": "Exercise normal precautionSummary not available",
-    "identifier": "BB,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
-    "pub_date": "09-22-2026_00-00-00",
-    "pull_date": "09-22-2026_15-26-52",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Barbados - Level 1: Exercise Normal Precautions"
+    "category": "News Releases",
+    "creator": "USCIS",
+    "description": "A Haitian alien pleaded guilty Sept. 22 in federal court to falsely claiming U.S. citizenship to register to vote and casting a ballot in the 2024 general election.",
+    "link": "https://www.uscis.gov/newsroom/news-releases/haitian-alien-pleads-guilty-to-illegally-voting-in-2024-election",
+    "pub_date": "09-23-2026_15-59-21",
+    "pull_date": "09-23-2026_15-23-32",
+    "source": "https://www.uscis.gov",
+    "title": "Haitian Alien Pleads Guilty to Illegally Voting in 2024 Election"
+  },
+  "d5db5466-44e8-4ef2-8dbd-aa5651da4b8c": {
+    "author": null,
+    "category": "News Releases",
+    "creator": "USCIS",
+    "description": "A federal grand jury in Charlotte returned a criminal indictment charging Sha Bahadur Ghaley, 42,&nbsp;a naturalized citizen from Bhutan, with naturalization fraud. ",
+    "link": "https://www.uscis.gov/newsroom/news-releases/man-charged-with-naturalization-fraud-three-others-face-denaturalization",
+    "pub_date": "09-23-2026_15-04-35",
+    "pull_date": "09-23-2026_15-23-32",
+    "source": "https://www.uscis.gov",
+    "title": "Man Charged with Naturalization Fraud; Three Others Face Denaturalization"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f1Z8BALRZ_ys%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,5rFEyeebRSWbGx1pNne7rBz8tOTXb34NdcBFDF-7HgnOt2uHYeR6BY66LOMMgNojdYjxyDsqvAcVVyxKRm6-aLiGSZOyhhsihP7iqGlIhF69qUJlVII,&typo=1": {
+    "author": "Jasmine Garsd",
+    "category": "AILA Daily News Update",
+    "creator": "NPR",
+    "description": "National",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f1Z8BALRZ_ys%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,5rFEyeebRSWbGx1pNne7rBz8tOTXb34NdcBFDF-7HgnOt2uHYeR6BY66LOMMgNojdYjxyDsqvAcVVyxKRm6-aLiGSZOyhhsihP7iqGlIhF69qUJlVII,&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "National - NPR -  ICE is looking into 'mobile detention facilities'"
+  },
+  "https://wapo.st/4dyCYvH": {
+    "author": "Maria Sacchetti and Liam Bowman",
+    "category": "AILA Daily News Update",
+    "creator": "The Washington Post ",
+    "description": "National",
+    "link": "https://wapo.st/4dyCYvH",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "National - The Washington Post  - Immigrants with final deportation orders disappear from ICE detainee locator"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fuvtQUMw6Qk8%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,oZuvBEG6AR_rniSuL3T2WHihq7YW1IFPhD7y5_0NaMa_FlG_xj-OeMPU06KdyZdhwDcBD1Lg8utd7U-6SmniG55EJLifjR1SQRXmVfj57k31h5y2QzvKmw,,&typo=1": {
+    "author": "Jalen Williams and Jeanine Santucci",
+    "category": "AILA Daily News Update",
+    "creator": "USA Today",
+    "description": "National",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fuvtQUMw6Qk8%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,oZuvBEG6AR_rniSuL3T2WHihq7YW1IFPhD7y5_0NaMa_FlG_xj-OeMPU06KdyZdhwDcBD1Lg8utd7U-6SmniG55EJLifjR1SQRXmVfj57k31h5y2QzvKmw,,&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "National - USA Today - Man dead in crash after fleeing from ICE in Michigan, police say"
+  },
+  "https://documentedny.com/2026/09/22/immigration-court-ny1-26-federal-plaza/": {
+    "author": "Eileen Grench",
+    "category": "AILA Daily News Update",
+    "creator": "Documented ",
+    "description": "National",
+    "link": "https://documentedny.com/2026/09/22/immigration-court-ny1-26-federal-plaza/",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "National - Documented  - New Immigration Courtroom at Federal Plaza Sparks Chaos, Confusion"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f15d4WABwZ_b%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,WYsw335wFRmVgI_twR3Q2dsCZ4MY8hOnQv9Dlhceohob7zRJOUyXA240Kkas2VSAtZA4ImKi5HktaC0_1yeQrgJ8xgIgmSiuJhTMou9fqeGYUD2DMcE,&typo=1": {
+    "author": "Farhad Sethna",
+    "category": "AILA Daily News Update",
+    "creator": "Akron Beacon Journal ",
+    "description": "National",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f15d4WABwZ_b%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,WYsw335wFRmVgI_twR3Q2dsCZ4MY8hOnQv9Dlhceohob7zRJOUyXA240Kkas2VSAtZA4ImKi5HktaC0_1yeQrgJ8xgIgmSiuJhTMou9fqeGYUD2DMcE,&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "National - Akron Beacon Journal  - The Trump administration's latest immigrant target? Children | Opinion"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fqz12iNYWRRt%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,Z8NKuOiFedqdSmqVgJgmlujsLkaGQiCvJkEZ43cr-uiKsCK1EaCLZwINHM9sBvafXrfDNOmRb9Pr3rLIgKkgS-SoPGPnO0ZiQF8_sKPscK4a&typo=1": {
+    "author": "Nathalie Leve",
+    "category": "AILA Daily News Update",
+    "creator": "The Intercept",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fqz12iNYWRRt%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,Z8NKuOiFedqdSmqVgJgmlujsLkaGQiCvJkEZ43cr-uiKsCK1EaCLZwINHM9sBvafXrfDNOmRb9Pr3rLIgKkgS-SoPGPnO0ZiQF8_sKPscK4a&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "Local - The Intercept -  How a Small Kansas City Became a Critical Hub for Trump's Deportation Regime Against Its Will"
+  },
+  "https://lasvegassun.com/news/2026/sep/22/nevada-legal-volunteers-counter-intimidation-by-gu/": {
+    "author": "Ava Chatlosh",
+    "category": "AILA Daily News Update",
+    "creator": "Las Vegas Sun",
+    "description": "Local",
+    "link": "https://lasvegassun.com/news/2026/sep/22/nevada-legal-volunteers-counter-intimidation-by-gu/",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "Local - Las Vegas Sun - Nevada legal volunteers counter intimidation by guiding immigrants toward citizenship"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fhfVKNE6SMsY%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,l_ZoEDfH-dm4jijKdsU4HIdCkpv5zznoOANDaIzFAV6vhO9SFi-pEYsWPX6n_59re2B6uTFj_BkRAkcOTUvZTG6Epclsxqn7ZQSFSVgdgqAHHWCUr6w,&typo=1": {
+    "author": "Anita Wadhwani",
+    "category": "AILA Daily News Update",
+    "creator": "Tennessee Lookout",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fhfVKNE6SMsY%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,l_ZoEDfH-dm4jijKdsU4HIdCkpv5zznoOANDaIzFAV6vhO9SFi-pEYsWPX6n_59re2B6uTFj_BkRAkcOTUvZTG6Epclsxqn7ZQSFSVgdgqAHHWCUr6w,&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "Local - Tennessee Lookout -  Immigrant advocates seek immediate halt to THP traffic stops conducted in tandem with ICE"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fNZDo1S0z1tJ%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,4icoCxBpJZR1cREE7nurv7tYTldk4zgW0VznoEalNijJo2sNwiI324IT2-4ElHtT81wE-_F5J6e7LnzqJpIc258LPqYd98mTrtJ1BUS8ASLR&typo=1": {
+    "author": "Jennifer Franco",
+    "category": "AILA Daily News Update",
+    "creator": "Fox 5 San Diego",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fNZDo1S0z1tJ%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,4icoCxBpJZR1cREE7nurv7tYTldk4zgW0VznoEalNijJo2sNwiI324IT2-4ElHtT81wE-_F5J6e7LnzqJpIc258LPqYd98mTrtJ1BUS8ASLR&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "Local - Fox 5 San Diego -  San Diego lawmakers push back on immigration enforcement near schools"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fnlM_TREZQCK%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,BY-ROvg_nDxKshglKFCd2YOvJRBMlG_gaF-T9ov9kBzOcwJBPSGrunBSY5YQnVSlg_KP6CggLnwxY2_dIsPcnVeL76_BpLXtAoGq20Il5tyyK8pgsQVSj5QKEgP8&typo=1": {
+    "author": "Yana Kunichoff",
+    "category": "AILA Daily News Update",
+    "creator": "AZ Luminaria",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fnlM_TREZQCK%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,BY-ROvg_nDxKshglKFCd2YOvJRBMlG_gaF-T9ov9kBzOcwJBPSGrunBSY5YQnVSlg_KP6CggLnwxY2_dIsPcnVeL76_BpLXtAoGq20Il5tyyK8pgsQVSj5QKEgP8&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "Local - AZ Luminaria -  Only half of people with new Arizona immigration court cases have a lawyer"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fBrz7J7S4wnZ%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,XF4Xh6UA6aUhHN0JDkL-9JFgBfw3O2rfamjvRNcTmBpF6_1yLxRIBjIzKeLu4mA9Rp3BQTCvbr9a1b-UILgmK39dgM0ixwQDJxl08CHIBMTrK8Ti2eY,&typo=1": {
+    "author": "Lauren McCaule",
+    "category": "AILA Daily News Update",
+    "creator": "Maine Morning Star",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fBrz7J7S4wnZ%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,XF4Xh6UA6aUhHN0JDkL-9JFgBfw3O2rfamjvRNcTmBpF6_1yLxRIBjIzKeLu4mA9Rp3BQTCvbr9a1b-UILgmK39dgM0ixwQDJxl08CHIBMTrK8Ti2eY,&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "Local - Maine Morning Star -  Families of ICE victims tell panel that falsehoods, obstruction amount to 'dual assassinations'"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fO_itwDogqta%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,-W1lq0su43xzf_zzlX027n-DxMgFNEOEWz6rM843pZn_0NYBNevGqly6mZ0MBM3WbpQ0Ee7-366HUW5vYhTIeOgBuWRy2zb6wmjwh5lIVeI,&typo=1": {
+    "author": "Steven Volk",
+    "category": "AILA Daily News Update",
+    "creator": "Ohio Capital Journal",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fO_itwDogqta%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,-W1lq0su43xzf_zzlX027n-DxMgFNEOEWz6rM843pZn_0NYBNevGqly6mZ0MBM3WbpQ0Ee7-366HUW5vYhTIeOgBuWRy2zb6wmjwh5lIVeI,&typo=1",
+    "pub_date": "09-23-2026_15-24-24",
+    "pull_date": "09-23-2026_15-24-24",
+    "source": "https://www.aila.org",
+    "title": "Local - Ohio Capital Journal -  ICE's culture of fear in Ohio is an un-American betrayal of our fundamental values"
   },
   "6a7a2747-cd62-4c4d-8859-6e656fe37adf": {
     "author": null,
@@ -36,20 +175,27 @@
     "source": "https://www.uscis.gov",
     "title": "Bosnian Prisoner Abuser Charged with Lying to Get US Citizenship"
   },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html": {
+  "CBMi5wFBVV95cUxOV2VnZ25ncE9hTmU1QVJYQ2FscS1obWJEbXM1Q2g4NTB3UmZQOXZOekdmUW1zWHhhQUJzZDhHSVJPNHg4cjlmZ3ZKSFdVbVRtSmVzVDgtYnkxSG5Db1h5NEt1ZnVYQmRXSTU3aVNxR25VRm1rdk9wWGQ5Ym1SbmwzWkhQSXJMSDRsWWdhNW5oM0JVUDJHXzY5SVhjc2dSQW9YemdUMkNQcU9fWkN1eUxCaFl5Q3ZtRTV4X184dDFUeTJTeTlXVkg3NHRTZjZuR3dndFVKcVpITFVLcWQ0LUh0UHExcG44Uzg": {
     "author": null,
-    "category": "main_feed",
-    "country": "BE",
+    "category": "US Immigration Changes",
     "creator": null,
-    "description": "Exercise normal precautionSummary not available",
-    "identifier": "BE,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html",
-    "pub_date": "09-21-2026_00-00-00",
-    "pull_date": "09-21-2026_15-08-04",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Belgium - Level 1: Exercise Normal Precautions"
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxOV2VnZ25ncE9hTmU1QVJYQ2FscS1obWJEbXM1Q2g4NTB3UmZQOXZOekdmUW1zWHhhQUJzZDhHSVJPNHg4cjlmZ3ZKSFdVbVRtSmVzVDgtYnkxSG5Db1h5NEt1ZnVYQmRXSTU3aVNxR25VRm1rdk9wWGQ5Ym1SbmwzWkhQSXJMSDRsWWdhNW5oM0JVUDJHXzY5SVhjc2dSQW9YemdUMkNQcU9fWkN1eUxCaFl5Q3ZtRTV4X184dDFUeTJTeTlXVkg3NHRTZjZuR3dndFVKcVpITFVLcWQ0LUh0UHExcG44Uzg?oc=5\" target=\"_blank\">Implementation of Medicaid Immigrant Eligibility Restrictions Under the 2025 Reconciliation Law: Issues to Consider</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">KFF</font>",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOV2VnZ25ncE9hTmU1QVJYQ2FscS1obWJEbXM1Q2g4NTB3UmZQOXZOekdmUW1zWHhhQUJzZDhHSVJPNHg4cjlmZ3ZKSFdVbVRtSmVzVDgtYnkxSG5Db1h5NEt1ZnVYQmRXSTU3aVNxR25VRm1rdk9wWGQ5Ym1SbmwzWkhQSXJMSDRsWWdhNW5oM0JVUDJHXzY5SVhjc2dSQW9YemdUMkNQcU9fWkN1eUxCaFl5Q3ZtRTV4X184dDFUeTJTeTlXVkg3NHRTZjZuR3dndFVKcVpITFVLcWQ0LUh0UHExcG44Uzg?oc=5",
+    "pub_date": "09-22-2026_17-23-06",
+    "pull_date": "09-23-2026_15-24-15",
+    "source": "https://www.news.google.com",
+    "title": "Implementation of Medicaid Immigrant Eligibility Restrictions Under the 2025 Reconciliation Law: Issues to Consider - KFF"
+  },
+  "CBMixAFBVV95cUxPWGoyNk5zeE5XOGdZLUotNkVLWlVGOTlROFcwbWRqR3MtMkVXTWtvMHd3bHlzT0VyWjJSU0w5ZGtwZXV1TnFxZUItbUhLUmw0aG4wUDhRRngtYldmZG9LT2xCZlU0VVN4QkhkY3lldGJwdURVWUUtM3VVN3hFLWlpMVk4dTMwLW5fYl8wTnpNVVN4dlNXV1BvRk9KS3M5RXZNM0pKVVR3bVIydzBnMDdfeE11VWM0cl9rQzBWeHduZXlKcm42": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxPWGoyNk5zeE5XOGdZLUotNkVLWlVGOTlROFcwbWRqR3MtMkVXTWtvMHd3bHlzT0VyWjJSU0w5ZGtwZXV1TnFxZUItbUhLUmw0aG4wUDhRRngtYldmZG9LT2xCZlU0VVN4QkhkY3lldGJwdURVWUUtM3VVN3hFLWlpMVk4dTMwLW5fYl8wTnpNVVN4dlNXV1BvRk9KS3M5RXZNM0pKVVR3bVIydzBnMDdfeE11VWM0cl9rQzBWeHduZXlKcm42?oc=5\" target=\"_blank\">Immigrants with final deportation orders disappear from ICE detainee locator</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Washington Post</font>",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWGoyNk5zeE5XOGdZLUotNkVLWlVGOTlROFcwbWRqR3MtMkVXTWtvMHd3bHlzT0VyWjJSU0w5ZGtwZXV1TnFxZUItbUhLUmw0aG4wUDhRRngtYldmZG9LT2xCZlU0VVN4QkhkY3lldGJwdURVWUUtM3VVN3hFLWlpMVk4dTMwLW5fYl8wTnpNVVN4dlNXV1BvRk9KS3M5RXZNM0pKVVR3bVIydzBnMDdfeE11VWM0cl9rQzBWeHduZXlKcm42?oc=5",
+    "pub_date": "09-22-2026_03-01-00",
+    "pull_date": "09-23-2026_15-24-15",
+    "source": "https://www.news.google.com",
+    "title": "Immigrants with final deportation orders disappear from ICE detainee locator - The Washington Post"
   },
   "CBMifEFVX3lxTE1UNGJJV0o3WmlaWXRzRkIyZjM0a3FvX0p3VElqNmFsbHJLOTd3aDdjcnNOd0pMQ1ZTbWxTVnFsY3lZQzFVZVZab0xhbEJTTC1wb3FOWDFkWHdCUlM3WldtWTQ2R01hV3JGQm1vZzlJSzktTDlWU1NydGpraF8": {
     "author": null,
@@ -5811,6 +5957,21 @@
     "pull_date": "07-25-2026_15-17-49",
     "source": "https://www.news.google.com",
     "title": "Olathe vigil calls for changes to Trump administration's immigration policies - KMBC"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "BE",
+    "creator": null,
+    "description": "Exercise increased caution<p>in <b>Belgium </b>due to <b>crime</b>, <b>terrorism</b>, and <b>unrest</b>.</p>\n<h5>Crime</h5>\n<ul>\n<li>Petty crime is common, especially in popular tourist locations. Stay aware of your surroundings.</li>\n<li>Most crimes against foreigners are crimes of opportunity, like purse snatching and pickpocketing.</li>\n</ul>\n<h5>Terrorism</h5>\n<ul>\n<li>There is risk of terrorist violence, including terrorist attacks and other activity in Belgium.&nbsp;</li>\n<li>Visit the U.S. Department of State's <a href='https://www.state.gov/country-reports-on-terrorism/' target='_blank'>country reports on terrorism</a> to learn more.</li>\n</ul>\n<h5>Unrest</h5>\n<ul>\n<li>Large-scale, generally peaceful demonstrations related to the local political situation may occur. Demonstrations may disrupt transportation and other essential services.</li>\n<li>Review our <a href='/en/international-travel/travel-advisories/belgium.html#requirements' title='Travel Guidance'>Travel Guidance for Belgium</a><span style='font-size: 18.24px; white-space: initial;'> to learn how to prepare for a safe trip.</span></li>\n</ul>",
+    "identifier": "BE,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html",
+    "pub_date": "07-23-2026_00-00-00",
+    "pull_date": "09-23-2026_15-23-51",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Belgium - Level 2: Exercise Increased Caution"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/belgium-travel-advisory.html": {
     "author": null,
@@ -19700,6 +19861,21 @@
     "pull_date": "04-12-2026_13-11-39",
     "source": "https://www.news.google.com",
     "title": "ICE Quietly Changes I-9 Offenses, Raising Employer Fine Risk - Law360"
+  },
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "BB",
+    "creator": null,
+    "description": "Exercise normal precaution<p>in <b>Barbados</b>.</p>\n<p>Barbados is generally a safe destination for travelers.</p>\n<ul>\n<li>Petty crime is common, especially in popular tourist locations. Stay aware of your surroundings.</li>\n<li>Most crimes against foreigners are crimes of opportunity, like purse snatching and pickpocketing.</li>\n</ul>\n<p>Review our <a href='/en/international-travel/travel-advisories/barbados.html#requirements'>travel guidance</a> for Barbados to learn how to prepare for a safe trip.</p>",
+    "identifier": "BB,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
+    "pub_date": "04-10-2026_00-00-00",
+    "pull_date": "09-23-2026_15-23-51",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Barbados - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bermuda-travel-advisory.html": {
     "author": null,
