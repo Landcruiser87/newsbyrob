@@ -1,4 +1,228 @@
 {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lva.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "LG",
+    "creator": null,
+    "description": "Exercise normal precautionSummary not available",
+    "identifier": "LG,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lva.html",
+    "pub_date": "10-02-2026_00-00-00",
+    "pull_date": "10-02-2026_15-12-01",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 1: Exercise Normal Precautions",
+    "title": "Latvia - Level 1: Exercise Normal Precautions"
+  },
+  "7f7a0b0f-50d4-4804-8c77-3a9cac7ffc8e": {
+    "author": null,
+    "category": "News Releases",
+    "creator": "USCIS",
+    "description": "Defendants illegally voted in the November 2022 and 2024 general elections and the August 2026 primary election",
+    "link": "https://www.uscis.gov/newsroom/news-releases/federal-grand-jury-indicts-ten-aliens-for-voter-fraud-in-minnesota-elections",
+    "pub_date": "10-02-2026_11-19-35",
+    "pull_date": "10-02-2026_15-11-46",
+    "source": "https://www.uscis.gov",
+    "title": "Federal Grand Jury Indicts Ten Aliens for Voter Fraud in Minnesota Elections"
+  },
+  "CBMi8wFBVV95cUxNNVdsak1vejZicUFUNFlaSlNNWkc0Z1ozZmxheWNGN3RhZEowM3dqMi1ILWFIS3l5ckUteVZ6UUJUYkRCYWNIMlk3bm5vY1RLVXRRSndVUktIV1VmX1lvT0RyeHFXcXhYMTJjNTlKWFFnb1BRZGhIVzZoSFNfNDhQbWFlQ3Q0QjFZSks2OXB2Ul9JUWVhbEtNMjI5bzRXZFIwdi1DZGE2Mzlqa3pwUmNzTWFMRVF4eWVweFZDbDB3ZmthN29yWlBxRS1aLWdrZm1keEpfWWRBeE50ZkhPdEFUY2x0U2Z3ZC10VUJIcTR5b19TNjTSAfgBQVVfeXFMTURYakEtdzVlUS1FY2tQQUFsb1B1d0VfWkR1aHk4aklpRXlBVGVBMGVfdTlGUW5aUy1jdHhCOWE5ZUc2M2pDNEFQNC1scWh0ZHk1dlE3dFBYZ01jb3RlUVhHNzF1ODF0MGx4akx6WEpCYUlPcUlTQmdvYVBMUjF1b2h2MXRvbG9tZHNFVWgtRGdHRmR4M3RXc0lsM2p0blVyQ2gyS21OQ0Q4d1hrNjdJOWRIbzBNNzNFREVXLXdmZXNZZDFNVjVVZUhZMG1INEFyMTFpbkpFT2hkekdrM0dJcHZ5Qmd1b05HOTNQTTlzYm5mYXRzTUhONGg": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNVdsak1vejZicUFUNFlaSlNNWkc0Z1ozZmxheWNGN3RhZEowM3dqMi1ILWFIS3l5ckUteVZ6UUJUYkRCYWNIMlk3bm5vY1RLVXRRSndVUktIV1VmX1lvT0RyeHFXcXhYMTJjNTlKWFFnb1BRZGhIVzZoSFNfNDhQbWFlQ3Q0QjFZSks2OXB2Ul9JUWVhbEtNMjI5bzRXZFIwdi1DZGE2Mzlqa3pwUmNzTWFMRVF4eWVweFZDbDB3ZmthN29yWlBxRS1aLWdrZm1keEpfWWRBeE50ZkhPdEFUY2x0U2Z3ZC10VUJIcTR5b19TNjTSAfgBQVVfeXFMTURYakEtdzVlUS1FY2tQQUFsb1B1d0VfWkR1aHk4aklpRXlBVGVBMGVfdTlGUW5aUy1jdHhCOWE5ZUc2M2pDNEFQNC1scWh0ZHk1dlE3dFBYZ01jb3RlUVhHNzF1ODF0MGx4akx6WEpCYUlPcUlTQmdvYVBMUjF1b2h2MXRvbG9tZHNFVWgtRGdHRmR4M3RXc0lsM2p0blVyQ2gyS21OQ0Q4d1hrNjdJOWRIbzBNNzNFREVXLXdmZXNZZDFNVjVVZUhZMG1INEFyMTFpbkpFT2hkekdrM0dJcHZ5Qmd1b05HOTNQTTlzYm5mYXRzTUhONGg?oc=5\" target=\"_blank\">US immigration changes in October: What Indian Green Card applicants should know as new fiscal year begins | Hindustan Times</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Hindustan Times</font>",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNVdsak1vejZicUFUNFlaSlNNWkc0Z1ozZmxheWNGN3RhZEowM3dqMi1ILWFIS3l5ckUteVZ6UUJUYkRCYWNIMlk3bm5vY1RLVXRRSndVUktIV1VmX1lvT0RyeHFXcXhYMTJjNTlKWFFnb1BRZGhIVzZoSFNfNDhQbWFlQ3Q0QjFZSks2OXB2Ul9JUWVhbEtNMjI5bzRXZFIwdi1DZGE2Mzlqa3pwUmNzTWFMRVF4eWVweFZDbDB3ZmthN29yWlBxRS1aLWdrZm1keEpfWWRBeE50ZkhPdEFUY2x0U2Z3ZC10VUJIcTR5b19TNjTSAfgBQVVfeXFMTURYakEtdzVlUS1FY2tQQUFsb1B1d0VfWkR1aHk4aklpRXlBVGVBMGVfdTlGUW5aUy1jdHhCOWE5ZUc2M2pDNEFQNC1scWh0ZHk1dlE3dFBYZ01jb3RlUVhHNzF1ODF0MGx4akx6WEpCYUlPcUlTQmdvYVBMUjF1b2h2MXRvbG9tZHNFVWgtRGdHRmR4M3RXc0lsM2p0blVyQ2gyS21OQ0Q4d1hrNjdJOWRIbzBNNzNFREVXLXdmZXNZZDFNVjVVZUhZMG1INEFyMTFpbkpFT2hkekdrM0dJcHZ5Qmd1b05HOTNQTTlzYm5mYXRzTUhONGg?oc=5",
+    "pub_date": "10-02-2026_03-18-48",
+    "pull_date": "10-02-2026_15-12-29",
+    "source": "https://www.news.google.com",
+    "title": "US immigration changes in October: What Indian Green Card applicants should know as new fiscal year begins | Hindustan Times - Hindustan Times"
+  },
+  "CBMi6gFBVV95cUxOemQ4dFJHTG8ycWhGUWN6SFZfd0ZiQ19KZjdGVkJBY0JGYnVndU5vUGFSU2dsc3dCTjFYeS1lVFdrcWZ1UGRtRjdWT3Z6VEFjdG94OVlISzcwVWJSc2hpSnUwY1E0TDhLY0Q2ODc5MXdJRjlYQVVDbjRFVXdTYjhtc2xNYTVsQlMwcVh4S0M0cUVDa0JJRDdZTThpdnViMGgtYjNpYjhyLTZmTldDX3J3b1NTSzF2bE9oMjVXVW8wdjE3WHBTZldPR2VWSnBYNzVZMDNDNUQtVVNiVU1tZUdfb2FBX1d5SnFacEHSAe8BQVVfeXFMT1VMZFd6TUVWOVEtVjBYNXBpNk92ZjlvbTc5TlFhQmRyYWlBdWY1NW14Ykt1VVhUbVNCcEpQWlhxMmZRMFZoSy1rUVMyUUl6bnN1VlBDMUVtUGJmUDZ6OVRFVl95S2JyTE5lV3dNRzVXTlg4SlJ1dzg0MG1Gd2l3d1RrdzZzS19MUVVVZU96M3FMRHpIb2ZEYmhqdlRMUW9uX180RlpVZWZWYlRxczJ0VVNJQV9UOFBoZEI2LU5Db0ZRUjk0UUNPT0REc1NzOUwtU1VKaWo5RkotUDlhV2h1dTNtTnFvbjhKbnZLckdHWDQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxOemQ4dFJHTG8ycWhGUWN6SFZfd0ZiQ19KZjdGVkJBY0JGYnVndU5vUGFSU2dsc3dCTjFYeS1lVFdrcWZ1UGRtRjdWT3Z6VEFjdG94OVlISzcwVWJSc2hpSnUwY1E0TDhLY0Q2ODc5MXdJRjlYQVVDbjRFVXdTYjhtc2xNYTVsQlMwcVh4S0M0cUVDa0JJRDdZTThpdnViMGgtYjNpYjhyLTZmTldDX3J3b1NTSzF2bE9oMjVXVW8wdjE3WHBTZldPR2VWSnBYNzVZMDNDNUQtVVNiVU1tZUdfb2FBX1d5SnFacEHSAe8BQVVfeXFMT1VMZFd6TUVWOVEtVjBYNXBpNk92ZjlvbTc5TlFhQmRyYWlBdWY1NW14Ykt1VVhUbVNCcEpQWlhxMmZRMFZoSy1rUVMyUUl6bnN1VlBDMUVtUGJmUDZ6OVRFVl95S2JyTE5lV3dNRzVXTlg4SlJ1dzg0MG1Gd2l3d1RrdzZzS19MUVVVZU96M3FMRHpIb2ZEYmhqdlRMUW9uX180RlpVZWZWYlRxczJ0VVNJQV9UOFBoZEI2LU5Db0ZRUjk0UUNPT0REc1NzOUwtU1VKaWo5RkotUDlhV2h1dTNtTnFvbjhKbnZLckdHWDQ?oc=5\" target=\"_blank\">New laws in North Carolina start October 2026 include DMV car registration changes, law enforcement, ICE agreement, ticket bots</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ABC11 News</font>",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOemQ4dFJHTG8ycWhGUWN6SFZfd0ZiQ19KZjdGVkJBY0JGYnVndU5vUGFSU2dsc3dCTjFYeS1lVFdrcWZ1UGRtRjdWT3Z6VEFjdG94OVlISzcwVWJSc2hpSnUwY1E0TDhLY0Q2ODc5MXdJRjlYQVVDbjRFVXdTYjhtc2xNYTVsQlMwcVh4S0M0cUVDa0JJRDdZTThpdnViMGgtYjNpYjhyLTZmTldDX3J3b1NTSzF2bE9oMjVXVW8wdjE3WHBTZldPR2VWSnBYNzVZMDNDNUQtVVNiVU1tZUdfb2FBX1d5SnFacEHSAe8BQVVfeXFMT1VMZFd6TUVWOVEtVjBYNXBpNk92ZjlvbTc5TlFhQmRyYWlBdWY1NW14Ykt1VVhUbVNCcEpQWlhxMmZRMFZoSy1rUVMyUUl6bnN1VlBDMUVtUGJmUDZ6OVRFVl95S2JyTE5lV3dNRzVXTlg4SlJ1dzg0MG1Gd2l3d1RrdzZzS19MUVVVZU96M3FMRHpIb2ZEYmhqdlRMUW9uX180RlpVZWZWYlRxczJ0VVNJQV9UOFBoZEI2LU5Db0ZRUjk0UUNPT0REc1NzOUwtU1VKaWo5RkotUDlhV2h1dTNtTnFvbjhKbnZLckdHWDQ?oc=5",
+    "pub_date": "10-02-2026_00-59-36",
+    "pull_date": "10-02-2026_15-12-29",
+    "source": "https://www.news.google.com",
+    "title": "New laws in North Carolina start October 2026 include DMV car registration changes, law enforcement, ICE agreement, ticket bots - ABC11 News"
+  },
+  "CBMijAFBVV95cUxOMDdLNElwR29DY0M3MVFZdDR6MGJ0R2Fwd2FxaTBmcW9lNzV6OU9XRHBXQ0FiWURlUjdKOEg2YkFvcG5XaTJfOUJWVE1BNHk5Z3dSRXhiQ1NjdnRKV0hmbk81ZEt2aElFYldadjl1SGNqeGJ5QWhob05zU29YanRPUVd0UDlFMzI4czVEXw": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxOMDdLNElwR29DY0M3MVFZdDR6MGJ0R2Fwd2FxaTBmcW9lNzV6OU9XRHBXQ0FiWURlUjdKOEg2YkFvcG5XaTJfOUJWVE1BNHk5Z3dSRXhiQ1NjdnRKV0hmbk81ZEt2aElFYldadjl1SGNqeGJ5QWhob05zU29YanRPUVd0UDlFMzI4czVEXw?oc=5\" target=\"_blank\">Thousands of legal immigrants in Colorado lose Medicaid coverage as SNAP changes roll out too</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Colorado Public Radio</font>",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMDdLNElwR29DY0M3MVFZdDR6MGJ0R2Fwd2FxaTBmcW9lNzV6OU9XRHBXQ0FiWURlUjdKOEg2YkFvcG5XaTJfOUJWVE1BNHk5Z3dSRXhiQ1NjdnRKV0hmbk81ZEt2aElFYldadjl1SGNqeGJ5QWhob05zU29YanRPUVd0UDlFMzI4czVEXw?oc=5",
+    "pub_date": "10-02-2026_00-53-55",
+    "pull_date": "10-02-2026_15-12-29",
+    "source": "https://www.news.google.com",
+    "title": "Thousands of legal immigrants in Colorado lose Medicaid coverage as SNAP changes roll out too - Colorado Public Radio"
+  },
+  "CBMihwFBVV95cUxPd3JGWG5YcEdSTVZnRWpnektHcDVmRlRzVHJwODJ4QTVMcFpUMDB1VC1uT1BlNzJJUEtGeVJWVjRXd2wyTFJnUlNQeGFmR1pGX3p4RDBpOHkxcDNJbWh1Zmd6ekg5NXM2LUlPdGcwUGExcENBNkxDbHRMRG5lUFE4NnQ3UVVfd2PSAYwBQVVfeXFMT3drWWFYb2stWHEyaURTZEd5VTY4M0h0dUFHT3I1UV9pSlZidnNaS0hmVjk4SmFfenVQTHV1U2hXY2lranpQWmljZ045c2JyZTg4SGpxMkx2a1k0eEZ5QjZtZ1pwQ3FUTUNXdDNMRzZnOEZvRXhpY3FGcm9iX2loZzA1TGNza3d3VmJkUHk": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPd3JGWG5YcEdSTVZnRWpnektHcDVmRlRzVHJwODJ4QTVMcFpUMDB1VC1uT1BlNzJJUEtGeVJWVjRXd2wyTFJnUlNQeGFmR1pGX3p4RDBpOHkxcDNJbWh1Zmd6ekg5NXM2LUlPdGcwUGExcENBNkxDbHRMRG5lUFE4NnQ3UVVfd2PSAYwBQVVfeXFMT3drWWFYb2stWHEyaURTZEd5VTY4M0h0dUFHT3I1UV9pSlZidnNaS0hmVjk4SmFfenVQTHV1U2hXY2lranpQWmljZ045c2JyZTg4SGpxMkx2a1k0eEZ5QjZtZ1pwQ3FUTUNXdDNMRzZnOEZvRXhpY3FGcm9iX2loZzA1TGNza3d3VmJkUHk?oc=5\" target=\"_blank\">ICE memo lays out limits on vehicle stops</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ABC News - Breaking News, Latest News and Videos</font>",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPd3JGWG5YcEdSTVZnRWpnektHcDVmRlRzVHJwODJ4QTVMcFpUMDB1VC1uT1BlNzJJUEtGeVJWVjRXd2wyTFJnUlNQeGFmR1pGX3p4RDBpOHkxcDNJbWh1Zmd6ekg5NXM2LUlPdGcwUGExcENBNkxDbHRMRG5lUFE4NnQ3UVVfd2PSAYwBQVVfeXFMT3drWWFYb2stWHEyaURTZEd5VTY4M0h0dUFHT3I1UV9pSlZidnNaS0hmVjk4SmFfenVQTHV1U2hXY2lranpQWmljZ045c2JyZTg4SGpxMkx2a1k0eEZ5QjZtZ1pwQ3FUTUNXdDNMRzZnOEZvRXhpY3FGcm9iX2loZzA1TGNza3d3VmJkUHk?oc=5",
+    "pub_date": "10-02-2026_00-51-25",
+    "pull_date": "10-02-2026_15-12-29",
+    "source": "https://www.news.google.com",
+    "title": "ICE memo lays out limits on vehicle stops - ABC News - Breaking News, Latest News and Videos"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fYyZEmV3ZK69%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,5_xl1VY-9ZPTo9Bhpq9IptLzVwffSmIWKusoNYnuRFyZ6CcjDXnhnglxtKJEk0GIeB1DwwC06hosqKOAwzXWec3dKcqbWR1jdlWiyqlPifry90iuvlx0&typo=1": {
+    "author": "John Kruzel",
+    "category": "AILA Daily News Update",
+    "creator": "Reuters",
+    "description": "National ",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fYyZEmV3ZK69%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,5_xl1VY-9ZPTo9Bhpq9IptLzVwffSmIWKusoNYnuRFyZ6CcjDXnhnglxtKJEk0GIeB1DwwC06hosqKOAwzXWec3dKcqbWR1jdlWiyqlPifry90iuvlx0&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "National  - Reuters - Supreme Court to weigh Trump's mandatory immigration detention policy"
+  },
+  "https://www.nytimes.com/live/2026/10/01/us/midterms-elections/republicans-from-deep-red-areas-are-seeking-distance-from-trump-on-ice?smid=url-share": {
+    "author": "Tim Balk",
+    "category": "AILA Daily News Update",
+    "creator": "The New York Times",
+    "description": "National ",
+    "link": "https://www.nytimes.com/live/2026/10/01/us/midterms-elections/republicans-from-deep-red-areas-are-seeking-distance-from-trump-on-ice?smid=url-share",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "National  - The New York Times - Republicans from deep-red areas are seeking distance from Trump on ICE. "
+  },
+  "https://www.usatoday.com/story/news/nation/2026/10/01/reporters-social-media-trump-immigration-free-speech/92002764007/": {
+    "author": "Anna J. Frank",
+    "category": "AILA Daily News Update",
+    "creator": "USA Today",
+    "description": "National ",
+    "link": "https://www.usatoday.com/story/news/nation/2026/10/01/reporters-social-media-trump-immigration-free-speech/92002764007/",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "National  - USA Today - Foreign reporters' social media to be reviewed under State Dept. policy"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f1CVckK64N2J%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,_frYiSTHr-_txMPUEy6XXRPeZ_wQEeLdonQsKTVpDzsqeNUs-PLaWcYfu7pnSx0Mqv3786rhbqc4mAoGHXlKLXOTgusdLmAFXl2CV4G5A70VPCZdGxMN&typo=1": {
+    "author": "Rebecca Santana, Ali Swenson",
+    "category": "AILA Daily News Update",
+    "creator": "Associated Press",
+    "description": "National ",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f1CVckK64N2J%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,_frYiSTHr-_txMPUEy6XXRPeZ_wQEeLdonQsKTVpDzsqeNUs-PLaWcYfu7pnSx0Mqv3786rhbqc4mAoGHXlKLXOTgusdLmAFXl2CV4G5A70VPCZdGxMN&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "National  - Associated Press - Trump administration says it has no plans for ICE officers at polls. Activists are preparing, anyway. "
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fvo5mQ2uUuqs%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,t2epmJuJxh6MuucBxyIYxmDr341p-VfQNt4KL8fCeDxWBEgZIzLVeKpoh6ptSOaCvLgDKeOoAIpEHudk5tQqZF2F5nXSZPw4a82qDopyGXPWd3Xh3jVIabxBFlgq&typo=1": {
+    "author": "Stuart Anderson",
+    "category": "AILA Daily News Update",
+    "creator": "Forbes ",
+    "description": "National ",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fvo5mQ2uUuqs%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,t2epmJuJxh6MuucBxyIYxmDr341p-VfQNt4KL8fCeDxWBEgZIzLVeKpoh6ptSOaCvLgDKeOoAIpEHudk5tQqZF2F5nXSZPw4a82qDopyGXPWd3Xh3jVIabxBFlgq&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "National  - Forbes  - Judge Strikes Down Latest Version Of $100,000 H-1B Immigration Fee"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f17cR72tVv50%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,bJMmjexaWZPTwVAEGYZcq0IlmV27XC6Js4rUGE2TGDwRoWNPe54EPUbh8iA78qv8XkegoFdjZLfQ2y5rE6MTXhIrCjXEba8eQfytVEQuCQ,,&typo=1": {
+    "author": "Ryan J. Fole",
+    "category": "AILA Daily News Update",
+    "creator": "Associated Press ",
+    "description": "National ",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f17cR72tVv50%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,bJMmjexaWZPTwVAEGYZcq0IlmV27XC6Js4rUGE2TGDwRoWNPe54EPUbh8iA78qv8XkegoFdjZLfQ2y5rE6MTXhIrCjXEba8eQfytVEQuCQ,,&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "National  - Associated Press  - ICE guidance bans high-speed car chases and sets tighter rules for traffic stops, a memo shows"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fG9BOLgowEkO%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,dL8x0v9v2K9wr1bmodM1ur5vV4Lw2aQOgVpNJu7ih1H3ATCevLWDXMFRioF9AmMPAWrfI6EFM2weLjb74-n2w0tPw8tcMkVYMK7wrLDMG4Q,&typo=1": {
+    "author": "Angi Gonzalez",
+    "category": "AILA Daily News Update",
+    "creator": "Spectrum News ",
+    "description": "National ",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fG9BOLgowEkO%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,dL8x0v9v2K9wr1bmodM1ur5vV4Lw2aQOgVpNJu7ih1H3ATCevLWDXMFRioF9AmMPAWrfI6EFM2weLjb74-n2w0tPw8tcMkVYMK7wrLDMG4Q,&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "National  - Spectrum News  - Not all ICE field agents trained on body cameras, missing target date"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fIFv912asO_z%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,wj9OLbB_NvF53O6W8gDsQDK1Iri8bD501vnIyvhRTnaY1jQ6fBeNGPBBzuqRCnRRO0vDMZ6G6pTfLQi25nFG7LoHTm5zrduIN-KmDYu8UZElzXo,&typo=1": {
+    "author": "Anna Wilder And Safiyah Riddle",
+    "category": "AILA Daily News Update",
+    "creator": "NBC News ",
+    "description": "National ",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fIFv912asO_z%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,wj9OLbB_NvF53O6W8gDsQDK1Iri8bD501vnIyvhRTnaY1jQ6fBeNGPBBzuqRCnRRO0vDMZ6G6pTfLQi25nFG7LoHTm5zrduIN-KmDYu8UZElzXo,&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "National  - NBC News  - Judge keeps immigrant delivery driver shot by ICE in custody for alleged assault"
+  },
+  "https://285south.com/inside-atlantas-mega-master-immigration-hearings/": {
+    "author": "Sophia Qureshi",
+    "category": "AILA Daily News Update",
+    "creator": "285 South",
+    "description": "Local",
+    "link": "https://285south.com/inside-atlantas-mega-master-immigration-hearings/",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "Local - 285 South - Inside Atlanta\u2019s \u201cmega master\u201d immigration hearings"
+  },
+  "https://www.nytimes.com/2026/10/01/us/renee-good-lawsuit-ice-shooting-minnesota.html?unlocked_article_code=1.FlE.s-Cn.b7n9c1Gn461u&smid=url-share": {
+    "author": "Ernesto Londo\u00f1o",
+    "category": "AILA Daily News Update",
+    "creator": "The New York Times",
+    "description": "Local",
+    "link": "https://www.nytimes.com/2026/10/01/us/renee-good-lawsuit-ice-shooting-minnesota.html?unlocked_article_code=1.FlE.s-Cn.b7n9c1Gn461u&smid=url-share",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "Local - The New York Times -  Renee Good\u2019s Family Sues ICE Agent and Top Officials Over Minnesota Killing"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f18w_4mURcFK%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,mHGJwUHC6O9BR0GmUpXkXun3mzU5y36BlFlZp17UCX8UBCQpSpJZOOtV4JbOBe1JbuW65MtZI-2CyCT1i-i89aujRbuH70R_r8aZLBUK67mpApHbc_NDOrxXgXAI&typo=1": {
+    "author": "Avery Martinez",
+    "category": "AILA Daily News Update",
+    "creator": "WPR ",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2f18w_4mURcFK%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,mHGJwUHC6O9BR0GmUpXkXun3mzU5y36BlFlZp17UCX8UBCQpSpJZOOtV4JbOBe1JbuW65MtZI-2CyCT1i-i89aujRbuH70R_r8aZLBUK67mpApHbc_NDOrxXgXAI&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "Local - WPR  - Trump funding halt means more children in ICE detention in Wisconsin won\u2019t have a lawyer"
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fShkajOQnJf5%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,J6eLVJuV_F-nw0pb_TZ84J60sHbiaO6CoeevVGWRDdI2lChU-h2DWT4a9tDOEaE_x75TDbgvDZdeZs05-UyzzfjPa1CnFyNyFRR8s5oYi093NunA94QfqD4,&typo=1": {
+    "author": "Megan Henr",
+    "category": "AILA Daily News Update",
+    "creator": "News from the States",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fShkajOQnJf5%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,J6eLVJuV_F-nw0pb_TZ84J60sHbiaO6CoeevVGWRDdI2lChU-h2DWT4a9tDOEaE_x75TDbgvDZdeZs05-UyzzfjPa1CnFyNyFRR8s5oYi093NunA94QfqD4,&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "Local - News from the States - 5 Haitians from Springfield, Ohio, have been deported after Trump ended protected status "
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fFwT8Hi3wzge%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,Rm1Ye369Drbv_RhWXzGFOeEINtSmhncyo6Zp3M_PC3Z44G5sxLV86_7bWoh9KmjCCXFAAhqgQE3_1PXQsuaI0uFTStl5kXC8yU0RJSikpZFfEjJnT8bAWwoSgg,,&typo=1": {
+    "author": "Renee Anderson",
+    "category": "AILA Daily News Update",
+    "creator": "CBS News",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fFwT8Hi3wzge%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,Rm1Ye369Drbv_RhWXzGFOeEINtSmhncyo6Zp3M_PC3Z44G5sxLV86_7bWoh9KmjCCXFAAhqgQE3_1PXQsuaI0uFTStl5kXC8yU0RJSikpZFfEjJnT8bAWwoSgg,,&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "Local - CBS News - Justice Department files complaint against Maryland over mask ban for federal officers "
+  },
+  "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fJEZWK2qpRJv%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,XyFCYMyTwLMzOeKvjWWPKXR2midjO0ZJXbxAS1Pt_PfzGyrnM_kNpzF4xNdLds6vlxGYSTADXN8VHCj84oFkKt70p_th87SezgLguFYDh9BP0QtgnU1UEGTXoA,,&typo=1": {
+    "author": "Elizabeth Trovall",
+    "category": "AILA Daily News Update",
+    "creator": "Marketplace ",
+    "description": "Local",
+    "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fus.list-manage.com%2fJEZWK2qpRJv%3fe%3d9626ca9d79%26c2id%3da2fe6f4712dfe3a9c0a991d4e55d1e84&c=E,1,XyFCYMyTwLMzOeKvjWWPKXR2midjO0ZJXbxAS1Pt_PfzGyrnM_kNpzF4xNdLds6vlxGYSTADXN8VHCj84oFkKt70p_th87SezgLguFYDh9BP0QtgnU1UEGTXoA,,&typo=1",
+    "pub_date": "10-02-2026_15-12-37",
+    "pull_date": "10-02-2026_15-12-37",
+    "source": "https://www.aila.org",
+    "title": "Local - Marketplace  - Immigration crackdown adds delays, costs to South Texas construction"
+  },
   "5883b105-8a17-4bbc-9bcd-5bf90a455808": {
     "author": null,
     "category": "Forms Updates",
@@ -64,6 +288,17 @@
     "pull_date": "10-01-2026_15-23-31",
     "source": "https://www.news.google.com",
     "title": "Sweeping US immigration changes take effect as 250,000 visas revoked - Dawn"
+  },
+  "CBMiuwFBVV95cUxQY1NNX3dIbU5meXRUMDR5UGpFU28zMDB0LTYzLXhSZjBmS2VjeE1pR3ZfdXQ4cUVweGxNQWdaSVVnbjQtSGdkbTdWbjZXekNBT0k1SWY4eDdHN0hTcUNsOWdESWZScjRjV3FGTnM2djdNUVNQM0ZFaE95RWVaVHJORVlCbDc1eTRjdVctc1l2UEF2UER1VkVWbGdJT1NSU2tkZzQ2NXcycF9feWZ5alM5TFhSNDg5Y3gxQ1Q4": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY1NNX3dIbU5meXRUMDR5UGpFU28zMDB0LTYzLXhSZjBmS2VjeE1pR3ZfdXQ4cUVweGxNQWdaSVVnbjQtSGdkbTdWbjZXekNBT0k1SWY4eDdHN0hTcUNsOWdESWZScjRjV3FGTnM2djdNUVNQM0ZFaE95RWVaVHJORVlCbDc1eTRjdVctc1l2UEF2UER1VkVWbGdJT1NSU2tkZzQ2NXcycF9feWZ5alM5TFhSNDg5Y3gxQ1Q4?oc=5\" target=\"_blank\">Pensacola clinics brace for impact as Medicaid eligibility changes for certain immigrants</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WEAR-TV</font>",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQY1NNX3dIbU5meXRUMDR5UGpFU28zMDB0LTYzLXhSZjBmS2VjeE1pR3ZfdXQ4cUVweGxNQWdaSVVnbjQtSGdkbTdWbjZXekNBT0k1SWY4eDdHN0hTcUNsOWdESWZScjRjV3FGTnM2djdNUVNQM0ZFaE95RWVaVHJORVlCbDc1eTRjdVctc1l2UEF2UER1VkVWbGdJT1NSU2tkZzQ2NXcycF9feWZ5alM5TFhSNDg5Y3gxQ1Q4?oc=5",
+    "pub_date": "10-01-2026_23-30-08",
+    "pull_date": "10-02-2026_15-12-29",
+    "source": "https://www.news.google.com",
+    "title": "Pensacola clinics brace for impact as Medicaid eligibility changes for certain immigrants - WEAR-TV"
   },
   "283fb4a7-98d9-42d7-bdb8-f01a02d82ced": {
     "author": null,
@@ -21869,21 +22104,6 @@
     "source": "https://travel.state.gov",
     "threat_level": "Level 3: Reconsider Travel",
     "title": "Ethiopia - Level 3: Reconsider Travel"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lva.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "LV",
-    "creator": null,
-    "description": "Exercise normal precaution<p>in <b>Latvia</b>.</p>\n<p>Latvia is generally a safe destination for travelers.</p>\n<ul>\n<li>Review our <a href='/en/international-travel/travel-advisories/latvia.html#requirements' title='travel guidance for Latvia'>Travel Guidance for Latvia</a> to learn how to prepare for a safe trip.</li>\n</ul>",
-    "identifier": "LV,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lva.html",
-    "pub_date": "04-01-2026_00-00-00",
-    "pull_date": "09-11-2026_15-22-34",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 1: Exercise Normal Precautions",
-    "title": "Latvia - Level 1: Exercise Normal Precautions"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/estonia-travel-advisory.html": {
     "author": null,
