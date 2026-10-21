@@ -1,4 +1,41 @@
 {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "FR",
+    "creator": null,
+    "description": "Exercise increased caution<p>in <b>France</b> due to\u00e2\u0080\u00af<b>terrorism</b>\u00e2\u0080\u00afand\u00e2\u0080\u00af<b>unrest</b>.</p>\n<p>Violence and rioting have recently occurred in France and may continue. Avoid demonstrations and areas of unrest.&nbsp; Stay away from areas with large crowds or significant police activity.</p>\n<p>Pickpocketing and phone thefts are common, especially in crowded places. Terrorist groups continue to plan possible attacks in France and may attack with little to no warning. There are also regular, peaceful protests and strikes in Paris and other cities throughout France.&nbsp;</p>\n<p>Pickpocketing and phone thefts are frequent crimes. They can occur in crowded areas such as:&nbsp;</p>\n<ul>\n<li>Airports&nbsp;</li>\n<li>Subways and train cars&nbsp;</li>\n<li>Tourist attractions&nbsp;</li>\n<li>Train stations&nbsp;</li>\n</ul>\n<p><a href='https://travel.state.gov/en/international-travel/travel-advisories/global-events/terrorism.html'>Terrorist groups</a> continue to plan possible attacks in France. They may attack with little or no warning. Possible targets include:&nbsp;</p>\n<ul>\n<li>Tourist locations&nbsp;</li>\n<li>Transportation hubs and airports&nbsp;</li>\n<li>Markets and shopping malls&nbsp;</li>\n<li>Local government facilities&nbsp;</li>\n<li>Hotels, restaurants, and clubs&nbsp;</li>\n<li>Places of worship&nbsp;</li>\n<li>Major sporting and cultural events&nbsp;</li>\n<li>Educational institutions&nbsp;</li>\n<li>Parks&nbsp;</li>\n<li>Other public areas&nbsp;</li>\n</ul>\n<p>Demonstrations and strikes happen often in Paris and other cities in France.&nbsp;</p>\n<ul>\n<li>Protests can disrupt transportation services.&nbsp;</li>\n<li>Protests have turned violent or caused property damage.&nbsp;</li>\n<li>Police may respond with force, including water cannons and tear gas.&nbsp;</li>\n</ul>",
+    "identifier": "FR,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html",
+    "pub_date": "10-21-2026_00-00-00",
+    "pull_date": "10-21-2026_15-23-25",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "France - Level 2: Exercise Increased Caution"
+  },
+  "CBMiW0FVX3lxTE5KNXNySHFZbDNPRFJZS2NGbFExa0FNRFJ3N212MEljWndIdnVSMzZUT0d3RTlaanFkQ1JjN2NReGNNbzlkVG1QTkFlWXBBN3FVNXhxTXc4ZWxFczg": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE5KNXNySHFZbDNPRFJZS2NGbFExa0FNRFJ3N212MEljWndIdnVSMzZUT0d3RTlaanFkQ1JjN2NReGNNbzlkVG1QTkFlWXBBN3FVNXhxTXc4ZWxFczg?oc=5\" target=\"_blank\">Haitian migrants changed this town - Trump's deportation drive is reshaping it again</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BBC</font>",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5KNXNySHFZbDNPRFJZS2NGbFExa0FNRFJ3N212MEljWndIdnVSMzZUT0d3RTlaanFkQ1JjN2NReGNNbzlkVG1QTkFlWXBBN3FVNXhxTXc4ZWxFczg?oc=5",
+    "pub_date": "10-21-2026_02-37-13",
+    "pull_date": "10-21-2026_15-23-46",
+    "source": "https://www.news.google.com",
+    "title": "Haitian migrants changed this town - Trump's deportation drive is reshaping it again - BBC"
+  },
+  "70379": {
+    "author": null,
+    "category": "Partnership and Engagement",
+    "creator": "ICE Headline News Feed by Category - Partnership and Engagement",
+    "description": "The event, attended by eight Angel families, was designed to gain feedback directly from families who have lost their loved ones, and how to better serve the needs of victims.",
+    "link": "https://www.ice.gov/news/releases/deputy-secretary-troy-edgar-participates-first-voice-roundtable-8-angel-families",
+    "pub_date": "10-21-2026_11-36-53",
+    "pull_date": "10-21-2026_15-24-18",
+    "source": "https://www.ice.gov",
+    "title": "Deputy Secretary Troy Edgar participates in first VOICE roundtable with 8 Angel families"
+  },
   "84bd36be-8897-468b-b219-891057b0b780": {
     "author": null,
     "category": "News Releases",
@@ -64,6 +101,17 @@
     "pull_date": "10-20-2026_15-26-14",
     "source": "https://www.ice.gov",
     "title": "ICE lodges detainers for Dominican illegal aliens wanted for stabbing off-duty New York City detective"
+  },
+  "70376": {
+    "author": null,
+    "category": "Enforcement and Removal",
+    "creator": "ICE Headline News Feed by Category - Enforcement and Removal",
+    "description": "On Sept. 11, ICE arrested a 29-year-old criminal illegal alien from El Salvador who is a high-ranking leader of the notorious MS-13 transnational criminal gang.",
+    "link": "https://www.ice.gov/news/releases/ice-washington-dc-arrests-criminal-illegal-alien-gang-leader-maryland",
+    "pub_date": "10-20-2026_15-07-24",
+    "pull_date": "10-21-2026_15-24-22",
+    "source": "https://www.ice.gov",
+    "title": "ICE Washington, DC arrests criminal illegal alien gang leader in Maryland"
   },
   "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.chn.html": {
     "author": null,
@@ -68685,21 +68733,6 @@
     "category": "Enforcement and Removal",
     "pub_date": "05-28-2025_12-23-56",
     "pull_date": "07-10-2025_11-37-11"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "FR",
-    "creator": null,
-    "description": "Exercise increased caution<p>in <b>France</b> due to\u00e2\u0080\u00af<b>terrorism</b>\u00e2\u0080\u00afand\u00e2\u0080\u00af<b>unrest</b>.</p>\n<p><span class='body-regular'>Pickpocketing and phone thefts are common, especially in crowded places. Terrorist groups continue to plan possible attacks in France and may attack with little to no warning. There are also regular, peaceful protests and strikes in Paris and other cities throughout France.\u00c2\u00a0</span></p>\n<p><span class='body-regular'>Pickpocketing and phone thefts are frequent crimes. They can occur in crowded areas such as:\u00c2\u00a0</span></p>\n<ul>\n<li><span class='body-regular'>Airports\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Subways and train cars\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Tourist attractions\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Train stations\u00c2\u00a0</span></li>\n</ul>\n<p><span class='body-regular'><a href='/en/international-travel/travel-advisories/global-events/terrorism.html'>Terrorist groups</a> continue to plan possible attacks in France. They may attack with little or no warning.\u00c2\u00a0Possible targets include:\u00c2\u00a0</span></p>\n<ul>\n<li><span class='body-regular'>Tourist locations\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Transportation hubs and airports\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Markets and shopping malls\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Local government facilities\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Hotels, restaurants, and clubs\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Places of worship\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Major sporting and cultural events\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Educational institutions\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Parks\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Other public areas\u00c2\u00a0</span></li>\n</ul>\n<p><span class='body-regular'>Peaceful demonstrations and strikes happen often in Paris and other cities in France.\u00c2\u00a0</span></p>\n<ul>\n<li><span class='body-regular'>Protests can disrupt transportation services.\u00c2\u00a0</span></li>\n<li><span class='body-regular'>On rare occasions, protests have turned violent or caused property damage.\u00c2\u00a0</span></li>\n<li><span class='body-regular'>Police may respond with water cannons and tear gas.\u00c2\u00a0</span></li>\n</ul>",
-    "identifier": "FR,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html",
-    "pub_date": "05-28-2025_00-00-00",
-    "pull_date": "12-30-2025_19-07-37",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 2: Exercise Increased Caution",
-    "title": "France - Level 2: Exercise Increased Caution"
   },
   "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/south-africa-travel-advisory.html": {
     "author": null,
