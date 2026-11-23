@@ -1,4 +1,85 @@
 {
+  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dnk.html": {
+    "author": null,
+    "category": "main_feed",
+    "country": "DA",
+    "creator": null,
+    "description": "Exercise increased caution<p>in <b>Denmark </b>due to <b>terrorism</b>.</p>\n<p>Terrorist groups continue plotting possible attacks in the Kingdom of Denmark.&nbsp; Visit the U.S. Department of State's <a href='https://www.state.gov/country-reports-on-terrorism/' target='_blank' title='DOS Country reports on terrorism'>country reports on terrorism</a> to learn more.</p>\n<p>Terrorists may attack without warning and target:</p>\n<ul>\n<li>Tourist locations</li>\n<li>Transportation hubs (airports)</li>\n<li>Markets and shopping malls &nbsp;</li>\n<li>Local government facilities</li>\n<li>Hotels, clubs, and restaurants</li>\n<li>Places of religious significance</li>\n<li>Parks</li>\n<li>Major sporting and cultural events</li>\n<li>Educational institutions</li>\n<li>Other Public Areas</li>\n</ul>",
+    "identifier": "DA,advisory",
+    "keyword": "advisory",
+    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dnk.html",
+    "pub_date": "11-23-2026_00-00-00",
+    "pull_date": "11-23-2026_15-31-47",
+    "source": "https://travel.state.gov",
+    "threat_level": "Level 2: Exercise Increased Caution",
+    "title": "Denmark - Level 2: Exercise Increased Caution"
+  },
+  "97e76201-4069-42c3-829d-ec045b3dd1dd": {
+    "author": null,
+    "category": "News Releases",
+    "creator": "USCIS",
+    "description": "U.S. Citizenship and Immigration Services assisted in an investigation leading to the&nbsp;sentencing of Chandrakant \u201cLala\u201d Patel, 40, of Oakdale, La., to 120 months in federal prison for conspiracy to commit visa fraud and engaging in monetary transactions in property derived from unlawful activity.",
+    "link": "https://www.uscis.gov/newsroom/news-releases/oakdale-visa-fraud-scheme-ringleader-sentenced-to-10-years-in-federal-prison-four-co-conspirators",
+    "pub_date": "11-23-2026_09-56-22",
+    "pull_date": "11-23-2026_15-31-28",
+    "source": "https://www.uscis.gov",
+    "title": "Oakdale Visa Fraud Scheme Ringleader Sentenced to 10 Years in Federal Prison; Four Co-Conspirators Also Sentenced to Five Years Each"
+  },
+  "CBMid0FVX3lxTE5qb0V3bmZYMXBGYnQzSVp6bGxvOGlsaXBydVU4TmZRUDduSkt2Ny1XdFJjYkpjMFRfTi1SU0staFlnX1JMVUxMMmFvNW0yaUstOVF4QUJHRVFGRWJWQnJ6aEJJYnRpVDdEWXRLaEt3bWI1SzF1aHI4": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE5qb0V3bmZYMXBGYnQzSVp6bGxvOGlsaXBydVU4TmZRUDduSkt2Ny1XdFJjYkpjMFRfTi1SU0staFlnX1JMVUxMMmFvNW0yaUstOVF4QUJHRVFGRWJWQnJ6aEJJYnRpVDdEWXRLaEt3bWI1SzF1aHI4?oc=5\" target=\"_blank\">Opinion | Real, Positive Change for Immigrants Will Only Come From Continuing Popular Pressure</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Common Dreams</font>",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qb0V3bmZYMXBGYnQzSVp6bGxvOGlsaXBydVU4TmZRUDduSkt2Ny1XdFJjYkpjMFRfTi1SU0staFlnX1JMVUxMMmFvNW0yaUstOVF4QUJHRVFGRWJWQnJ6aEJJYnRpVDdEWXRLaEt3bWI1SzF1aHI4?oc=5",
+    "pub_date": "11-23-2026_17-43-21",
+    "pull_date": "11-23-2026_15-32-17",
+    "source": "https://www.news.google.com",
+    "title": "Opinion | Real, Positive Change for Immigrants Will Only Come From Continuing Popular Pressure - Common Dreams"
+  },
+  "CBMid0FVX3lxTE00VWlrdG10SmdrbHp4Mktzc3hVY1lLVnBFbElUbTBxRmhaZnQxd0tzVjlQMVk2Q3kwZ21lb2JEQjhfMWhJcHpjNTVBdDJycnBVOUhjX0tMTE1ZQ2NLSjhTQWt3OVZIRGJkeFd1T3A3M1N4M2w1MWVR": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE00VWlrdG10SmdrbHp4Mktzc3hVY1lLVnBFbElUbTBxRmhaZnQxd0tzVjlQMVk2Q3kwZ21lb2JEQjhfMWhJcHpjNTVBdDJycnBVOUhjX0tMTE1ZQ2NLSjhTQWt3OVZIRGJkeFd1T3A3M1N4M2w1MWVR?oc=5\" target=\"_blank\">Michigan college soccer player detained by ICE as changes 'rock' higher ed</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Belleville News-Democrat</font>",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00VWlrdG10SmdrbHp4Mktzc3hVY1lLVnBFbElUbTBxRmhaZnQxd0tzVjlQMVk2Q3kwZ21lb2JEQjhfMWhJcHpjNTVBdDJycnBVOUhjX0tMTE1ZQ2NLSjhTQWt3OVZIRGJkeFd1T3A3M1N4M2w1MWVR?oc=5",
+    "pub_date": "11-23-2026_15-25-00",
+    "pull_date": "11-23-2026_15-32-17",
+    "source": "https://www.news.google.com",
+    "title": "Michigan college soccer player detained by ICE as changes 'rock' higher ed - Belleville News-Democrat"
+  },
+  "CBMikwFBVV95cUxOVDNJSnpSelhobzVZNloxY1JMOURGV1NsUHBNTkZkMXhOMC0tenU2YWR5VU1mZExsSTk2Y2NuYkVXWUJBb3R4UkNESWZRVThQVG16TDR0ZnNxbEtPREhjWDFpbm5fY1pkRVhJWm5ieHlHRGl3Wlg4MDRMYTExeUN3RENjZGFsUWwweDQyeFllY2kxS1E": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOVDNJSnpSelhobzVZNloxY1JMOURGV1NsUHBNTkZkMXhOMC0tenU2YWR5VU1mZExsSTk2Y2NuYkVXWUJBb3R4UkNESWZRVThQVG16TDR0ZnNxbEtPREhjWDFpbm5fY1pkRVhJWm5ieHlHRGl3Wlg4MDRMYTExeUN3RENjZGFsUWwweDQyeFllY2kxS1E?oc=5\" target=\"_blank\">Recent Changes in Immigration and Fiscal Policy</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fullerton Observer</font>",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVDNJSnpSelhobzVZNloxY1JMOURGV1NsUHBNTkZkMXhOMC0tenU2YWR5VU1mZExsSTk2Y2NuYkVXWUJBb3R4UkNESWZRVThQVG16TDR0ZnNxbEtPREhjWDFpbm5fY1pkRVhJWm5ieHlHRGl3Wlg4MDRMYTExeUN3RENjZGFsUWwweDQyeFllY2kxS1E?oc=5",
+    "pub_date": "11-23-2026_15-10-20",
+    "pull_date": "11-23-2026_15-32-17",
+    "source": "https://www.news.google.com",
+    "title": "Recent Changes in Immigration and Fiscal Policy - Fullerton Observer"
+  },
+  "CBMi7wFBVV95cUxQQ2RlWU4zckE1ZFF6MFhERXZUWHA0Mkh4dUU0ZjdlZXlXLWNseDRJSnBicEtkMEQ2a3dUMVJ1dmIycFN1TUhtYzZucDZ3U1NfdXMyS1M1dTBKbmh3ZUFmU0oxLW9Eb3JyTzVHaVcwcldhOXktZDd1ZVhPa2VFb0lBZjAwMWltNU80UWVoOGVjMk5sQWdMaERCTDB4WEEzMW5lTHUxTl9iZzlXNU9xVUhhYUFGOUpJUFlndlZXaXN3WDRkRFhYaXRnWUpySTB4TFpGV3pBdU51UC1uWnZMZ3M2YmdIV1FhYVItSWN4b0tNRQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxQQ2RlWU4zckE1ZFF6MFhERXZUWHA0Mkh4dUU0ZjdlZXlXLWNseDRJSnBicEtkMEQ2a3dUMVJ1dmIycFN1TUhtYzZucDZ3U1NfdXMyS1M1dTBKbmh3ZUFmU0oxLW9Eb3JyTzVHaVcwcldhOXktZDd1ZVhPa2VFb0lBZjAwMWltNU80UWVoOGVjMk5sQWdMaERCTDB4WEEzMW5lTHUxTl9iZzlXNU9xVUhhYUFGOUpJUFlndlZXaXN3WDRkRFhYaXRnWUpySTB4TFpGV3pBdU51UC1uWnZMZ3M2YmdIV1FhYVItSWN4b0tNRQ?oc=5\" target=\"_blank\">Approved by Donald Trump, USCIS tightens rules for granting green cards and adds new restrictions for these immigrants</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">El Cronista</font>",
+    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQQ2RlWU4zckE1ZFF6MFhERXZUWHA0Mkh4dUU0ZjdlZXlXLWNseDRJSnBicEtkMEQ2a3dUMVJ1dmIycFN1TUhtYzZucDZ3U1NfdXMyS1M1dTBKbmh3ZUFmU0oxLW9Eb3JyTzVHaVcwcldhOXktZDd1ZVhPa2VFb0lBZjAwMWltNU80UWVoOGVjMk5sQWdMaERCTDB4WEEzMW5lTHUxTl9iZzlXNU9xVUhhYUFGOUpJUFlndlZXaXN3WDRkRFhYaXRnWUpySTB4TFpGV3pBdU51UC1uWnZMZ3M2YmdIV1FhYVItSWN4b0tNRQ?oc=5",
+    "pub_date": "11-23-2026_13-34-53",
+    "pull_date": "11-23-2026_15-32-17",
+    "source": "https://www.news.google.com",
+    "title": "Approved by Donald Trump, USCIS tightens rules for granting green cards and adds new restrictions for these immigrants - El Cronista"
+  },
+  "CBMipAFBVV95cUxPS3YyQXRIakdYZzNiaXlOLTQ2QkV4TkZHaU84NU5fOWYyNXFReU45THJscWFQdVV6WTdEM09DUEphZjE5ZnFMZzJBQS10LWp3RnBZXzJGM0VYSWk5UEJfeDFaT3ZzamFtWGNzMVV0Y3hfSjVXbWxaOFdOb3FoeDRMNXBOTENTcnJYVy1CM29DQnNzZlBMNXZ1MTY3eWl4WE5ndFRQbQ": {
+    "author": null,
+    "category": "US Immigration Changes",
+    "creator": null,
+    "description": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3YyQXRIakdYZzNiaXlOLTQ2QkV4TkZHaU84NU5fOWYyNXFReU45THJscWFQdVV6WTdEM09DUEphZjE5ZnFMZzJBQS10LWp3RnBZXzJGM0VYSWk5UEJfeDFaT3ZzamFtWGNzMVV0Y3hfSjVXbWxaOFdOb3FoeDRMNXBOTENTcnJYVy1CM29DQnNzZlBMNXZ1MTY3eWl4WE5ndFRQbQ?oc=5\" target=\"_blank\">Rule changes leave international students rethinking plans to study in the U.S.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Globe and Mail</font>",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS3YyQXRIakdYZzNiaXlOLTQ2QkV4TkZHaU84NU5fOWYyNXFReU45THJscWFQdVV6WTdEM09DUEphZjE5ZnFMZzJBQS10LWp3RnBZXzJGM0VYSWk5UEJfeDFaT3ZzamFtWGNzMVV0Y3hfSjVXbWxaOFdOb3FoeDRMNXBOTENTcnJYVy1CM29DQnNzZlBMNXZ1MTY3eWl4WE5ndFRQbQ?oc=5",
+    "pub_date": "11-23-2026_11-00-00",
+    "pull_date": "11-23-2026_15-32-17",
+    "source": "https://www.news.google.com",
+    "title": "Rule changes leave international students rethinking plans to study in the U.S. - The Globe and Mail"
+  },
   "CBMicEFVX3lxTE94T0JROG5Hd2xDaE0xU3FyeXFGYTNCNGoyZXRFUGY0X0xBaExEMUN2T1drd2ZBRkJLZEpHamdSbTg5cEdIalBSV3pZMzQzeEVkVl9sR3N1MFFuQ0tCalVPWkZWbjFjSXpTWUVxYTk1SWo": {
     "author": null,
     "category": "US Immigration Changes",
@@ -90550,21 +90631,6 @@
     "category": "Newsroom",
     "pub_date": "09-17-2024_11-48-14",
     "pull_date": "09-18-2024_08-40-06"
-  },
-  "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dnk.html": {
-    "author": null,
-    "category": "main_feed",
-    "country": "DN",
-    "creator": null,
-    "description": "Exercise increased caution<p>&nbsp;in the <b>Kingdom of Denmark</b> due to\u00e2\u0080\u00af<b>terrorism</b>.</p>\n<p>Terrorist groups continue plotting possible attacks in the Kingdom of Denmark.&nbsp; Terrorists can attack with little or no warning. They could target tourist spots, transport hubs, markets/shopping malls, local government facilities, hotels, clubs, restaurants, places of religious importance, parks, major sporting and cultural events, schools, airports, and other public areas.</p>\n<p>The Kingdom of Denmark consists of Denmark, the Faroe Islands, and Greenland.&nbsp; For additional information, please review the <a title='Travel guidance for Denmark' href='/en/international-travel/travel-advisories/denmark.html#requirements'>travel guidances for Denmark</a> and the Faroe Islands and for <a href='/en/international-travel/travel-advisories/greenland.html#requirements' title='Travel guidance for Greenland'>Greenland</a>.</p>",
-    "identifier": "DN,advisory",
-    "keyword": "advisory",
-    "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dnk.html",
-    "pub_date": "09-17-2024_00-00-00",
-    "pull_date": "10-22-2026_15-11-00",
-    "source": "https://travel.state.gov",
-    "threat_level": "Level 2: Exercise Increased Caution",
-    "title": "Denmark - Level 2: Exercise Increased Caution"
   },
   "https://www.cbp.gov/node/429998": {
     "source": "https://www.cbp.gov",
